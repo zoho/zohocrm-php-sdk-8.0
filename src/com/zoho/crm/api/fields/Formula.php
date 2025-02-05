@@ -12,7 +12,6 @@ class Formula implements Model
 	private  $dynamic;
 	private  $stopComputeConditionally;
 	private  $stopComputeExpression;
-	private  $expression2;
 	private  $keyModified=array();
 
 	/**
@@ -138,27 +137,6 @@ class Formula implements Model
 	{
 		$this->stopComputeExpression=$stopComputeExpression; 
 		$this->keyModified['stop_compute_expression'] = 1; 
-
-	}
-
-	/**
-	 * The method to get the expression2
-	 * @return string A string representing the expression2
-	 */
-	public function getExpression2()
-	{
-		return $this->expression2; 
-
-	}
-
-	/**
-	 * The method to set the value to expression2
-	 * @param string $expression2 A string
-	 */
-	public function setExpression2(string $expression2)
-	{
-		$this->expression2=$expression2; 
-		$this->keyModified['expression'] = 1; 
 
 	}
 

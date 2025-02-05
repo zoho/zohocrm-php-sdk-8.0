@@ -815,7 +815,6 @@ class Utility
         if(strtolower($apiType) == Constants::MULTI_MODULE_LOOKUP)
 		{
 			$fieldDetail[Constants::SKIP_MANDATORY] = true;	
-			$fieldDetail[Constants::SUBFORM] = true;
 		}
         if (array_key_exists($apiType, Utility::$apiTypeVsStructureName))
         {
@@ -875,7 +874,7 @@ class Utility
         $fieldAPINamesInteger = ["integer"];
         $fieldAPINamesBoolean = ["boolean"];
         $fieldAPINamesLong = ["long", "bigint"];
-        $fieldAPINamesDouble = ["double", "percent", "lookup", "currency"];
+        $fieldAPINamesDouble = ["double", "percent", "currency"];
         $fieldAPINamesFieldFile = ["fileupload"];
         $fieldAPINamesDateTime = ["datetime", "event_reminder"];
         $fieldAPINamesDate = ["date"];

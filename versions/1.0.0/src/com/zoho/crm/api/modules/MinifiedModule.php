@@ -10,6 +10,7 @@ class MinifiedModule implements Model
 	private  $id;
 	private  $moduleName;
 	private  $module;
+	private  $crypt;
 	private  $keyModified=array();
 
 	/**
@@ -93,6 +94,27 @@ class MinifiedModule implements Model
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the crypt
+	 * @return bool A bool representing the crypt
+	 */
+	public function getCrypt()
+	{
+		return $this->crypt; 
+
+	}
+
+	/**
+	 * The method to set the value to crypt
+	 * @param bool $crypt A bool
+	 */
+	public function setCrypt(bool $crypt)
+	{
+		$this->crypt=$crypt; 
+		$this->keyModified['crypt'] = 1; 
 
 	}
 

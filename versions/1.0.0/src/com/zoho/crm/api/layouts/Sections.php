@@ -8,6 +8,7 @@ class Sections implements Model
 
 	private  $displayLabel;
 	private  $sequenceNumber;
+	private  $actionsAllowed;
 	private  $issubformsection;
 	private  $tabTraversal;
 	private  $apiName;
@@ -60,6 +61,27 @@ class Sections implements Model
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the actionsAllowed
+	 * @return ActionsAllowed An instance of ActionsAllowed
+	 */
+	public function getActionsAllowed()
+	{
+		return $this->actionsAllowed; 
+
+	}
+
+	/**
+	 * The method to set the value to actionsAllowed
+	 * @param ActionsAllowed $actionsAllowed An instance of ActionsAllowed
+	 */
+	public function setActionsAllowed(ActionsAllowed $actionsAllowed)
+	{
+		$this->actionsAllowed=$actionsAllowed; 
+		$this->keyModified['actions_allowed'] = 1; 
 
 	}
 

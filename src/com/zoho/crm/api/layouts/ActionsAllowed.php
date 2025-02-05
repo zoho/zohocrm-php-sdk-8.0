@@ -13,6 +13,11 @@ class ActionsAllowed implements Model
 	private  $delete;
 	private  $deactivate;
 	private  $setLayoutPermissions;
+	private  $addField;
+	private  $changeTabTraversal;
+	private  $reorder;
+	private  $removeField;
+	private  $changeColumnCount;
 	private  $keyModified=array();
 
 	/**
@@ -113,7 +118,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to delete
 	 * @param bool $delete A bool
 	 */
-	public function setDelete(?bool $delete)
+	public function setDelete(bool $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['delete'] = 1; 
@@ -159,6 +164,111 @@ class ActionsAllowed implements Model
 	{
 		$this->setLayoutPermissions=$setLayoutPermissions; 
 		$this->keyModified['set_layout_permissions'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the addField
+	 * @return bool A bool representing the addField
+	 */
+	public function getAddField()
+	{
+		return $this->addField; 
+
+	}
+
+	/**
+	 * The method to set the value to addField
+	 * @param bool $addField A bool
+	 */
+	public function setAddField(bool $addField)
+	{
+		$this->addField=$addField; 
+		$this->keyModified['add_field'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the changeTabTraversal
+	 * @return bool A bool representing the changeTabTraversal
+	 */
+	public function getChangeTabTraversal()
+	{
+		return $this->changeTabTraversal; 
+
+	}
+
+	/**
+	 * The method to set the value to changeTabTraversal
+	 * @param bool $changeTabTraversal A bool
+	 */
+	public function setChangeTabTraversal(bool $changeTabTraversal)
+	{
+		$this->changeTabTraversal=$changeTabTraversal; 
+		$this->keyModified['change_tab_traversal'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the reorder
+	 * @return bool A bool representing the reorder
+	 */
+	public function getReorder()
+	{
+		return $this->reorder; 
+
+	}
+
+	/**
+	 * The method to set the value to reorder
+	 * @param bool $reorder A bool
+	 */
+	public function setReorder(bool $reorder)
+	{
+		$this->reorder=$reorder; 
+		$this->keyModified['reorder'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the removeField
+	 * @return bool A bool representing the removeField
+	 */
+	public function getRemoveField()
+	{
+		return $this->removeField; 
+
+	}
+
+	/**
+	 * The method to set the value to removeField
+	 * @param bool $removeField A bool
+	 */
+	public function setRemoveField(bool $removeField)
+	{
+		$this->removeField=$removeField; 
+		$this->keyModified['remove_field'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the changeColumnCount
+	 * @return bool A bool representing the changeColumnCount
+	 */
+	public function getChangeColumnCount()
+	{
+		return $this->changeColumnCount; 
+
+	}
+
+	/**
+	 * The method to set the value to changeColumnCount
+	 * @param bool $changeColumnCount A bool
+	 */
+	public function setChangeColumnCount(bool $changeColumnCount)
+	{
+		$this->changeColumnCount=$changeColumnCount; 
+		$this->keyModified['change_column_count'] = 1; 
 
 	}
 
