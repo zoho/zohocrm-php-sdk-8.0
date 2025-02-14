@@ -8,7 +8,7 @@ use com\zoho\crm\api\inventorytemplates\User;
 use com\zoho\crm\api\sendmail\Template;
 use com\zoho\crm\api\util\Model;
 
-class EmailTemplate extends InventoryTemplates implements Model, Template
+class EmailTemplate extends InventoryTemplates implements Template, Model
 {
 
 	private  $attachments;

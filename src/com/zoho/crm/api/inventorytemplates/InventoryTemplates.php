@@ -4,7 +4,7 @@ namespace com\zoho\crm\api\inventorytemplates;
 use com\zoho\crm\api\sendmail\Template;
 use com\zoho\crm\api\util\Model;
 
-class InventoryTemplates implements Model, Template
+class InventoryTemplates implements Template, Model
 {
 
 	private  $createdTime;

@@ -14,6 +14,7 @@ class BusinessHours implements Model
 	private  $sameAsEveryday;
 	private  $dailyTiming;
 	private  $customTiming;
+	private  $timezone;
 	private  $keyModified=array();
 
 	/**
@@ -160,6 +161,27 @@ class BusinessHours implements Model
 	{
 		$this->customTiming=$customTiming; 
 		$this->keyModified['custom_timing'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the timezone
+	 * @return string A string representing the timezone
+	 */
+	public function getTimezone()
+	{
+		return $this->timezone; 
+
+	}
+
+	/**
+	 * The method to set the value to timezone
+	 * @param string $timezone A string
+	 */
+	public function setTimezone(string $timezone)
+	{
+		$this->timezone=$timezone; 
+		$this->keyModified['timezone'] = 1; 
 
 	}
 
