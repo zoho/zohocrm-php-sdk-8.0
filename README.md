@@ -25,6 +25,9 @@ License
 
 
 ## Latest Version
+- [2.0.0](/versions/2.0.0/README.md)
+    - New fields have been added to the History Tracking Fields API. 
+    - Fixed the issue with the inventory mass conversion status API.
 
 - [1.0.0](/versions/1.0.0/README.md)
 
