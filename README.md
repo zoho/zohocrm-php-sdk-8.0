@@ -35,11 +35,11 @@ License
 
     - PHP SDK improved to support the following new APIs
 
-      - [Get Related Records Count of a Record]()
-      - [Calls Preference]()
-      - [Record-Level Sharing of Emails]()
-      - [Data Sharing Rules API]()
-      - [Get Rich Text Fields API]()
+      - [Get Related Records Count of a Record](https://www.zoho.com/crm/developer/docs/api/v8/get-related-records-count.html)
+      - [Calls Preference](https://www.zoho.com/crm/developer/docs/api/v8/get-calls-preferences.html)
+      - [Record-Level Sharing of Emails](https://www.zoho.com/crm/developer/docs/api/v8/share-emails.html)
+      - [Data Sharing Rules API](https://www.zoho.com/crm/developer/docs/api/v8/data-sharing-rules.html)
+      - [Get Rich Text Fields API](https://www.zoho.com/crm/developer/docs/api/v8/get-rich-text-fields.html)
 
 For older versions, please [refer](https://github.com/zoho/zohocrm-php-sdk-8.0/releases).
 

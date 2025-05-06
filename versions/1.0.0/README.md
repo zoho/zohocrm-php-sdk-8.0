@@ -344,7 +344,7 @@ The **environment** key contains the domain information to make API calls. The *
 
   - Use the following method for **grantToken flow :**
   ```php
-  $token = (new OAuthBuider())
+  $token = (new OAuthBuilder())
   ->clientID("clientId")
   ->clientSecret("clientSecret")
   ->grantToken("grantToken")
