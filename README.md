@@ -27,7 +27,7 @@ License
 ## Latest Version
 
 - [2.1.0](/versions/2.1.0/README.md)
-  - ***trigger*** field have been added to the Notes API. 
+  - ***trigger*** field has been added to the Notes API. 
 
 - [2.0.0](/versions/2.0.0/README.md)
     - New fields have been added to the History Tracking Fields API. 
