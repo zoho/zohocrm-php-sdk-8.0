@@ -25,6 +25,10 @@ License
 
 
 ## Latest Version
+
+- [2.1.0](/versions/2.1.0/README.md)
+  - ***trigger*** field have been added to the Notes API. 
+
 - [2.0.0](/versions/2.0.0/README.md)
     - New fields have been added to the History Tracking Fields API. 
     - Fixed the issue with the inventory mass conversion status API.
@@ -45,10 +49,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-php-sdk-8.0/r
 
 ## Including the SDK in your project
 You can include the SDK to your project using Composer.
-For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/2.0.0) of PHP SDK, navigate to the workspace of your client app and run the following command.
+For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/2.1.0) of PHP SDK, navigate to the workspace of your client app and run the following command.
 
 ```sh
-composer require zohocrm/php-sdk-8.0:2.0.0
+composer require zohocrm/php-sdk-8.0:2.1.0
 ```
 With this, the PHP SDK will be installed and a package named vendor will be created in the workspace of your client app.
 
@@ -67,4 +71,4 @@ For example, if you generate the tokens for your Sandbox environment in the CN d
 
 ---
 
-For more details, kindly refer here. [here](/versions/2.0.0/README.md).
+For more details, kindly refer here. [here](/versions/2.1.0/README.md).
