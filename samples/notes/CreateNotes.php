@@ -1,8 +1,8 @@
 <?php
-namespace notes;
+namespace samples\notes;
 
 use com\zoho\api\authenticator\OAuthBuilder;
-use com\zoho\crm\api\dc\USDataCenter;
+use com\zoho\crm\api\dc\INDataCenter;
 use com\zoho\crm\api\InitializeBuilder;
 use com\zoho\crm\api\notes\APIException;
 use com\zoho\crm\api\notes\ActionWrapper;
@@ -12,6 +12,7 @@ use com\zoho\crm\api\notes\SuccessResponse;
 use com\zoho\crm\api\notes\ParentId;
 use com\zoho\crm\api\util\Choice;
 use com\zoho\crm\api\modules\MinifiedModule;
+use com\zoho\crm\api\notes\Note;
 
 require_once "vendor/autoload.php";
 
@@ -19,9 +20,9 @@ class CreateNotes
 {
     public static function initialize()
     {
-        $environment = USDataCenter::PRODUCTION();
+        $environment = INDataCenter::PRODUCTION();
         $token = (new OAuthBuilder())
-           ->clientId("client_id")
+            ->clientId("client_id")
             ->clientSecret("client_secret")
             ->refreshToken("refresh_token")
             ->build();
@@ -39,14 +40,13 @@ class CreateNotes
         //List of Note instances
         $notes = array();
         for ($i = 1; $i <= 5; $i++) {
-            $nodeClass = 'com\zoho\crm\api\notes\Note';
-            $note = new $nodeClass();
+            $note = new Note();
             $note->setNoteTitle("Contacted");
             $note->setNoteContent("Need to do further tracking");
             $parentRecord = new ParentId();
-            $parentRecord->setId("4402480774074");
+            $parentRecord->setId("1055806000028448054");
             $module = new MinifiedModule();
-			$module->setId(34770612175);
+			$module->setId("1055806000000002175");
 			$module->setAPIName("Leads");
 			$parentRecord->setModule($module);
             $note->setParentId($parentRecord);

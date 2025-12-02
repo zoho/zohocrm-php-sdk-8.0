@@ -4,17 +4,13 @@ namespace samples\modules;
 use com\zoho\api\authenticator\OAuthBuilder;
 use com\zoho\crm\api\dc\INDataCenter;
 use com\zoho\crm\api\InitializeBuilder;
-use com\zoho\crm\api\HeaderMap;
-use com\zoho\crm\api\ParameterMap;
-use com\zoho\crm\api\modules\APIException;
 use com\zoho\crm\api\modules\ModulesOperations;
 use com\zoho\crm\api\modules\ResponseWrapper;
-use com\zoho\crm\api\modules\GetModulesHeader;
-use com\zoho\crm\api\modules\GetModulesParam;
+use com\zoho\crm\api\modules\APIException;
 
 require_once "vendor/autoload.php";
 
-class GetModules
+class GetModule
 {
     public static function initialize()
     {
@@ -30,16 +26,14 @@ class GetModules
             ->initialize();
     }
 
-    public static function getModules()
+    public static function getModule(string $moduleAPIName)
     {
+        self::initialize();
+        
         $moduleOperations = new ModulesOperations();
-        $paramInstance = new ParameterMap();
-        $paramInstance->add(GetModulesParam::status(), "user_hidden,visible");//user_hidden,system_hidden,scheduled_for_deletion,visible
-        $headerInstance = new HeaderMap();
-        $datetime = date_create("2022-12-15T17:58:47+05:30")->setTimezone(new \DateTimeZone(date_default_timezone_get()));
-        $headerInstance->add(GetModulesHeader::IfModifiedSince(), $datetime);
-        //Call getModules method that takes headerInstance as parameters
-        $response = $moduleOperations->getModules($paramInstance, $headerInstance);
+        
+        $response = $moduleOperations->getModuleByAPIName($moduleAPIName);
+        
         if ($response != null) {
             echo ("Status code " . $response->getStatusCode() . "\n");
             if (in_array($response->getStatusCode(), array(204, 304))) {
@@ -161,5 +155,4 @@ class GetModules
     }
 }
 
-GetModules::initialize();
-GetModules::getModules();
+GetModule::getModule("Leads");
