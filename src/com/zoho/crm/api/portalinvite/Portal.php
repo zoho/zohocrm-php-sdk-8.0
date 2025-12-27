@@ -27,7 +27,7 @@ class Portal implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -48,7 +48,7 @@ class Portal implements Model
 	 * The method to set the value to userTypeId
 	 * @param string $userTypeId A string
 	 */
-	public function setUserTypeId(string $userTypeId)
+	public function setUserTypeId(?string $userTypeId)
 	{
 		$this->userTypeId=$userTypeId; 
 		$this->keyModified['user_type_id'] = 1; 
@@ -69,7 +69,7 @@ class Portal implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -90,7 +90,7 @@ class Portal implements Model
 	 * The method to set the value to language
 	 * @param Choice $language An instance of Choice
 	 */
-	public function setLanguage(Choice $language)
+	public function setLanguage(?Choice $language)
 	{
 		$this->language=$language; 
 		$this->keyModified['language'] = 1; 

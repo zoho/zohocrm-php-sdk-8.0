@@ -29,7 +29,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -50,7 +50,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to enabled
 	 * @param bool $enabled A bool
 	 */
-	public function setEnabled(bool $enabled)
+	public function setEnabled(?bool $enabled)
 	{
 		$this->enabled=$enabled; 
 		$this->keyModified['enabled'] = 1; 
@@ -71,7 +71,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -92,7 +92,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -113,7 +113,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to customizable
 	 * @param bool $customizable A bool
 	 */
-	public function setCustomizable(bool $customizable)
+	public function setCustomizable(?bool $customizable)
 	{
 		$this->customizable=$customizable; 
 		$this->keyModified['customizable'] = 1; 
@@ -134,7 +134,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to parentPermissions
 	 * @param array $parentPermissions A array
 	 */
-	public function setParentPermissions(array $parentPermissions)
+	public function setParentPermissions(?array $parentPermissions)
 	{
 		$this->parentPermissions=$parentPermissions; 
 		$this->keyModified['parent_permissions'] = 1; 
@@ -155,7 +155,7 @@ class PermissionDetail implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 

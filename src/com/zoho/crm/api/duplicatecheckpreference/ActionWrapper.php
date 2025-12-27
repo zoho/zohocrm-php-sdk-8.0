@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to duplicateCheckPreference
 	 * @param ActionResponse $duplicateCheckPreference An instance of ActionResponse
 	 */
-	public function setDuplicateCheckPreference(ActionResponse $duplicateCheckPreference)
+	public function setDuplicateCheckPreference(?ActionResponse $duplicateCheckPreference)
 	{
 		$this->duplicateCheckPreference=$duplicateCheckPreference; 
 		$this->keyModified['duplicate_check_preference'] = 1; 

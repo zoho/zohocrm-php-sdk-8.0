@@ -24,7 +24,7 @@ class SuccessResponse implements Model, ActionResponse
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -45,7 +45,7 @@ class SuccessResponse implements Model, ActionResponse
 	 * The method to set the value to relatedList
 	 * @param RelatedList $relatedList An instance of RelatedList
 	 */
-	public function setRelatedList(RelatedList $relatedList)
+	public function setRelatedList(?RelatedList $relatedList)
 	{
 		$this->relatedList=$relatedList; 
 		$this->keyModified['related_list'] = 1; 

@@ -24,7 +24,7 @@ class RecordIdBodyWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 
@@ -45,7 +45,7 @@ class RecordIdBodyWrapper implements Model
 	 * The method to set the value to territory
 	 * @param Territory $territory An instance of Territory
 	 */
-	public function setTerritory(Territory $territory)
+	public function setTerritory(?Territory $territory)
 	{
 		$this->territory=$territory; 
 		$this->keyModified['territory'] = 1; 

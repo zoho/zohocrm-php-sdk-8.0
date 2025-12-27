@@ -26,7 +26,7 @@ class Analytics implements Model
 	 * The method to set the value to analytics
 	 * @param array $analytics A array
 	 */
-	public function setAnalytics(array $analytics)
+	public function setAnalytics(?array $analytics)
 	{
 		$this->analytics=$analytics; 
 		$this->keyModified['analytics'] = 1; 
@@ -47,7 +47,7 @@ class Analytics implements Model
 	 * The method to set the value to parentFollowUp
 	 * @param ParentFollowUp $parentFollowUp An instance of ParentFollowUp
 	 */
-	public function setParentFollowUp(ParentFollowUp $parentFollowUp)
+	public function setParentFollowUp(?ParentFollowUp $parentFollowUp)
 	{
 		$this->parentFollowUp=$parentFollowUp; 
 		$this->keyModified['parent_follow_up'] = 1; 
@@ -68,7 +68,7 @@ class Analytics implements Model
 	 * The method to set the value to action
 	 * @param Action $action An instance of Action
 	 */
-	public function setAction(Action $action)
+	public function setAction(?Action $action)
 	{
 		$this->action=$action; 
 		$this->keyModified['action'] = 1; 
@@ -89,7 +89,7 @@ class Analytics implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

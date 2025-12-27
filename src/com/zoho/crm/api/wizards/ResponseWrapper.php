@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to wizards
 	 * @param array $wizards A array
 	 */
-	public function setWizards(array $wizards)
+	public function setWizards(?array $wizards)
 	{
 		$this->wizards=$wizards; 
 		$this->keyModified['wizards'] = 1; 

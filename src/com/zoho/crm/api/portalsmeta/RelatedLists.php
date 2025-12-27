@@ -23,7 +23,7 @@ class RelatedLists implements Model
 	 * The method to set the value to module
 	 * @param Modules $module An instance of Modules
 	 */
-	public function setModule(Modules $module)
+	public function setModule(?Modules $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 

@@ -1,7 +1,6 @@
 <?php 
 namespace com\zoho\crm\api\notifications;
 
-use com\zoho\crm\api\util\Choice;
 use com\zoho\crm\api\util\Model;
 
 class Notification extends Event implements Model
@@ -36,7 +35,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to channelId
 	 * @param string $channelId A string
 	 */
-	public function setChannelId(string $channelId)
+	public function setChannelId(?string $channelId)
 	{
 		$this->channelId=$channelId; 
 		$this->keyModified['channel_id'] = 1; 
@@ -57,7 +56,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to notifyUrl
 	 * @param string $notifyUrl A string
 	 */
-	public function setNotifyUrl(string $notifyUrl)
+	public function setNotifyUrl(?string $notifyUrl)
 	{
 		$this->notifyUrl=$notifyUrl; 
 		$this->keyModified['notify_url'] = 1; 
@@ -78,7 +77,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to events
 	 * @param array $events A array
 	 */
-	public function setEvents(array $events)
+	public function setEvents(?array $events)
 	{
 		$this->events=$events; 
 		$this->keyModified['events'] = 1; 
@@ -99,7 +98,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to token
 	 * @param string $token A string
 	 */
-	public function setToken(string $token)
+	public function setToken(?string $token)
 	{
 		$this->token=$token; 
 		$this->keyModified['token'] = 1; 
@@ -120,7 +119,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -141,7 +140,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to notifyOnRelatedAction
 	 * @param bool $notifyOnRelatedAction A bool
 	 */
-	public function setNotifyOnRelatedAction(bool $notifyOnRelatedAction)
+	public function setNotifyOnRelatedAction(?bool $notifyOnRelatedAction)
 	{
 		$this->notifyOnRelatedAction=$notifyOnRelatedAction; 
 		$this->keyModified['notify_on_related_action'] = 1; 
@@ -162,7 +161,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to returnAffectedFieldValues
 	 * @param bool $returnAffectedFieldValues A bool
 	 */
-	public function setReturnAffectedFieldValues(bool $returnAffectedFieldValues)
+	public function setReturnAffectedFieldValues(?bool $returnAffectedFieldValues)
 	{
 		$this->returnAffectedFieldValues=$returnAffectedFieldValues; 
 		$this->keyModified['return_affected_field_values'] = 1; 
@@ -171,7 +170,7 @@ class Notification extends Event implements Model
 
 	/**
 	 * The method to get the deleteEvents
-	 * @return Choice An instance of Choice
+	 * @return bool A bool representing the deleteEvents
 	 */
 	public function getDeleteEvents()
 	{
@@ -181,9 +180,9 @@ class Notification extends Event implements Model
 
 	/**
 	 * The method to set the value to deleteEvents
-	 * @param Choice $deleteEvents An instance of Choice
+	 * @param bool $deleteEvents A bool
 	 */
-	public function setDeleteEvents(Choice $deleteEvents)
+	public function setDeleteEvents(?bool $deleteEvents)
 	{
 		$this->deleteEvents=$deleteEvents; 
 		$this->keyModified['_delete_events'] = 1; 
@@ -204,7 +203,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to resourceName
 	 * @param string $resourceName A string
 	 */
-	public function setResourceName(string $resourceName)
+	public function setResourceName(?string $resourceName)
 	{
 		$this->resourceName=$resourceName; 
 		$this->keyModified['resource_name'] = 1; 
@@ -225,7 +224,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to channelExpiry
 	 * @param \DateTime $channelExpiry An instance of \DateTime
 	 */
-	public function setChannelExpiry(\DateTime $channelExpiry)
+	public function setChannelExpiry(?\DateTime $channelExpiry)
 	{
 		$this->channelExpiry=$channelExpiry; 
 		$this->keyModified['channel_expiry'] = 1; 
@@ -246,7 +245,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to resourceId
 	 * @param string $resourceId A string
 	 */
-	public function setResourceId(string $resourceId)
+	public function setResourceId(?string $resourceId)
 	{
 		$this->resourceId=$resourceId; 
 		$this->keyModified['resource_id'] = 1; 
@@ -267,7 +266,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to resourceUri
 	 * @param string $resourceUri A string
 	 */
-	public function setResourceUri(string $resourceUri)
+	public function setResourceUri(?string $resourceUri)
 	{
 		$this->resourceUri=$resourceUri; 
 		$this->keyModified['resource_uri'] = 1; 
@@ -288,7 +287,7 @@ class Notification extends Event implements Model
 	 * The method to set the value to notificationCondition
 	 * @param array $notificationCondition A array
 	 */
-	public function setNotificationCondition(array $notificationCondition)
+	public function setNotificationCondition(?array $notificationCondition)
 	{
 		$this->notificationCondition=$notificationCondition; 
 		$this->keyModified['notification_condition'] = 1; 

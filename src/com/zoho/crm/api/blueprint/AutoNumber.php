@@ -25,7 +25,7 @@ class AutoNumber implements Model
 	 * The method to set the value to prefix
 	 * @param string $prefix A string
 	 */
-	public function setPrefix(string $prefix)
+	public function setPrefix(?string $prefix)
 	{
 		$this->prefix=$prefix; 
 		$this->keyModified['prefix'] = 1; 
@@ -46,7 +46,7 @@ class AutoNumber implements Model
 	 * The method to set the value to suffix
 	 * @param string $suffix A string
 	 */
-	public function setSuffix(string $suffix)
+	public function setSuffix(?string $suffix)
 	{
 		$this->suffix=$suffix; 
 		$this->keyModified['suffix'] = 1; 
@@ -67,7 +67,7 @@ class AutoNumber implements Model
 	 * The method to set the value to startNumber
 	 * @param int $startNumber A int
 	 */
-	public function setStartNumber(int $startNumber)
+	public function setStartNumber(?int $startNumber)
 	{
 		$this->startNumber=$startNumber; 
 		$this->keyModified['start_number'] = 1; 

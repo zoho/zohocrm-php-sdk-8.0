@@ -25,7 +25,7 @@ class Fields implements Model
 	 * The method to set the value to readOnly
 	 * @param bool $readOnly A bool
 	 */
-	public function setReadOnly(bool $readOnly)
+	public function setReadOnly(?bool $readOnly)
 	{
 		$this->readOnly=$readOnly; 
 		$this->keyModified['read_only'] = 1; 
@@ -46,7 +46,7 @@ class Fields implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -67,7 +67,7 @@ class Fields implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

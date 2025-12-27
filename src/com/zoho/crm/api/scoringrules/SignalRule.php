@@ -25,7 +25,7 @@ class SignalRule implements Model
 	 * The method to set the value to score
 	 * @param int $score A int
 	 */
-	public function setScore(int $score)
+	public function setScore(?int $score)
 	{
 		$this->score=$score; 
 		$this->keyModified['score'] = 1; 
@@ -46,7 +46,7 @@ class SignalRule implements Model
 	 * The method to set the value to signal
 	 * @param Signal $signal An instance of Signal
 	 */
-	public function setSignal(Signal $signal)
+	public function setSignal(?Signal $signal)
 	{
 		$this->signal=$signal; 
 		$this->keyModified['signal'] = 1; 
@@ -67,7 +67,7 @@ class SignalRule implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

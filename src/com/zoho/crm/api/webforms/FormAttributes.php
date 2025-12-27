@@ -10,6 +10,8 @@ class FormAttributes implements Model
 	private  $width;
 	private  $fontAttributes;
 	private  $align;
+	private  $logo;
+	private  $background;
 	private  $displayFormName;
 	private  $keyModified=array();
 
@@ -27,7 +29,7 @@ class FormAttributes implements Model
 	 * The method to set the value to color
 	 * @param string $color A string
 	 */
-	public function setColor(string $color)
+	public function setColor(?string $color)
 	{
 		$this->color=$color; 
 		$this->keyModified['color'] = 1; 
@@ -48,7 +50,7 @@ class FormAttributes implements Model
 	 * The method to set the value to width
 	 * @param int $width A int
 	 */
-	public function setWidth(int $width)
+	public function setWidth(?int $width)
 	{
 		$this->width=$width; 
 		$this->keyModified['width'] = 1; 
@@ -69,7 +71,7 @@ class FormAttributes implements Model
 	 * The method to set the value to fontAttributes
 	 * @param FontAttributes $fontAttributes An instance of FontAttributes
 	 */
-	public function setFontAttributes(FontAttributes $fontAttributes)
+	public function setFontAttributes(?FontAttributes $fontAttributes)
 	{
 		$this->fontAttributes=$fontAttributes; 
 		$this->keyModified['font_attributes'] = 1; 
@@ -90,7 +92,7 @@ class FormAttributes implements Model
 	 * The method to set the value to align
 	 * @param string $align A string
 	 */
-	public function setAlign(string $align)
+	public function setAlign(?string $align)
 	{
 		$this->align=$align; 
 		$this->keyModified['align'] = 1; 
@@ -98,8 +100,50 @@ class FormAttributes implements Model
 	}
 
 	/**
+	 * The method to get the logo
+	 * @return Logo An instance of Logo
+	 */
+	public function getLogo()
+	{
+		return $this->logo; 
+
+	}
+
+	/**
+	 * The method to set the value to logo
+	 * @param Logo $logo An instance of Logo
+	 */
+	public function setLogo(?Logo $logo)
+	{
+		$this->logo=$logo; 
+		$this->keyModified['logo'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the background
+	 * @return Background An instance of Background
+	 */
+	public function getBackground()
+	{
+		return $this->background; 
+
+	}
+
+	/**
+	 * The method to set the value to background
+	 * @param Background $background An instance of Background
+	 */
+	public function setBackground(?Background $background)
+	{
+		$this->background=$background; 
+		$this->keyModified['background'] = 1; 
+
+	}
+
+	/**
 	 * The method to get the displayFormName
-	 * @return string A string representing the displayFormName
+	 * @return bool A bool representing the displayFormName
 	 */
 	public function getDisplayFormName()
 	{
@@ -109,9 +153,9 @@ class FormAttributes implements Model
 
 	/**
 	 * The method to set the value to displayFormName
-	 * @param string $displayFormName A string
+	 * @param bool $displayFormName A bool
 	 */
-	public function setDisplayFormName(string $displayFormName)
+	public function setDisplayFormName(?bool $displayFormName)
 	{
 		$this->displayFormName=$displayFormName; 
 		$this->keyModified['display_form_name'] = 1; 

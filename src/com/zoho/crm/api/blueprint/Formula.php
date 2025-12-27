@@ -24,7 +24,7 @@ class Formula implements Model
 	 * The method to set the value to returnType
 	 * @param string $returnType A string
 	 */
-	public function setReturnType(string $returnType)
+	public function setReturnType(?string $returnType)
 	{
 		$this->returnType=$returnType; 
 		$this->keyModified['return_type'] = 1; 
@@ -45,7 +45,7 @@ class Formula implements Model
 	 * The method to set the value to expression
 	 * @param int $expression A int
 	 */
-	public function setExpression(int $expression)
+	public function setExpression(?int $expression)
 	{
 		$this->expression=$expression; 
 		$this->keyModified['expression'] = 1; 

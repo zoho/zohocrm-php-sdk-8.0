@@ -23,7 +23,7 @@ class BaseCurrencyWrapper implements Model
 	 * The method to set the value to baseCurrency
 	 * @param BaseCurrency $baseCurrency An instance of BaseCurrency
 	 */
-	public function setBaseCurrency(BaseCurrency $baseCurrency)
+	public function setBaseCurrency(?BaseCurrency $baseCurrency)
 	{
 		$this->baseCurrency=$baseCurrency; 
 		$this->keyModified['base_currency'] = 1; 

@@ -61,27 +61,6 @@ class WebformsOperations
 	}
 
 	/**
-	 * The method to update web forms
-	 * @param BodyWrapper $request An instance of BodyWrapper
-	 * @return APIResponse An instance of APIResponse
-	 */
-	public function updateWebForms(BodyWrapper $request)
-	{
-		$handlerInstance=new CommonAPIHandler(); 
-		$apiPath=""; 
-		$apiPath=$apiPath.('/crm/v8/settings/webforms'); 
-		$handlerInstance->setAPIPath($apiPath); 
-		$handlerInstance->setHttpMethod(Constants::REQUEST_METHOD_PUT); 
-		$handlerInstance->setCategoryMethod(Constants::REQUEST_CATEGORY_UPDATE); 
-		$handlerInstance->setContentType('application/json'); 
-		$handlerInstance->setRequest($request); 
-		$handlerInstance->setMandatoryChecker(true); 
-		$handlerInstance->addParam(new Param('module', 'com.zoho.crm.api.Webforms.UpdateWebFormsParam'), $this->module); 
-		return $handlerInstance->apiCall(ActionHandler::class, 'application/json'); 
-
-	}
-
-	/**
 	 * The method to get web form
 	 * @param string $formId A string
 	 * @return APIResponse An instance of APIResponse

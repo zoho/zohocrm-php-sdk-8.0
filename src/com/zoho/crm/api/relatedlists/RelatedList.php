@@ -42,7 +42,7 @@ class RelatedList implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -63,7 +63,7 @@ class RelatedList implements Model
 	 * The method to set the value to sequenceNumber
 	 * @param string $sequenceNumber A string
 	 */
-	public function setSequenceNumber(string $sequenceNumber)
+	public function setSequenceNumber(?string $sequenceNumber)
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
@@ -84,7 +84,7 @@ class RelatedList implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -105,7 +105,7 @@ class RelatedList implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -126,7 +126,7 @@ class RelatedList implements Model
 	 * The method to set the value to module
 	 * @param ModuleMap $module An instance of ModuleMap
 	 */
-	public function setModule(ModuleMap $module)
+	public function setModule(?ModuleMap $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -147,7 +147,7 @@ class RelatedList implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -168,7 +168,7 @@ class RelatedList implements Model
 	 * The method to set the value to action
 	 * @param string $action A string
 	 */
-	public function setAction(string $action)
+	public function setAction(?string $action)
 	{
 		$this->action=$action; 
 		$this->keyModified['action'] = 1; 
@@ -189,7 +189,7 @@ class RelatedList implements Model
 	 * The method to set the value to href
 	 * @param string $href A string
 	 */
-	public function setHref(string $href)
+	public function setHref(?string $href)
 	{
 		$this->href=$href; 
 		$this->keyModified['href'] = 1; 
@@ -210,7 +210,7 @@ class RelatedList implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -231,7 +231,7 @@ class RelatedList implements Model
 	 * The method to set the value to connectedmodule
 	 * @param string $connectedmodule A string
 	 */
-	public function setConnectedmodule(string $connectedmodule)
+	public function setConnectedmodule(?string $connectedmodule)
 	{
 		$this->connectedmodule=$connectedmodule; 
 		$this->keyModified['connectedmodule'] = 1; 
@@ -252,7 +252,7 @@ class RelatedList implements Model
 	 * The method to set the value to linkingmodule
 	 * @param string $linkingmodule A string
 	 */
-	public function setLinkingmodule(string $linkingmodule)
+	public function setLinkingmodule(?string $linkingmodule)
 	{
 		$this->linkingmodule=$linkingmodule; 
 		$this->keyModified['linkingmodule'] = 1; 
@@ -273,7 +273,7 @@ class RelatedList implements Model
 	 * The method to set the value to visible
 	 * @param bool $visible A bool
 	 */
-	public function setVisible(bool $visible)
+	public function setVisible(?bool $visible)
 	{
 		$this->visible=$visible; 
 		$this->keyModified['visible'] = 1; 
@@ -294,7 +294,7 @@ class RelatedList implements Model
 	 * The method to set the value to customizeSort
 	 * @param bool $customizeSort A bool
 	 */
-	public function setCustomizeSort(bool $customizeSort)
+	public function setCustomizeSort(?bool $customizeSort)
 	{
 		$this->customizeSort=$customizeSort; 
 		$this->keyModified['customize_sort'] = 1; 
@@ -315,7 +315,7 @@ class RelatedList implements Model
 	 * The method to set the value to customizeFields
 	 * @param bool $customizeFields A bool
 	 */
-	public function setCustomizeFields(bool $customizeFields)
+	public function setCustomizeFields(?bool $customizeFields)
 	{
 		$this->customizeFields=$customizeFields; 
 		$this->keyModified['customize_fields'] = 1; 
@@ -336,7 +336,7 @@ class RelatedList implements Model
 	 * The method to set the value to customizeDisplayLabel
 	 * @param bool $customizeDisplayLabel A bool
 	 */
-	public function setCustomizeDisplayLabel(bool $customizeDisplayLabel)
+	public function setCustomizeDisplayLabel(?bool $customizeDisplayLabel)
 	{
 		$this->customizeDisplayLabel=$customizeDisplayLabel; 
 		$this->keyModified['customize_display_label'] = 1; 
@@ -357,7 +357,7 @@ class RelatedList implements Model
 	 * The method to set the value to sortBy
 	 * @param Field $sortBy An instance of Field
 	 */
-	public function setSortBy(Field $sortBy)
+	public function setSortBy(?Field $sortBy)
 	{
 		$this->sortBy=$sortBy; 
 		$this->keyModified['sort_by'] = 1; 
@@ -378,7 +378,7 @@ class RelatedList implements Model
 	 * The method to set the value to sortOrder
 	 * @param string $sortOrder A string
 	 */
-	public function setSortOrder(string $sortOrder)
+	public function setSortOrder(?string $sortOrder)
 	{
 		$this->sortOrder=$sortOrder; 
 		$this->keyModified['sort_order'] = 1; 
@@ -399,7 +399,7 @@ class RelatedList implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -420,7 +420,7 @@ class RelatedList implements Model
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

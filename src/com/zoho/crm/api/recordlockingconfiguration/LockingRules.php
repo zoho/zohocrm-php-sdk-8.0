@@ -27,7 +27,7 @@ class LockingRules implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -48,7 +48,7 @@ class LockingRules implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -69,7 +69,7 @@ class LockingRules implements Model
 	 * The method to set the value to lockExistingRecords
 	 * @param bool $lockExistingRecords A bool
 	 */
-	public function setLockExistingRecords(bool $lockExistingRecords)
+	public function setLockExistingRecords(?bool $lockExistingRecords)
 	{
 		$this->lockExistingRecords=$lockExistingRecords; 
 		$this->keyModified['lock_existing_records'] = 1; 
@@ -90,7 +90,7 @@ class LockingRules implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -111,7 +111,7 @@ class LockingRules implements Model
 	 * The method to set the value to delete
 	 * @param bool $delete A bool
 	 */
-	public function setDelete($delete)
+	public function setDelete(?bool $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 

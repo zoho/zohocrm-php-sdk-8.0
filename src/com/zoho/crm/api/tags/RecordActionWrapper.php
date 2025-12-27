@@ -26,7 +26,7 @@ class RecordActionWrapper implements Model, RecordActionHandler
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -47,7 +47,7 @@ class RecordActionWrapper implements Model, RecordActionHandler
 	 * The method to set the value to wfScheduler
 	 * @param bool $wfScheduler A bool
 	 */
-	public function setWfScheduler(bool $wfScheduler)
+	public function setWfScheduler(?bool $wfScheduler)
 	{
 		$this->wfScheduler=$wfScheduler; 
 		$this->keyModified['wf_scheduler'] = 1; 
@@ -68,7 +68,7 @@ class RecordActionWrapper implements Model, RecordActionHandler
 	 * The method to set the value to successCount
 	 * @param string $successCount A string
 	 */
-	public function setSuccessCount(string $successCount)
+	public function setSuccessCount(?string $successCount)
 	{
 		$this->successCount=$successCount; 
 		$this->keyModified['success_count'] = 1; 
@@ -89,7 +89,7 @@ class RecordActionWrapper implements Model, RecordActionHandler
 	 * The method to set the value to lockedCount
 	 * @param string $lockedCount A string
 	 */
-	public function setLockedCount(string $lockedCount)
+	public function setLockedCount(?string $lockedCount)
 	{
 		$this->lockedCount=$lockedCount; 
 		$this->keyModified['locked_count'] = 1; 

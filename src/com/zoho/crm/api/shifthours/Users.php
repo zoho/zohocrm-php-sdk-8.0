@@ -28,7 +28,7 @@ class Users implements Model
 	 * The method to set the value to role
 	 * @param Role $role An instance of Role
 	 */
-	public function setRole(Role $role)
+	public function setRole(?Role $role)
 	{
 		$this->role=$role; 
 		$this->keyModified['role'] = 1; 
@@ -49,7 +49,7 @@ class Users implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -70,7 +70,7 @@ class Users implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -91,7 +91,7 @@ class Users implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 
@@ -112,7 +112,7 @@ class Users implements Model
 	 * The method to set the value to zuid
 	 * @param string $zuid A string
 	 */
-	public function setZuid(string $zuid)
+	public function setZuid(?string $zuid)
 	{
 		$this->zuid=$zuid; 
 		$this->keyModified['zuid'] = 1; 
@@ -133,7 +133,7 @@ class Users implements Model
 	 * The method to set the value to effectiveFrom
 	 * @param \DateTime $effectiveFrom An instance of \DateTime
 	 */
-	public function setEffectiveFrom(\DateTime $effectiveFrom)
+	public function setEffectiveFrom(?\DateTime $effectiveFrom)
 	{
 		$this->effectiveFrom=$effectiveFrom; 
 		$this->keyModified['effective_from'] = 1; 

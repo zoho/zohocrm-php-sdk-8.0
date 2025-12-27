@@ -24,7 +24,7 @@ class SocialMedia implements Model
 	 * The method to set the value to mediaType
 	 * @param string $mediaType A string
 	 */
-	public function setMediaType(string $mediaType)
+	public function setMediaType(?string $mediaType)
 	{
 		$this->mediaType=$mediaType; 
 		$this->keyModified['media_type'] = 1; 
@@ -45,7 +45,7 @@ class SocialMedia implements Model
 	 * The method to set the value to mediaUrl
 	 * @param array $mediaUrl A array
 	 */
-	public function setMediaUrl(array $mediaUrl)
+	public function setMediaUrl(?array $mediaUrl)
 	{
 		$this->mediaUrl=$mediaUrl; 
 		$this->keyModified['media_url'] = 1; 

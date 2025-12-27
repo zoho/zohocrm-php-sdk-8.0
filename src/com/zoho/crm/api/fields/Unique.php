@@ -24,7 +24,7 @@ class Unique implements Model
 	 * The method to set the value to casesensitive
 	 * @param string $casesensitive A string
 	 */
-	public function setCasesensitive(string $casesensitive)
+	public function setCasesensitive(?string $casesensitive)
 	{
 		$this->casesensitive=$casesensitive; 
 		$this->keyModified['casesensitive'] = 1; 

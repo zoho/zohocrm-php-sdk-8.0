@@ -27,7 +27,7 @@ class ChartData implements Model
 	 * The method to set the value to nodes
 	 * @param array $nodes A array
 	 */
-	public function setNodes(array $nodes)
+	public function setNodes(?array $nodes)
 	{
 		$this->nodes=$nodes; 
 		$this->keyModified['nodes'] = 1; 
@@ -48,7 +48,7 @@ class ChartData implements Model
 	 * The method to set the value to connections
 	 * @param array $connections A array
 	 */
-	public function setConnections(array $connections)
+	public function setConnections(?array $connections)
 	{
 		$this->connections=$connections; 
 		$this->keyModified['connections'] = 1; 
@@ -69,7 +69,7 @@ class ChartData implements Model
 	 * The method to set the value to colorPalette
 	 * @param ButtonBackground $colorPalette An instance of ButtonBackground
 	 */
-	public function setColorPalette(ButtonBackground $colorPalette)
+	public function setColorPalette(?ButtonBackground $colorPalette)
 	{
 		$this->colorPalette=$colorPalette; 
 		$this->keyModified['color_palette'] = 1; 
@@ -90,7 +90,7 @@ class ChartData implements Model
 	 * The method to set the value to canvasWidth
 	 * @param int $canvasWidth A int
 	 */
-	public function setCanvasWidth(int $canvasWidth)
+	public function setCanvasWidth(?int $canvasWidth)
 	{
 		$this->canvasWidth=$canvasWidth; 
 		$this->keyModified['canvas_width'] = 1; 
@@ -111,7 +111,7 @@ class ChartData implements Model
 	 * The method to set the value to canvasHeight
 	 * @param int $canvasHeight A int
 	 */
-	public function setCanvasHeight(int $canvasHeight)
+	public function setCanvasHeight(?int $canvasHeight)
 	{
 		$this->canvasHeight=$canvasHeight; 
 		$this->keyModified['canvas_height'] = 1; 

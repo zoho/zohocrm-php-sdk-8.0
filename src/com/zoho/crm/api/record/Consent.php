@@ -23,7 +23,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to owner
 	 * @param MinifiedUser $owner An instance of MinifiedUser
 	 */
-	public function setOwner(MinifiedUser $owner)
+	public function setOwner(?MinifiedUser $owner)
 	{
 		$this->addKeyValue('Owner', $owner); 
 
@@ -43,7 +43,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to contactThroughEmail
 	 * @param bool $contactThroughEmail A bool
 	 */
-	public function setContactThroughEmail(bool $contactThroughEmail)
+	public function setContactThroughEmail(?bool $contactThroughEmail)
 	{
 		$this->addKeyValue('Contact_Through_Email', $contactThroughEmail); 
 
@@ -63,7 +63,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to contactThroughSocial
 	 * @param bool $contactThroughSocial A bool
 	 */
-	public function setContactThroughSocial(bool $contactThroughSocial)
+	public function setContactThroughSocial(?bool $contactThroughSocial)
 	{
 		$this->addKeyValue('Contact_Through_Social', $contactThroughSocial); 
 
@@ -83,7 +83,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to contactThroughSurvey
 	 * @param bool $contactThroughSurvey A bool
 	 */
-	public function setContactThroughSurvey(bool $contactThroughSurvey)
+	public function setContactThroughSurvey(?bool $contactThroughSurvey)
 	{
 		$this->addKeyValue('Contact_Through_Survey', $contactThroughSurvey); 
 
@@ -103,7 +103,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to contactThroughPhone
 	 * @param bool $contactThroughPhone A bool
 	 */
-	public function setContactThroughPhone(bool $contactThroughPhone)
+	public function setContactThroughPhone(?bool $contactThroughPhone)
 	{
 		$this->addKeyValue('Contact_Through_Phone', $contactThroughPhone); 
 
@@ -123,7 +123,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to mailSentTime
 	 * @param \DateTime $mailSentTime An instance of \DateTime
 	 */
-	public function setMailSentTime(\DateTime $mailSentTime)
+	public function setMailSentTime(?\DateTime $mailSentTime)
 	{
 		$this->addKeyValue('Mail_Sent_Time', $mailSentTime); 
 
@@ -143,7 +143,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to consentDate
 	 * @param \DateTime $consentDate An instance of \DateTime
 	 */
-	public function setConsentDate(\DateTime $consentDate)
+	public function setConsentDate(?\DateTime $consentDate)
 	{
 		$this->addKeyValue('Consent_Date', $consentDate); 
 
@@ -163,7 +163,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to consentRemarks
 	 * @param string $consentRemarks A string
 	 */
-	public function setConsentRemarks(string $consentRemarks)
+	public function setConsentRemarks(?string $consentRemarks)
 	{
 		$this->addKeyValue('Consent_Remarks', $consentRemarks); 
 
@@ -183,7 +183,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to consentThrough
 	 * @param string $consentThrough A string
 	 */
-	public function setConsentThrough(string $consentThrough)
+	public function setConsentThrough(?string $consentThrough)
 	{
 		$this->addKeyValue('Consent_Through', $consentThrough); 
 
@@ -203,7 +203,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to dataProcessingBasis
 	 * @param string $dataProcessingBasis A string
 	 */
-	public function setDataProcessingBasis(string $dataProcessingBasis)
+	public function setDataProcessingBasis(?string $dataProcessingBasis)
 	{
 		$this->addKeyValue('Data_Processing_Basis', $dataProcessingBasis); 
 
@@ -223,7 +223,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->addKeyValue('id', $id); 
 
@@ -243,7 +243,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->addKeyValue('Created_By', $createdBy); 
 
@@ -263,7 +263,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->addKeyValue('Created_Time', $createdTime); 
 
@@ -283,7 +283,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->addKeyValue('Modified_By', $modifiedBy); 
 
@@ -303,7 +303,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->addKeyValue('Modified_Time', $modifiedTime); 
 
@@ -323,7 +323,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to tag
 	 * @param array $tag A array
 	 */
-	public function setTag(array $tag)
+	public function setTag(?array $tag)
 	{
 		$this->addKeyValue('Tag', $tag); 
 
@@ -343,7 +343,7 @@ class Consent extends Record implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->addKeyValue('name', $name); 
 

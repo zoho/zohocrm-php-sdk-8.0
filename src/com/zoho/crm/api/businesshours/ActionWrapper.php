@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to businessHours
 	 * @param ActionResponse $businessHours An instance of ActionResponse
 	 */
-	public function setBusinessHours(ActionResponse $businessHours)
+	public function setBusinessHours(?ActionResponse $businessHours)
 	{
 		$this->businessHours=$businessHours; 
 		$this->keyModified['business_hours'] = 1; 

@@ -23,7 +23,7 @@ class TransferPipelineActionWrapper implements Model, TransferPipelineActionHand
 	 * The method to set the value to transferPipeline
 	 * @param array $transferPipeline A array
 	 */
-	public function setTransferPipeline(array $transferPipeline)
+	public function setTransferPipeline(?array $transferPipeline)
 	{
 		$this->transferPipeline=$transferPipeline; 
 		$this->keyModified['transfer_pipeline'] = 1; 

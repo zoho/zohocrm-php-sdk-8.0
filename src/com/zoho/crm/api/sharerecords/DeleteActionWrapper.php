@@ -23,7 +23,7 @@ class DeleteActionWrapper implements Model, DeleteActionHandler
 	 * The method to set the value to share
 	 * @param DeleteActionResponse $share An instance of DeleteActionResponse
 	 */
-	public function setShare(DeleteActionResponse $share)
+	public function setShare(?DeleteActionResponse $share)
 	{
 		$this->share=$share; 
 		$this->keyModified['share'] = 1; 

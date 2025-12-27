@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to pickListValues
 	 * @param array $pickListValues A array
 	 */
-	public function setPickListValues(array $pickListValues)
+	public function setPickListValues(?array $pickListValues)
 	{
 		$this->pickListValues=$pickListValues; 
 		$this->keyModified['pick_list_values'] = 1; 

@@ -27,7 +27,7 @@ class DuplicateRecord implements Model
 	 * The method to set the value to owner
 	 * @param MinifiedUser $owner An instance of MinifiedUser
 	 */
-	public function setOwner(MinifiedUser $owner)
+	public function setOwner(?MinifiedUser $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['Owner'] = 1; 
@@ -48,7 +48,7 @@ class DuplicateRecord implements Model
 	 * The method to set the value to module
 	 * @param MinifiedModule $module An instance of MinifiedModule
 	 */
-	public function setModule(MinifiedModule $module)
+	public function setModule(?MinifiedModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -69,7 +69,7 @@ class DuplicateRecord implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

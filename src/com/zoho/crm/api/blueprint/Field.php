@@ -74,7 +74,7 @@ class Field implements Model
 	 * The method to set the value to external
 	 * @param External $external An instance of External
 	 */
-	public function setExternal(External $external)
+	public function setExternal(?External $external)
 	{
 		$this->external=$external; 
 		$this->keyModified['external'] = 1; 
@@ -95,7 +95,7 @@ class Field implements Model
 	 * The method to set the value to displayType
 	 * @param Choice $displayType An instance of Choice
 	 */
-	public function setDisplayType(Choice $displayType)
+	public function setDisplayType(?Choice $displayType)
 	{
 		$this->displayType=$displayType; 
 		$this->keyModified['display_type'] = 1; 
@@ -116,7 +116,7 @@ class Field implements Model
 	 * The method to set the value to filterable
 	 * @param bool $filterable A bool
 	 */
-	public function setFilterable(bool $filterable)
+	public function setFilterable(?bool $filterable)
 	{
 		$this->filterable=$filterable; 
 		$this->keyModified['filterable'] = 1; 
@@ -137,7 +137,7 @@ class Field implements Model
 	 * The method to set the value to pickListValuesSortedLexically
 	 * @param bool $pickListValuesSortedLexically A bool
 	 */
-	public function setPickListValuesSortedLexically(bool $pickListValuesSortedLexically)
+	public function setPickListValuesSortedLexically(?bool $pickListValuesSortedLexically)
 	{
 		$this->pickListValuesSortedLexically=$pickListValuesSortedLexically; 
 		$this->keyModified['pick_list_values_sorted_lexically'] = 1; 
@@ -158,7 +158,7 @@ class Field implements Model
 	 * The method to set the value to sortable
 	 * @param bool $sortable A bool
 	 */
-	public function setSortable(bool $sortable)
+	public function setSortable(?bool $sortable)
 	{
 		$this->sortable=$sortable; 
 		$this->keyModified['sortable'] = 1; 
@@ -179,7 +179,7 @@ class Field implements Model
 	 * The method to set the value to uiType
 	 * @param int $uiType A int
 	 */
-	public function setUiType(int $uiType)
+	public function setUiType(?int $uiType)
 	{
 		$this->uiType=$uiType; 
 		$this->keyModified['ui_type'] = 1; 
@@ -200,7 +200,7 @@ class Field implements Model
 	 * The method to set the value to private
 	 * @param Private1 $private An instance of Private1
 	 */
-	public function setPrivate(Private1 $private)
+	public function setPrivate(?Private1 $private)
 	{
 		$this->private=$private; 
 		$this->keyModified['private'] = 1; 
@@ -221,7 +221,7 @@ class Field implements Model
 	 * The method to set the value to systemMandatory
 	 * @param bool $systemMandatory A bool
 	 */
-	public function setSystemMandatory(bool $systemMandatory)
+	public function setSystemMandatory(?bool $systemMandatory)
 	{
 		$this->systemMandatory=$systemMandatory; 
 		$this->keyModified['system_mandatory'] = 1; 
@@ -242,7 +242,7 @@ class Field implements Model
 	 * The method to set the value to webhook
 	 * @param bool $webhook A bool
 	 */
-	public function setWebhook(bool $webhook)
+	public function setWebhook(?bool $webhook)
 	{
 		$this->webhook=$webhook; 
 		$this->keyModified['webhook'] = 1; 
@@ -263,7 +263,7 @@ class Field implements Model
 	 * The method to set the value to jsonType
 	 * @param string $jsonType A string
 	 */
-	public function setJsonType(string $jsonType)
+	public function setJsonType(?string $jsonType)
 	{
 		$this->jsonType=$jsonType; 
 		$this->keyModified['json_type'] = 1; 
@@ -284,7 +284,7 @@ class Field implements Model
 	 * The method to set the value to crypt
 	 * @param Crypt $crypt An instance of Crypt
 	 */
-	public function setCrypt(Crypt $crypt)
+	public function setCrypt(?Crypt $crypt)
 	{
 		$this->crypt=$crypt; 
 		$this->keyModified['crypt'] = 1; 
@@ -305,7 +305,7 @@ class Field implements Model
 	 * The method to set the value to fieldLabel
 	 * @param string $fieldLabel A string
 	 */
-	public function setFieldLabel(string $fieldLabel)
+	public function setFieldLabel(?string $fieldLabel)
 	{
 		$this->fieldLabel=$fieldLabel; 
 		$this->keyModified['field_label'] = 1; 
@@ -326,7 +326,7 @@ class Field implements Model
 	 * The method to set the value to tooltip
 	 * @param ToolTip $tooltip An instance of ToolTip
 	 */
-	public function setTooltip(ToolTip $tooltip)
+	public function setTooltip(?ToolTip $tooltip)
 	{
 		$this->tooltip=$tooltip; 
 		$this->keyModified['tooltip'] = 1; 
@@ -347,7 +347,7 @@ class Field implements Model
 	 * The method to set the value to createdSource
 	 * @param string $createdSource A string
 	 */
-	public function setCreatedSource(string $createdSource)
+	public function setCreatedSource(?string $createdSource)
 	{
 		$this->createdSource=$createdSource; 
 		$this->keyModified['created_source'] = 1; 
@@ -368,7 +368,7 @@ class Field implements Model
 	 * The method to set the value to layouts
 	 * @param Layout $layouts An instance of Layout
 	 */
-	public function setLayouts(Layout $layouts)
+	public function setLayouts(?Layout $layouts)
 	{
 		$this->layouts=$layouts; 
 		$this->keyModified['layouts'] = 1; 
@@ -389,7 +389,7 @@ class Field implements Model
 	 * The method to set the value to fieldReadOnly
 	 * @param bool $fieldReadOnly A bool
 	 */
-	public function setFieldReadOnly(bool $fieldReadOnly)
+	public function setFieldReadOnly(?bool $fieldReadOnly)
 	{
 		$this->fieldReadOnly=$fieldReadOnly; 
 		$this->keyModified['field_read_only'] = 1; 
@@ -410,7 +410,7 @@ class Field implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 
@@ -431,7 +431,7 @@ class Field implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -440,7 +440,6 @@ class Field implements Model
 
 	/**
 	 * The method to get the validationRule
-	 * @return string A string representing the validationRule
 	 */
 	public function getValidationRule()
 	{
@@ -450,9 +449,9 @@ class Field implements Model
 
 	/**
 	 * The method to set the value to validationRule
-	 * @param string $validationRule A string
+	 * @param 
 	 */
-	public function setValidationRule(string $validationRule)
+	public function setValidationRule( $validationRule)
 	{
 		$this->validationRule=$validationRule; 
 		$this->keyModified['validation_rule'] = 1; 
@@ -473,7 +472,7 @@ class Field implements Model
 	 * The method to set the value to readOnly
 	 * @param bool $readOnly A bool
 	 */
-	public function setReadOnly(bool $readOnly)
+	public function setReadOnly(?bool $readOnly)
 	{
 		$this->readOnly=$readOnly; 
 		$this->keyModified['read_only'] = 1; 
@@ -494,7 +493,7 @@ class Field implements Model
 	 * The method to set the value to associationDetails
 	 * @param AssociationDetails $associationDetails An instance of AssociationDetails
 	 */
-	public function setAssociationDetails(AssociationDetails $associationDetails)
+	public function setAssociationDetails(?AssociationDetails $associationDetails)
 	{
 		$this->associationDetails=$associationDetails; 
 		$this->keyModified['association_details'] = 1; 
@@ -515,7 +514,7 @@ class Field implements Model
 	 * The method to set the value to multiModuleLookup
 	 * @param MultiModuleLookup $multiModuleLookup An instance of MultiModuleLookup
 	 */
-	public function setMultiModuleLookup(MultiModuleLookup $multiModuleLookup)
+	public function setMultiModuleLookup(?MultiModuleLookup $multiModuleLookup)
 	{
 		$this->multiModuleLookup=$multiModuleLookup; 
 		$this->keyModified['multi_module_lookup'] = 1; 
@@ -536,7 +535,7 @@ class Field implements Model
 	 * The method to set the value to currency
 	 * @param Currency $currency An instance of Currency
 	 */
-	public function setCurrency(Currency $currency)
+	public function setCurrency(?Currency $currency)
 	{
 		$this->currency=$currency; 
 		$this->keyModified['currency'] = 1; 
@@ -557,7 +556,7 @@ class Field implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -578,7 +577,7 @@ class Field implements Model
 	 * The method to set the value to customField
 	 * @param bool $customField A bool
 	 */
-	public function setCustomField(bool $customField)
+	public function setCustomField(?bool $customField)
 	{
 		$this->customField=$customField; 
 		$this->keyModified['custom_field'] = 1; 
@@ -599,7 +598,7 @@ class Field implements Model
 	 * The method to set the value to lookup
 	 * @param Module $lookup An instance of Module
 	 */
-	public function setLookup(Module $lookup)
+	public function setLookup(?Module $lookup)
 	{
 		$this->lookup=$lookup; 
 		$this->keyModified['lookup'] = 1; 
@@ -620,7 +619,7 @@ class Field implements Model
 	 * The method to set the value to convertMapping
 	 * @param array $convertMapping A array
 	 */
-	public function setConvertMapping(array $convertMapping)
+	public function setConvertMapping(?array $convertMapping)
 	{
 		$this->convertMapping=$convertMapping; 
 		$this->keyModified['convert_mapping'] = 1; 
@@ -641,7 +640,7 @@ class Field implements Model
 	 * The method to set the value to visible
 	 * @param bool $visible A bool
 	 */
-	public function setVisible(bool $visible)
+	public function setVisible(?bool $visible)
 	{
 		$this->visible=$visible; 
 		$this->keyModified['visible'] = 1; 
@@ -662,7 +661,7 @@ class Field implements Model
 	 * The method to set the value to length
 	 * @param int $length A int
 	 */
-	public function setLength(int $length)
+	public function setLength(?int $length)
 	{
 		$this->length=$length; 
 		$this->keyModified['length'] = 1; 
@@ -683,7 +682,7 @@ class Field implements Model
 	 * The method to set the value to columnName
 	 * @param string $columnName A string
 	 */
-	public function setColumnName(string $columnName)
+	public function setColumnName(?string $columnName)
 	{
 		$this->columnName=$columnName; 
 		$this->keyModified['column_name'] = 1; 
@@ -704,7 +703,7 @@ class Field implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['_type'] = 1; 
@@ -725,7 +724,7 @@ class Field implements Model
 	 * The method to set the value to viewType
 	 * @param ViewType $viewType An instance of ViewType
 	 */
-	public function setViewType(ViewType $viewType)
+	public function setViewType(?ViewType $viewType)
 	{
 		$this->viewType=$viewType; 
 		$this->keyModified['view_type'] = 1; 
@@ -746,7 +745,7 @@ class Field implements Model
 	 * The method to set the value to transitionSequence
 	 * @param int $transitionSequence A int
 	 */
-	public function setTransitionSequence(int $transitionSequence)
+	public function setTransitionSequence(?int $transitionSequence)
 	{
 		$this->transitionSequence=$transitionSequence; 
 		$this->keyModified['transition_sequence'] = 1; 
@@ -767,7 +766,7 @@ class Field implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -788,7 +787,7 @@ class Field implements Model
 	 * The method to set the value to unique
 	 * @param Unique $unique An instance of Unique
 	 */
-	public function setUnique(Unique $unique)
+	public function setUnique(?Unique $unique)
 	{
 		$this->unique=$unique; 
 		$this->keyModified['unique'] = 1; 
@@ -809,7 +808,7 @@ class Field implements Model
 	 * The method to set the value to historyTracking
 	 * @param bool $historyTracking A bool
 	 */
-	public function setHistoryTracking(bool $historyTracking)
+	public function setHistoryTracking(?bool $historyTracking)
 	{
 		$this->historyTracking=$historyTracking; 
 		$this->keyModified['history_tracking'] = 1; 
@@ -830,7 +829,7 @@ class Field implements Model
 	 * The method to set the value to dataType
 	 * @param string $dataType A string
 	 */
-	public function setDataType(string $dataType)
+	public function setDataType(?string $dataType)
 	{
 		$this->dataType=$dataType; 
 		$this->keyModified['data_type'] = 1; 
@@ -851,7 +850,7 @@ class Field implements Model
 	 * The method to set the value to formula
 	 * @param Formula $formula An instance of Formula
 	 */
-	public function setFormula(Formula $formula)
+	public function setFormula(?Formula $formula)
 	{
 		$this->formula=$formula; 
 		$this->keyModified['formula'] = 1; 
@@ -872,7 +871,7 @@ class Field implements Model
 	 * The method to set the value to decimalPlace
 	 * @param string $decimalPlace A string
 	 */
-	public function setDecimalPlace(string $decimalPlace)
+	public function setDecimalPlace(?string $decimalPlace)
 	{
 		$this->decimalPlace=$decimalPlace; 
 		$this->keyModified['decimal_place'] = 1; 
@@ -893,7 +892,7 @@ class Field implements Model
 	 * The method to set the value to multiselectlookup
 	 * @param MultiSelectLookup $multiselectlookup An instance of MultiSelectLookup
 	 */
-	public function setMultiselectlookup(MultiSelectLookup $multiselectlookup)
+	public function setMultiselectlookup(?MultiSelectLookup $multiselectlookup)
 	{
 		$this->multiselectlookup=$multiselectlookup; 
 		$this->keyModified['multiselectlookup'] = 1; 
@@ -914,7 +913,7 @@ class Field implements Model
 	 * The method to set the value to pickListValues
 	 * @param array $pickListValues A array
 	 */
-	public function setPickListValues(array $pickListValues)
+	public function setPickListValues(?array $pickListValues)
 	{
 		$this->pickListValues=$pickListValues; 
 		$this->keyModified['pick_list_values'] = 1; 
@@ -935,7 +934,7 @@ class Field implements Model
 	 * The method to set the value to autoNumber
 	 * @param AutoNumber $autoNumber An instance of AutoNumber
 	 */
-	public function setAutoNumber(AutoNumber $autoNumber)
+	public function setAutoNumber(?AutoNumber $autoNumber)
 	{
 		$this->autoNumber=$autoNumber; 
 		$this->keyModified['auto_number'] = 1; 
@@ -956,7 +955,7 @@ class Field implements Model
 	 * The method to set the value to personalityName
 	 * @param string $personalityName A string
 	 */
-	public function setPersonalityName(string $personalityName)
+	public function setPersonalityName(?string $personalityName)
 	{
 		$this->personalityName=$personalityName; 
 		$this->keyModified['personality_name'] = 1; 
@@ -977,7 +976,7 @@ class Field implements Model
 	 * The method to set the value to mandatory
 	 * @param bool $mandatory A bool
 	 */
-	public function setMandatory(bool $mandatory)
+	public function setMandatory(?bool $mandatory)
 	{
 		$this->mandatory=$mandatory; 
 		$this->keyModified['mandatory'] = 1; 
@@ -998,7 +997,7 @@ class Field implements Model
 	 * The method to set the value to quickSequenceNumber
 	 * @param string $quickSequenceNumber A string
 	 */
-	public function setQuickSequenceNumber(string $quickSequenceNumber)
+	public function setQuickSequenceNumber(?string $quickSequenceNumber)
 	{
 		$this->quickSequenceNumber=$quickSequenceNumber; 
 		$this->keyModified['quick_sequence_number'] = 1; 
@@ -1019,7 +1018,7 @@ class Field implements Model
 	 * The method to set the value to profiles
 	 * @param array $profiles A array
 	 */
-	public function setProfiles(array $profiles)
+	public function setProfiles(?array $profiles)
 	{
 		$this->profiles=$profiles; 
 		$this->keyModified['profiles'] = 1; 

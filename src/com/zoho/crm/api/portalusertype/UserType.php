@@ -33,7 +33,7 @@ class UserType implements Model
 	 * The method to set the value to personalityModule
 	 * @param PersonalityModule $personalityModule An instance of PersonalityModule
 	 */
-	public function setPersonalityModule(PersonalityModule $personalityModule)
+	public function setPersonalityModule(?PersonalityModule $personalityModule)
 	{
 		$this->personalityModule=$personalityModule; 
 		$this->keyModified['personality_module'] = 1; 
@@ -54,7 +54,7 @@ class UserType implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -75,7 +75,7 @@ class UserType implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -96,7 +96,7 @@ class UserType implements Model
 	 * The method to set the value to modifiedBy
 	 * @param Owner $modifiedBy An instance of Owner
 	 */
-	public function setModifiedBy(Owner $modifiedBy)
+	public function setModifiedBy(?Owner $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -117,7 +117,7 @@ class UserType implements Model
 	 * The method to set the value to createdBy
 	 * @param Owner $createdBy An instance of Owner
 	 */
-	public function setCreatedBy(Owner $createdBy)
+	public function setCreatedBy(?Owner $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -138,7 +138,7 @@ class UserType implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -159,7 +159,7 @@ class UserType implements Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -180,7 +180,7 @@ class UserType implements Model
 	 * The method to set the value to default
 	 * @param bool $default A bool
 	 */
-	public function setDefault(bool $default)
+	public function setDefault(?bool $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 
@@ -201,7 +201,7 @@ class UserType implements Model
 	 * The method to set the value to noOfUsers
 	 * @param int $noOfUsers A int
 	 */
-	public function setNoOfUsers(int $noOfUsers)
+	public function setNoOfUsers(?int $noOfUsers)
 	{
 		$this->noOfUsers=$noOfUsers; 
 		$this->keyModified['no_of_users'] = 1; 
@@ -222,7 +222,7 @@ class UserType implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -243,7 +243,7 @@ class UserType implements Model
 	 * The method to set the value to modules
 	 * @param array $modules A array
 	 */
-	public function setModules(array $modules)
+	public function setModules(?array $modules)
 	{
 		$this->modules=$modules; 
 		$this->keyModified['modules'] = 1; 

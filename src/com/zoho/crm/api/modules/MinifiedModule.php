@@ -27,7 +27,7 @@ class MinifiedModule implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -48,7 +48,7 @@ class MinifiedModule implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -69,7 +69,7 @@ class MinifiedModule implements Model
 	 * The method to set the value to moduleName
 	 * @param string $moduleName A string
 	 */
-	public function setModuleName(string $moduleName)
+	public function setModuleName(?string $moduleName)
 	{
 		$this->moduleName=$moduleName; 
 		$this->keyModified['module_name'] = 1; 
@@ -90,7 +90,7 @@ class MinifiedModule implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -111,7 +111,7 @@ class MinifiedModule implements Model
 	 * The method to set the value to crypt
 	 * @param bool $crypt A bool
 	 */
-	public function setCrypt(bool $crypt)
+	public function setCrypt(?bool $crypt)
 	{
 		$this->crypt=$crypt; 
 		$this->keyModified['crypt'] = 1; 

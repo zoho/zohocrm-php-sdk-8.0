@@ -28,7 +28,7 @@ class Event implements Model
 	 * The method to set the value to resourceName
 	 * @param string $resourceName A string
 	 */
-	public function setResourceName(string $resourceName)
+	public function setResourceName(?string $resourceName)
 	{
 		$this->resourceName=$resourceName; 
 		$this->keyModified['resource_name'] = 1; 
@@ -49,7 +49,7 @@ class Event implements Model
 	 * The method to set the value to channelExpiry
 	 * @param \DateTime $channelExpiry An instance of \DateTime
 	 */
-	public function setChannelExpiry(\DateTime $channelExpiry)
+	public function setChannelExpiry(?\DateTime $channelExpiry)
 	{
 		$this->channelExpiry=$channelExpiry; 
 		$this->keyModified['channel_expiry'] = 1; 
@@ -70,7 +70,7 @@ class Event implements Model
 	 * The method to set the value to resourceId
 	 * @param string $resourceId A string
 	 */
-	public function setResourceId(string $resourceId)
+	public function setResourceId(?string $resourceId)
 	{
 		$this->resourceId=$resourceId; 
 		$this->keyModified['resource_id'] = 1; 
@@ -91,7 +91,7 @@ class Event implements Model
 	 * The method to set the value to resourceUri
 	 * @param string $resourceUri A string
 	 */
-	public function setResourceUri(string $resourceUri)
+	public function setResourceUri(?string $resourceUri)
 	{
 		$this->resourceUri=$resourceUri; 
 		$this->keyModified['resource_uri'] = 1; 
@@ -112,7 +112,7 @@ class Event implements Model
 	 * The method to set the value to channelId
 	 * @param string $channelId A string
 	 */
-	public function setChannelId(string $channelId)
+	public function setChannelId(?string $channelId)
 	{
 		$this->channelId=$channelId; 
 		$this->keyModified['channel_id'] = 1; 
@@ -133,7 +133,7 @@ class Event implements Model
 	 * The method to set the value to notificationCondition
 	 * @param array $notificationCondition A array
 	 */
-	public function setNotificationCondition(array $notificationCondition)
+	public function setNotificationCondition(?array $notificationCondition)
 	{
 		$this->notificationCondition=$notificationCondition; 
 		$this->keyModified['notification_condition'] = 1; 

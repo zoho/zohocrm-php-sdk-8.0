@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to users
 	 * @param array $users A array
 	 */
-	public function setUsers(array $users)
+	public function setUsers(?array $users)
 	{
 		$this->users=$users; 
 		$this->keyModified['users'] = 1; 

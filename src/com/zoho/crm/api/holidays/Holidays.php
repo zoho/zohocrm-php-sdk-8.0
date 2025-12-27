@@ -23,7 +23,7 @@ class Holidays implements Model
 	 * The method to set the value to holidays
 	 * @param array $holidays A array
 	 */
-	public function setHolidays(array $holidays)
+	public function setHolidays(?array $holidays)
 	{
 		$this->holidays=$holidays; 
 		$this->keyModified['holidays'] = 1; 

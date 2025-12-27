@@ -33,7 +33,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to code
 	 * @param Choice $code An instance of Choice
 	 */
-	public function setCode(Choice $code)
+	public function setCode(?Choice $code)
 	{
 		$this->code=$code; 
 		$this->keyModified['code'] = 1; 
@@ -54,7 +54,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to details
 	 * @param array $details A array
 	 */
-	public function setDetails(array $details)
+	public function setDetails(?array $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 
@@ -75,7 +75,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to message
 	 * @param Choice $message An instance of Choice
 	 */
-	public function setMessage(Choice $message)
+	public function setMessage(?Choice $message)
 	{
 		$this->message=$message; 
 		$this->keyModified['message'] = 1; 
@@ -96,7 +96,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -144,7 +144,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to errorMessage
 	 * @param Choice $errorMessage An instance of Choice
 	 */
-	public function setErrorMessage(Choice $errorMessage)
+	public function setErrorMessage(?Choice $errorMessage)
 	{
 		$this->errorMessage=$errorMessage; 
 		$this->keyModified['ERROR_MESSAGE'] = 1; 
@@ -165,7 +165,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to errorCode
 	 * @param int $errorCode A int
 	 */
-	public function setErrorCode(int $errorCode)
+	public function setErrorCode(?int $errorCode)
 	{
 		$this->errorCode=$errorCode; 
 		$this->keyModified['ERROR_CODE'] = 1; 
@@ -186,7 +186,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to xError
 	 * @param Choice $xError An instance of Choice
 	 */
-	public function setXError(Choice $xError)
+	public function setXError(?Choice $xError)
 	{
 		$this->xError=$xError; 
 		$this->keyModified['x-error'] = 1; 
@@ -207,7 +207,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to info
 	 * @param Choice $info An instance of Choice
 	 */
-	public function setInfo(Choice $info)
+	public function setInfo(?Choice $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 
@@ -228,7 +228,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to xInfo
 	 * @param Choice $xInfo An instance of Choice
 	 */
-	public function setXInfo(Choice $xInfo)
+	public function setXInfo(?Choice $xInfo)
 	{
 		$this->xInfo=$xInfo; 
 		$this->keyModified['x-info'] = 1; 
@@ -249,7 +249,7 @@ class APIException implements Model, ActionResponse, ResponseWrapper, ResponseHa
 	 * The method to set the value to httpStatus
 	 * @param string $httpStatus A string
 	 */
-	public function setHttpStatus(string $httpStatus)
+	public function setHttpStatus(?string $httpStatus)
 	{
 		$this->httpStatus=$httpStatus; 
 		$this->keyModified['http_status'] = 1; 

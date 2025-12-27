@@ -23,7 +23,7 @@ class Result implements Model
 	 * The method to set the value to downloadUrl
 	 * @param string $downloadUrl A string
 	 */
-	public function setDownloadUrl(string $downloadUrl)
+	public function setDownloadUrl(?string $downloadUrl)
 	{
 		$this->downloadUrl=$downloadUrl; 
 		$this->keyModified['download_url'] = 1; 

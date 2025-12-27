@@ -28,7 +28,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to enabled
 	 * @param bool $enabled A bool
 	 */
-	public function setEnabled(bool $enabled)
+	public function setEnabled(?bool $enabled)
 	{
 		$this->enabled=$enabled; 
 		$this->keyModified['enabled'] = 1; 
@@ -49,7 +49,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to enabledForModules
 	 * @param array $enabledForModules A array
 	 */
-	public function setEnabledForModules(array $enabledForModules)
+	public function setEnabledForModules(?array $enabledForModules)
 	{
 		$this->enabledForModules=$enabledForModules; 
 		$this->keyModified['enabled_for_modules'] = 1; 
@@ -70,7 +70,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to restrictToZohoApps
 	 * @param bool $restrictToZohoApps A bool
 	 */
-	public function setRestrictToZohoApps(bool $restrictToZohoApps)
+	public function setRestrictToZohoApps(?bool $restrictToZohoApps)
 	{
 		$this->restrictToZohoApps=$restrictToZohoApps; 
 		$this->keyModified['restrict_to_zoho_apps'] = 1; 
@@ -91,7 +91,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to restrictDataAccessThroughAPI
 	 * @param bool $restrictDataAccessThroughAPI A bool
 	 */
-	public function setRestrictDataAccessThroughAPI(bool $restrictDataAccessThroughAPI)
+	public function setRestrictDataAccessThroughAPI(?bool $restrictDataAccessThroughAPI)
 	{
 		$this->restrictDataAccessThroughAPI=$restrictDataAccessThroughAPI; 
 		$this->keyModified['restrict_data_access_through_api'] = 1; 
@@ -112,7 +112,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to restrictDataInExport
 	 * @param bool $restrictDataInExport A bool
 	 */
-	public function setRestrictDataInExport(bool $restrictDataInExport)
+	public function setRestrictDataInExport(?bool $restrictDataInExport)
 	{
 		$this->restrictDataInExport=$restrictDataInExport; 
 		$this->keyModified['restrict_data_in_export'] = 1; 
@@ -133,7 +133,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to restrictToThirdPartyApps
 	 * @param array $restrictToThirdPartyApps A array
 	 */
-	public function setRestrictToThirdPartyApps(array $restrictToThirdPartyApps)
+	public function setRestrictToThirdPartyApps(?array $restrictToThirdPartyApps)
 	{
 		$this->restrictToThirdPartyApps=$restrictToThirdPartyApps; 
 		$this->keyModified['restrict_to_third_party_apps'] = 1; 

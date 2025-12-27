@@ -36,7 +36,7 @@ class ScoringRule implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -57,7 +57,7 @@ class ScoringRule implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -78,7 +78,7 @@ class ScoringRule implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -99,7 +99,7 @@ class ScoringRule implements Model
 	 * The method to set the value to layout
 	 * @param Layout $layout An instance of Layout
 	 */
-	public function setLayout(Layout $layout)
+	public function setLayout(?Layout $layout)
 	{
 		$this->layout=$layout; 
 		$this->keyModified['layout'] = 1; 
@@ -120,7 +120,7 @@ class ScoringRule implements Model
 	 * The method to set the value to createdTime
 	 * @param string $createdTime A string
 	 */
-	public function setCreatedTime(string $createdTime)
+	public function setCreatedTime(?string $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -141,7 +141,7 @@ class ScoringRule implements Model
 	 * The method to set the value to modifiedTime
 	 * @param string $modifiedTime A string
 	 */
-	public function setModifiedTime(string $modifiedTime)
+	public function setModifiedTime(?string $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -162,7 +162,7 @@ class ScoringRule implements Model
 	 * The method to set the value to module
 	 * @param Modules $module An instance of Modules
 	 */
-	public function setModule(Modules $module)
+	public function setModule(?Modules $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -183,7 +183,7 @@ class ScoringRule implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -204,7 +204,7 @@ class ScoringRule implements Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -225,7 +225,7 @@ class ScoringRule implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -246,7 +246,7 @@ class ScoringRule implements Model
 	 * The method to set the value to fieldRules
 	 * @param array $fieldRules A array
 	 */
-	public function setFieldRules(array $fieldRules)
+	public function setFieldRules(?array $fieldRules)
 	{
 		$this->fieldRules=$fieldRules; 
 		$this->keyModified['field_rules'] = 1; 
@@ -267,7 +267,7 @@ class ScoringRule implements Model
 	 * The method to set the value to signalRules
 	 * @param array $signalRules A array
 	 */
-	public function setSignalRules(array $signalRules)
+	public function setSignalRules(?array $signalRules)
 	{
 		$this->signalRules=$signalRules; 
 		$this->keyModified['signal_rules'] = 1; 

@@ -28,7 +28,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -49,7 +49,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to linkingModule
 	 * @param string $linkingModule A string
 	 */
-	public function setLinkingModule(string $linkingModule)
+	public function setLinkingModule(?string $linkingModule)
 	{
 		$this->linkingModule=$linkingModule; 
 		$this->keyModified['linking_module'] = 1; 
@@ -70,7 +70,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to lookupApiname
 	 * @param string $lookupApiname A string
 	 */
-	public function setLookupApiname(string $lookupApiname)
+	public function setLookupApiname(?string $lookupApiname)
 	{
 		$this->lookupApiname=$lookupApiname; 
 		$this->keyModified['lookup_apiname'] = 1; 
@@ -91,7 +91,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -112,7 +112,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to connectedlookupApiname
 	 * @param string $connectedlookupApiname A string
 	 */
-	public function setConnectedlookupApiname(string $connectedlookupApiname)
+	public function setConnectedlookupApiname(?string $connectedlookupApiname)
 	{
 		$this->connectedlookupApiname=$connectedlookupApiname; 
 		$this->keyModified['connectedlookup_apiname'] = 1; 
@@ -133,7 +133,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

@@ -40,7 +40,7 @@ class Data implements Model
 	 * The method to set the value to from
 	 * @param From $from An instance of From
 	 */
-	public function setFrom(From $from)
+	public function setFrom(?From $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -61,7 +61,7 @@ class Data implements Model
 	 * The method to set the value to to
 	 * @param array $to A array
 	 */
-	public function setTo(array $to)
+	public function setTo(?array $to)
 	{
 		$this->to=$to; 
 		$this->keyModified['to'] = 1; 
@@ -82,7 +82,7 @@ class Data implements Model
 	 * The method to set the value to cc
 	 * @param array $cc A array
 	 */
-	public function setCc(array $cc)
+	public function setCc(?array $cc)
 	{
 		$this->cc=$cc; 
 		$this->keyModified['cc'] = 1; 
@@ -103,7 +103,7 @@ class Data implements Model
 	 * The method to set the value to bcc
 	 * @param array $bcc A array
 	 */
-	public function setBcc(array $bcc)
+	public function setBcc(?array $bcc)
 	{
 		$this->bcc=$bcc; 
 		$this->keyModified['bcc'] = 1; 
@@ -124,7 +124,7 @@ class Data implements Model
 	 * The method to set the value to replyTo
 	 * @param To $replyTo An instance of To
 	 */
-	public function setReplyTo(To $replyTo)
+	public function setReplyTo(?To $replyTo)
 	{
 		$this->replyTo=$replyTo; 
 		$this->keyModified['reply_to'] = 1; 
@@ -145,7 +145,7 @@ class Data implements Model
 	 * The method to set the value to orgEmail
 	 * @param bool $orgEmail A bool
 	 */
-	public function setOrgEmail(bool $orgEmail)
+	public function setOrgEmail(?bool $orgEmail)
 	{
 		$this->orgEmail=$orgEmail; 
 		$this->keyModified['org_email'] = 1; 
@@ -166,7 +166,7 @@ class Data implements Model
 	 * The method to set the value to scheduledTime
 	 * @param \DateTime $scheduledTime An instance of \DateTime
 	 */
-	public function setScheduledTime(\DateTime $scheduledTime)
+	public function setScheduledTime(?\DateTime $scheduledTime)
 	{
 		$this->scheduledTime=$scheduledTime; 
 		$this->keyModified['scheduled_time'] = 1; 
@@ -187,7 +187,7 @@ class Data implements Model
 	 * The method to set the value to mailFormat
 	 * @param Choice $mailFormat An instance of Choice
 	 */
-	public function setMailFormat(Choice $mailFormat)
+	public function setMailFormat(?Choice $mailFormat)
 	{
 		$this->mailFormat=$mailFormat; 
 		$this->keyModified['mail_format'] = 1; 
@@ -208,7 +208,7 @@ class Data implements Model
 	 * The method to set the value to consentEmail
 	 * @param bool $consentEmail A bool
 	 */
-	public function setConsentEmail(bool $consentEmail)
+	public function setConsentEmail(?bool $consentEmail)
 	{
 		$this->consentEmail=$consentEmail; 
 		$this->keyModified['consent_email'] = 1; 
@@ -229,7 +229,7 @@ class Data implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 
@@ -250,7 +250,7 @@ class Data implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -271,7 +271,7 @@ class Data implements Model
 	 * The method to set the value to inReplyTo
 	 * @param InReplyTo $inReplyTo An instance of InReplyTo
 	 */
-	public function setInReplyTo(InReplyTo $inReplyTo)
+	public function setInReplyTo(?InReplyTo $inReplyTo)
 	{
 		$this->inReplyTo=$inReplyTo; 
 		$this->keyModified['in_reply_to'] = 1; 
@@ -292,7 +292,7 @@ class Data implements Model
 	 * The method to set the value to template
 	 * @param Template $template An instance of Template
 	 */
-	public function setTemplate(Template $template)
+	public function setTemplate(?Template $template)
 	{
 		$this->template=$template; 
 		$this->keyModified['template'] = 1; 
@@ -313,7 +313,7 @@ class Data implements Model
 	 * The method to set the value to inventoryDetails
 	 * @param InventoryDetails $inventoryDetails An instance of InventoryDetails
 	 */
-	public function setInventoryDetails(InventoryDetails $inventoryDetails)
+	public function setInventoryDetails(?InventoryDetails $inventoryDetails)
 	{
 		$this->inventoryDetails=$inventoryDetails; 
 		$this->keyModified['inventory_details'] = 1; 
@@ -334,7 +334,7 @@ class Data implements Model
 	 * The method to set the value to dataSubjectRequest
 	 * @param DataSubjectRequest $dataSubjectRequest An instance of DataSubjectRequest
 	 */
-	public function setDataSubjectRequest(DataSubjectRequest $dataSubjectRequest)
+	public function setDataSubjectRequest(?DataSubjectRequest $dataSubjectRequest)
 	{
 		$this->dataSubjectRequest=$dataSubjectRequest; 
 		$this->keyModified['data_subject_request'] = 1; 
@@ -355,7 +355,7 @@ class Data implements Model
 	 * The method to set the value to attachments
 	 * @param array $attachments A array
 	 */
-	public function setAttachments(array $attachments)
+	public function setAttachments(?array $attachments)
 	{
 		$this->attachments=$attachments; 
 		$this->keyModified['attachments'] = 1; 
@@ -376,7 +376,7 @@ class Data implements Model
 	 * The method to set the value to linkedRecord
 	 * @param LinkedRecord $linkedRecord An instance of LinkedRecord
 	 */
-	public function setLinkedRecord(LinkedRecord $linkedRecord)
+	public function setLinkedRecord(?LinkedRecord $linkedRecord)
 	{
 		$this->linkedRecord=$linkedRecord; 
 		$this->keyModified['linked_record'] = 1; 

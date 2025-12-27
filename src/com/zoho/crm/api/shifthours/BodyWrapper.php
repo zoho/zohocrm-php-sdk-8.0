@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to shiftHours
 	 * @param array $shiftHours A array
 	 */
-	public function setShiftHours(array $shiftHours)
+	public function setShiftHours(?array $shiftHours)
 	{
 		$this->shiftHours=$shiftHours; 
 		$this->keyModified['shift_hours'] = 1; 

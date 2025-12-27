@@ -39,7 +39,7 @@ class Wizard implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -60,7 +60,7 @@ class Wizard implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -81,7 +81,7 @@ class Wizard implements Model
 	 * The method to set the value to module
 	 * @param Modules $module An instance of Modules
 	 */
-	public function setModule(Modules $module)
+	public function setModule(?Modules $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -102,7 +102,7 @@ class Wizard implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -123,7 +123,7 @@ class Wizard implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -144,7 +144,7 @@ class Wizard implements Model
 	 * The method to set the value to profiles
 	 * @param array $profiles A array
 	 */
-	public function setProfiles(array $profiles)
+	public function setProfiles(?array $profiles)
 	{
 		$this->profiles=$profiles; 
 		$this->keyModified['profiles'] = 1; 
@@ -165,7 +165,7 @@ class Wizard implements Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -186,7 +186,7 @@ class Wizard implements Model
 	 * The method to set the value to containers
 	 * @param array $containers A array
 	 */
-	public function setContainers(array $containers)
+	public function setContainers(?array $containers)
 	{
 		$this->containers=$containers; 
 		$this->keyModified['containers'] = 1; 
@@ -207,7 +207,7 @@ class Wizard implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -228,7 +228,7 @@ class Wizard implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -249,7 +249,7 @@ class Wizard implements Model
 	 * The method to set the value to portalUserTypes
 	 * @param array $portalUserTypes A array
 	 */
-	public function setPortalUserTypes(array $portalUserTypes)
+	public function setPortalUserTypes(?array $portalUserTypes)
 	{
 		$this->portalUserTypes=$portalUserTypes; 
 		$this->keyModified['portal_user_types'] = 1; 
@@ -270,7 +270,7 @@ class Wizard implements Model
 	 * The method to set the value to exemptedPortalUserTypes
 	 * @param array $exemptedPortalUserTypes A array
 	 */
-	public function setExemptedPortalUserTypes(array $exemptedPortalUserTypes)
+	public function setExemptedPortalUserTypes(?array $exemptedPortalUserTypes)
 	{
 		$this->exemptedPortalUserTypes=$exemptedPortalUserTypes; 
 		$this->keyModified['exempted_portal_user_types'] = 1; 
@@ -291,7 +291,7 @@ class Wizard implements Model
 	 * The method to set the value to parentWizard
 	 * @param Wizard $parentWizard An instance of Wizard
 	 */
-	public function setParentWizard(Wizard $parentWizard)
+	public function setParentWizard(?Wizard $parentWizard)
 	{
 		$this->parentWizard=$parentWizard; 
 		$this->keyModified['parent_wizard'] = 1; 
@@ -312,7 +312,7 @@ class Wizard implements Model
 	 * The method to set the value to draft
 	 * @param bool $draft A bool
 	 */
-	public function setDraft(bool $draft)
+	public function setDraft(?bool $draft)
 	{
 		$this->draft=$draft; 
 		$this->keyModified['draft'] = 1; 

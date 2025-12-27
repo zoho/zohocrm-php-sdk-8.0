@@ -26,7 +26,7 @@ class RelatedListProperties implements Model
 	 * The method to set the value to sortBy
 	 * @param MinifiedField $sortBy An instance of MinifiedField
 	 */
-	public function setSortBy(MinifiedField $sortBy)
+	public function setSortBy(?MinifiedField $sortBy)
 	{
 		$this->sortBy=$sortBy; 
 		$this->keyModified['sort_by'] = 1; 
@@ -47,7 +47,7 @@ class RelatedListProperties implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -68,7 +68,7 @@ class RelatedListProperties implements Model
 	 * The method to set the value to sortOrder
 	 * @param string $sortOrder A string
 	 */
-	public function setSortOrder(string $sortOrder)
+	public function setSortOrder(?string $sortOrder)
 	{
 		$this->sortOrder=$sortOrder; 
 		$this->keyModified['sort_order'] = 1; 

@@ -27,7 +27,7 @@ class BluePrint implements Model
 	 * The method to set the value to transitionId
 	 * @param string $transitionId A string
 	 */
-	public function setTransitionId(string $transitionId)
+	public function setTransitionId(?string $transitionId)
 	{
 		$this->transitionId=$transitionId; 
 		$this->keyModified['transition_id'] = 1; 
@@ -48,7 +48,7 @@ class BluePrint implements Model
 	 * The method to set the value to data
 	 * @param Record $data An instance of Record
 	 */
-	public function setData(Record $data)
+	public function setData(?Record $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -69,7 +69,7 @@ class BluePrint implements Model
 	 * The method to set the value to processInfo
 	 * @param ProcessInfo $processInfo An instance of ProcessInfo
 	 */
-	public function setProcessInfo(ProcessInfo $processInfo)
+	public function setProcessInfo(?ProcessInfo $processInfo)
 	{
 		$this->processInfo=$processInfo; 
 		$this->keyModified['process_info'] = 1; 
@@ -90,7 +90,7 @@ class BluePrint implements Model
 	 * The method to set the value to transitions
 	 * @param array $transitions A array
 	 */
-	public function setTransitions(array $transitions)
+	public function setTransitions(?array $transitions)
 	{
 		$this->transitions=$transitions; 
 		$this->keyModified['transitions'] = 1; 

@@ -45,7 +45,7 @@ class Layouts implements Model
 	 * The method to set the value to displayType
 	 * @param int $displayType A int
 	 */
-	public function setDisplayType(int $displayType)
+	public function setDisplayType(?int $displayType)
 	{
 		$this->displayType=$displayType; 
 		$this->keyModified['display_type'] = 1; 
@@ -66,7 +66,7 @@ class Layouts implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -87,7 +87,7 @@ class Layouts implements Model
 	 * The method to set the value to hasMoreProfiles
 	 * @param bool $hasMoreProfiles A bool
 	 */
-	public function setHasMoreProfiles(bool $hasMoreProfiles)
+	public function setHasMoreProfiles(?bool $hasMoreProfiles)
 	{
 		$this->hasMoreProfiles=$hasMoreProfiles; 
 		$this->keyModified['has_more_profiles'] = 1; 
@@ -108,7 +108,7 @@ class Layouts implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -129,7 +129,7 @@ class Layouts implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -150,7 +150,7 @@ class Layouts implements Model
 	 * The method to set the value to visible
 	 * @param bool $visible A bool
 	 */
-	public function setVisible(bool $visible)
+	public function setVisible(?bool $visible)
 	{
 		$this->visible=$visible; 
 		$this->keyModified['visible'] = 1; 
@@ -171,7 +171,7 @@ class Layouts implements Model
 	 * The method to set the value to source
 	 * @param string $source A string
 	 */
-	public function setSource(string $source)
+	public function setSource(?string $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 
@@ -192,7 +192,7 @@ class Layouts implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -213,7 +213,7 @@ class Layouts implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -234,7 +234,7 @@ class Layouts implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -255,7 +255,7 @@ class Layouts implements Model
 	 * The method to set the value to mode
 	 * @param string $mode A string
 	 */
-	public function setMode(string $mode)
+	public function setMode(?string $mode)
 	{
 		$this->mode=$mode; 
 		$this->keyModified['mode'] = 1; 
@@ -276,7 +276,7 @@ class Layouts implements Model
 	 * The method to set the value to subformProperties
 	 * @param SubformProperty $subformProperties An instance of SubformProperty
 	 */
-	public function setSubformProperties(SubformProperty $subformProperties)
+	public function setSubformProperties(?SubformProperty $subformProperties)
 	{
 		$this->subformProperties=$subformProperties; 
 		$this->keyModified['subform_properties'] = 1; 
@@ -297,7 +297,7 @@ class Layouts implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -318,7 +318,7 @@ class Layouts implements Model
 	 * The method to set the value to showBusinessCard
 	 * @param bool $showBusinessCard A bool
 	 */
-	public function setShowBusinessCard(bool $showBusinessCard)
+	public function setShowBusinessCard(?bool $showBusinessCard)
 	{
 		$this->showBusinessCard=$showBusinessCard; 
 		$this->keyModified['show_business_card'] = 1; 
@@ -339,7 +339,7 @@ class Layouts implements Model
 	 * The method to set the value to generatedType
 	 * @param string $generatedType A string
 	 */
-	public function setGeneratedType(string $generatedType)
+	public function setGeneratedType(?string $generatedType)
 	{
 		$this->generatedType=$generatedType; 
 		$this->keyModified['generated_type'] = 1; 
@@ -360,7 +360,7 @@ class Layouts implements Model
 	 * The method to set the value to createdFor
 	 * @param MinifiedUser $createdFor An instance of MinifiedUser
 	 */
-	public function setCreatedFor(MinifiedUser $createdFor)
+	public function setCreatedFor(?MinifiedUser $createdFor)
 	{
 		$this->createdFor=$createdFor; 
 		$this->keyModified['created_for'] = 1; 
@@ -381,7 +381,7 @@ class Layouts implements Model
 	 * The method to set the value to convertMapping
 	 * @param ConvertMapping $convertMapping An instance of ConvertMapping
 	 */
-	public function setConvertMapping(ConvertMapping $convertMapping)
+	public function setConvertMapping(?ConvertMapping $convertMapping)
 	{
 		$this->convertMapping=$convertMapping; 
 		$this->keyModified['convert_mapping'] = 1; 
@@ -402,7 +402,7 @@ class Layouts implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -423,7 +423,7 @@ class Layouts implements Model
 	 * The method to set the value to profiles
 	 * @param array $profiles A array
 	 */
-	public function setProfiles(array $profiles)
+	public function setProfiles(?array $profiles)
 	{
 		$this->profiles=$profiles; 
 		$this->keyModified['profiles'] = 1; 
@@ -444,7 +444,7 @@ class Layouts implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -465,7 +465,7 @@ class Layouts implements Model
 	 * The method to set the value to sections
 	 * @param array $sections A array
 	 */
-	public function setSections(array $sections)
+	public function setSections(?array $sections)
 	{
 		$this->sections=$sections; 
 		$this->keyModified['sections'] = 1; 
@@ -486,7 +486,7 @@ class Layouts implements Model
 	 * The method to set the value to actionsAllowed
 	 * @param ActionsAllowed $actionsAllowed An instance of ActionsAllowed
 	 */
-	public function setActionsAllowed(ActionsAllowed $actionsAllowed)
+	public function setActionsAllowed(?ActionsAllowed $actionsAllowed)
 	{
 		$this->actionsAllowed=$actionsAllowed; 
 		$this->keyModified['actions_allowed'] = 1; 

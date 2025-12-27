@@ -25,7 +25,7 @@ class ScheduleDetails implements Model
 	 * The method to set the value to time
 	 * @param \DateTime $time An instance of \DateTime
 	 */
-	public function setTime(\DateTime $time)
+	public function setTime(?\DateTime $time)
 	{
 		$this->time=$time; 
 		$this->keyModified['time'] = 1; 
@@ -46,7 +46,7 @@ class ScheduleDetails implements Model
 	 * The method to set the value to timezone
 	 * @param \DateTimeZone $timezone An instance of \DateTimeZone
 	 */
-	public function setTimezone(\DateTimeZone $timezone)
+	public function setTimezone(?\DateTimeZone $timezone)
 	{
 		$this->timezone=$timezone; 
 		$this->keyModified['timezone'] = 1; 
@@ -67,7 +67,7 @@ class ScheduleDetails implements Model
 	 * The method to set the value to source
 	 * @param string $source A string
 	 */
-	public function setSource(string $source)
+	public function setSource(?string $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 

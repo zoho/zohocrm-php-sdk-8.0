@@ -24,7 +24,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to cadencesIds
 	 * @param array $cadencesIds A array
 	 */
-	public function setCadencesIds(array $cadencesIds)
+	public function setCadencesIds(?array $cadencesIds)
 	{
 		$this->cadencesIds=$cadencesIds; 
 		$this->keyModified['cadences_ids'] = 1; 
@@ -45,7 +45,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 

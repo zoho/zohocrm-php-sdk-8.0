@@ -23,7 +23,7 @@ class AssignedActionWrapper implements Model
 	 * The method to set the value to getAssigned
 	 * @param AssignedActionResponse $getAssigned An instance of AssignedActionResponse
 	 */
-	public function setGetAssigned(AssignedActionResponse $getAssigned)
+	public function setGetAssigned(?AssignedActionResponse $getAssigned)
 	{
 		$this->getAssigned=$getAssigned; 
 		$this->keyModified['get_assigned'] = 1; 

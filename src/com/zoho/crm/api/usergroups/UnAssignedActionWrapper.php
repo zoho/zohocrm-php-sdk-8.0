@@ -23,7 +23,7 @@ class UnAssignedActionWrapper implements Model
 	 * The method to set the value to getUnassigned
 	 * @param UnAssignedActionResponse $getUnassigned An instance of UnAssignedActionResponse
 	 */
-	public function setGetUnassigned(UnAssignedActionResponse $getUnassigned)
+	public function setGetUnassigned(?UnAssignedActionResponse $getUnassigned)
 	{
 		$this->getUnassigned=$getUnassigned; 
 		$this->keyModified['get_unassigned'] = 1; 

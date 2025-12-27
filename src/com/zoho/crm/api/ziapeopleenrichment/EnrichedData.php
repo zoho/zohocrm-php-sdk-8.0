@@ -42,7 +42,7 @@ class EnrichedData implements Model
 	 * The method to set the value to website
 	 * @param string $website A string
 	 */
-	public function setWebsite(string $website)
+	public function setWebsite(?string $website)
 	{
 		$this->website=$website; 
 		$this->keyModified['website'] = 1; 
@@ -63,7 +63,7 @@ class EnrichedData implements Model
 	 * The method to set the value to emailInfos
 	 * @param array $emailInfos A array
 	 */
-	public function setEmailInfos(array $emailInfos)
+	public function setEmailInfos(?array $emailInfos)
 	{
 		$this->emailInfos=$emailInfos; 
 		$this->keyModified['email_infos'] = 1; 
@@ -84,7 +84,7 @@ class EnrichedData implements Model
 	 * The method to set the value to gender
 	 * @param string $gender A string
 	 */
-	public function setGender(string $gender)
+	public function setGender(?string $gender)
 	{
 		$this->gender=$gender; 
 		$this->keyModified['gender'] = 1; 
@@ -105,7 +105,7 @@ class EnrichedData implements Model
 	 * The method to set the value to companyInfo
 	 * @param CompanyInfo $companyInfo An instance of CompanyInfo
 	 */
-	public function setCompanyInfo(CompanyInfo $companyInfo)
+	public function setCompanyInfo(?CompanyInfo $companyInfo)
 	{
 		$this->companyInfo=$companyInfo; 
 		$this->keyModified['company_info'] = 1; 
@@ -126,7 +126,7 @@ class EnrichedData implements Model
 	 * The method to set the value to lastName
 	 * @param string $lastName A string
 	 */
-	public function setLastName(string $lastName)
+	public function setLastName(?string $lastName)
 	{
 		$this->lastName=$lastName; 
 		$this->keyModified['last_name'] = 1; 
@@ -147,7 +147,7 @@ class EnrichedData implements Model
 	 * The method to set the value to educations
 	 * @param array $educations A array
 	 */
-	public function setEducations(array $educations)
+	public function setEducations(?array $educations)
 	{
 		$this->educations=$educations; 
 		$this->keyModified['educations'] = 1; 
@@ -168,7 +168,7 @@ class EnrichedData implements Model
 	 * The method to set the value to middleName
 	 * @param string $middleName A string
 	 */
-	public function setMiddleName(string $middleName)
+	public function setMiddleName(?string $middleName)
 	{
 		$this->middleName=$middleName; 
 		$this->keyModified['middle_name'] = 1; 
@@ -189,7 +189,7 @@ class EnrichedData implements Model
 	 * The method to set the value to skills
 	 * @param array $skills A array
 	 */
-	public function setSkills(array $skills)
+	public function setSkills(?array $skills)
 	{
 		$this->skills=$skills; 
 		$this->keyModified['skills'] = 1; 
@@ -210,7 +210,7 @@ class EnrichedData implements Model
 	 * The method to set the value to otherContacts
 	 * @param array $otherContacts A array
 	 */
-	public function setOtherContacts(array $otherContacts)
+	public function setOtherContacts(?array $otherContacts)
 	{
 		$this->otherContacts=$otherContacts; 
 		$this->keyModified['other_contacts'] = 1; 
@@ -231,7 +231,7 @@ class EnrichedData implements Model
 	 * The method to set the value to addressListInfo
 	 * @param array $addressListInfo A array
 	 */
-	public function setAddressListInfo(array $addressListInfo)
+	public function setAddressListInfo(?array $addressListInfo)
 	{
 		$this->addressListInfo=$addressListInfo; 
 		$this->keyModified['address_list_info'] = 1; 
@@ -252,7 +252,7 @@ class EnrichedData implements Model
 	 * The method to set the value to primaryAddressInfo
 	 * @param Address $primaryAddressInfo An instance of Address
 	 */
-	public function setPrimaryAddressInfo(Address $primaryAddressInfo)
+	public function setPrimaryAddressInfo(?Address $primaryAddressInfo)
 	{
 		$this->primaryAddressInfo=$primaryAddressInfo; 
 		$this->keyModified['primary_address_info'] = 1; 
@@ -273,7 +273,7 @@ class EnrichedData implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -294,7 +294,7 @@ class EnrichedData implements Model
 	 * The method to set the value to secondaryContact
 	 * @param string $secondaryContact A string
 	 */
-	public function setSecondaryContact(string $secondaryContact)
+	public function setSecondaryContact(?string $secondaryContact)
 	{
 		$this->secondaryContact=$secondaryContact; 
 		$this->keyModified['secondary_contact'] = 1; 
@@ -315,7 +315,7 @@ class EnrichedData implements Model
 	 * The method to set the value to primaryEmail
 	 * @param string $primaryEmail A string
 	 */
-	public function setPrimaryEmail(string $primaryEmail)
+	public function setPrimaryEmail(?string $primaryEmail)
 	{
 		$this->primaryEmail=$primaryEmail; 
 		$this->keyModified['primary_email'] = 1; 
@@ -336,7 +336,7 @@ class EnrichedData implements Model
 	 * The method to set the value to designation
 	 * @param string $designation A string
 	 */
-	public function setDesignation(string $designation)
+	public function setDesignation(?string $designation)
 	{
 		$this->designation=$designation; 
 		$this->keyModified['designation'] = 1; 
@@ -357,7 +357,7 @@ class EnrichedData implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -378,7 +378,7 @@ class EnrichedData implements Model
 	 * The method to set the value to interests
 	 * @param array $interests A array
 	 */
-	public function setInterests(array $interests)
+	public function setInterests(?array $interests)
 	{
 		$this->interests=$interests; 
 		$this->keyModified['interests'] = 1; 
@@ -399,7 +399,7 @@ class EnrichedData implements Model
 	 * The method to set the value to firstName
 	 * @param string $firstName A string
 	 */
-	public function setFirstName(string $firstName)
+	public function setFirstName(?string $firstName)
 	{
 		$this->firstName=$firstName; 
 		$this->keyModified['first_name'] = 1; 
@@ -420,7 +420,7 @@ class EnrichedData implements Model
 	 * The method to set the value to primaryContact
 	 * @param string $primaryContact A string
 	 */
-	public function setPrimaryContact(string $primaryContact)
+	public function setPrimaryContact(?string $primaryContact)
 	{
 		$this->primaryContact=$primaryContact; 
 		$this->keyModified['primary_contact'] = 1; 
@@ -441,7 +441,7 @@ class EnrichedData implements Model
 	 * The method to set the value to socialMedia
 	 * @param array $socialMedia A array
 	 */
-	public function setSocialMedia(array $socialMedia)
+	public function setSocialMedia(?array $socialMedia)
 	{
 		$this->socialMedia=$socialMedia; 
 		$this->keyModified['social_media'] = 1; 

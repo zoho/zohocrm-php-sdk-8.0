@@ -23,7 +23,7 @@ class Notify implements Model
 	 * The method to set the value to sendCancellingMail
 	 * @param bool $sendCancellingMail A bool
 	 */
-	public function setSendCancellingMail(bool $sendCancellingMail)
+	public function setSendCancellingMail(?bool $sendCancellingMail)
 	{
 		$this->sendCancellingMail=$sendCancellingMail; 
 		$this->keyModified['send_cancelling_mail'] = 1; 

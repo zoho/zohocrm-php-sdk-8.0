@@ -108,7 +108,7 @@ class CustomizeInfo implements Model
 	 * The method to set the value to showHome
 	 * @param bool $showHome A bool
 	 */
-	public function setShowHome(bool $showHome)
+	public function setShowHome(?bool $showHome)
 	{
 		$this->showHome=$showHome; 
 		$this->keyModified['show_home'] = 1; 
@@ -129,7 +129,7 @@ class CustomizeInfo implements Model
 	 * The method to set the value to showDetailView
 	 * @param bool $showDetailView A bool
 	 */
-	public function setShowDetailView(bool $showDetailView)
+	public function setShowDetailView(?bool $showDetailView)
 	{
 		$this->showDetailView=$showDetailView; 
 		$this->keyModified['show_detail_view'] = 1; 

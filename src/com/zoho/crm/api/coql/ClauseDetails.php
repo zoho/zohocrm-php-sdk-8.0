@@ -23,7 +23,7 @@ class ClauseDetails implements Model, DetailsWrapper
 	 * The method to set the value to clause
 	 * @param string $clause A string
 	 */
-	public function setClause(string $clause)
+	public function setClause(?string $clause)
 	{
 		$this->clause=$clause; 
 		$this->keyModified['clause'] = 1; 

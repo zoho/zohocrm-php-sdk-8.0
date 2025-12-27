@@ -28,7 +28,7 @@ class LastVersionStatistics implements Model
 	 * The method to set the value to tracked
 	 * @param int $tracked A int
 	 */
-	public function setTracked(int $tracked)
+	public function setTracked(?int $tracked)
 	{
 		$this->tracked=$tracked; 
 		$this->keyModified['tracked'] = 1; 
@@ -49,7 +49,7 @@ class LastVersionStatistics implements Model
 	 * The method to set the value to delivered
 	 * @param int $delivered A int
 	 */
-	public function setDelivered(int $delivered)
+	public function setDelivered(?int $delivered)
 	{
 		$this->delivered=$delivered; 
 		$this->keyModified['delivered'] = 1; 
@@ -70,7 +70,7 @@ class LastVersionStatistics implements Model
 	 * The method to set the value to opened
 	 * @param int $opened A int
 	 */
-	public function setOpened(int $opened)
+	public function setOpened(?int $opened)
 	{
 		$this->opened=$opened; 
 		$this->keyModified['opened'] = 1; 
@@ -91,7 +91,7 @@ class LastVersionStatistics implements Model
 	 * The method to set the value to bounced
 	 * @param int $bounced A int
 	 */
-	public function setBounced(int $bounced)
+	public function setBounced(?int $bounced)
 	{
 		$this->bounced=$bounced; 
 		$this->keyModified['bounced'] = 1; 
@@ -112,7 +112,7 @@ class LastVersionStatistics implements Model
 	 * The method to set the value to sent
 	 * @param int $sent A int
 	 */
-	public function setSent(int $sent)
+	public function setSent(?int $sent)
 	{
 		$this->sent=$sent; 
 		$this->keyModified['sent'] = 1; 
@@ -133,7 +133,7 @@ class LastVersionStatistics implements Model
 	 * The method to set the value to clicked
 	 * @param int $clicked A int
 	 */
-	public function setClicked(int $clicked)
+	public function setClicked(?int $clicked)
 	{
 		$this->clicked=$clicked; 
 		$this->keyModified['clicked'] = 1; 

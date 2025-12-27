@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to orgTaxes
 	 * @param ActionResponse $orgTaxes An instance of ActionResponse
 	 */
-	public function setOrgTaxes(ActionResponse $orgTaxes)
+	public function setOrgTaxes(?ActionResponse $orgTaxes)
 	{
 		$this->orgTaxes=$orgTaxes; 
 		$this->keyModified['org_taxes'] = 1; 

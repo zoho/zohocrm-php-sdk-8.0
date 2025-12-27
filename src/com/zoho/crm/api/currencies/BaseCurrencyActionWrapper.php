@@ -23,7 +23,7 @@ class BaseCurrencyActionWrapper implements Model, ActionHandler
 	 * The method to set the value to baseCurrency
 	 * @param BaseCurrencyActionResponse $baseCurrency An instance of BaseCurrencyActionResponse
 	 */
-	public function setBaseCurrency(BaseCurrencyActionResponse $baseCurrency)
+	public function setBaseCurrency(?BaseCurrencyActionResponse $baseCurrency)
 	{
 		$this->baseCurrency=$baseCurrency; 
 		$this->keyModified['base_currency'] = 1; 

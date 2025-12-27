@@ -26,7 +26,7 @@ class SuccessResponse implements Model, ResponseWrapper
 	 * The method to set the value to code
 	 * @param Choice $code An instance of Choice
 	 */
-	public function setCode(Choice $code)
+	public function setCode(?Choice $code)
 	{
 		$this->code=$code; 
 		$this->keyModified['code'] = 1; 
@@ -47,7 +47,7 @@ class SuccessResponse implements Model, ResponseWrapper
 	 * The method to set the value to message
 	 * @param Choice $message An instance of Choice
 	 */
-	public function setMessage(Choice $message)
+	public function setMessage(?Choice $message)
 	{
 		$this->message=$message; 
 		$this->keyModified['message'] = 1; 
@@ -68,7 +68,7 @@ class SuccessResponse implements Model, ResponseWrapper
 	 * The method to set the value to details
 	 * @param array $details A array
 	 */
-	public function setDetails(array $details)
+	public function setDetails(?array $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 

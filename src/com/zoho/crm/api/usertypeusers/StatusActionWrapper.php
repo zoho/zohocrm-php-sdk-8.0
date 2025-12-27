@@ -23,7 +23,7 @@ class StatusActionWrapper implements Model, StatusActionHandler
 	 * The method to set the value to changeStatus
 	 * @param array $changeStatus A array
 	 */
-	public function setChangeStatus(array $changeStatus)
+	public function setChangeStatus(?array $changeStatus)
 	{
 		$this->changeStatus=$changeStatus; 
 		$this->keyModified['change_status'] = 1; 

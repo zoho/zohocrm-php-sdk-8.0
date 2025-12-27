@@ -26,7 +26,7 @@ class OperationTypes implements Model
 	 * The method to set the value to method
 	 * @param string $method A string
 	 */
-	public function setMethod(string $method)
+	public function setMethod(?string $method)
 	{
 		$this->method=$method; 
 		$this->keyModified['method'] = 1; 
@@ -47,7 +47,7 @@ class OperationTypes implements Model
 	 * The method to set the value to oauthScope
 	 * @param string $oauthScope A string
 	 */
-	public function setOauthScope(string $oauthScope)
+	public function setOauthScope(?string $oauthScope)
 	{
 		$this->oauthScope=$oauthScope; 
 		$this->keyModified['oauth_scope'] = 1; 
@@ -68,7 +68,7 @@ class OperationTypes implements Model
 	 * The method to set the value to maxCredits
 	 * @param int $maxCredits A int
 	 */
-	public function setMaxCredits(int $maxCredits)
+	public function setMaxCredits(?int $maxCredits)
 	{
 		$this->maxCredits=$maxCredits; 
 		$this->keyModified['max_credits'] = 1; 
@@ -89,7 +89,7 @@ class OperationTypes implements Model
 	 * The method to set the value to minCredits
 	 * @param int $minCredits A int
 	 */
-	public function setMinCredits(int $minCredits)
+	public function setMinCredits(?int $minCredits)
 	{
 		$this->minCredits=$minCredits; 
 		$this->keyModified['min_credits'] = 1; 

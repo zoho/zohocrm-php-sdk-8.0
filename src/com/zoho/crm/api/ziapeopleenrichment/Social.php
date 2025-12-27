@@ -25,7 +25,7 @@ class Social implements Model
 	 * The method to set the value to twitter
 	 * @param string $twitter A string
 	 */
-	public function setTwitter(string $twitter)
+	public function setTwitter(?string $twitter)
 	{
 		$this->twitter=$twitter; 
 		$this->keyModified['twitter'] = 1; 
@@ -46,7 +46,7 @@ class Social implements Model
 	 * The method to set the value to facebook
 	 * @param string $facebook A string
 	 */
-	public function setFacebook(string $facebook)
+	public function setFacebook(?string $facebook)
 	{
 		$this->facebook=$facebook; 
 		$this->keyModified['facebook'] = 1; 
@@ -67,7 +67,7 @@ class Social implements Model
 	 * The method to set the value to linkedin
 	 * @param string $linkedin A string
 	 */
-	public function setLinkedin(string $linkedin)
+	public function setLinkedin(?string $linkedin)
 	{
 		$this->linkedin=$linkedin; 
 		$this->keyModified['linkedin'] = 1; 

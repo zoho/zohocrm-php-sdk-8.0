@@ -24,7 +24,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -45,7 +45,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to info
 	 * @param array $info A array
 	 */
-	public function setInfo(array $info)
+	public function setInfo(?array $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

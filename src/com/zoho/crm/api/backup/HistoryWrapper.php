@@ -24,7 +24,7 @@ class HistoryWrapper implements Model, ResponseHandler
 	 * The method to set the value to history
 	 * @param array $history A array
 	 */
-	public function setHistory(array $history)
+	public function setHistory(?array $history)
 	{
 		$this->history=$history; 
 		$this->keyModified['history'] = 1; 
@@ -45,7 +45,7 @@ class HistoryWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

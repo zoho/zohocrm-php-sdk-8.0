@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to backup
 	 * @param Backup $backup An instance of Backup
 	 */
-	public function setBackup(Backup $backup)
+	public function setBackup(?Backup $backup)
 	{
 		$this->backup=$backup; 
 		$this->keyModified['backup'] = 1; 

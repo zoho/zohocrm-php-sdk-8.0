@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to mapDependency
 	 * @param array $mapDependency A array
 	 */
-	public function setMapDependency(array $mapDependency)
+	public function setMapDependency(?array $mapDependency)
 	{
 		$this->mapDependency=$mapDependency; 
 		$this->keyModified['map_dependency'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

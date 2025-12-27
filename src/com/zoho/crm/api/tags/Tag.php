@@ -2,7 +2,6 @@
 namespace com\zoho\crm\api\tags;
 
 use com\zoho\crm\api\users\MinifiedUser;
-use com\zoho\crm\api\util\Choice;
 use com\zoho\crm\api\util\Model;
 
 class Tag implements Model
@@ -31,7 +30,7 @@ class Tag implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -40,7 +39,7 @@ class Tag implements Model
 
 	/**
 	 * The method to get the colorCode
-	 * @return Choice An instance of Choice
+	 * @return string A string representing the colorCode
 	 */
 	public function getColorCode()
 	{
@@ -50,9 +49,9 @@ class Tag implements Model
 
 	/**
 	 * The method to set the value to colorCode
-	 * @param Choice $colorCode An instance of Choice
+	 * @param string $colorCode A string
 	 */
-	public function setColorCode(Choice $colorCode)
+	public function setColorCode(?string $colorCode)
 	{
 		$this->colorCode=$colorCode; 
 		$this->keyModified['color_code'] = 1; 
@@ -73,7 +72,7 @@ class Tag implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -94,7 +93,7 @@ class Tag implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -115,7 +114,7 @@ class Tag implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -136,7 +135,7 @@ class Tag implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -157,7 +156,7 @@ class Tag implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

@@ -23,7 +23,7 @@ class ActionWrapper implements Model
 	 * The method to set the value to org
 	 * @param array $org A array
 	 */
-	public function setOrg(array $org)
+	public function setOrg(?array $org)
 	{
 		$this->org=$org; 
 		$this->keyModified['org'] = 1; 

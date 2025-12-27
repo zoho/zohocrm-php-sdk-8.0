@@ -25,7 +25,7 @@ class AssociatedPlaces implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -46,7 +46,7 @@ class AssociatedPlaces implements Model
 	 * The method to set the value to resource
 	 * @param Resource $resource An instance of Resource
 	 */
-	public function setResource(Resource $resource)
+	public function setResource(?Resource $resource)
 	{
 		$this->resource=$resource; 
 		$this->keyModified['resource'] = 1; 
@@ -67,7 +67,7 @@ class AssociatedPlaces implements Model
 	 * The method to set the value to details
 	 * @param Detail $details An instance of Detail
 	 */
-	public function setDetails(Detail $details)
+	public function setDetails(?Detail $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 

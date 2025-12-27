@@ -40,7 +40,7 @@ class Note implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['Modified_Time'] = 1; 
@@ -61,7 +61,7 @@ class Note implements Model
 	 * The method to set the value to attachments
 	 * @param array $attachments A array
 	 */
-	public function setAttachments(array $attachments)
+	public function setAttachments(?array $attachments)
 	{
 		$this->attachments=$attachments; 
 		$this->keyModified['$attachments'] = 1; 
@@ -82,7 +82,7 @@ class Note implements Model
 	 * The method to set the value to owner
 	 * @param MinifiedUser $owner An instance of MinifiedUser
 	 */
-	public function setOwner(MinifiedUser $owner)
+	public function setOwner(?MinifiedUser $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['Owner'] = 1; 
@@ -103,7 +103,7 @@ class Note implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['Created_Time'] = 1; 
@@ -124,7 +124,7 @@ class Note implements Model
 	 * The method to set the value to parentId
 	 * @param ParentId $parentId An instance of ParentId
 	 */
-	public function setParentId(ParentId $parentId)
+	public function setParentId(?ParentId $parentId)
 	{
 		$this->parentId=$parentId; 
 		$this->keyModified['Parent_Id'] = 1; 
@@ -145,7 +145,7 @@ class Note implements Model
 	 * The method to set the value to editable
 	 * @param bool $editable A bool
 	 */
-	public function setEditable(bool $editable)
+	public function setEditable(?bool $editable)
 	{
 		$this->editable=$editable; 
 		$this->keyModified['$editable'] = 1; 
@@ -166,7 +166,7 @@ class Note implements Model
 	 * The method to set the value to isSharedToClient
 	 * @param bool $isSharedToClient A bool
 	 */
-	public function setIsSharedToClient(bool $isSharedToClient)
+	public function setIsSharedToClient(?bool $isSharedToClient)
 	{
 		$this->isSharedToClient=$isSharedToClient; 
 		$this->keyModified['$is_shared_to_client'] = 1; 
@@ -187,7 +187,7 @@ class Note implements Model
 	 * The method to set the value to sharingPermission
 	 * @param string $sharingPermission A string
 	 */
-	public function setSharingPermission(string $sharingPermission)
+	public function setSharingPermission(?string $sharingPermission)
 	{
 		$this->sharingPermission=$sharingPermission; 
 		$this->keyModified['$sharing_permission'] = 1; 
@@ -208,7 +208,7 @@ class Note implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['Modified_By'] = 1; 
@@ -229,7 +229,7 @@ class Note implements Model
 	 * The method to set the value to size
 	 * @param string $size A string
 	 */
-	public function setSize(string $size)
+	public function setSize(?string $size)
 	{
 		$this->size=$size; 
 		$this->keyModified['$size'] = 1; 
@@ -250,7 +250,7 @@ class Note implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['$state'] = 1; 
@@ -271,7 +271,7 @@ class Note implements Model
 	 * The method to set the value to voiceNote
 	 * @param bool $voiceNote A bool
 	 */
-	public function setVoiceNote(bool $voiceNote)
+	public function setVoiceNote(?bool $voiceNote)
 	{
 		$this->voiceNote=$voiceNote; 
 		$this->keyModified['$voice_note'] = 1; 
@@ -292,7 +292,7 @@ class Note implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -313,7 +313,7 @@ class Note implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['Created_By'] = 1; 
@@ -334,7 +334,7 @@ class Note implements Model
 	 * The method to set the value to noteTitle
 	 * @param string $noteTitle A string
 	 */
-	public function setNoteTitle(string $noteTitle)
+	public function setNoteTitle(?string $noteTitle)
 	{
 		$this->noteTitle=$noteTitle; 
 		$this->keyModified['Note_Title'] = 1; 
@@ -355,7 +355,7 @@ class Note implements Model
 	 * The method to set the value to noteContent
 	 * @param string $noteContent A string
 	 */
-	public function setNoteContent(string $noteContent)
+	public function setNoteContent(?string $noteContent)
 	{
 		$this->noteContent=$noteContent; 
 		$this->keyModified['Note_Content'] = 1; 

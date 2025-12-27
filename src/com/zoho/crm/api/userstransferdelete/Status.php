@@ -23,7 +23,7 @@ class Status implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

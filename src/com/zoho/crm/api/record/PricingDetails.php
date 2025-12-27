@@ -23,7 +23,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to toRange
 	 * @param float $toRange A float
 	 */
-	public function setToRange(float $toRange)
+	public function setToRange(?float $toRange)
 	{
 		$this->addKeyValue('to_range', $toRange); 
 
@@ -43,7 +43,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to discount
 	 * @param float $discount A float
 	 */
-	public function setDiscount(float $discount)
+	public function setDiscount(?float $discount)
 	{
 		$this->addKeyValue('discount', $discount); 
 
@@ -63,7 +63,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to fromRange
 	 * @param float $fromRange A float
 	 */
-	public function setFromRange(float $fromRange)
+	public function setFromRange(?float $fromRange)
 	{
 		$this->addKeyValue('from_range', $fromRange); 
 
@@ -83,7 +83,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->addKeyValue('id', $id); 
 
@@ -103,7 +103,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->addKeyValue('Created_By', $createdBy); 
 
@@ -123,7 +123,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->addKeyValue('Created_Time', $createdTime); 
 
@@ -143,7 +143,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->addKeyValue('Modified_By', $modifiedBy); 
 
@@ -163,7 +163,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->addKeyValue('Modified_Time', $modifiedTime); 
 
@@ -183,7 +183,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to tag
 	 * @param array $tag A array
 	 */
-	public function setTag(array $tag)
+	public function setTag(?array $tag)
 	{
 		$this->addKeyValue('Tag', $tag); 
 
@@ -203,7 +203,7 @@ class PricingDetails extends Record implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->addKeyValue('name', $name); 
 

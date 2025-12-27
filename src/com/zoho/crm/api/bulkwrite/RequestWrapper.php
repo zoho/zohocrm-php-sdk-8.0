@@ -28,7 +28,7 @@ class RequestWrapper implements Model
 	 * The method to set the value to characterEncoding
 	 * @param string $characterEncoding A string
 	 */
-	public function setCharacterEncoding(string $characterEncoding)
+	public function setCharacterEncoding(?string $characterEncoding)
 	{
 		$this->characterEncoding=$characterEncoding; 
 		$this->keyModified['character_encoding'] = 1; 
@@ -49,7 +49,7 @@ class RequestWrapper implements Model
 	 * The method to set the value to operation
 	 * @param Choice $operation An instance of Choice
 	 */
-	public function setOperation(Choice $operation)
+	public function setOperation(?Choice $operation)
 	{
 		$this->operation=$operation; 
 		$this->keyModified['operation'] = 1; 
@@ -70,7 +70,7 @@ class RequestWrapper implements Model
 	 * The method to set the value to callback
 	 * @param CallBack $callback An instance of CallBack
 	 */
-	public function setCallback(CallBack $callback)
+	public function setCallback(?CallBack $callback)
 	{
 		$this->callback=$callback; 
 		$this->keyModified['callback'] = 1; 
@@ -91,7 +91,7 @@ class RequestWrapper implements Model
 	 * The method to set the value to resource
 	 * @param array $resource A array
 	 */
-	public function setResource(array $resource)
+	public function setResource(?array $resource)
 	{
 		$this->resource=$resource; 
 		$this->keyModified['resource'] = 1; 
@@ -112,7 +112,7 @@ class RequestWrapper implements Model
 	 * The method to set the value to ignoreEmpty
 	 * @param bool $ignoreEmpty A bool
 	 */
-	public function setIgnoreEmpty(bool $ignoreEmpty)
+	public function setIgnoreEmpty(?bool $ignoreEmpty)
 	{
 		$this->ignoreEmpty=$ignoreEmpty; 
 		$this->keyModified['ignore_empty'] = 1; 

@@ -26,7 +26,7 @@ class Extension implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -47,7 +47,7 @@ class Extension implements Model
 	 * The method to set the value to namespace
 	 * @param string $namespace A string
 	 */
-	public function setNamespace(string $namespace)
+	public function setNamespace(?string $namespace)
 	{
 		$this->namespace=$namespace; 
 		$this->keyModified['namespace'] = 1; 
@@ -68,7 +68,7 @@ class Extension implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -89,7 +89,7 @@ class Extension implements Model
 	 * The method to set the value to type
 	 * @param int $type A int
 	 */
-	public function setType(int $type)
+	public function setType(?int $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

@@ -24,7 +24,7 @@ class EmailParser implements Model
 	 * The method to set the value to fieldsUpdateSupported
 	 * @param bool $fieldsUpdateSupported A bool
 	 */
-	public function setFieldsUpdateSupported(bool $fieldsUpdateSupported)
+	public function setFieldsUpdateSupported(?bool $fieldsUpdateSupported)
 	{
 		$this->fieldsUpdateSupported=$fieldsUpdateSupported; 
 		$this->keyModified['fields_update_supported'] = 1; 
@@ -45,7 +45,7 @@ class EmailParser implements Model
 	 * The method to set the value to recordOperationsSupported
 	 * @param bool $recordOperationsSupported A bool
 	 */
-	public function setRecordOperationsSupported(bool $recordOperationsSupported)
+	public function setRecordOperationsSupported(?bool $recordOperationsSupported)
 	{
 		$this->recordOperationsSupported=$recordOperationsSupported; 
 		$this->keyModified['record_operations_supported'] = 1; 

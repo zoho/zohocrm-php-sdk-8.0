@@ -28,7 +28,7 @@ class AnalyticsTask implements Model
 	 * The method to set the value to openTasksCount
 	 * @param int $openTasksCount A int
 	 */
-	public function setOpenTasksCount(int $openTasksCount)
+	public function setOpenTasksCount(?int $openTasksCount)
 	{
 		$this->openTasksCount=$openTasksCount; 
 		$this->keyModified['open_tasks_count'] = 1; 
@@ -49,7 +49,7 @@ class AnalyticsTask implements Model
 	 * The method to set the value to failedTasksCount
 	 * @param int $failedTasksCount A int
 	 */
-	public function setFailedTasksCount(int $failedTasksCount)
+	public function setFailedTasksCount(?int $failedTasksCount)
 	{
 		$this->failedTasksCount=$failedTasksCount; 
 		$this->keyModified['failed_tasks_count'] = 1; 
@@ -70,7 +70,7 @@ class AnalyticsTask implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -91,7 +91,7 @@ class AnalyticsTask implements Model
 	 * The method to set the value to completedTasksCount
 	 * @param int $completedTasksCount A int
 	 */
-	public function setCompletedTasksCount(int $completedTasksCount)
+	public function setCompletedTasksCount(?int $completedTasksCount)
 	{
 		$this->completedTasksCount=$completedTasksCount; 
 		$this->keyModified['completed_tasks_count'] = 1; 
@@ -112,7 +112,7 @@ class AnalyticsTask implements Model
 	 * The method to set the value to createdTasksCount
 	 * @param int $createdTasksCount A int
 	 */
-	public function setCreatedTasksCount(int $createdTasksCount)
+	public function setCreatedTasksCount(?int $createdTasksCount)
 	{
 		$this->createdTasksCount=$createdTasksCount; 
 		$this->keyModified['created_tasks_count'] = 1; 
@@ -133,7 +133,7 @@ class AnalyticsTask implements Model
 	 * The method to set the value to tasksCount
 	 * @param int $tasksCount A int
 	 */
-	public function setTasksCount(int $tasksCount)
+	public function setTasksCount(?int $tasksCount)
 	{
 		$this->tasksCount=$tasksCount; 
 		$this->keyModified['tasks_count'] = 1; 

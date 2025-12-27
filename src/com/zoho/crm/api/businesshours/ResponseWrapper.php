@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to businessHours
 	 * @param BusinessHours $businessHours An instance of BusinessHours
 	 */
-	public function setBusinessHours(BusinessHours $businessHours)
+	public function setBusinessHours(?BusinessHours $businessHours)
 	{
 		$this->businessHours=$businessHours; 
 		$this->keyModified['business_hours'] = 1; 

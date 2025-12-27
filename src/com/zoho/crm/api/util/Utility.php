@@ -1018,7 +1018,7 @@ class Utility
 	{
 		$userName = null;
 		$paramInstance = new ParameterMap();
-		$paramInstance->add(GetUsersParam::type(), new Choice(Constants::CURRENTUSER));
+		$paramInstance->add(GetUsersParam::type(), Constants::CURRENTUSER);
 		$headerInstance = new HeaderMap();
 		$handlerInstance = new CommonAPIHandler();
 		$apiPath=""; 

@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to dataSharing
 	 * @param array $dataSharing A array
 	 */
-	public function setDataSharing(array $dataSharing)
+	public function setDataSharing(?array $dataSharing)
 	{
 		$this->dataSharing=$dataSharing; 
 		$this->keyModified['data_sharing'] = 1; 

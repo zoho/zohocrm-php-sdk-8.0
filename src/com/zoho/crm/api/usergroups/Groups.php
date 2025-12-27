@@ -31,7 +31,7 @@ class Groups implements Model
 	 * The method to set the value to createdBy
 	 * @param Owner $createdBy An instance of Owner
 	 */
-	public function setCreatedBy(Owner $createdBy)
+	public function setCreatedBy(?Owner $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -52,7 +52,7 @@ class Groups implements Model
 	 * The method to set the value to modifiedBy
 	 * @param Owner $modifiedBy An instance of Owner
 	 */
-	public function setModifiedBy(Owner $modifiedBy)
+	public function setModifiedBy(?Owner $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -73,7 +73,7 @@ class Groups implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -94,7 +94,7 @@ class Groups implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -115,7 +115,7 @@ class Groups implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -136,7 +136,7 @@ class Groups implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -157,7 +157,7 @@ class Groups implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -178,7 +178,7 @@ class Groups implements Model
 	 * The method to set the value to sourcesCount
 	 * @param SourcesCount $sourcesCount An instance of SourcesCount
 	 */
-	public function setSourcesCount(SourcesCount $sourcesCount)
+	public function setSourcesCount(?SourcesCount $sourcesCount)
 	{
 		$this->sourcesCount=$sourcesCount; 
 		$this->keyModified['sources_count'] = 1; 
@@ -199,7 +199,7 @@ class Groups implements Model
 	 * The method to set the value to sources
 	 * @param array $sources A array
 	 */
-	public function setSources(array $sources)
+	public function setSources(?array $sources)
 	{
 		$this->sources=$sources; 
 		$this->keyModified['sources'] = 1; 

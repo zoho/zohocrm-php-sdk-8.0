@@ -31,7 +31,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to deals
 	 * @param Record $deals An instance of Record
 	 */
-	public function setDeals(Record $deals)
+	public function setDeals(?Record $deals)
 	{
 		$this->deals=$deals; 
 		$this->keyModified['Deals'] = 1; 
@@ -52,7 +52,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to moveAttachmentsTo
 	 * @param MoveAttachmentsTo $moveAttachmentsTo An instance of MoveAttachmentsTo
 	 */
-	public function setMoveAttachmentsTo(MoveAttachmentsTo $moveAttachmentsTo)
+	public function setMoveAttachmentsTo(?MoveAttachmentsTo $moveAttachmentsTo)
 	{
 		$this->moveAttachmentsTo=$moveAttachmentsTo; 
 		$this->keyModified['move_attachments_to'] = 1; 
@@ -73,7 +73,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to assignTo
 	 * @param AssignTo $assignTo An instance of AssignTo
 	 */
-	public function setAssignTo(AssignTo $assignTo)
+	public function setAssignTo(?AssignTo $assignTo)
 	{
 		$this->assignTo=$assignTo; 
 		$this->keyModified['assign_to'] = 1; 
@@ -94,7 +94,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to carryOverTags
 	 * @param array $carryOverTags A array
 	 */
-	public function setCarryOverTags(array $carryOverTags)
+	public function setCarryOverTags(?array $carryOverTags)
 	{
 		$this->carryOverTags=$carryOverTags; 
 		$this->keyModified['carry_over_tags'] = 1; 
@@ -115,7 +115,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to relatedModules
 	 * @param array $relatedModules A array
 	 */
-	public function setRelatedModules(array $relatedModules)
+	public function setRelatedModules(?array $relatedModules)
 	{
 		$this->relatedModules=$relatedModules; 
 		$this->keyModified['related_modules'] = 1; 
@@ -136,7 +136,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to portalUserType
 	 * @param PortalUserType $portalUserType An instance of PortalUserType
 	 */
-	public function setPortalUserType(PortalUserType $portalUserType)
+	public function setPortalUserType(?PortalUserType $portalUserType)
 	{
 		$this->portalUserType=$portalUserType; 
 		$this->keyModified['portal_user_type'] = 1; 
@@ -157,7 +157,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 
@@ -178,7 +178,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to applyAssignmentThreshold
 	 * @param bool $applyAssignmentThreshold A bool
 	 */
-	public function setApplyAssignmentThreshold(bool $applyAssignmentThreshold)
+	public function setApplyAssignmentThreshold(?bool $applyAssignmentThreshold)
 	{
 		$this->applyAssignmentThreshold=$applyAssignmentThreshold; 
 		$this->keyModified['apply_assignment_threshold'] = 1; 

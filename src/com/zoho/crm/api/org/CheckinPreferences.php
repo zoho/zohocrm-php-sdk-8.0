@@ -23,7 +23,7 @@ class CheckinPreferences implements Model
 	 * The method to set the value to restrictedEventTypes
 	 * @param string $restrictedEventTypes A string
 	 */
-	public function setRestrictedEventTypes(string $restrictedEventTypes)
+	public function setRestrictedEventTypes(?string $restrictedEventTypes)
 	{
 		$this->restrictedEventTypes=$restrictedEventTypes; 
 		$this->keyModified['restricted_event_types'] = 1; 

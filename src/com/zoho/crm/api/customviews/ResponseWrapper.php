@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to customViews
 	 * @param array $customViews A array
 	 */
-	public function setCustomViews(array $customViews)
+	public function setCustomViews(?array $customViews)
 	{
 		$this->customViews=$customViews; 
 		$this->keyModified['custom_views'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

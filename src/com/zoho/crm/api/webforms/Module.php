@@ -9,6 +9,7 @@ class Module implements Model
 	private  $id;
 	private  $moduleName;
 	private  $apiName;
+	private  $displayLabel;
 	private  $keyModified=array();
 
 	/**
@@ -25,7 +26,7 @@ class Module implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -46,7 +47,7 @@ class Module implements Model
 	 * The method to set the value to moduleName
 	 * @param string $moduleName A string
 	 */
-	public function setModuleName(string $moduleName)
+	public function setModuleName(?string $moduleName)
 	{
 		$this->moduleName=$moduleName; 
 		$this->keyModified['module_name'] = 1; 
@@ -67,10 +68,31 @@ class Module implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the displayLabel
+	 * @return string A string representing the displayLabel
+	 */
+	public function getDisplayLabel()
+	{
+		return $this->displayLabel; 
+
+	}
+
+	/**
+	 * The method to set the value to displayLabel
+	 * @param string $displayLabel A string
+	 */
+	public function setDisplayLabel(?string $displayLabel)
+	{
+		$this->displayLabel=$displayLabel; 
+		$this->keyModified['display_label'] = 1; 
 
 	}
 

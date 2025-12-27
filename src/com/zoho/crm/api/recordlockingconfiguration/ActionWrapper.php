@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to recordLockingConfigurations
 	 * @param array $recordLockingConfigurations A array
 	 */
-	public function setRecordLockingConfigurations(array $recordLockingConfigurations)
+	public function setRecordLockingConfigurations(?array $recordLockingConfigurations)
 	{
 		$this->recordLockingConfigurations=$recordLockingConfigurations; 
 		$this->keyModified['record_locking_configurations'] = 1; 

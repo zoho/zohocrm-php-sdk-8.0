@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to massDelete
 	 * @param array $massDelete A array
 	 */
-	public function setMassDelete(array $massDelete)
+	public function setMassDelete(?array $massDelete)
 	{
 		$this->massDelete=$massDelete; 
 		$this->keyModified['mass_delete'] = 1; 

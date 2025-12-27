@@ -24,7 +24,7 @@ class AssociatedUserCount implements Model, ResponseHandler
 	 * The method to set the value to associatedUsersCount
 	 * @param array $associatedUsersCount A array
 	 */
-	public function setAssociatedUsersCount(array $associatedUsersCount)
+	public function setAssociatedUsersCount(?array $associatedUsersCount)
 	{
 		$this->associatedUsersCount=$associatedUsersCount; 
 		$this->keyModified['associated_users_count'] = 1; 
@@ -45,7 +45,7 @@ class AssociatedUserCount implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

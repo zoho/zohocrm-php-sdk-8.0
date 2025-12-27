@@ -38,7 +38,7 @@ class Picklist implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -59,7 +59,7 @@ class Picklist implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -80,7 +80,7 @@ class Picklist implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -101,7 +101,7 @@ class Picklist implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -122,7 +122,7 @@ class Picklist implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -143,7 +143,7 @@ class Picklist implements Model
 	 * The method to set the value to actualLabel
 	 * @param string $actualLabel A string
 	 */
-	public function setActualLabel(string $actualLabel)
+	public function setActualLabel(?string $actualLabel)
 	{
 		$this->actualLabel=$actualLabel; 
 		$this->keyModified['actual_label'] = 1; 
@@ -164,7 +164,7 @@ class Picklist implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -185,7 +185,7 @@ class Picklist implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -206,7 +206,7 @@ class Picklist implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -227,7 +227,7 @@ class Picklist implements Model
 	 * The method to set the value to presence
 	 * @param bool $presence A bool
 	 */
-	public function setPresence(bool $presence)
+	public function setPresence(?bool $presence)
 	{
 		$this->presence=$presence; 
 		$this->keyModified['presence'] = 1; 
@@ -248,7 +248,7 @@ class Picklist implements Model
 	 * The method to set the value to pickListValuesSortedLexically
 	 * @param bool $pickListValuesSortedLexically A bool
 	 */
-	public function setPickListValuesSortedLexically(bool $pickListValuesSortedLexically)
+	public function setPickListValuesSortedLexically(?bool $pickListValuesSortedLexically)
 	{
 		$this->pickListValuesSortedLexically=$pickListValuesSortedLexically; 
 		$this->keyModified['pick_list_values_sorted_lexically'] = 1; 
@@ -269,7 +269,7 @@ class Picklist implements Model
 	 * The method to set the value to pickListValues
 	 * @param array $pickListValues A array
 	 */
-	public function setPickListValues(array $pickListValues)
+	public function setPickListValues(?array $pickListValues)
 	{
 		$this->pickListValues=$pickListValues; 
 		$this->keyModified['pick_list_values'] = 1; 
@@ -290,7 +290,7 @@ class Picklist implements Model
 	 * The method to set the value to associatedFieldsCount
 	 * @param int $associatedFieldsCount A int
 	 */
-	public function setAssociatedFieldsCount(int $associatedFieldsCount)
+	public function setAssociatedFieldsCount(?int $associatedFieldsCount)
 	{
 		$this->associatedFieldsCount=$associatedFieldsCount; 
 		$this->keyModified['associated_fields_count'] = 1; 
@@ -311,7 +311,7 @@ class Picklist implements Model
 	 * The method to set the value to usedInModules
 	 * @param array $usedInModules A array
 	 */
-	public function setUsedInModules(array $usedInModules)
+	public function setUsedInModules(?array $usedInModules)
 	{
 		$this->usedInModules=$usedInModules; 
 		$this->keyModified['used_in_modules'] = 1; 
@@ -332,7 +332,7 @@ class Picklist implements Model
 	 * The method to set the value to customizable
 	 * @param bool $customizable A bool
 	 */
-	public function setCustomizable(bool $customizable)
+	public function setCustomizable(?bool $customizable)
 	{
 		$this->customizable=$customizable; 
 		$this->keyModified['customizable'] = 1; 

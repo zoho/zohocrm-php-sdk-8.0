@@ -25,7 +25,7 @@ class Tab implements Model
 	 * The method to set the value to fontColor
 	 * @param Choice $fontColor An instance of Choice
 	 */
-	public function setFontColor(Choice $fontColor)
+	public function setFontColor(?Choice $fontColor)
 	{
 		$this->fontColor=$fontColor; 
 		$this->keyModified['font_color'] = 1; 
@@ -46,7 +46,7 @@ class Tab implements Model
 	 * The method to set the value to background
 	 * @param Choice $background An instance of Choice
 	 */
-	public function setBackground(Choice $background)
+	public function setBackground(?Choice $background)
 	{
 		$this->background=$background; 
 		$this->keyModified['background'] = 1; 

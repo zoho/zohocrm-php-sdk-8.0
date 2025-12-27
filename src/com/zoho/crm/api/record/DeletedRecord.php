@@ -29,7 +29,7 @@ class DeletedRecord implements Model
 	 * The method to set the value to deletedBy
 	 * @param MinifiedUser $deletedBy An instance of MinifiedUser
 	 */
-	public function setDeletedBy(MinifiedUser $deletedBy)
+	public function setDeletedBy(?MinifiedUser $deletedBy)
 	{
 		$this->deletedBy=$deletedBy; 
 		$this->keyModified['deleted_by'] = 1; 
@@ -50,7 +50,7 @@ class DeletedRecord implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -71,7 +71,7 @@ class DeletedRecord implements Model
 	 * The method to set the value to displayName
 	 * @param string $displayName A string
 	 */
-	public function setDisplayName(string $displayName)
+	public function setDisplayName(?string $displayName)
 	{
 		$this->displayName=$displayName; 
 		$this->keyModified['display_name'] = 1; 
@@ -92,7 +92,7 @@ class DeletedRecord implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -113,7 +113,7 @@ class DeletedRecord implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -134,7 +134,7 @@ class DeletedRecord implements Model
 	 * The method to set the value to deletedTime
 	 * @param \DateTime $deletedTime An instance of \DateTime
 	 */
-	public function setDeletedTime(\DateTime $deletedTime)
+	public function setDeletedTime(?\DateTime $deletedTime)
 	{
 		$this->deletedTime=$deletedTime; 
 		$this->keyModified['deleted_time'] = 1; 

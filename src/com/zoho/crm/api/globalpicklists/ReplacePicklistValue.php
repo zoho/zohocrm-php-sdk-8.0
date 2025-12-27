@@ -24,7 +24,7 @@ class ReplacePicklistValue implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -45,7 +45,7 @@ class ReplacePicklistValue implements Model
 	 * The method to set the value to displayValue
 	 * @param string $displayValue A string
 	 */
-	public function setDisplayValue(string $displayValue)
+	public function setDisplayValue(?string $displayValue)
 	{
 		$this->displayValue=$displayValue; 
 		$this->keyModified['display_value'] = 1; 

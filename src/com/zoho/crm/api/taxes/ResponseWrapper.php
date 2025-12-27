@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to orgTaxes
 	 * @param OrgTax $orgTaxes An instance of OrgTax
 	 */
-	public function setOrgTaxes(OrgTax $orgTaxes)
+	public function setOrgTaxes(?OrgTax $orgTaxes)
 	{
 		$this->orgTaxes=$orgTaxes; 
 		$this->keyModified['org_taxes'] = 1; 

@@ -41,7 +41,7 @@ class RecordLock implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -62,7 +62,7 @@ class RecordLock implements Model
 	 * The method to set the value to lockedFor
 	 * @param string $lockedFor A string
 	 */
-	public function setLockedFor(string $lockedFor)
+	public function setLockedFor(?string $lockedFor)
 	{
 		$this->lockedFor=$lockedFor; 
 		$this->keyModified['locked_for'] = 1; 
@@ -83,7 +83,7 @@ class RecordLock implements Model
 	 * The method to set the value to excludedFields
 	 * @param array $excludedFields A array
 	 */
-	public function setExcludedFields(array $excludedFields)
+	public function setExcludedFields(?array $excludedFields)
 	{
 		$this->excludedFields=$excludedFields; 
 		$this->keyModified['excluded_fields'] = 1; 
@@ -104,7 +104,7 @@ class RecordLock implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -125,7 +125,7 @@ class RecordLock implements Model
 	 * The method to set the value to featureType
 	 * @param string $featureType A string
 	 */
-	public function setFeatureType(string $featureType)
+	public function setFeatureType(?string $featureType)
 	{
 		$this->featureType=$featureType; 
 		$this->keyModified['feature_type'] = 1; 
@@ -146,7 +146,7 @@ class RecordLock implements Model
 	 * The method to set the value to lockingRules
 	 * @param array $lockingRules A array
 	 */
-	public function setLockingRules(array $lockingRules)
+	public function setLockingRules(?array $lockingRules)
 	{
 		$this->lockingRules=$lockingRules; 
 		$this->keyModified['locking_rules'] = 1; 
@@ -167,7 +167,7 @@ class RecordLock implements Model
 	 * The method to set the value to restrictedActions
 	 * @param array $restrictedActions A array
 	 */
-	public function setRestrictedActions(array $restrictedActions)
+	public function setRestrictedActions(?array $restrictedActions)
 	{
 		$this->restrictedActions=$restrictedActions; 
 		$this->keyModified['restricted_actions'] = 1; 
@@ -188,7 +188,7 @@ class RecordLock implements Model
 	 * The method to set the value to lockForPortalUsers
 	 * @param bool $lockForPortalUsers A bool
 	 */
-	public function setLockForPortalUsers(bool $lockForPortalUsers)
+	public function setLockForPortalUsers(?bool $lockForPortalUsers)
 	{
 		$this->lockForPortalUsers=$lockForPortalUsers; 
 		$this->keyModified['lock_for_portal_users'] = 1; 
@@ -209,7 +209,7 @@ class RecordLock implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -230,7 +230,7 @@ class RecordLock implements Model
 	 * The method to set the value to restrictedCommunications
 	 * @param array $restrictedCommunications A array
 	 */
-	public function setRestrictedCommunications(array $restrictedCommunications)
+	public function setRestrictedCommunications(?array $restrictedCommunications)
 	{
 		$this->restrictedCommunications=$restrictedCommunications; 
 		$this->keyModified['restricted_communications'] = 1; 
@@ -251,7 +251,7 @@ class RecordLock implements Model
 	 * The method to set the value to systemDefined
 	 * @param bool $systemDefined A bool
 	 */
-	public function setSystemDefined(bool $systemDefined)
+	public function setSystemDefined(?bool $systemDefined)
 	{
 		$this->systemDefined=$systemDefined; 
 		$this->keyModified['system_defined'] = 1; 
@@ -272,7 +272,7 @@ class RecordLock implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -293,7 +293,7 @@ class RecordLock implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -314,7 +314,7 @@ class RecordLock implements Model
 	 * The method to set the value to lockType
 	 * @param Choice $lockType An instance of Choice
 	 */
-	public function setLockType(Choice $lockType)
+	public function setLockType(?Choice $lockType)
 	{
 		$this->lockType=$lockType; 
 		$this->keyModified['lock_type'] = 1; 
@@ -335,7 +335,7 @@ class RecordLock implements Model
 	 * The method to set the value to restrictedCustomButtons
 	 * @param array $restrictedCustomButtons A array
 	 */
-	public function setRestrictedCustomButtons(array $restrictedCustomButtons)
+	public function setRestrictedCustomButtons(?array $restrictedCustomButtons)
 	{
 		$this->restrictedCustomButtons=$restrictedCustomButtons; 
 		$this->keyModified['restricted_custom_buttons'] = 1; 
@@ -356,7 +356,7 @@ class RecordLock implements Model
 	 * The method to set the value to lockExcludedProfiles
 	 * @param array $lockExcludedProfiles A array
 	 */
-	public function setLockExcludedProfiles(array $lockExcludedProfiles)
+	public function setLockExcludedProfiles(?array $lockExcludedProfiles)
 	{
 		$this->lockExcludedProfiles=$lockExcludedProfiles; 
 		$this->keyModified['lock_excluded_profiles'] = 1; 

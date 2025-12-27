@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to transferAndDelete
 	 * @param array $transferAndDelete A array
 	 */
-	public function setTransferAndDelete(array $transferAndDelete)
+	public function setTransferAndDelete(?array $transferAndDelete)
 	{
 		$this->transferAndDelete=$transferAndDelete; 
 		$this->keyModified['transfer_and_delete'] = 1; 

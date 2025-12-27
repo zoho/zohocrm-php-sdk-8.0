@@ -26,7 +26,7 @@ class SignMailMerge implements Model
 	 * The method to set the value to mailMergeTemplate
 	 * @param MailMergeTemplate $mailMergeTemplate An instance of MailMergeTemplate
 	 */
-	public function setMailMergeTemplate(MailMergeTemplate $mailMergeTemplate)
+	public function setMailMergeTemplate(?MailMergeTemplate $mailMergeTemplate)
 	{
 		$this->mailMergeTemplate=$mailMergeTemplate; 
 		$this->keyModified['mail_merge_template'] = 1; 
@@ -47,7 +47,7 @@ class SignMailMerge implements Model
 	 * The method to set the value to signInOrder
 	 * @param bool $signInOrder A bool
 	 */
-	public function setSignInOrder(bool $signInOrder)
+	public function setSignInOrder(?bool $signInOrder)
 	{
 		$this->signInOrder=$signInOrder; 
 		$this->keyModified['sign_in_order'] = 1; 
@@ -68,7 +68,7 @@ class SignMailMerge implements Model
 	 * The method to set the value to fileName
 	 * @param string $fileName A string
 	 */
-	public function setFileName(string $fileName)
+	public function setFileName(?string $fileName)
 	{
 		$this->fileName=$fileName; 
 		$this->keyModified['file_name'] = 1; 
@@ -89,7 +89,7 @@ class SignMailMerge implements Model
 	 * The method to set the value to signers
 	 * @param array $signers A array
 	 */
-	public function setSigners(array $signers)
+	public function setSigners(?array $signers)
 	{
 		$this->signers=$signers; 
 		$this->keyModified['signers'] = 1; 

@@ -24,7 +24,7 @@ class InReplyTo implements Model
 	 * The method to set the value to messageId
 	 * @param string $messageId A string
 	 */
-	public function setMessageId(string $messageId)
+	public function setMessageId(?string $messageId)
 	{
 		$this->messageId=$messageId; 
 		$this->keyModified['message_id'] = 1; 
@@ -45,7 +45,7 @@ class InReplyTo implements Model
 	 * The method to set the value to owner
 	 * @param Owner $owner An instance of Owner
 	 */
-	public function setOwner(Owner $owner)
+	public function setOwner(?Owner $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['owner'] = 1; 

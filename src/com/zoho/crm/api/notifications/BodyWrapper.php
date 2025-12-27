@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to watch
 	 * @param array $watch A array
 	 */
-	public function setWatch(array $watch)
+	public function setWatch(?array $watch)
 	{
 		$this->watch=$watch; 
 		$this->keyModified['watch'] = 1; 

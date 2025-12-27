@@ -27,7 +27,7 @@ class Info implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -48,7 +48,7 @@ class Info implements Model
 	 * The method to set the value to nextIndex
 	 * @param string $nextIndex A string
 	 */
-	public function setNextIndex(string $nextIndex)
+	public function setNextIndex(?string $nextIndex)
 	{
 		$this->nextIndex=$nextIndex; 
 		$this->keyModified['next_index'] = 1; 
@@ -69,7 +69,7 @@ class Info implements Model
 	 * The method to set the value to prevIndex
 	 * @param string $prevIndex A string
 	 */
-	public function setPrevIndex(string $prevIndex)
+	public function setPrevIndex(?string $prevIndex)
 	{
 		$this->prevIndex=$prevIndex; 
 		$this->keyModified['prev_index'] = 1; 
@@ -90,7 +90,7 @@ class Info implements Model
 	 * The method to set the value to perPage
 	 * @param int $perPage A int
 	 */
-	public function setPerPage(int $perPage)
+	public function setPerPage(?int $perPage)
 	{
 		$this->perPage=$perPage; 
 		$this->keyModified['per_page'] = 1; 
@@ -111,7 +111,7 @@ class Info implements Model
 	 * The method to set the value to moreRecords
 	 * @param bool $moreRecords A bool
 	 */
-	public function setMoreRecords(bool $moreRecords)
+	public function setMoreRecords(?bool $moreRecords)
 	{
 		$this->moreRecords=$moreRecords; 
 		$this->keyModified['more_records'] = 1; 

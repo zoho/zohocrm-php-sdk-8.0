@@ -29,7 +29,7 @@ class Modules implements Model
 	 * The method to set the value to pluralLabel
 	 * @param string $pluralLabel A string
 	 */
-	public function setPluralLabel(string $pluralLabel)
+	public function setPluralLabel(?string $pluralLabel)
 	{
 		$this->pluralLabel=$pluralLabel; 
 		$this->keyModified['plural_label'] = 1; 
@@ -50,7 +50,7 @@ class Modules implements Model
 	 * The method to set the value to sharedType
 	 * @param string $sharedType A string
 	 */
-	public function setSharedType(string $sharedType)
+	public function setSharedType(?string $sharedType)
 	{
 		$this->sharedType=$sharedType; 
 		$this->keyModified['shared_type'] = 1; 
@@ -71,7 +71,7 @@ class Modules implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -92,7 +92,7 @@ class Modules implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -113,7 +113,7 @@ class Modules implements Model
 	 * The method to set the value to filters
 	 * @param array $filters A array
 	 */
-	public function setFilters(array $filters)
+	public function setFilters(?array $filters)
 	{
 		$this->filters=$filters; 
 		$this->keyModified['filters'] = 1; 
@@ -134,7 +134,7 @@ class Modules implements Model
 	 * The method to set the value to layouts
 	 * @param array $layouts A array
 	 */
-	public function setLayouts(array $layouts)
+	public function setLayouts(?array $layouts)
 	{
 		$this->layouts=$layouts; 
 		$this->keyModified['layouts'] = 1; 
@@ -155,7 +155,7 @@ class Modules implements Model
 	 * The method to set the value to views
 	 * @param array $views A array
 	 */
-	public function setViews(array $views)
+	public function setViews(?array $views)
 	{
 		$this->views=$views; 
 		$this->keyModified['views'] = 1; 

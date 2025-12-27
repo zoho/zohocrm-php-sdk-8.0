@@ -32,7 +32,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -53,7 +53,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -74,7 +74,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to outputDataFieldMapping
 	 * @param array $outputDataFieldMapping A array
 	 */
-	public function setOutputDataFieldMapping(array $outputDataFieldMapping)
+	public function setOutputDataFieldMapping(?array $outputDataFieldMapping)
 	{
 		$this->outputDataFieldMapping=$outputDataFieldMapping; 
 		$this->keyModified['output_data_field_mapping'] = 1; 
@@ -95,7 +95,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to inputDataFieldMapping
 	 * @param array $inputDataFieldMapping A array
 	 */
-	public function setInputDataFieldMapping(array $inputDataFieldMapping)
+	public function setInputDataFieldMapping(?array $inputDataFieldMapping)
 	{
 		$this->inputDataFieldMapping=$inputDataFieldMapping; 
 		$this->keyModified['input_data_field_mapping'] = 1; 
@@ -116,7 +116,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -137,7 +137,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to status
 	 * @param bool $status A bool
 	 */
-	public function setStatus(bool $status)
+	public function setStatus(?bool $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -158,7 +158,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -179,7 +179,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -200,7 +200,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -221,7 +221,7 @@ class DataEnrichment implements Model
 	 * The method to set the value to modifiedBy
 	 * @param User $modifiedBy An instance of User
 	 */
-	public function setModifiedBy(User $modifiedBy)
+	public function setModifiedBy(?User $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 

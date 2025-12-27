@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 

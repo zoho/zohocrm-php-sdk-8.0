@@ -29,7 +29,7 @@ class Permissions implements Model
 	 * The method to set the value to view
 	 * @param bool $view A bool
 	 */
-	public function setView(bool $view)
+	public function setView(?bool $view)
 	{
 		$this->view=$view; 
 		$this->keyModified['view'] = 1; 
@@ -50,7 +50,7 @@ class Permissions implements Model
 	 * The method to set the value to edit
 	 * @param bool $edit A bool
 	 */
-	public function setEdit(bool $edit)
+	public function setEdit(?bool $edit)
 	{
 		$this->edit=$edit; 
 		$this->keyModified['edit'] = 1; 
@@ -71,7 +71,7 @@ class Permissions implements Model
 	 * The method to set the value to editSharedRecords
 	 * @param bool $editSharedRecords A bool
 	 */
-	public function setEditSharedRecords(bool $editSharedRecords)
+	public function setEditSharedRecords(?bool $editSharedRecords)
 	{
 		$this->editSharedRecords=$editSharedRecords; 
 		$this->keyModified['edit_shared_records'] = 1; 
@@ -92,7 +92,7 @@ class Permissions implements Model
 	 * The method to set the value to create
 	 * @param bool $create A bool
 	 */
-	public function setCreate(bool $create)
+	public function setCreate(?bool $create)
 	{
 		$this->create=$create; 
 		$this->keyModified['create'] = 1; 
@@ -113,7 +113,7 @@ class Permissions implements Model
 	 * The method to set the value to delete
 	 * @param bool $delete A bool
 	 */
-	public function setDelete($delete)
+	public function setDelete(?bool $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['delete'] = 1; 
@@ -134,7 +134,7 @@ class Permissions implements Model
 	 * The method to set the value to deleteAttachment
 	 * @param bool $deleteAttachment A bool
 	 */
-	public function setDeleteAttachment(bool $deleteAttachment)
+	public function setDeleteAttachment(?bool $deleteAttachment)
 	{
 		$this->deleteAttachment=$deleteAttachment; 
 		$this->keyModified['delete_attachment'] = 1; 
@@ -155,7 +155,7 @@ class Permissions implements Model
 	 * The method to set the value to createAttachment
 	 * @param bool $createAttachment A bool
 	 */
-	public function setCreateAttachment(bool $createAttachment)
+	public function setCreateAttachment(?bool $createAttachment)
 	{
 		$this->createAttachment=$createAttachment; 
 		$this->keyModified['create_attachment'] = 1; 

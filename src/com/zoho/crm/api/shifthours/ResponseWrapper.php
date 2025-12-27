@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to shiftHours
 	 * @param array $shiftHours A array
 	 */
-	public function setShiftHours(array $shiftHours)
+	public function setShiftHours(?array $shiftHours)
 	{
 		$this->shiftHours=$shiftHours; 
 		$this->keyModified['shift_hours'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to shiftCount
 	 * @param ShiftCount $shiftCount An instance of ShiftCount
 	 */
-	public function setShiftCount(ShiftCount $shiftCount)
+	public function setShiftCount(?ShiftCount $shiftCount)
 	{
 		$this->shiftCount=$shiftCount; 
 		$this->keyModified['shift_count'] = 1; 

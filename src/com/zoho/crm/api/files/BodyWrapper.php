@@ -24,7 +24,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to file
 	 * @param array $file A array
 	 */
-	public function setFile(array $file)
+	public function setFile(?array $file)
 	{
 		$this->file=$file; 
 		$this->keyModified['file'] = 1; 

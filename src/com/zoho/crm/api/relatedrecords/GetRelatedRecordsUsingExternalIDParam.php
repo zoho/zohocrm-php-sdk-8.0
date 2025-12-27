@@ -21,4 +21,9 @@ class GetRelatedRecordsUsingExternalIDParam
 		return new Param('fields', 'com.zoho.crm.api.RelatedRecords.GetRelatedRecordsUsingExternalIDParam'); 
 
 	}
+	public static final function ids()
+	{
+		return new Param('ids', 'com.zoho.crm.api.RelatedRecords.GetRelatedRecordsUsingExternalIDParam'); 
+
+	}
 } 

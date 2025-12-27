@@ -23,7 +23,7 @@ class UrlsWrapper implements Model, ResponseHandler
 	 * The method to set the value to urls
 	 * @param Urls $urls An instance of Urls
 	 */
-	public function setUrls(Urls $urls)
+	public function setUrls(?Urls $urls)
 	{
 		$this->urls=$urls; 
 		$this->keyModified['urls'] = 1; 

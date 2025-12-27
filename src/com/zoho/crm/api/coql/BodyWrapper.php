@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to selectQuery
 	 * @param string $selectQuery A string
 	 */
-	public function setSelectQuery(string $selectQuery)
+	public function setSelectQuery(?string $selectQuery)
 	{
 		$this->selectQuery=$selectQuery; 
 		$this->keyModified['select_query'] = 1; 

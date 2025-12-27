@@ -1,7 +1,6 @@
 <?php 
 namespace com\zoho\crm\api\bulkread;
 
-use com\zoho\crm\api\util\Choice;
 use com\zoho\crm\api\util\Model;
 
 class BodyWrapper implements Model
@@ -26,7 +25,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to callback
 	 * @param CallBack $callback An instance of CallBack
 	 */
-	public function setCallback(CallBack $callback)
+	public function setCallback(?CallBack $callback)
 	{
 		$this->callback=$callback; 
 		$this->keyModified['callback'] = 1; 
@@ -47,7 +46,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to query
 	 * @param Query $query An instance of Query
 	 */
-	public function setQuery(Query $query)
+	public function setQuery(?Query $query)
 	{
 		$this->query=$query; 
 		$this->keyModified['query'] = 1; 
@@ -56,7 +55,7 @@ class BodyWrapper implements Model
 
 	/**
 	 * The method to get the fileType
-	 * @return Choice An instance of Choice
+	 * @return string A string representing the fileType
 	 */
 	public function getFileType()
 	{
@@ -66,9 +65,9 @@ class BodyWrapper implements Model
 
 	/**
 	 * The method to set the value to fileType
-	 * @param Choice $fileType An instance of Choice
+	 * @param string $fileType A string
 	 */
-	public function setFileType(Choice $fileType)
+	public function setFileType(?string $fileType)
 	{
 		$this->fileType=$fileType; 
 		$this->keyModified['file_type'] = 1; 

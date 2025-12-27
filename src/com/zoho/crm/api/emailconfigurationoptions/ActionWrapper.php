@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to configurationOptions
 	 * @param array $configurationOptions A array
 	 */
-	public function setConfigurationOptions(array $configurationOptions)
+	public function setConfigurationOptions(?array $configurationOptions)
 	{
 		$this->configurationOptions=$configurationOptions; 
 		$this->keyModified['configuration_options'] = 1; 

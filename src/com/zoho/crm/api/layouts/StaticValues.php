@@ -25,7 +25,7 @@ class StaticValues implements Model
 	 * The method to set the value to sequenceNumber
 	 * @param int $sequenceNumber A int
 	 */
-	public function setSequenceNumber(int $sequenceNumber)
+	public function setSequenceNumber(?int $sequenceNumber)
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
@@ -46,7 +46,7 @@ class StaticValues implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -67,7 +67,7 @@ class StaticValues implements Model
 	 * The method to set the value to value
 	 * @param string $value A string
 	 */
-	public function setValue(string $value)
+	public function setValue(?string $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 

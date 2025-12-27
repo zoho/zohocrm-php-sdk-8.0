@@ -24,7 +24,7 @@ class Escalation implements Model
 	 * The method to set the value to days
 	 * @param int $days A int
 	 */
-	public function setDays(int $days)
+	public function setDays(?int $days)
 	{
 		$this->days=$days; 
 		$this->keyModified['days'] = 1; 
@@ -45,7 +45,7 @@ class Escalation implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

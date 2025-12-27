@@ -29,7 +29,7 @@ class RollupSummary implements Model
 	 * The method to set the value to returnType
 	 * @param string $returnType A string
 	 */
-	public function setReturnType(string $returnType)
+	public function setReturnType(?string $returnType)
 	{
 		$this->returnType=$returnType; 
 		$this->keyModified['return_type'] = 1; 
@@ -50,7 +50,7 @@ class RollupSummary implements Model
 	 * The method to set the value to expression
 	 * @param Expression $expression An instance of Expression
 	 */
-	public function setExpression(Expression $expression)
+	public function setExpression(?Expression $expression)
 	{
 		$this->expression=$expression; 
 		$this->keyModified['expression'] = 1; 
@@ -71,7 +71,7 @@ class RollupSummary implements Model
 	 * The method to set the value to basedOnModule
 	 * @param MinifiedModule $basedOnModule An instance of MinifiedModule
 	 */
-	public function setBasedOnModule(MinifiedModule $basedOnModule)
+	public function setBasedOnModule(?MinifiedModule $basedOnModule)
 	{
 		$this->basedOnModule=$basedOnModule; 
 		$this->keyModified['based_on_module'] = 1; 
@@ -92,7 +92,7 @@ class RollupSummary implements Model
 	 * The method to set the value to relatedList
 	 * @param RelatedList $relatedList An instance of RelatedList
 	 */
-	public function setRelatedList(RelatedList $relatedList)
+	public function setRelatedList(?RelatedList $relatedList)
 	{
 		$this->relatedList=$relatedList; 
 		$this->keyModified['related_list'] = 1; 
@@ -113,7 +113,7 @@ class RollupSummary implements Model
 	 * The method to set the value to rollupBasedOn
 	 * @param string $rollupBasedOn A string
 	 */
-	public function setRollupBasedOn(string $rollupBasedOn)
+	public function setRollupBasedOn(?string $rollupBasedOn)
 	{
 		$this->rollupBasedOn=$rollupBasedOn; 
 		$this->keyModified['rollup_based_on'] = 1; 

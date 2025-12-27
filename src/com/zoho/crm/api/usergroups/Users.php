@@ -25,7 +25,7 @@ class Users implements Model
 	 * The method to set the value to inactive
 	 * @param int $inactive A int
 	 */
-	public function setInactive(int $inactive)
+	public function setInactive(?int $inactive)
 	{
 		$this->inactive=$inactive; 
 		$this->keyModified['inactive'] = 1; 
@@ -46,7 +46,7 @@ class Users implements Model
 	 * The method to set the value to deleted
 	 * @param int $deleted A int
 	 */
-	public function setDeleted(int $deleted)
+	public function setDeleted(?int $deleted)
 	{
 		$this->deleted=$deleted; 
 		$this->keyModified['deleted'] = 1; 
@@ -67,7 +67,7 @@ class Users implements Model
 	 * The method to set the value to active
 	 * @param int $active A int
 	 */
-	public function setActive(int $active)
+	public function setActive(?int $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 

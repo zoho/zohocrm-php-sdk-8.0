@@ -23,7 +23,7 @@ class ReplacedResponseWrapper implements Model, ReplacedResponseHandler
 	 * The method to set the value to replacedValues
 	 * @param array $replacedValues A array
 	 */
-	public function setReplacedValues(array $replacedValues)
+	public function setReplacedValues(?array $replacedValues)
 	{
 		$this->replacedValues=$replacedValues; 
 		$this->keyModified['replaced_values'] = 1; 

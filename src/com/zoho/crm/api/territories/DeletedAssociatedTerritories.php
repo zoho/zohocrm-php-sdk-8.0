@@ -27,7 +27,7 @@ class DeletedAssociatedTerritories implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -48,7 +48,7 @@ class DeletedAssociatedTerritories implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -69,7 +69,7 @@ class DeletedAssociatedTerritories implements Model
 	 * The method to set the value to deletedTime
 	 * @param \DateTime $deletedTime An instance of \DateTime
 	 */
-	public function setDeletedTime(\DateTime $deletedTime)
+	public function setDeletedTime(?\DateTime $deletedTime)
 	{
 		$this->deletedTime=$deletedTime; 
 		$this->keyModified['deleted_time'] = 1; 
@@ -90,7 +90,7 @@ class DeletedAssociatedTerritories implements Model
 	 * The method to set the value to deletedBy
 	 * @param MinifiedUser $deletedBy An instance of MinifiedUser
 	 */
-	public function setDeletedBy(MinifiedUser $deletedBy)
+	public function setDeletedBy(?MinifiedUser $deletedBy)
 	{
 		$this->deletedBy=$deletedBy; 
 		$this->keyModified['deleted_by'] = 1; 

@@ -25,7 +25,7 @@ class DealLayoutMapping extends MinifiedLayout implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -46,7 +46,7 @@ class DealLayoutMapping extends MinifiedLayout implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -67,7 +67,7 @@ class DealLayoutMapping extends MinifiedLayout implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

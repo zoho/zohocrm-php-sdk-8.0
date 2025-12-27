@@ -25,7 +25,7 @@ class DealRecordConfiguration implements Model
 	 * The method to set the value to layout
 	 * @param Layout $layout An instance of Layout
 	 */
-	public function setLayout(Layout $layout)
+	public function setLayout(?Layout $layout)
 	{
 		$this->layout=$layout; 
 		$this->keyModified['layout'] = 1; 
@@ -46,7 +46,7 @@ class DealRecordConfiguration implements Model
 	 * The method to set the value to fieldMappings
 	 * @param array $fieldMappings A array
 	 */
-	public function setFieldMappings(array $fieldMappings)
+	public function setFieldMappings(?array $fieldMappings)
 	{
 		$this->fieldMappings=$fieldMappings; 
 		$this->keyModified['field_mappings'] = 1; 
@@ -67,7 +67,7 @@ class DealRecordConfiguration implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

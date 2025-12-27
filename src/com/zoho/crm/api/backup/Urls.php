@@ -25,7 +25,7 @@ class Urls implements Model
 	 * The method to set the value to dataLinks
 	 * @param array $dataLinks A array
 	 */
-	public function setDataLinks(array $dataLinks)
+	public function setDataLinks(?array $dataLinks)
 	{
 		$this->dataLinks=$dataLinks; 
 		$this->keyModified['data_links'] = 1; 
@@ -46,7 +46,7 @@ class Urls implements Model
 	 * The method to set the value to attachmentLinks
 	 * @param array $attachmentLinks A array
 	 */
-	public function setAttachmentLinks(array $attachmentLinks)
+	public function setAttachmentLinks(?array $attachmentLinks)
 	{
 		$this->attachmentLinks=$attachmentLinks; 
 		$this->keyModified['attachment_links'] = 1; 
@@ -67,7 +67,7 @@ class Urls implements Model
 	 * The method to set the value to expiryDate
 	 * @param \DateTime $expiryDate An instance of \DateTime
 	 */
-	public function setExpiryDate(\DateTime $expiryDate)
+	public function setExpiryDate(?\DateTime $expiryDate)
 	{
 		$this->expiryDate=$expiryDate; 
 		$this->keyModified['expiry_date'] = 1; 

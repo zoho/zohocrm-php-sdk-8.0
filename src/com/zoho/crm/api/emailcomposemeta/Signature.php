@@ -24,7 +24,7 @@ class Signature implements Model
 	 * The method to set the value to mode
 	 * @param int $mode A int
 	 */
-	public function setMode(int $mode)
+	public function setMode(?int $mode)
 	{
 		$this->mode=$mode; 
 		$this->keyModified['mode'] = 1; 
@@ -45,7 +45,7 @@ class Signature implements Model
 	 * The method to set the value to sign
 	 * @param string $sign A string
 	 */
-	public function setSign(string $sign)
+	public function setSign(?string $sign)
 	{
 		$this->sign=$sign; 
 		$this->keyModified['sign'] = 1; 

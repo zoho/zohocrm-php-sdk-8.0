@@ -30,7 +30,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to createdCallsCount
 	 * @param int $createdCallsCount A int
 	 */
-	public function setCreatedCallsCount(int $createdCallsCount)
+	public function setCreatedCallsCount(?int $createdCallsCount)
 	{
 		$this->createdCallsCount=$createdCallsCount; 
 		$this->keyModified['created_calls_count'] = 1; 
@@ -51,7 +51,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to cancelledCallsCount
 	 * @param int $cancelledCallsCount A int
 	 */
-	public function setCancelledCallsCount(int $cancelledCallsCount)
+	public function setCancelledCallsCount(?int $cancelledCallsCount)
 	{
 		$this->cancelledCallsCount=$cancelledCallsCount; 
 		$this->keyModified['cancelled_calls_count'] = 1; 
@@ -72,7 +72,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to failedCallsCount
 	 * @param int $failedCallsCount A int
 	 */
-	public function setFailedCallsCount(int $failedCallsCount)
+	public function setFailedCallsCount(?int $failedCallsCount)
 	{
 		$this->failedCallsCount=$failedCallsCount; 
 		$this->keyModified['failed_calls_count'] = 1; 
@@ -93,7 +93,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to completedCallsCount
 	 * @param int $completedCallsCount A int
 	 */
-	public function setCompletedCallsCount(int $completedCallsCount)
+	public function setCompletedCallsCount(?int $completedCallsCount)
 	{
 		$this->completedCallsCount=$completedCallsCount; 
 		$this->keyModified['completed_calls_count'] = 1; 
@@ -114,7 +114,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to scheduledCallsCount
 	 * @param int $scheduledCallsCount A int
 	 */
-	public function setScheduledCallsCount(int $scheduledCallsCount)
+	public function setScheduledCallsCount(?int $scheduledCallsCount)
 	{
 		$this->scheduledCallsCount=$scheduledCallsCount; 
 		$this->keyModified['scheduled_calls_count'] = 1; 
@@ -135,7 +135,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to callsCount
 	 * @param int $callsCount A int
 	 */
-	public function setCallsCount(int $callsCount)
+	public function setCallsCount(?int $callsCount)
 	{
 		$this->callsCount=$callsCount; 
 		$this->keyModified['calls_count'] = 1; 
@@ -156,7 +156,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to overdueCallsCount
 	 * @param int $overdueCallsCount A int
 	 */
-	public function setOverdueCallsCount(int $overdueCallsCount)
+	public function setOverdueCallsCount(?int $overdueCallsCount)
 	{
 		$this->overdueCallsCount=$overdueCallsCount; 
 		$this->keyModified['overdue_calls_count'] = 1; 
@@ -177,7 +177,7 @@ class AnalyticsCall implements Model
 	 * The method to set the value to missedCallsCount
 	 * @param int $missedCallsCount A int
 	 */
-	public function setMissedCallsCount(int $missedCallsCount)
+	public function setMissedCallsCount(?int $missedCallsCount)
 	{
 		$this->missedCallsCount=$missedCallsCount; 
 		$this->keyModified['missed_calls_count'] = 1; 

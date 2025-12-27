@@ -24,7 +24,7 @@ class FileBodyWrapper implements Model, DownloadResponseHandler
 	 * The method to set the value to file
 	 * @param StreamWrapper $file An instance of StreamWrapper
 	 */
-	public function setFile(StreamWrapper $file)
+	public function setFile(?StreamWrapper $file)
 	{
 		$this->file=$file; 
 		$this->keyModified['file'] = 1; 

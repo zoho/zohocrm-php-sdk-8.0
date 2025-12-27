@@ -24,7 +24,7 @@ class OutputData implements Model
 	 * The method to set the value to enrichField
 	 * @param EnrichField $enrichField An instance of EnrichField
 	 */
-	public function setEnrichField(EnrichField $enrichField)
+	public function setEnrichField(?EnrichField $enrichField)
 	{
 		$this->enrichField=$enrichField; 
 		$this->keyModified['enrich_field'] = 1; 
@@ -45,7 +45,7 @@ class OutputData implements Model
 	 * The method to set the value to crmField
 	 * @param CrmField $crmField An instance of CrmField
 	 */
-	public function setCrmField(CrmField $crmField)
+	public function setCrmField(?CrmField $crmField)
 	{
 		$this->crmField=$crmField; 
 		$this->keyModified['crm_field'] = 1; 

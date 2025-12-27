@@ -26,7 +26,7 @@ class Action implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -47,7 +47,7 @@ class Action implements Model
 	 * The method to set the value to openIn
 	 * @param string $openIn A string
 	 */
-	public function setOpenIn(string $openIn)
+	public function setOpenIn(?string $openIn)
 	{
 		$this->openIn=$openIn; 
 		$this->keyModified['open_in'] = 1; 
@@ -68,7 +68,7 @@ class Action implements Model
 	 * The method to set the value to displayName
 	 * @param string $displayName A string
 	 */
-	public function setDisplayName(string $displayName)
+	public function setDisplayName(?string $displayName)
 	{
 		$this->displayName=$displayName; 
 		$this->keyModified['display_name'] = 1; 
@@ -89,7 +89,7 @@ class Action implements Model
 	 * The method to set the value to url
 	 * @param string $url A string
 	 */
-	public function setUrl(string $url)
+	public function setUrl(?string $url)
 	{
 		$this->url=$url; 
 		$this->keyModified['url'] = 1; 

@@ -52,7 +52,7 @@ abstract class Converter
      * @param object $response A object containing the HttpResponse class instance.
      * @param $pack $pack A string containing the expected method return type.
      */
-    public abstract function getWrappedResponse($response, $pack);
+    public abstract function getWrappedResponse($response, $pack, $headers);
 
     /**
      * This method is to validate if the input values satisfy the constraints for the respective fields.

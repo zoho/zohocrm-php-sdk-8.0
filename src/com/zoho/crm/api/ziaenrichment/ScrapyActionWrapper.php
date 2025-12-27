@@ -23,7 +23,7 @@ class ScrapyActionWrapper implements Model
 	 * The method to set the value to scrapyFeedback
 	 * @param ScrapyActionResponse $scrapyFeedback An instance of ScrapyActionResponse
 	 */
-	public function setScrapyFeedback(ScrapyActionResponse $scrapyFeedback)
+	public function setScrapyFeedback(?ScrapyActionResponse $scrapyFeedback)
 	{
 		$this->scrapyFeedback=$scrapyFeedback; 
 		$this->keyModified['scrapy_feedback'] = 1; 

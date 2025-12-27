@@ -29,7 +29,7 @@ class Signals implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -50,7 +50,7 @@ class Signals implements Model
 	 * The method to set the value to namespace
 	 * @param string $namespace A string
 	 */
-	public function setNamespace(string $namespace)
+	public function setNamespace(?string $namespace)
 	{
 		$this->namespace=$namespace; 
 		$this->keyModified['namespace'] = 1; 
@@ -71,7 +71,7 @@ class Signals implements Model
 	 * The method to set the value to chatEnabled
 	 * @param bool $chatEnabled A bool
 	 */
-	public function setChatEnabled(bool $chatEnabled)
+	public function setChatEnabled(?bool $chatEnabled)
 	{
 		$this->chatEnabled=$chatEnabled; 
 		$this->keyModified['chat_enabled'] = 1; 
@@ -92,7 +92,7 @@ class Signals implements Model
 	 * The method to set the value to enabled
 	 * @param bool $enabled A bool
 	 */
-	public function setEnabled(bool $enabled)
+	public function setEnabled(?bool $enabled)
 	{
 		$this->enabled=$enabled; 
 		$this->keyModified['enabled'] = 1; 
@@ -113,7 +113,7 @@ class Signals implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -134,7 +134,7 @@ class Signals implements Model
 	 * The method to set the value to featureAvailability
 	 * @param FeatureAvailability $featureAvailability An instance of FeatureAvailability
 	 */
-	public function setFeatureAvailability(FeatureAvailability $featureAvailability)
+	public function setFeatureAvailability(?FeatureAvailability $featureAvailability)
 	{
 		$this->featureAvailability=$featureAvailability; 
 		$this->keyModified['feature_availability'] = 1; 
@@ -155,7 +155,7 @@ class Signals implements Model
 	 * The method to set the value to extension
 	 * @param Extension $extension An instance of Extension
 	 */
-	public function setExtension(Extension $extension)
+	public function setExtension(?Extension $extension)
 	{
 		$this->extension=$extension; 
 		$this->keyModified['extension'] = 1; 

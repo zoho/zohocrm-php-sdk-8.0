@@ -34,7 +34,7 @@ class SharingRules implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -55,7 +55,7 @@ class SharingRules implements Model
 	 * The method to set the value to permissionType
 	 * @param Choice $permissionType An instance of Choice
 	 */
-	public function setPermissionType(Choice $permissionType)
+	public function setPermissionType(?Choice $permissionType)
 	{
 		$this->permissionType=$permissionType; 
 		$this->keyModified['permission_type'] = 1; 
@@ -76,7 +76,7 @@ class SharingRules implements Model
 	 * The method to set the value to superiorsAllowed
 	 * @param bool $superiorsAllowed A bool
 	 */
-	public function setSuperiorsAllowed(bool $superiorsAllowed)
+	public function setSuperiorsAllowed(?bool $superiorsAllowed)
 	{
 		$this->superiorsAllowed=$superiorsAllowed; 
 		$this->keyModified['superiors_allowed'] = 1; 
@@ -97,7 +97,7 @@ class SharingRules implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -118,7 +118,7 @@ class SharingRules implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -139,7 +139,7 @@ class SharingRules implements Model
 	 * The method to set the value to sharedFrom
 	 * @param Shared $sharedFrom An instance of Shared
 	 */
-	public function setSharedFrom(Shared $sharedFrom)
+	public function setSharedFrom(?Shared $sharedFrom)
 	{
 		$this->sharedFrom=$sharedFrom; 
 		$this->keyModified['shared_from'] = 1; 
@@ -160,7 +160,7 @@ class SharingRules implements Model
 	 * The method to set the value to sharedTo
 	 * @param Shared $sharedTo An instance of Shared
 	 */
-	public function setSharedTo(Shared $sharedTo)
+	public function setSharedTo(?Shared $sharedTo)
 	{
 		$this->sharedTo=$sharedTo; 
 		$this->keyModified['shared_to'] = 1; 
@@ -181,7 +181,7 @@ class SharingRules implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -202,7 +202,7 @@ class SharingRules implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -223,7 +223,7 @@ class SharingRules implements Model
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -244,7 +244,7 @@ class SharingRules implements Model
 	 * The method to set the value to matchLimitExceeded
 	 * @param bool $matchLimitExceeded A bool
 	 */
-	public function setMatchLimitExceeded(bool $matchLimitExceeded)
+	public function setMatchLimitExceeded(?bool $matchLimitExceeded)
 	{
 		$this->matchLimitExceeded=$matchLimitExceeded; 
 		$this->keyModified['match_limit_exceeded'] = 1; 

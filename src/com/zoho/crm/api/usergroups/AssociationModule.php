@@ -24,7 +24,7 @@ class AssociationModule implements Model
 	 * The method to set the value to module
 	 * @param MinifiedModule $module An instance of MinifiedModule
 	 */
-	public function setModule(MinifiedModule $module)
+	public function setModule(?MinifiedModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 

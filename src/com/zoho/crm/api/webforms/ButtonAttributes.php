@@ -8,6 +8,8 @@ class ButtonAttributes implements Model
 
 	private  $color;
 	private  $name;
+	private  $align;
+	private  $borderRadiusPx;
 	private  $keyModified=array();
 
 	/**
@@ -24,7 +26,7 @@ class ButtonAttributes implements Model
 	 * The method to set the value to color
 	 * @param string $color A string
 	 */
-	public function setColor(string $color)
+	public function setColor(?string $color)
 	{
 		$this->color=$color; 
 		$this->keyModified['color'] = 1; 
@@ -45,10 +47,52 @@ class ButtonAttributes implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the align
+	 * @return string A string representing the align
+	 */
+	public function getAlign()
+	{
+		return $this->align; 
+
+	}
+
+	/**
+	 * The method to set the value to align
+	 * @param string $align A string
+	 */
+	public function setAlign(?string $align)
+	{
+		$this->align=$align; 
+		$this->keyModified['align'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the borderRadiusPx
+	 * @return string A string representing the borderRadiusPx
+	 */
+	public function getBorderRadiusPx()
+	{
+		return $this->borderRadiusPx; 
+
+	}
+
+	/**
+	 * The method to set the value to borderRadiusPx
+	 * @param string $borderRadiusPx A string
+	 */
+	public function setBorderRadiusPx(?string $borderRadiusPx)
+	{
+		$this->borderRadiusPx=$borderRadiusPx; 
+		$this->keyModified['border_radius_px'] = 1; 
 
 	}
 

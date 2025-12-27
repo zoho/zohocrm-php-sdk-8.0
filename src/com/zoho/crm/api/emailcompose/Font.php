@@ -24,7 +24,7 @@ class Font implements Model
 	 * The method to set the value to size
 	 * @param int $size A int
 	 */
-	public function setSize(int $size)
+	public function setSize(?int $size)
 	{
 		$this->size=$size; 
 		$this->keyModified['size'] = 1; 
@@ -45,7 +45,7 @@ class Font implements Model
 	 * The method to set the value to family
 	 * @param string $family A string
 	 */
-	public function setFamily(string $family)
+	public function setFamily(?string $family)
 	{
 		$this->family=$family; 
 		$this->keyModified['family'] = 1; 

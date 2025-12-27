@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to servicePreferences
 	 * @param ServicePreference $servicePreferences An instance of ServicePreference
 	 */
-	public function setServicePreferences(ServicePreference $servicePreferences)
+	public function setServicePreferences(?ServicePreference $servicePreferences)
 	{
 		$this->servicePreferences=$servicePreferences; 
 		$this->keyModified['service_preferences'] = 1; 

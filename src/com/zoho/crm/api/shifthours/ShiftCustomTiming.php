@@ -24,7 +24,7 @@ class ShiftCustomTiming implements Model
 	 * The method to set the value to days
 	 * @param string $days A string
 	 */
-	public function setDays(string $days)
+	public function setDays(?string $days)
 	{
 		$this->days=$days; 
 		$this->keyModified['days'] = 1; 
@@ -45,7 +45,7 @@ class ShiftCustomTiming implements Model
 	 * The method to set the value to shiftTiming
 	 * @param array $shiftTiming A array
 	 */
-	public function setShiftTiming(array $shiftTiming)
+	public function setShiftTiming(?array $shiftTiming)
 	{
 		$this->shiftTiming=$shiftTiming; 
 		$this->keyModified['shift_timing'] = 1; 

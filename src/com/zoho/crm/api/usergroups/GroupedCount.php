@@ -25,7 +25,7 @@ class GroupedCount implements Model
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -46,7 +46,7 @@ class GroupedCount implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 

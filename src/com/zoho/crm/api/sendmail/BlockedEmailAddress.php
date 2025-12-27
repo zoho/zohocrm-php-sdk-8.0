@@ -24,7 +24,7 @@ class BlockedEmailAddress implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 
@@ -45,7 +45,7 @@ class BlockedEmailAddress implements Model
 	 * The method to set the value to reason
 	 * @param string $reason A string
 	 */
-	public function setReason(string $reason)
+	public function setReason(?string $reason)
 	{
 		$this->reason=$reason; 
 		$this->keyModified['reason'] = 1; 

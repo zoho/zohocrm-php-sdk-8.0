@@ -23,7 +23,7 @@ class ActionWrapper implements Model
 	 * The method to set the value to dataEnrichment
 	 * @param array $dataEnrichment A array
 	 */
-	public function setDataEnrichment(array $dataEnrichment)
+	public function setDataEnrichment(?array $dataEnrichment)
 	{
 		$this->dataEnrichment=$dataEnrichment; 
 		$this->keyModified['data_enrichment'] = 1; 

@@ -24,7 +24,7 @@ class ShowFields implements Model
 	 * The method to set the value to showData
 	 * @param bool $showData A bool
 	 */
-	public function setShowData(bool $showData)
+	public function setShowData(?bool $showData)
 	{
 		$this->showData=$showData; 
 		$this->keyModified['show_data'] = 1; 
@@ -45,7 +45,7 @@ class ShowFields implements Model
 	 * The method to set the value to field
 	 * @param MinifiedField $field An instance of MinifiedField
 	 */
-	public function setField(MinifiedField $field)
+	public function setField(?MinifiedField $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 

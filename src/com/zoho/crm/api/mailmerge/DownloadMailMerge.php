@@ -27,7 +27,7 @@ class DownloadMailMerge implements Model
 	 * The method to set the value to mailMergeTemplate
 	 * @param MailMergeTemplate $mailMergeTemplate An instance of MailMergeTemplate
 	 */
-	public function setMailMergeTemplate(MailMergeTemplate $mailMergeTemplate)
+	public function setMailMergeTemplate(?MailMergeTemplate $mailMergeTemplate)
 	{
 		$this->mailMergeTemplate=$mailMergeTemplate; 
 		$this->keyModified['mail_merge_template'] = 1; 
@@ -48,7 +48,7 @@ class DownloadMailMerge implements Model
 	 * The method to set the value to outputFormat
 	 * @param Choice $outputFormat An instance of Choice
 	 */
-	public function setOutputFormat(Choice $outputFormat)
+	public function setOutputFormat(?Choice $outputFormat)
 	{
 		$this->outputFormat=$outputFormat; 
 		$this->keyModified['output_format'] = 1; 
@@ -69,7 +69,7 @@ class DownloadMailMerge implements Model
 	 * The method to set the value to fileName
 	 * @param string $fileName A string
 	 */
-	public function setFileName(string $fileName)
+	public function setFileName(?string $fileName)
 	{
 		$this->fileName=$fileName; 
 		$this->keyModified['file_name'] = 1; 
@@ -90,7 +90,7 @@ class DownloadMailMerge implements Model
 	 * The method to set the value to password
 	 * @param string $password A string
 	 */
-	public function setPassword(string $password)
+	public function setPassword(?string $password)
 	{
 		$this->password=$password; 
 		$this->keyModified['password'] = 1; 

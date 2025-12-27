@@ -29,7 +29,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -50,7 +50,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to jsonPath
 	 * @param string $jsonPath A string
 	 */
-	public function setJsonPath(string $jsonPath)
+	public function setJsonPath(?string $jsonPath)
 	{
 		$this->jsonPath=$jsonPath; 
 		$this->keyModified['json_path'] = 1; 
@@ -71,7 +71,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to supportedValues
 	 * @param array $supportedValues A array
 	 */
-	public function setSupportedValues(array $supportedValues)
+	public function setSupportedValues(?array $supportedValues)
 	{
 		$this->supportedValues=$supportedValues; 
 		$this->keyModified['supported_values'] = 1; 
@@ -92,7 +92,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to range
 	 * @param RangeStructure $range An instance of RangeStructure
 	 */
-	public function setRange(RangeStructure $range)
+	public function setRange(?RangeStructure $range)
 	{
 		$this->range=$range; 
 		$this->keyModified['range'] = 1; 
@@ -113,7 +113,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to paramName
 	 * @param string $paramName A string
 	 */
-	public function setParamName(string $paramName)
+	public function setParamName(?string $paramName)
 	{
 		$this->paramName=$paramName; 
 		$this->keyModified['param_name'] = 1; 
@@ -134,7 +134,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to regex
 	 * @param string $regex A string
 	 */
-	public function setRegex(string $regex)
+	public function setRegex(?string $regex)
 	{
 		$this->regex=$regex; 
 		$this->keyModified['regex'] = 1; 
@@ -155,7 +155,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to expectedDataType
 	 * @param string $expectedDataType A string
 	 */
-	public function setExpectedDataType(string $expectedDataType)
+	public function setExpectedDataType(?string $expectedDataType)
 	{
 		$this->expectedDataType=$expectedDataType; 
 		$this->keyModified['expected_data_type'] = 1; 

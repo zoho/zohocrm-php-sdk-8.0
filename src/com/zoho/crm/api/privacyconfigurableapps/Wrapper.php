@@ -23,7 +23,7 @@ class Wrapper implements Model
 	 * The method to set the value to privacyConfigurableApps
 	 * @param array $privacyConfigurableApps A array
 	 */
-	public function setPrivacyConfigurableApps(array $privacyConfigurableApps)
+	public function setPrivacyConfigurableApps(?array $privacyConfigurableApps)
 	{
 		$this->privacyConfigurableApps=$privacyConfigurableApps; 
 		$this->keyModified['privacy_configurable_apps'] = 1; 

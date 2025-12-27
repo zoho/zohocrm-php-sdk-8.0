@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to sharingRules
 	 * @param array $sharingRules A array
 	 */
-	public function setSharingRules(array $sharingRules)
+	public function setSharingRules(?array $sharingRules)
 	{
 		$this->sharingRules=$sharingRules; 
 		$this->keyModified['sharing_rules'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

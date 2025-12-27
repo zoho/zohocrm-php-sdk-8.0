@@ -25,7 +25,7 @@ class SectionSubformField implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -46,7 +46,7 @@ class SectionSubformField implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -67,7 +67,7 @@ class SectionSubformField implements Model
 	 * The method to set the value to layout
 	 * @param MinifiedLayout $layout An instance of MinifiedLayout
 	 */
-	public function setLayout(MinifiedLayout $layout)
+	public function setLayout(?MinifiedLayout $layout)
 	{
 		$this->layout=$layout; 
 		$this->keyModified['layout'] = 1; 

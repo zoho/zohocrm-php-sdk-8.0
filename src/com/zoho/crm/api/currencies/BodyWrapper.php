@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to currencies
 	 * @param array $currencies A array
 	 */
-	public function setCurrencies(array $currencies)
+	public function setCurrencies(?array $currencies)
 	{
 		$this->currencies=$currencies; 
 		$this->keyModified['currencies'] = 1; 

@@ -26,7 +26,7 @@ class Component implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -47,7 +47,7 @@ class Component implements Model
 	 * The method to set the value to moduleSupported
 	 * @param bool $moduleSupported A bool
 	 */
-	public function setModuleSupported(bool $moduleSupported)
+	public function setModuleSupported(?bool $moduleSupported)
 	{
 		$this->moduleSupported=$moduleSupported; 
 		$this->keyModified['module_supported'] = 1; 
@@ -68,7 +68,7 @@ class Component implements Model
 	 * The method to set the value to details
 	 * @param Detail $details An instance of Detail
 	 */
-	public function setDetails(Detail $details)
+	public function setDetails(?Detail $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 
@@ -89,7 +89,7 @@ class Component implements Model
 	 * The method to set the value to featureLabel
 	 * @param string $featureLabel A string
 	 */
-	public function setFeatureLabel(string $featureLabel)
+	public function setFeatureLabel(?string $featureLabel)
 	{
 		$this->featureLabel=$featureLabel; 
 		$this->keyModified['feature_label'] = 1; 

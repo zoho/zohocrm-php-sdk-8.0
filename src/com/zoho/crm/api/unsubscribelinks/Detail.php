@@ -23,7 +23,7 @@ class Detail implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 

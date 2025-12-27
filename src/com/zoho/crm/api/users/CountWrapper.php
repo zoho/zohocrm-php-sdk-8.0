@@ -11,7 +11,7 @@ class CountWrapper implements Model, CountHandler
 
 	/**
 	 * The method to get the count
-	 * @return string A string representing the count
+	 * @return int A int representing the count
 	 */
 	public function getCount()
 	{
@@ -21,9 +21,9 @@ class CountWrapper implements Model, CountHandler
 
 	/**
 	 * The method to set the value to count
-	 * @param string $count A string
+	 * @param int $count A int
 	 */
-	public function setCount(string $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 

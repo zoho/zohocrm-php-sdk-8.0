@@ -27,7 +27,7 @@ class DataSharing implements Model
 	 * The method to set the value to shareType
 	 * @param Choice $shareType An instance of Choice
 	 */
-	public function setShareType(Choice $shareType)
+	public function setShareType(?Choice $shareType)
 	{
 		$this->shareType=$shareType; 
 		$this->keyModified['share_type'] = 1; 
@@ -48,7 +48,7 @@ class DataSharing implements Model
 	 * The method to set the value to publicInPortals
 	 * @param bool $publicInPortals A bool
 	 */
-	public function setPublicInPortals(bool $publicInPortals)
+	public function setPublicInPortals(?bool $publicInPortals)
 	{
 		$this->publicInPortals=$publicInPortals; 
 		$this->keyModified['public_in_portals'] = 1; 
@@ -69,7 +69,7 @@ class DataSharing implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -90,7 +90,7 @@ class DataSharing implements Model
 	 * The method to set the value to ruleComputationRunning
 	 * @param bool $ruleComputationRunning A bool
 	 */
-	public function setRuleComputationRunning(bool $ruleComputationRunning)
+	public function setRuleComputationRunning(?bool $ruleComputationRunning)
 	{
 		$this->ruleComputationRunning=$ruleComputationRunning; 
 		$this->keyModified['rule_computation_running'] = 1; 

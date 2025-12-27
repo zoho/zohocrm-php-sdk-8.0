@@ -26,7 +26,7 @@ class Filters implements Model
 	 * The method to set the value to comparator
 	 * @param Choice $comparator An instance of Choice
 	 */
-	public function setComparator(Choice $comparator)
+	public function setComparator(?Choice $comparator)
 	{
 		$this->comparator=$comparator; 
 		$this->keyModified['comparator'] = 1; 
@@ -47,7 +47,7 @@ class Filters implements Model
 	 * The method to set the value to field
 	 * @param Field $field An instance of Field
 	 */
-	public function setField(Field $field)
+	public function setField(?Field $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -68,7 +68,7 @@ class Filters implements Model
 	 * The method to set the value to value
 	 * @param string $value A string
 	 */
-	public function setValue(string $value)
+	public function setValue(?string $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 

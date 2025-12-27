@@ -26,7 +26,7 @@ class Multiselectlookup implements Model
 	 * The method to set the value to linkingDetails
 	 * @param LinkingDetails $linkingDetails An instance of LinkingDetails
 	 */
-	public function setLinkingDetails(LinkingDetails $linkingDetails)
+	public function setLinkingDetails(?LinkingDetails $linkingDetails)
 	{
 		$this->linkingDetails=$linkingDetails; 
 		$this->keyModified['linking_details'] = 1; 
@@ -47,7 +47,7 @@ class Multiselectlookup implements Model
 	 * The method to set the value to connectedDetails
 	 * @param ConnectedDetails $connectedDetails An instance of ConnectedDetails
 	 */
-	public function setConnectedDetails(ConnectedDetails $connectedDetails)
+	public function setConnectedDetails(?ConnectedDetails $connectedDetails)
 	{
 		$this->connectedDetails=$connectedDetails; 
 		$this->keyModified['connected_details'] = 1; 
@@ -68,7 +68,7 @@ class Multiselectlookup implements Model
 	 * The method to set the value to relatedList
 	 * @param LookupRelatedList $relatedList An instance of LookupRelatedList
 	 */
-	public function setRelatedList(LookupRelatedList $relatedList)
+	public function setRelatedList(?LookupRelatedList $relatedList)
 	{
 		$this->relatedList=$relatedList; 
 		$this->keyModified['related_list'] = 1; 
@@ -89,7 +89,7 @@ class Multiselectlookup implements Model
 	 * The method to set the value to recordAccess
 	 * @param bool $recordAccess A bool
 	 */
-	public function setRecordAccess(bool $recordAccess)
+	public function setRecordAccess(?bool $recordAccess)
 	{
 		$this->recordAccess=$recordAccess; 
 		$this->keyModified['record_access'] = 1; 

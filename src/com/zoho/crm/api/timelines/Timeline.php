@@ -33,7 +33,7 @@ class Timeline implements Model
 	 * The method to set the value to auditedTime
 	 * @param \DateTime $auditedTime An instance of \DateTime
 	 */
-	public function setAuditedTime(\DateTime $auditedTime)
+	public function setAuditedTime(?\DateTime $auditedTime)
 	{
 		$this->auditedTime=$auditedTime; 
 		$this->keyModified['audited_time'] = 1; 
@@ -54,7 +54,7 @@ class Timeline implements Model
 	 * The method to set the value to action
 	 * @param string $action A string
 	 */
-	public function setAction(string $action)
+	public function setAction(?string $action)
 	{
 		$this->action=$action; 
 		$this->keyModified['action'] = 1; 
@@ -75,7 +75,7 @@ class Timeline implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -96,7 +96,7 @@ class Timeline implements Model
 	 * The method to set the value to source
 	 * @param string $source A string
 	 */
-	public function setSource(string $source)
+	public function setSource(?string $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 
@@ -117,7 +117,7 @@ class Timeline implements Model
 	 * The method to set the value to extension
 	 * @param string $extension A string
 	 */
-	public function setExtension(string $extension)
+	public function setExtension(?string $extension)
 	{
 		$this->extension=$extension; 
 		$this->keyModified['extension'] = 1; 
@@ -138,7 +138,7 @@ class Timeline implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -159,7 +159,7 @@ class Timeline implements Model
 	 * The method to set the value to doneBy
 	 * @param NameIdStructure $doneBy An instance of NameIdStructure
 	 */
-	public function setDoneBy(NameIdStructure $doneBy)
+	public function setDoneBy(?NameIdStructure $doneBy)
 	{
 		$this->doneBy=$doneBy; 
 		$this->keyModified['done_by'] = 1; 
@@ -180,7 +180,7 @@ class Timeline implements Model
 	 * The method to set the value to relatedRecord
 	 * @param RelatedRecord $relatedRecord An instance of RelatedRecord
 	 */
-	public function setRelatedRecord(RelatedRecord $relatedRecord)
+	public function setRelatedRecord(?RelatedRecord $relatedRecord)
 	{
 		$this->relatedRecord=$relatedRecord; 
 		$this->keyModified['related_record'] = 1; 
@@ -201,7 +201,7 @@ class Timeline implements Model
 	 * The method to set the value to automationDetails
 	 * @param AutomationDetail $automationDetails An instance of AutomationDetail
 	 */
-	public function setAutomationDetails(AutomationDetail $automationDetails)
+	public function setAutomationDetails(?AutomationDetail $automationDetails)
 	{
 		$this->automationDetails=$automationDetails; 
 		$this->keyModified['automation_details'] = 1; 
@@ -222,7 +222,7 @@ class Timeline implements Model
 	 * The method to set the value to record
 	 * @param Record $record An instance of Record
 	 */
-	public function setRecord(Record $record)
+	public function setRecord(?Record $record)
 	{
 		$this->record=$record; 
 		$this->keyModified['record'] = 1; 
@@ -243,7 +243,7 @@ class Timeline implements Model
 	 * The method to set the value to fieldHistory
 	 * @param array $fieldHistory A array
 	 */
-	public function setFieldHistory(array $fieldHistory)
+	public function setFieldHistory(?array $fieldHistory)
 	{
 		$this->fieldHistory=$fieldHistory; 
 		$this->keyModified['field_history'] = 1; 

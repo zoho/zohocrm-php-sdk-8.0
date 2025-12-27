@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to variableGroups
 	 * @param array $variableGroups A array
 	 */
-	public function setVariableGroups(array $variableGroups)
+	public function setVariableGroups(?array $variableGroups)
 	{
 		$this->variableGroups=$variableGroups; 
 		$this->keyModified['variable_groups'] = 1; 

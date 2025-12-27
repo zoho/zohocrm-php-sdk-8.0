@@ -26,7 +26,7 @@ class Transfer implements Model
 	 * The method to set the value to records
 	 * @param bool $records A bool
 	 */
-	public function setRecords(bool $records)
+	public function setRecords(?bool $records)
 	{
 		$this->records=$records; 
 		$this->keyModified['records'] = 1; 
@@ -47,7 +47,7 @@ class Transfer implements Model
 	 * The method to set the value to assignment
 	 * @param bool $assignment A bool
 	 */
-	public function setAssignment(bool $assignment)
+	public function setAssignment(?bool $assignment)
 	{
 		$this->assignment=$assignment; 
 		$this->keyModified['assignment'] = 1; 
@@ -68,7 +68,7 @@ class Transfer implements Model
 	 * The method to set the value to criteria
 	 * @param bool $criteria A bool
 	 */
-	public function setCriteria(bool $criteria)
+	public function setCriteria(?bool $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -89,7 +89,7 @@ class Transfer implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

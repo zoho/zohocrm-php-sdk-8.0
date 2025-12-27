@@ -25,7 +25,7 @@ class DuplicateCheckPreference implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -46,7 +46,7 @@ class DuplicateCheckPreference implements Model
 	 * The method to set the value to typeConfigurations
 	 * @param array $typeConfigurations A array
 	 */
-	public function setTypeConfigurations(array $typeConfigurations)
+	public function setTypeConfigurations(?array $typeConfigurations)
 	{
 		$this->typeConfigurations=$typeConfigurations; 
 		$this->keyModified['type_configurations'] = 1; 

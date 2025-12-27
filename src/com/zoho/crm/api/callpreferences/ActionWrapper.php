@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to callPreferences
 	 * @param ActionResponse $callPreferences An instance of ActionResponse
 	 */
-	public function setCallPreferences(ActionResponse $callPreferences)
+	public function setCallPreferences(?ActionResponse $callPreferences)
 	{
 		$this->callPreferences=$callPreferences; 
 		$this->keyModified['call_preferences'] = 1; 

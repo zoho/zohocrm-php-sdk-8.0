@@ -23,7 +23,7 @@ class InventoryDetails implements Model
 	 * The method to set the value to inventoryTemplate
 	 * @param InventoryTemplate $inventoryTemplate An instance of InventoryTemplate
 	 */
-	public function setInventoryTemplate(InventoryTemplate $inventoryTemplate)
+	public function setInventoryTemplate(?InventoryTemplate $inventoryTemplate)
 	{
 		$this->inventoryTemplate=$inventoryTemplate; 
 		$this->keyModified['inventory_template'] = 1; 

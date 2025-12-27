@@ -6,7 +6,6 @@ use com\zoho\crm\api\HeaderMap;
 use com\zoho\crm\api\Param;
 use com\zoho\crm\api\ParameterMap;
 use com\zoho\crm\api\exception\SDKException;
-use com\zoho\crm\api\util\Choice;
 use com\zoho\crm\api\util\CommonAPIHandler;
 use com\zoho\crm\api\util\Constants;
 use com\zoho\crm\api\util\APIResponse;

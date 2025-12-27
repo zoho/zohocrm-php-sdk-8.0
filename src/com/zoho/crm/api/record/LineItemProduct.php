@@ -23,7 +23,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to productCode
 	 * @param string $productCode A string
 	 */
-	public function setProductCode(string $productCode)
+	public function setProductCode(?string $productCode)
 	{
 		$this->addKeyValue('Product_Code', $productCode); 
 
@@ -43,7 +43,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to currency
 	 * @param string $currency A string
 	 */
-	public function setCurrency(string $currency)
+	public function setCurrency(?string $currency)
 	{
 		$this->addKeyValue('Currency', $currency); 
 
@@ -63,7 +63,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->addKeyValue('name', $name); 
 
@@ -83,7 +83,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->addKeyValue('id', $id); 
 
@@ -103,7 +103,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->addKeyValue('Created_By', $createdBy); 
 
@@ -123,7 +123,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->addKeyValue('Created_Time', $createdTime); 
 
@@ -143,7 +143,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->addKeyValue('Modified_By', $modifiedBy); 
 
@@ -163,7 +163,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->addKeyValue('Modified_Time', $modifiedTime); 
 
@@ -183,7 +183,7 @@ class LineItemProduct extends Record implements Model
 	 * The method to set the value to tag
 	 * @param array $tag A array
 	 */
-	public function setTag(array $tag)
+	public function setTag(?array $tag)
 	{
 		$this->addKeyValue('Tag', $tag); 
 

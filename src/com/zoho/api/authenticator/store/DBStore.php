@@ -67,45 +67,51 @@ class DBStore implements TokenStore
         {
             $oauthToken = $token;
             $query = "select * from " . $this->tableName;
+            $param = null;
             if ($oauthToken->getUserSignature() != null)
             {
                 $name = $oauthToken->getUserSignature()->getName();
                 if ($name != null && strlen($name) > 0)
                 {
-                    $query .= " where user_name='" . $name . "'";
+                    $query .= " where user_name = ?";
+                    $param = $name;
                 }
             }
             elseif ($oauthToken->getAccessToken() != null && $oauthToken->getClientId() == null && $oauthToken->getClientSecret() == null)
             {
-                $query .= " where access_token='" . $oauthToken->getAccessToken() . "'";
+                $query .= " where access_token = ?";
+                $param = $oauthToken->getAccessToken();
             }
             elseif (($oauthToken->getRefreshToken() != null || $oauthToken->getGrantToken() != null) && $oauthToken->getClientId() != null && $oauthToken->getClientSecret() != null)
             {
                 if ($oauthToken->getGrantToken() != null && strlen($oauthToken->getGrantToken()) > 0)
                 {
-                    $query .= " where grant_token='" . $oauthToken->getGrantToken() . "'";
+                    $query .= " where grant_token = ?";
+                    $param = $oauthToken->getGrantToken();
                 }
                 elseif ($oauthToken->getRefreshToken() != null && strlen($oauthToken->getRefreshToken()) > 0)
                 {
-                    $query .= " where refresh_token='" . $oauthToken->getRefreshToken() . "'";
+                    $query .= " where refresh_token = ?";
+                    $param = $oauthToken->getRefreshToken();
                 }
             }
-            $query .= "limit 1;";
+            $query .= " limit 1;";
             $connection = null;
             try
             {
                 $connection = $this->getMysqlConnection();
-                $result = mysqli_query($connection, $query);
+                $stmt  = $connection->prepare($query);
+                $stmt->bind_param('s', $param);
+                $stmt->execute();
+                $result = $stmt->get_result();
                 if (!$result)
                 {
                     return $token;
                 }
-                do
+                if($row = $result->fetch_assoc())
                 {
-                    $this->setMergeData($oauthToken, $result);
-                    break;
+                    $this->setMergeData($oauthToken, $row);
                 }
-                while (next($result));
             }
             catch (Exception $e)
             {
@@ -133,28 +139,33 @@ class DBStore implements TokenStore
             return;
         }
         $oauthToken = $token;
+        $param = null;
         $query = "update " . $this->tableName . " set ";
         if ($oauthToken->getUserSignature() != null)
         {
             $name = $oauthToken->getUserSignature()->getName();
             if ($name != null && strlen($name) > 0)
             {
-                $query .= $this->setToken($oauthToken) . " where user_name='" . $name . "'";
+                $query .= $this->setToken($oauthToken) . " where user_name = ?";
+                $param = $name;
             }
         }
         elseif ($oauthToken->getAccessToken() != null && strlen($oauthToken->getAccessToken()) > 0 && $oauthToken->getClientId() == null && $oauthToken->getClientSecret() == null)
         {
-            $query .= $this->setToken($oauthToken) . " where access_token='" . $oauthToken->getAccessToken() . "'";
+            $query .= $this->setToken($oauthToken) . " where access_token = ?";
+            $param = $oauthToken->getAccessToken();
         }
         elseif ((($oauthToken->getRefreshToken() != null && strlen($oauthToken->getRefreshToken()) > 0) || ($oauthToken->getGrantToken() != null && strlen($oauthToken->getGrantToken()) > 0)) && $oauthToken->getClientId() != null && $oauthToken->getClientSecret() != null)
         {
             if ($oauthToken->getGrantToken() != null && strlen($oauthToken->getGrantToken()) > 0)
             {
-                $query .= $this->setToken($oauthToken) . " where grant_token='" . $oauthToken->getGrantToken() . "'";
+                $query .= $this->setToken($oauthToken) . " where grant_token = ?";
+                $param = $oauthToken->getGrantToken();
             }
             else if ($oauthToken->getRefreshToken() != null && strlen($oauthToken->getRefreshToken())> 0)
             {
-                $query .= $this->setToken($oauthToken) . " where refresh_token='" . $oauthToken->getRefreshToken() . "'";
+                $query .= $this->setToken($oauthToken) . " where refresh_token = ?";
+                $param = $oauthToken->getRefreshToken();
             }
         }
         $query .= " limit 1";
@@ -163,8 +174,10 @@ class DBStore implements TokenStore
         {
             $rowaffected = false;
             $connection = $this->getMysqlConnection();
-            $connection->query($query);
-            if ($connection->affected_rows > 0)
+            $stmt  = $connection->prepare($query);
+            $stmt->bind_param('s', $param);
+            $stmt->execute();
+            if ($stmt->affected_rows > 0)
             {
                 $rowaffected = true;
             }
@@ -223,9 +236,11 @@ class DBStore implements TokenStore
         try 
         {
             $connection = $this->getMysqlConnection();
-            $query = "delete from " . $this->tableName . " where id='" . $id . "';";
-            $result = mysqli_query($connection, $query);
-            if (!$result)
+            $query = "delete from " . $this->tableName . " where id = ?";
+            $stmt  = $connection->prepare($query);
+            $stmt->bind_param('s', $id);
+            $stmt->execute();
+            if (!$stmt)
             {
                 throw new \Exception($connection->error);
             }
@@ -322,18 +337,20 @@ class DBStore implements TokenStore
             $connection = $this->getMysqlConnection();
             $class = new \ReflectionClass(OAuthToken::class);
             $oauthToken = $class->newInstanceWithoutConstructor();
-            $query = "select * from " . $this->tableName . " where id='" . $id . "';";
-            $result = mysqli_query($connection, $query);
+            $query = "select * from " . $this->tableName . " where id = ?";
+            $stmt  = $connection->prepare($query);
+            $stmt->bind_param('s', $id);
+            $stmt->execute();
+            $result = $stmt->get_result();
             if (!$result)
             {
                 throw new SDKException(Constants::TOKEN_STORE, Constants::GET_TOKEN_BY_ID_DB_ERROR);
             }
-            do
+            if($row = $result->fetch_assoc())
             {
-                $this->setMergeData($oauthToken, $result);
+                $this->setMergeData($oauthToken, $row);
                 return $oauthToken;
             }
-            while (next($result));
         }
         catch (SDKException $ex)
         {
@@ -404,14 +421,11 @@ class DBStore implements TokenStore
             $oauthToken->setAPIDomain($row[Constants::API_DOMAIN]);
         }
     }
-    private function setMergeData(OAuthToken $oauthToken, \mysqli_result $result)
+    private function setMergeData(OAuthToken $oauthToken, array $row)
     {
-        if ($result)
+        if ($row)
         {
-            while ($row = mysqli_fetch_assoc($result))
-            {
-                $this->mergeToken($oauthToken, $row);
-            }
+            $this->mergeToken($oauthToken, $row);
         }
     }
 

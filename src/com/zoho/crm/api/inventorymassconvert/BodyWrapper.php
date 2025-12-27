@@ -26,7 +26,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to convertTo
 	 * @param array $convertTo A array
 	 */
-	public function setConvertTo(array $convertTo)
+	public function setConvertTo(?array $convertTo)
 	{
 		$this->convertTo=$convertTo; 
 		$this->keyModified['convert_to'] = 1; 
@@ -47,7 +47,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to assignTo
 	 * @param User $assignTo An instance of User
 	 */
-	public function setAssignTo(User $assignTo)
+	public function setAssignTo(?User $assignTo)
 	{
 		$this->assignTo=$assignTo; 
 		$this->keyModified['assign_to'] = 1; 
@@ -68,7 +68,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to relatedModules
 	 * @param array $relatedModules A array
 	 */
-	public function setRelatedModules(array $relatedModules)
+	public function setRelatedModules(?array $relatedModules)
 	{
 		$this->relatedModules=$relatedModules; 
 		$this->keyModified['related_modules'] = 1; 
@@ -89,7 +89,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 

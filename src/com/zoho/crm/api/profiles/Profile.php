@@ -41,7 +41,7 @@ class Profile implements Model
 	 * The method to set the value to defaultView
 	 * @param DefaultView $defaultView An instance of DefaultView
 	 */
-	public function setDefaultView(DefaultView $defaultView)
+	public function setDefaultView(?DefaultView $defaultView)
 	{
 		$this->defaultView=$defaultView; 
 		$this->keyModified['_default_view'] = 1; 
@@ -62,7 +62,7 @@ class Profile implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -83,7 +83,7 @@ class Profile implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -104,7 +104,7 @@ class Profile implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -125,7 +125,7 @@ class Profile implements Model
 	 * The method to set the value to default
 	 * @param bool $default A bool
 	 */
-	public function setDefault(bool $default)
+	public function setDefault(?bool $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 
@@ -134,7 +134,7 @@ class Profile implements Model
 
 	/**
 	 * The method to get the delete
-	 * @return bool A bool representing the delete
+	 * @return Delete An instance of Delete
 	 */
 	public function getDelete()
 	{
@@ -144,9 +144,9 @@ class Profile implements Model
 
 	/**
 	 * The method to set the value to delete
-	 * @param bool $delete A bool
+	 * @param Delete $delete An instance of Delete
 	 */
-	public function setDelete($delete)
+	public function setDelete(?Delete $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 
@@ -167,7 +167,7 @@ class Profile implements Model
 	 * The method to set the value to permissionType
 	 * @param string $permissionType A string
 	 */
-	public function setPermissionType(string $permissionType)
+	public function setPermissionType(?string $permissionType)
 	{
 		$this->permissionType=$permissionType; 
 		$this->keyModified['permission_type'] = 1; 
@@ -188,7 +188,7 @@ class Profile implements Model
 	 * The method to set the value to custom
 	 * @param bool $custom A bool
 	 */
-	public function setCustom(bool $custom)
+	public function setCustom(?bool $custom)
 	{
 		$this->custom=$custom; 
 		$this->keyModified['custom'] = 1; 
@@ -209,7 +209,7 @@ class Profile implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -230,7 +230,7 @@ class Profile implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -251,7 +251,7 @@ class Profile implements Model
 	 * The method to set the value to permissionsDetails
 	 * @param array $permissionsDetails A array
 	 */
-	public function setPermissionsDetails(array $permissionsDetails)
+	public function setPermissionsDetails(?array $permissionsDetails)
 	{
 		$this->permissionsDetails=$permissionsDetails; 
 		$this->keyModified['permissions_details'] = 1; 
@@ -272,7 +272,7 @@ class Profile implements Model
 	 * The method to set the value to sections
 	 * @param array $sections A array
 	 */
-	public function setSections(array $sections)
+	public function setSections(?array $sections)
 	{
 		$this->sections=$sections; 
 		$this->keyModified['sections'] = 1; 
@@ -293,7 +293,7 @@ class Profile implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -314,7 +314,7 @@ class Profile implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -335,7 +335,7 @@ class Profile implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -356,7 +356,7 @@ class Profile implements Model
 	 * The method to set the value to category
 	 * @param bool $category A bool
 	 */
-	public function setCategory(bool $category)
+	public function setCategory(?bool $category)
 	{
 		$this->category=$category; 
 		$this->keyModified['category'] = 1; 
@@ -377,7 +377,7 @@ class Profile implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 

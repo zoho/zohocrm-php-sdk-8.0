@@ -28,7 +28,7 @@ class Status implements Model
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['Status'] = 1; 
@@ -49,7 +49,7 @@ class Status implements Model
 	 * The method to set the value to failedCount
 	 * @param int $failedCount A int
 	 */
-	public function setFailedCount(int $failedCount)
+	public function setFailedCount(?int $failedCount)
 	{
 		$this->failedCount=$failedCount; 
 		$this->keyModified['Failed_Count'] = 1; 
@@ -70,7 +70,7 @@ class Status implements Model
 	 * The method to set the value to notUpdatedCount
 	 * @param int $notUpdatedCount A int
 	 */
-	public function setNotUpdatedCount(int $notUpdatedCount)
+	public function setNotUpdatedCount(?int $notUpdatedCount)
 	{
 		$this->notUpdatedCount=$notUpdatedCount; 
 		$this->keyModified['Not_Updated_Count'] = 1; 
@@ -91,7 +91,7 @@ class Status implements Model
 	 * The method to set the value to updatedCount
 	 * @param int $updatedCount A int
 	 */
-	public function setUpdatedCount(int $updatedCount)
+	public function setUpdatedCount(?int $updatedCount)
 	{
 		$this->updatedCount=$updatedCount; 
 		$this->keyModified['Updated_Count'] = 1; 
@@ -112,7 +112,7 @@ class Status implements Model
 	 * The method to set the value to totalCount
 	 * @param int $totalCount A int
 	 */
-	public function setTotalCount(int $totalCount)
+	public function setTotalCount(?int $totalCount)
 	{
 		$this->totalCount=$totalCount; 
 		$this->keyModified['Total_Count'] = 1; 

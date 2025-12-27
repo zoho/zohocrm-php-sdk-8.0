@@ -25,7 +25,7 @@ class ValueDetails implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -66,7 +66,7 @@ class ValueDetails implements Model
 	 * The method to set the value to delete
 	 * @param bool $delete A bool
 	 */
-	public function setDelete($delete)
+	public function setDelete(?bool $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 

@@ -23,7 +23,7 @@ class ResponseWrapper implements Model
 	 * The method to set the value to definition
 	 * @param Definition $definition An instance of Definition
 	 */
-	public function setDefinition(Definition $definition)
+	public function setDefinition(?Definition $definition)
 	{
 		$this->definition=$definition; 
 		$this->keyModified['definition'] = 1; 

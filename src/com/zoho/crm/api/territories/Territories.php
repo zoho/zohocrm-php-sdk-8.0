@@ -38,7 +38,7 @@ class Territories implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -59,7 +59,7 @@ class Territories implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -80,7 +80,7 @@ class Territories implements Model
 	 * The method to set the value to manager
 	 * @param Manager $manager An instance of Manager
 	 */
-	public function setManager(Manager $manager)
+	public function setManager(?Manager $manager)
 	{
 		$this->manager=$manager; 
 		$this->keyModified['manager'] = 1; 
@@ -101,7 +101,7 @@ class Territories implements Model
 	 * The method to set the value to reportingTo
 	 * @param ReportingTo $reportingTo An instance of ReportingTo
 	 */
-	public function setReportingTo(ReportingTo $reportingTo)
+	public function setReportingTo(?ReportingTo $reportingTo)
 	{
 		$this->reportingTo=$reportingTo; 
 		$this->keyModified['reporting_to'] = 1; 
@@ -122,7 +122,7 @@ class Territories implements Model
 	 * The method to set the value to permissionType
 	 * @param Choice $permissionType An instance of Choice
 	 */
-	public function setPermissionType(Choice $permissionType)
+	public function setPermissionType(?Choice $permissionType)
 	{
 		$this->permissionType=$permissionType; 
 		$this->keyModified['permission_type'] = 1; 
@@ -143,7 +143,7 @@ class Territories implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -164,7 +164,7 @@ class Territories implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -185,7 +185,7 @@ class Territories implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -206,7 +206,7 @@ class Territories implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -227,7 +227,7 @@ class Territories implements Model
 	 * The method to set the value to accountRuleCriteria
 	 * @param Criteria $accountRuleCriteria An instance of Criteria
 	 */
-	public function setAccountRuleCriteria(Criteria $accountRuleCriteria)
+	public function setAccountRuleCriteria(?Criteria $accountRuleCriteria)
 	{
 		$this->accountRuleCriteria=$accountRuleCriteria; 
 		$this->keyModified['account_rule_criteria'] = 1; 
@@ -248,7 +248,7 @@ class Territories implements Model
 	 * The method to set the value to dealRuleCriteria
 	 * @param Criteria $dealRuleCriteria An instance of Criteria
 	 */
-	public function setDealRuleCriteria(Criteria $dealRuleCriteria)
+	public function setDealRuleCriteria(?Criteria $dealRuleCriteria)
 	{
 		$this->dealRuleCriteria=$dealRuleCriteria; 
 		$this->keyModified['deal_rule_criteria'] = 1; 
@@ -269,7 +269,7 @@ class Territories implements Model
 	 * The method to set the value to leadRuleCriteria
 	 * @param Criteria $leadRuleCriteria An instance of Criteria
 	 */
-	public function setLeadRuleCriteria(Criteria $leadRuleCriteria)
+	public function setLeadRuleCriteria(?Criteria $leadRuleCriteria)
 	{
 		$this->leadRuleCriteria=$leadRuleCriteria; 
 		$this->keyModified['lead_rule_criteria'] = 1; 
@@ -290,7 +290,7 @@ class Territories implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -311,7 +311,7 @@ class Territories implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 

@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to digest
 	 * @param array $digest A array
 	 */
-	public function setDigest(array $digest)
+	public function setDigest(?array $digest)
 	{
 		$this->digest=$digest; 
 		$this->keyModified['__digest'] = 1; 

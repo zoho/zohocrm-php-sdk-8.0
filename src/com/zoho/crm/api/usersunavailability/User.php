@@ -25,7 +25,7 @@ class User implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -46,7 +46,7 @@ class User implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -67,7 +67,7 @@ class User implements Model
 	 * The method to set the value to zuid
 	 * @param string $zuid A string
 	 */
-	public function setZuid(string $zuid)
+	public function setZuid(?string $zuid)
 	{
 		$this->zuid=$zuid; 
 		$this->keyModified['zuid'] = 1; 

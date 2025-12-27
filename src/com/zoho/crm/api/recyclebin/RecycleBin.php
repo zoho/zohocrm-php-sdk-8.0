@@ -30,7 +30,7 @@ class RecycleBin implements Model
 	 * The method to set the value to displayName
 	 * @param string $displayName A string
 	 */
-	public function setDisplayName(string $displayName)
+	public function setDisplayName(?string $displayName)
 	{
 		$this->displayName=$displayName; 
 		$this->keyModified['display_name'] = 1; 
@@ -51,7 +51,7 @@ class RecycleBin implements Model
 	 * The method to set the value to deletedTime
 	 * @param \DateTime $deletedTime An instance of \DateTime
 	 */
-	public function setDeletedTime(\DateTime $deletedTime)
+	public function setDeletedTime(?\DateTime $deletedTime)
 	{
 		$this->deletedTime=$deletedTime; 
 		$this->keyModified['deleted_time'] = 1; 
@@ -72,7 +72,7 @@ class RecycleBin implements Model
 	 * The method to set the value to owner
 	 * @param MinifiedUser $owner An instance of MinifiedUser
 	 */
-	public function setOwner(MinifiedUser $owner)
+	public function setOwner(?MinifiedUser $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['owner'] = 1; 
@@ -93,7 +93,7 @@ class RecycleBin implements Model
 	 * The method to set the value to module
 	 * @param MinifiedModule $module An instance of MinifiedModule
 	 */
-	public function setModule(MinifiedModule $module)
+	public function setModule(?MinifiedModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -114,7 +114,7 @@ class RecycleBin implements Model
 	 * The method to set the value to deletedBy
 	 * @param MinifiedUser $deletedBy An instance of MinifiedUser
 	 */
-	public function setDeletedBy(MinifiedUser $deletedBy)
+	public function setDeletedBy(?MinifiedUser $deletedBy)
 	{
 		$this->deletedBy=$deletedBy; 
 		$this->keyModified['deleted_by'] = 1; 
@@ -135,7 +135,7 @@ class RecycleBin implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

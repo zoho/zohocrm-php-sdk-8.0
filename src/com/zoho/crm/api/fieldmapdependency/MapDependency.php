@@ -31,7 +31,7 @@ class MapDependency implements Model
 	 * The method to set the value to parent
 	 * @param Parent1 $parent An instance of Parent1
 	 */
-	public function setParent(Parent1 $parent)
+	public function setParent(?Parent1 $parent)
 	{
 		$this->parent=$parent; 
 		$this->keyModified['parent'] = 1; 
@@ -52,7 +52,7 @@ class MapDependency implements Model
 	 * The method to set the value to child
 	 * @param Child $child An instance of Child
 	 */
-	public function setChild(Child $child)
+	public function setChild(?Child $child)
 	{
 		$this->child=$child; 
 		$this->keyModified['child'] = 1; 
@@ -73,7 +73,7 @@ class MapDependency implements Model
 	 * The method to set the value to pickListValues
 	 * @param array $pickListValues A array
 	 */
-	public function setPickListValues(array $pickListValues)
+	public function setPickListValues(?array $pickListValues)
 	{
 		$this->pickListValues=$pickListValues; 
 		$this->keyModified['pick_list_values'] = 1; 
@@ -94,7 +94,7 @@ class MapDependency implements Model
 	 * The method to set the value to internal
 	 * @param bool $internal A bool
 	 */
-	public function setInternal(bool $internal)
+	public function setInternal(?bool $internal)
 	{
 		$this->internal=$internal; 
 		$this->keyModified['internal'] = 1; 
@@ -115,7 +115,7 @@ class MapDependency implements Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -136,7 +136,7 @@ class MapDependency implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -157,7 +157,7 @@ class MapDependency implements Model
 	 * The method to set the value to source
 	 * @param int $source A int
 	 */
-	public function setSource(int $source)
+	public function setSource(?int $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 
@@ -178,7 +178,7 @@ class MapDependency implements Model
 	 * The method to set the value to category
 	 * @param int $category A int
 	 */
-	public function setCategory(int $category)
+	public function setCategory(?int $category)
 	{
 		$this->category=$category; 
 		$this->keyModified['category'] = 1; 
@@ -199,7 +199,7 @@ class MapDependency implements Model
 	 * The method to set the value to subModule
 	 * @param SubModule $subModule An instance of SubModule
 	 */
-	public function setSubModule(SubModule $subModule)
+	public function setSubModule(?SubModule $subModule)
 	{
 		$this->subModule=$subModule; 
 		$this->keyModified['sub_module'] = 1; 

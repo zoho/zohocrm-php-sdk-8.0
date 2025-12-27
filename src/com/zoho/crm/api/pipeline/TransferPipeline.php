@@ -24,7 +24,7 @@ class TransferPipeline implements Model
 	 * The method to set the value to pipeline
 	 * @param TPipeline $pipeline An instance of TPipeline
 	 */
-	public function setPipeline(TPipeline $pipeline)
+	public function setPipeline(?TPipeline $pipeline)
 	{
 		$this->pipeline=$pipeline; 
 		$this->keyModified['pipeline'] = 1; 
@@ -45,7 +45,7 @@ class TransferPipeline implements Model
 	 * The method to set the value to stages
 	 * @param array $stages A array
 	 */
-	public function setStages(array $stages)
+	public function setStages(?array $stages)
 	{
 		$this->stages=$stages; 
 		$this->keyModified['stages'] = 1; 

@@ -24,7 +24,7 @@ class AssociatedGroupsWrapper implements Model, ResponseHandler
 	 * The method to set the value to userGroups
 	 * @param array $userGroups A array
 	 */
-	public function setUserGroups(array $userGroups)
+	public function setUserGroups(?array $userGroups)
 	{
 		$this->userGroups=$userGroups; 
 		$this->keyModified['user_groups'] = 1; 
@@ -45,7 +45,7 @@ class AssociatedGroupsWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

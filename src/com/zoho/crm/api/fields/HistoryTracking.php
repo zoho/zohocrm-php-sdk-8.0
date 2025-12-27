@@ -29,7 +29,7 @@ class HistoryTracking implements Model
 	 * The method to set the value to relatedListName
 	 * @param string $relatedListName A string
 	 */
-	public function setRelatedListName(string $relatedListName)
+	public function setRelatedListName(?string $relatedListName)
 	{
 		$this->relatedListName=$relatedListName; 
 		$this->keyModified['related_list_name'] = 1; 
@@ -50,7 +50,7 @@ class HistoryTracking implements Model
 	 * The method to set the value to durationConfiguration
 	 * @param Choice $durationConfiguration An instance of Choice
 	 */
-	public function setDurationConfiguration(Choice $durationConfiguration)
+	public function setDurationConfiguration(?Choice $durationConfiguration)
 	{
 		$this->durationConfiguration=$durationConfiguration; 
 		$this->keyModified['duration_configuration'] = 1; 
@@ -71,7 +71,7 @@ class HistoryTracking implements Model
 	 * The method to set the value to followedFields
 	 * @param array $followedFields A array
 	 */
-	public function setFollowedFields(array $followedFields)
+	public function setFollowedFields(?array $followedFields)
 	{
 		$this->followedFields=$followedFields; 
 		$this->keyModified['followed_fields'] = 1; 
@@ -92,7 +92,7 @@ class HistoryTracking implements Model
 	 * The method to set the value to module
 	 * @param HistoryTrackingModule $module An instance of HistoryTrackingModule
 	 */
-	public function setModule(HistoryTrackingModule $module)
+	public function setModule(?HistoryTrackingModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -113,7 +113,7 @@ class HistoryTracking implements Model
 	 * The method to set the value to durationConfiguredField
 	 * @param MinifiedModule $durationConfiguredField An instance of MinifiedModule
 	 */
-	public function setDurationConfiguredField(MinifiedModule $durationConfiguredField)
+	public function setDurationConfiguredField(?MinifiedModule $durationConfiguredField)
 	{
 		$this->durationConfiguredField=$durationConfiguredField; 
 		$this->keyModified['duration_configured_field'] = 1; 

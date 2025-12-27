@@ -23,7 +23,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->addKeyValue('name', $name); 
 
@@ -43,7 +43,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->addKeyValue('Email', $email); 
 
@@ -63,7 +63,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to invited
 	 * @param bool $invited A bool
 	 */
-	public function setInvited(bool $invited)
+	public function setInvited(?bool $invited)
 	{
 		$this->addKeyValue('invited', $invited); 
 
@@ -83,7 +83,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->addKeyValue('type', $type); 
 
@@ -103,7 +103,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to participant
 	 * @param string $participant A string
 	 */
-	public function setParticipant(string $participant)
+	public function setParticipant(?string $participant)
 	{
 		$this->addKeyValue('participant', $participant); 
 
@@ -123,7 +123,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->addKeyValue('status', $status); 
 
@@ -143,7 +143,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->addKeyValue('id', $id); 
 
@@ -163,7 +163,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->addKeyValue('Created_By', $createdBy); 
 
@@ -183,7 +183,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->addKeyValue('Created_Time', $createdTime); 
 
@@ -203,7 +203,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->addKeyValue('Modified_By', $modifiedBy); 
 
@@ -223,7 +223,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->addKeyValue('Modified_Time', $modifiedTime); 
 
@@ -243,7 +243,7 @@ class Participants extends Record implements Model
 	 * The method to set the value to tag
 	 * @param array $tag A array
 	 */
-	public function setTag(array $tag)
+	public function setTag(?array $tag)
 	{
 		$this->addKeyValue('Tag', $tag); 
 

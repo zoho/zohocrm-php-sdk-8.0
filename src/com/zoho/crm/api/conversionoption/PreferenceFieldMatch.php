@@ -24,7 +24,7 @@ class PreferenceFieldMatch implements Model
 	 * The method to set the value to field
 	 * @param Field $field An instance of Field
 	 */
-	public function setField(Field $field)
+	public function setField(?Field $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -45,7 +45,7 @@ class PreferenceFieldMatch implements Model
 	 * The method to set the value to matchedLeadValue
 	 * @param string $matchedLeadValue A string
 	 */
-	public function setMatchedLeadValue(string $matchedLeadValue)
+	public function setMatchedLeadValue(?string $matchedLeadValue)
 	{
 		$this->matchedLeadValue=$matchedLeadValue; 
 		$this->keyModified['matched_lead_value'] = 1; 

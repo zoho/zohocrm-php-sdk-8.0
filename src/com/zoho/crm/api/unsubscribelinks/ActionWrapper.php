@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to unsubscribeLinks
 	 * @param array $unsubscribeLinks A array
 	 */
-	public function setUnsubscribeLinks(array $unsubscribeLinks)
+	public function setUnsubscribeLinks(?array $unsubscribeLinks)
 	{
 		$this->unsubscribeLinks=$unsubscribeLinks; 
 		$this->keyModified['unsubscribe_links'] = 1; 

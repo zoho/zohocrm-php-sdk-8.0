@@ -25,7 +25,7 @@ class RulesSummary implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -46,7 +46,7 @@ class RulesSummary implements Model
 	 * The method to set the value to ruleComputationStatus
 	 * @param bool $ruleComputationStatus A bool
 	 */
-	public function setRuleComputationStatus(bool $ruleComputationStatus)
+	public function setRuleComputationStatus(?bool $ruleComputationStatus)
 	{
 		$this->ruleComputationStatus=$ruleComputationStatus; 
 		$this->keyModified['rule_computation_status'] = 1; 
@@ -67,7 +67,7 @@ class RulesSummary implements Model
 	 * The method to set the value to ruleCount
 	 * @param int $ruleCount A int
 	 */
-	public function setRuleCount(int $ruleCount)
+	public function setRuleCount(?int $ruleCount)
 	{
 		$this->ruleCount=$ruleCount; 
 		$this->keyModified['rule_count'] = 1; 

@@ -24,7 +24,7 @@ class MergeData implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['_fields'] = 1; 
@@ -45,7 +45,7 @@ class MergeData implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

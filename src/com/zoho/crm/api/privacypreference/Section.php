@@ -27,7 +27,7 @@ class Section implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -48,7 +48,7 @@ class Section implements Model
 	 * The method to set the value to tooltip
 	 * @param string $tooltip A string
 	 */
-	public function setTooltip(string $tooltip)
+	public function setTooltip(?string $tooltip)
 	{
 		$this->tooltip=$tooltip; 
 		$this->keyModified['tooltip'] = 1; 
@@ -69,7 +69,7 @@ class Section implements Model
 	 * The method to set the value to showType
 	 * @param string $showType A string
 	 */
-	public function setShowType(string $showType)
+	public function setShowType(?string $showType)
 	{
 		$this->showType=$showType; 
 		$this->keyModified['show_type'] = 1; 
@@ -90,7 +90,7 @@ class Section implements Model
 	 * The method to set the value to title
 	 * @param string $title A string
 	 */
-	public function setTitle(string $title)
+	public function setTitle(?string $title)
 	{
 		$this->title=$title; 
 		$this->keyModified['title'] = 1; 
@@ -111,7 +111,7 @@ class Section implements Model
 	 * The method to set the value to options
 	 * @param array $options A array
 	 */
-	public function setOptions(array $options)
+	public function setOptions(?array $options)
 	{
 		$this->options=$options; 
 		$this->keyModified['options'] = 1; 

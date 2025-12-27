@@ -24,7 +24,7 @@ class Section implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -45,7 +45,7 @@ class Section implements Model
 	 * The method to set the value to categories
 	 * @param array $categories A array
 	 */
-	public function setCategories(array $categories)
+	public function setCategories(?array $categories)
 	{
 		$this->categories=$categories; 
 		$this->keyModified['categories'] = 1; 

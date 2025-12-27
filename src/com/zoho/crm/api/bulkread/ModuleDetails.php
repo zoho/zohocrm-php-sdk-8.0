@@ -24,7 +24,7 @@ class ModuleDetails implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -45,7 +45,7 @@ class ModuleDetails implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 

@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to emailSignatures
 	 * @param array $emailSignatures A array
 	 */
-	public function setEmailSignatures(array $emailSignatures)
+	public function setEmailSignatures(?array $emailSignatures)
 	{
 		$this->emailSignatures=$emailSignatures; 
 		$this->keyModified['email_signatures'] = 1; 

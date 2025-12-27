@@ -23,7 +23,7 @@ class SubformProperty implements Model
 	 * The method to set the value to pinnedColumn
 	 * @param bool $pinnedColumn A bool
 	 */
-	public function setPinnedColumn(bool $pinnedColumn)
+	public function setPinnedColumn(?bool $pinnedColumn)
 	{
 		$this->pinnedColumn=$pinnedColumn; 
 		$this->keyModified['pinned_column'] = 1; 

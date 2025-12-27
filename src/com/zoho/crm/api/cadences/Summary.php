@@ -25,7 +25,7 @@ class Summary implements Model
 	 * The method to set the value to taskFollowUpCount
 	 * @param int $taskFollowUpCount A int
 	 */
-	public function setTaskFollowUpCount(int $taskFollowUpCount)
+	public function setTaskFollowUpCount(?int $taskFollowUpCount)
 	{
 		$this->taskFollowUpCount=$taskFollowUpCount; 
 		$this->keyModified['task_follow_up_count'] = 1; 
@@ -46,7 +46,7 @@ class Summary implements Model
 	 * The method to set the value to callFollowUpCount
 	 * @param int $callFollowUpCount A int
 	 */
-	public function setCallFollowUpCount(int $callFollowUpCount)
+	public function setCallFollowUpCount(?int $callFollowUpCount)
 	{
 		$this->callFollowUpCount=$callFollowUpCount; 
 		$this->keyModified['call_follow_up_count'] = 1; 
@@ -67,7 +67,7 @@ class Summary implements Model
 	 * The method to set the value to emailFollowUpCount
 	 * @param int $emailFollowUpCount A int
 	 */
-	public function setEmailFollowUpCount(int $emailFollowUpCount)
+	public function setEmailFollowUpCount(?int $emailFollowUpCount)
 	{
 		$this->emailFollowUpCount=$emailFollowUpCount; 
 		$this->keyModified['email_follow_up_count'] = 1; 

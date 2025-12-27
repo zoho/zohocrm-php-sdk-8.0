@@ -23,7 +23,7 @@ class Count implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 

@@ -28,7 +28,7 @@ class Territory implements Model
 	 * The method to set the value to assigned
 	 * @param string $assigned A string
 	 */
-	public function setAssigned(string $assigned)
+	public function setAssigned(?string $assigned)
 	{
 		$this->assigned=$assigned; 
 		$this->keyModified['$assigned'] = 1; 
@@ -49,7 +49,7 @@ class Territory implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['Name'] = 1; 
@@ -70,7 +70,7 @@ class Territory implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -91,7 +91,7 @@ class Territory implements Model
 	 * The method to set the value to assignedTime
 	 * @param \DateTime $assignedTime An instance of \DateTime
 	 */
-	public function setAssignedTime(\DateTime $assignedTime)
+	public function setAssignedTime(?\DateTime $assignedTime)
 	{
 		$this->assignedTime=$assignedTime; 
 		$this->keyModified['$assigned_time'] = 1; 
@@ -112,7 +112,7 @@ class Territory implements Model
 	 * The method to set the value to assignedBy
 	 * @param MinifiedUser $assignedBy An instance of MinifiedUser
 	 */
-	public function setAssignedBy(MinifiedUser $assignedBy)
+	public function setAssignedBy(?MinifiedUser $assignedBy)
 	{
 		$this->assignedBy=$assignedBy; 
 		$this->keyModified['$assigned_by'] = 1; 

@@ -26,7 +26,7 @@ class Signers implements Model
 	 * The method to set the value to recipientName
 	 * @param string $recipientName A string
 	 */
-	public function setRecipientName(string $recipientName)
+	public function setRecipientName(?string $recipientName)
 	{
 		$this->recipientName=$recipientName; 
 		$this->keyModified['recipient_name'] = 1; 
@@ -47,7 +47,7 @@ class Signers implements Model
 	 * The method to set the value to actionType
 	 * @param Choice $actionType An instance of Choice
 	 */
-	public function setActionType(Choice $actionType)
+	public function setActionType(?Choice $actionType)
 	{
 		$this->actionType=$actionType; 
 		$this->keyModified['action_type'] = 1; 
@@ -68,7 +68,7 @@ class Signers implements Model
 	 * The method to set the value to recipient
 	 * @param Address $recipient An instance of Address
 	 */
-	public function setRecipient(Address $recipient)
+	public function setRecipient(?Address $recipient)
 	{
 		$this->recipient=$recipient; 
 		$this->keyModified['recipient'] = 1; 

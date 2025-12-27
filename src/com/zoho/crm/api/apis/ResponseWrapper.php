@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to apis
 	 * @param array $apis A array
 	 */
-	public function setApis(array $apis)
+	public function setApis(?array $apis)
 	{
 		$this->apis=$apis; 
 		$this->keyModified['__apis'] = 1; 

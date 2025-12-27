@@ -32,7 +32,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to service
 	 * @param string $service A string
 	 */
-	public function setService(string $service)
+	public function setService(?string $service)
 	{
 		$this->service=$service; 
 		$this->keyModified['service'] = 1; 
@@ -53,7 +53,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to title
 	 * @param string $title A string
 	 */
-	public function setTitle(string $title)
+	public function setTitle(?string $title)
 	{
 		$this->title=$title; 
 		$this->keyModified['title'] = 1; 
@@ -74,7 +74,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to allDay
 	 * @param bool $allDay A bool
 	 */
-	public function setAllDay(bool $allDay)
+	public function setAllDay(?bool $allDay)
 	{
 		$this->allDay=$allDay; 
 		$this->keyModified['all_day'] = 1; 
@@ -95,7 +95,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to tpCalendarId
 	 * @param string $tpCalendarId A string
 	 */
-	public function setTpCalendarId(string $tpCalendarId)
+	public function setTpCalendarId(?string $tpCalendarId)
 	{
 		$this->tpCalendarId=$tpCalendarId; 
 		$this->keyModified['tp_calendar_id'] = 1; 
@@ -116,7 +116,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to tpEventId
 	 * @param string $tpEventId A string
 	 */
-	public function setTpEventId(string $tpEventId)
+	public function setTpEventId(?string $tpEventId)
 	{
 		$this->tpEventId=$tpEventId; 
 		$this->keyModified['tp_event_id'] = 1; 
@@ -137,7 +137,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to comments
 	 * @param string $comments A string
 	 */
-	public function setComments(string $comments)
+	public function setComments(?string $comments)
 	{
 		$this->comments=$comments; 
 		$this->keyModified['comments'] = 1; 
@@ -158,7 +158,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to from
 	 * @param \DateTime $from An instance of \DateTime
 	 */
-	public function setFrom(\DateTime $from)
+	public function setFrom(?\DateTime $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -179,7 +179,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -200,7 +200,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to to
 	 * @param \DateTime $to An instance of \DateTime
 	 */
-	public function setTo(\DateTime $to)
+	public function setTo(?\DateTime $to)
 	{
 		$this->to=$to; 
 		$this->keyModified['to'] = 1; 
@@ -221,7 +221,7 @@ class UsersUnavailability implements Model
 	 * The method to set the value to user
 	 * @param User $user An instance of User
 	 */
-	public function setUser(User $user)
+	public function setUser(?User $user)
 	{
 		$this->user=$user; 
 		$this->keyModified['user'] = 1; 

@@ -27,7 +27,7 @@ class Profiles implements Model
 	 * The method to set the value to default
 	 * @param bool $default A bool
 	 */
-	public function setDefault(bool $default)
+	public function setDefault(?bool $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 
@@ -48,7 +48,7 @@ class Profiles implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -69,7 +69,7 @@ class Profiles implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -90,7 +90,7 @@ class Profiles implements Model
 	 * The method to set the value to defaultView
 	 * @param DefaultView $defaultView An instance of DefaultView
 	 */
-	public function setDefaultView(DefaultView $defaultView)
+	public function setDefaultView(?DefaultView $defaultView)
 	{
 		$this->defaultView=$defaultView; 
 		$this->keyModified['_default_view'] = 1; 
@@ -111,7 +111,7 @@ class Profiles implements Model
 	 * The method to set the value to defaultAssignmentView
 	 * @param DefaultAssignmentView $defaultAssignmentView An instance of DefaultAssignmentView
 	 */
-	public function setDefaultAssignmentView(DefaultAssignmentView $defaultAssignmentView)
+	public function setDefaultAssignmentView(?DefaultAssignmentView $defaultAssignmentView)
 	{
 		$this->defaultAssignmentView=$defaultAssignmentView; 
 		$this->keyModified['_default_assignment_view'] = 1; 

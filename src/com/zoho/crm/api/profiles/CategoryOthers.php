@@ -25,7 +25,7 @@ class CategoryOthers implements Model, Category
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -46,7 +46,7 @@ class CategoryOthers implements Model, Category
 	 * The method to set the value to permissionsDetails
 	 * @param array $permissionsDetails A array
 	 */
-	public function setPermissionsDetails(array $permissionsDetails)
+	public function setPermissionsDetails(?array $permissionsDetails)
 	{
 		$this->permissionsDetails=$permissionsDetails; 
 		$this->keyModified['permissions_details'] = 1; 
@@ -67,7 +67,7 @@ class CategoryOthers implements Model, Category
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 

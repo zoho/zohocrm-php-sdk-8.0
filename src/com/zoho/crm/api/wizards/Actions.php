@@ -31,7 +31,7 @@ class Actions implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -52,7 +52,7 @@ class Actions implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -73,7 +73,7 @@ class Actions implements Model
 	 * The method to set the value to segment
 	 * @param Segment $segment An instance of Segment
 	 */
-	public function setSegment(Segment $segment)
+	public function setSegment(?Segment $segment)
 	{
 		$this->segment=$segment; 
 		$this->keyModified['segment'] = 1; 
@@ -94,7 +94,7 @@ class Actions implements Model
 	 * The method to set the value to fields
 	 * @param Fields $fields An instance of Fields
 	 */
-	public function setFields(Fields $fields)
+	public function setFields(?Fields $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -115,7 +115,7 @@ class Actions implements Model
 	 * The method to set the value to field
 	 * @param Fields $field An instance of Fields
 	 */
-	public function setField(Fields $field)
+	public function setField(?Fields $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -156,7 +156,7 @@ class Actions implements Model
 	 * The method to set the value to exemptedProfiles
 	 * @param array $exemptedProfiles A array
 	 */
-	public function setExemptedProfiles(array $exemptedProfiles)
+	public function setExemptedProfiles(?array $exemptedProfiles)
 	{
 		$this->exemptedProfiles=$exemptedProfiles; 
 		$this->keyModified['exempted_profiles'] = 1; 

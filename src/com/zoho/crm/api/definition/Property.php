@@ -34,7 +34,7 @@ class Property implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -55,7 +55,7 @@ class Property implements Model
 	 * The method to set the value to allowedValues
 	 * @param array $allowedValues A array
 	 */
-	public function setAllowedValues(array $allowedValues)
+	public function setAllowedValues(?array $allowedValues)
 	{
 		$this->allowedValues=$allowedValues; 
 		$this->keyModified['allowed_values'] = 1; 
@@ -76,7 +76,7 @@ class Property implements Model
 	 * The method to set the value to uiType
 	 * @param int $uiType A int
 	 */
-	public function setUiType(int $uiType)
+	public function setUiType(?int $uiType)
 	{
 		$this->uiType=$uiType; 
 		$this->keyModified['ui_type'] = 1; 
@@ -97,7 +97,7 @@ class Property implements Model
 	 * The method to set the value to regex
 	 * @param string $regex A string
 	 */
-	public function setRegex(string $regex)
+	public function setRegex(?string $regex)
 	{
 		$this->regex=$regex; 
 		$this->keyModified['regex'] = 1; 
@@ -118,7 +118,7 @@ class Property implements Model
 	 * The method to set the value to readOnly
 	 * @param bool $readOnly A bool
 	 */
-	public function setReadOnly(bool $readOnly)
+	public function setReadOnly(?bool $readOnly)
 	{
 		$this->readOnly=$readOnly; 
 		$this->keyModified['read_only'] = 1; 
@@ -139,7 +139,7 @@ class Property implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -160,7 +160,7 @@ class Property implements Model
 	 * The method to set the value to fieldLabel
 	 * @param string $fieldLabel A string
 	 */
-	public function setFieldLabel(string $fieldLabel)
+	public function setFieldLabel(?string $fieldLabel)
 	{
 		$this->fieldLabel=$fieldLabel; 
 		$this->keyModified['field_label'] = 1; 
@@ -181,7 +181,7 @@ class Property implements Model
 	 * The method to set the value to dataType
 	 * @param string $dataType A string
 	 */
-	public function setDataType(string $dataType)
+	public function setDataType(?string $dataType)
 	{
 		$this->dataType=$dataType; 
 		$this->keyModified['data_type'] = 1; 
@@ -202,7 +202,7 @@ class Property implements Model
 	 * The method to set the value to length
 	 * @param int $length A int
 	 */
-	public function setLength(int $length)
+	public function setLength(?int $length)
 	{
 		$this->length=$length; 
 		$this->keyModified['length'] = 1; 
@@ -223,7 +223,7 @@ class Property implements Model
 	 * The method to set the value to availableInUserLayout
 	 * @param bool $availableInUserLayout A bool
 	 */
-	public function setAvailableInUserLayout(bool $availableInUserLayout)
+	public function setAvailableInUserLayout(?bool $availableInUserLayout)
 	{
 		$this->availableInUserLayout=$availableInUserLayout; 
 		$this->keyModified['available_in_user_layout'] = 1; 
@@ -244,7 +244,7 @@ class Property implements Model
 	 * The method to set the value to required
 	 * @param bool $required A bool
 	 */
-	public function setRequired(bool $required)
+	public function setRequired(?bool $required)
 	{
 		$this->required=$required; 
 		$this->keyModified['required'] = 1; 
@@ -265,7 +265,7 @@ class Property implements Model
 	 * The method to set the value to properties
 	 * @param array $properties A array
 	 */
-	public function setProperties(array $properties)
+	public function setProperties(?array $properties)
 	{
 		$this->properties=$properties; 
 		$this->keyModified['properties'] = 1; 

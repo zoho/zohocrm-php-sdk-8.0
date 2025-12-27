@@ -29,7 +29,7 @@ class FieldMapping implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -50,7 +50,7 @@ class FieldMapping implements Model
 	 * The method to set the value to index
 	 * @param int $index A int
 	 */
-	public function setIndex(int $index)
+	public function setIndex(?int $index)
 	{
 		$this->index=$index; 
 		$this->keyModified['index'] = 1; 
@@ -71,7 +71,7 @@ class FieldMapping implements Model
 	 * The method to set the value to format
 	 * @param string $format A string
 	 */
-	public function setFormat(string $format)
+	public function setFormat(?string $format)
 	{
 		$this->format=$format; 
 		$this->keyModified['format'] = 1; 
@@ -92,7 +92,7 @@ class FieldMapping implements Model
 	 * The method to set the value to findBy
 	 * @param string $findBy A string
 	 */
-	public function setFindBy(string $findBy)
+	public function setFindBy(?string $findBy)
 	{
 		$this->findBy=$findBy; 
 		$this->keyModified['find_by'] = 1; 
@@ -113,7 +113,7 @@ class FieldMapping implements Model
 	 * The method to set the value to defaultValue
 	 * @param DefaultValue $defaultValue An instance of DefaultValue
 	 */
-	public function setDefaultValue(DefaultValue $defaultValue)
+	public function setDefaultValue(?DefaultValue $defaultValue)
 	{
 		$this->defaultValue=$defaultValue; 
 		$this->keyModified['default_value'] = 1; 
@@ -134,7 +134,7 @@ class FieldMapping implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -155,7 +155,7 @@ class FieldMapping implements Model
 	 * The method to set the value to parentColumnIndex
 	 * @param int $parentColumnIndex A int
 	 */
-	public function setParentColumnIndex(int $parentColumnIndex)
+	public function setParentColumnIndex(?int $parentColumnIndex)
 	{
 		$this->parentColumnIndex=$parentColumnIndex; 
 		$this->keyModified['parent_column_index'] = 1; 

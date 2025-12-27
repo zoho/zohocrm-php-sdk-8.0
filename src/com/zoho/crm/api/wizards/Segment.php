@@ -31,7 +31,7 @@ class Segment implements Model
 	 * The method to set the value to sequenceNumber
 	 * @param int $sequenceNumber A int
 	 */
-	public function setSequenceNumber(int $sequenceNumber)
+	public function setSequenceNumber(?int $sequenceNumber)
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
@@ -52,7 +52,7 @@ class Segment implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -73,7 +73,7 @@ class Segment implements Model
 	 * The method to set the value to columnCount
 	 * @param int $columnCount A int
 	 */
-	public function setColumnCount(int $columnCount)
+	public function setColumnCount(?int $columnCount)
 	{
 		$this->columnCount=$columnCount; 
 		$this->keyModified['column_count'] = 1; 
@@ -94,7 +94,7 @@ class Segment implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -115,7 +115,7 @@ class Segment implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -136,7 +136,7 @@ class Segment implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -157,7 +157,7 @@ class Segment implements Model
 	 * The method to set the value to buttons
 	 * @param array $buttons A array
 	 */
-	public function setButtons(array $buttons)
+	public function setButtons(?array $buttons)
 	{
 		$this->buttons=$buttons; 
 		$this->keyModified['buttons'] = 1; 
@@ -178,7 +178,7 @@ class Segment implements Model
 	 * The method to set the value to elements
 	 * @param array $elements A array
 	 */
-	public function setElements(array $elements)
+	public function setElements(?array $elements)
 	{
 		$this->elements=$elements; 
 		$this->keyModified['elements'] = 1; 

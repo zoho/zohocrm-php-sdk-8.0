@@ -24,7 +24,7 @@ class GroupedCountWrapper implements Model, ResponseHandler
 	 * The method to set the value to groupedCounts
 	 * @param array $groupedCounts A array
 	 */
-	public function setGroupedCounts(array $groupedCounts)
+	public function setGroupedCounts(?array $groupedCounts)
 	{
 		$this->groupedCounts=$groupedCounts; 
 		$this->keyModified['grouped_counts'] = 1; 
@@ -45,7 +45,7 @@ class GroupedCountWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

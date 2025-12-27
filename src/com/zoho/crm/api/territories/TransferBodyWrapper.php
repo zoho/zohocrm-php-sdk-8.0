@@ -23,7 +23,7 @@ class TransferBodyWrapper implements Model
 	 * The method to set the value to territories
 	 * @param array $territories A array
 	 */
-	public function setTerritories(array $territories)
+	public function setTerritories(?array $territories)
 	{
 		$this->territories=$territories; 
 		$this->keyModified['territories'] = 1; 

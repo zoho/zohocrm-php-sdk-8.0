@@ -35,7 +35,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to from
 	 * @param From $from An instance of From
 	 */
-	public function setFrom(From $from)
+	public function setFrom(?From $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -56,7 +56,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to to
 	 * @param array $to A array
 	 */
-	public function setTo(array $to)
+	public function setTo(?array $to)
 	{
 		$this->to=$to; 
 		$this->keyModified['to'] = 1; 
@@ -77,7 +77,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to cc
 	 * @param array $cc A array
 	 */
-	public function setCc(array $cc)
+	public function setCc(?array $cc)
 	{
 		$this->cc=$cc; 
 		$this->keyModified['cc'] = 1; 
@@ -98,7 +98,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to bcc
 	 * @param array $bcc A array
 	 */
-	public function setBcc(array $bcc)
+	public function setBcc(?array $bcc)
 	{
 		$this->bcc=$bcc; 
 		$this->keyModified['bcc'] = 1; 
@@ -119,7 +119,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to attachments
 	 * @param array $attachments A array
 	 */
-	public function setAttachments(array $attachments)
+	public function setAttachments(?array $attachments)
 	{
 		$this->attachments=$attachments; 
 		$this->keyModified['attachments'] = 1; 
@@ -140,7 +140,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 
@@ -161,7 +161,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to mailFormat
 	 * @param Choice $mailFormat An instance of Choice
 	 */
-	public function setMailFormat(Choice $mailFormat)
+	public function setMailFormat(?Choice $mailFormat)
 	{
 		$this->mailFormat=$mailFormat; 
 		$this->keyModified['mail_format'] = 1; 
@@ -182,7 +182,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -203,7 +203,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to originalMessageId
 	 * @param string $originalMessageId A string
 	 */
-	public function setOriginalMessageId(string $originalMessageId)
+	public function setOriginalMessageId(?string $originalMessageId)
 	{
 		$this->originalMessageId=$originalMessageId; 
 		$this->keyModified['original_message_id'] = 1; 
@@ -224,7 +224,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to sent
 	 * @param bool $sent A bool
 	 */
-	public function setSent(bool $sent)
+	public function setSent(?bool $sent)
 	{
 		$this->sent=$sent; 
 		$this->keyModified['sent'] = 1; 
@@ -245,7 +245,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to dateTime
 	 * @param \DateTime $dateTime An instance of \DateTime
 	 */
-	public function setDateTime(\DateTime $dateTime)
+	public function setDateTime(?\DateTime $dateTime)
 	{
 		$this->dateTime=$dateTime; 
 		$this->keyModified['date_time'] = 1; 
@@ -266,7 +266,7 @@ class AssociateEmail implements Model
 	 * The method to set the value to linkedRecord
 	 * @param LinkedRecord $linkedRecord An instance of LinkedRecord
 	 */
-	public function setLinkedRecord(LinkedRecord $linkedRecord)
+	public function setLinkedRecord(?LinkedRecord $linkedRecord)
 	{
 		$this->linkedRecord=$linkedRecord; 
 		$this->keyModified['linked_record'] = 1; 

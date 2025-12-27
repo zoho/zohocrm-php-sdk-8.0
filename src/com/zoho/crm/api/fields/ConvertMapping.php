@@ -25,7 +25,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to contacts
 	 * @param string $contacts A string
 	 */
-	public function setContacts(string $contacts)
+	public function setContacts(?string $contacts)
 	{
 		$this->contacts=$contacts; 
 		$this->keyModified['Contacts'] = 1; 
@@ -46,7 +46,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to deals
 	 * @param string $deals A string
 	 */
-	public function setDeals(string $deals)
+	public function setDeals(?string $deals)
 	{
 		$this->deals=$deals; 
 		$this->keyModified['Deals'] = 1; 
@@ -67,7 +67,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to accounts
 	 * @param string $accounts A string
 	 */
-	public function setAccounts(string $accounts)
+	public function setAccounts(?string $accounts)
 	{
 		$this->accounts=$accounts; 
 		$this->keyModified['Accounts'] = 1; 

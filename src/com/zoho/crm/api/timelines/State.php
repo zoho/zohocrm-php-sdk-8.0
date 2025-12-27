@@ -26,7 +26,7 @@ class State implements Model
 	 * The method to set the value to triggerType
 	 * @param string $triggerType A string
 	 */
-	public function setTriggerType(string $triggerType)
+	public function setTriggerType(?string $triggerType)
 	{
 		$this->triggerType=$triggerType; 
 		$this->keyModified['trigger_type'] = 1; 
@@ -47,7 +47,7 @@ class State implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -68,7 +68,7 @@ class State implements Model
 	 * The method to set the value to isLastState
 	 * @param bool $isLastState A bool
 	 */
-	public function setIsLastState(bool $isLastState)
+	public function setIsLastState(?bool $isLastState)
 	{
 		$this->isLastState=$isLastState; 
 		$this->keyModified['is_last_state'] = 1; 
@@ -89,7 +89,7 @@ class State implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

@@ -25,7 +25,7 @@ class PathFinder implements Model
 	 * The method to set the value to processEntry
 	 * @param bool $processEntry A bool
 	 */
-	public function setProcessEntry(bool $processEntry)
+	public function setProcessEntry(?bool $processEntry)
 	{
 		$this->processEntry=$processEntry; 
 		$this->keyModified['process_entry'] = 1; 
@@ -46,7 +46,7 @@ class PathFinder implements Model
 	 * The method to set the value to processExit
 	 * @param bool $processExit A bool
 	 */
-	public function setProcessExit(bool $processExit)
+	public function setProcessExit(?bool $processExit)
 	{
 		$this->processExit=$processExit; 
 		$this->keyModified['process_exit'] = 1; 
@@ -67,7 +67,7 @@ class PathFinder implements Model
 	 * The method to set the value to state
 	 * @param State $state An instance of State
 	 */
-	public function setState(State $state)
+	public function setState(?State $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['state'] = 1; 

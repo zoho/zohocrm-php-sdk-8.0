@@ -26,7 +26,7 @@ class Owner implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -47,7 +47,7 @@ class Owner implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -68,7 +68,7 @@ class Owner implements Model
 	 * The method to set the value to lastName
 	 * @param string $lastName A string
 	 */
-	public function setLastName(string $lastName)
+	public function setLastName(?string $lastName)
 	{
 		$this->lastName=$lastName; 
 		$this->keyModified['last_name'] = 1; 
@@ -89,7 +89,7 @@ class Owner implements Model
 	 * The method to set the value to firstName
 	 * @param string $firstName A string
 	 */
-	public function setFirstName(string $firstName)
+	public function setFirstName(?string $firstName)
 	{
 		$this->firstName=$firstName; 
 		$this->keyModified['first_name'] = 1; 

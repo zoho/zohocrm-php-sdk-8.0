@@ -23,7 +23,7 @@ class ReplaceBodyWrapper implements Model
 	 * The method to set the value to replacePicklistValues
 	 * @param array $replacePicklistValues A array
 	 */
-	public function setReplacePicklistValues(array $replacePicklistValues)
+	public function setReplacePicklistValues(?array $replacePicklistValues)
 	{
 		$this->replacePicklistValues=$replacePicklistValues; 
 		$this->keyModified['replace_picklist_values'] = 1; 

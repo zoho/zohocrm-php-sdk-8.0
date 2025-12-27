@@ -27,7 +27,7 @@ class MinifiedProperty1 implements Model
 	 * The method to set the value to readOnly
 	 * @param bool $readOnly A bool
 	 */
-	public function setReadOnly(bool $readOnly)
+	public function setReadOnly(?bool $readOnly)
 	{
 		$this->readOnly=$readOnly; 
 		$this->keyModified['read_only'] = 1; 
@@ -48,7 +48,7 @@ class MinifiedProperty1 implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -69,7 +69,7 @@ class MinifiedProperty1 implements Model
 	 * The method to set the value to dataType
 	 * @param string $dataType A string
 	 */
-	public function setDataType(string $dataType)
+	public function setDataType(?string $dataType)
 	{
 		$this->dataType=$dataType; 
 		$this->keyModified['data_type'] = 1; 
@@ -90,7 +90,7 @@ class MinifiedProperty1 implements Model
 	 * The method to set the value to length
 	 * @param int $length A int
 	 */
-	public function setLength(int $length)
+	public function setLength(?int $length)
 	{
 		$this->length=$length; 
 		$this->keyModified['length'] = 1; 
@@ -111,7 +111,7 @@ class MinifiedProperty1 implements Model
 	 * The method to set the value to required
 	 * @param bool $required A bool
 	 */
-	public function setRequired(bool $required)
+	public function setRequired(?bool $required)
 	{
 		$this->required=$required; 
 		$this->keyModified['required'] = 1; 

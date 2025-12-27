@@ -24,7 +24,7 @@ class ConvertTo implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -45,7 +45,7 @@ class ConvertTo implements Model
 	 * The method to set the value to carryOverTags
 	 * @param bool $carryOverTags A bool
 	 */
-	public function setCarryOverTags(bool $carryOverTags)
+	public function setCarryOverTags(?bool $carryOverTags)
 	{
 		$this->carryOverTags=$carryOverTags; 
 		$this->keyModified['carry_over_tags'] = 1; 

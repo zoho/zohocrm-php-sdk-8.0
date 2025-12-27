@@ -24,7 +24,7 @@ class Preference implements Model
 	 * The method to set the value to autoPopulateTax
 	 * @param bool $autoPopulateTax A bool
 	 */
-	public function setAutoPopulateTax(bool $autoPopulateTax)
+	public function setAutoPopulateTax(?bool $autoPopulateTax)
 	{
 		$this->autoPopulateTax=$autoPopulateTax; 
 		$this->keyModified['auto_populate_tax'] = 1; 
@@ -45,7 +45,7 @@ class Preference implements Model
 	 * The method to set the value to modifyTaxRates
 	 * @param bool $modifyTaxRates A bool
 	 */
-	public function setModifyTaxRates(bool $modifyTaxRates)
+	public function setModifyTaxRates(?bool $modifyTaxRates)
 	{
 		$this->modifyTaxRates=$modifyTaxRates; 
 		$this->keyModified['modify_tax_rates'] = 1; 

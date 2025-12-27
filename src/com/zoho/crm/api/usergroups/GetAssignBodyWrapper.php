@@ -23,7 +23,7 @@ class GetAssignBodyWrapper implements Model
 	 * The method to set the value to getAssigned
 	 * @param Assign $getAssigned An instance of Assign
 	 */
-	public function setGetAssigned(Assign $getAssigned)
+	public function setGetAssigned(?Assign $getAssigned)
 	{
 		$this->getAssigned=$getAssigned; 
 		$this->keyModified['get_assigned'] = 1; 

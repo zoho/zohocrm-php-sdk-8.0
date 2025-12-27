@@ -30,7 +30,7 @@ class PickListValues implements Model
 	 * The method to set the value to sequenceNumber
 	 * @param int $sequenceNumber A int
 	 */
-	public function setSequenceNumber(int $sequenceNumber)
+	public function setSequenceNumber(?int $sequenceNumber)
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
@@ -51,7 +51,7 @@ class PickListValues implements Model
 	 * The method to set the value to displayValue
 	 * @param string $displayValue A string
 	 */
-	public function setDisplayValue(string $displayValue)
+	public function setDisplayValue(?string $displayValue)
 	{
 		$this->displayValue=$displayValue; 
 		$this->keyModified['display_value'] = 1; 
@@ -72,7 +72,7 @@ class PickListValues implements Model
 	 * The method to set the value to referenceValue
 	 * @param string $referenceValue A string
 	 */
-	public function setReferenceValue(string $referenceValue)
+	public function setReferenceValue(?string $referenceValue)
 	{
 		$this->referenceValue=$referenceValue; 
 		$this->keyModified['reference_value'] = 1; 
@@ -93,7 +93,7 @@ class PickListValues implements Model
 	 * The method to set the value to colourCode
 	 * @param string $colourCode A string
 	 */
-	public function setColourCode(string $colourCode)
+	public function setColourCode(?string $colourCode)
 	{
 		$this->colourCode=$colourCode; 
 		$this->keyModified['colour_code'] = 1; 
@@ -114,7 +114,7 @@ class PickListValues implements Model
 	 * The method to set the value to actualValue
 	 * @param string $actualValue A string
 	 */
-	public function setActualValue(string $actualValue)
+	public function setActualValue(?string $actualValue)
 	{
 		$this->actualValue=$actualValue; 
 		$this->keyModified['actual_value'] = 1; 
@@ -135,7 +135,7 @@ class PickListValues implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -156,7 +156,7 @@ class PickListValues implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -177,7 +177,7 @@ class PickListValues implements Model
 	 * The method to set the value to layoutAssociations
 	 * @param array $layoutAssociations A array
 	 */
-	public function setLayoutAssociations(array $layoutAssociations)
+	public function setLayoutAssociations(?array $layoutAssociations)
 	{
 		$this->layoutAssociations=$layoutAssociations; 
 		$this->keyModified['layout_associations'] = 1; 

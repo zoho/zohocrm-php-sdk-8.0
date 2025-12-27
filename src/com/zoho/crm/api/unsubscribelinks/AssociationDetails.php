@@ -24,7 +24,7 @@ class AssociationDetails implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -45,7 +45,7 @@ class AssociationDetails implements Model
 	 * The method to set the value to associatedPlaces
 	 * @param array $associatedPlaces A array
 	 */
-	public function setAssociatedPlaces(array $associatedPlaces)
+	public function setAssociatedPlaces(?array $associatedPlaces)
 	{
 		$this->associatedPlaces=$associatedPlaces; 
 		$this->keyModified['associated_places'] = 1; 

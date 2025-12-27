@@ -23,7 +23,7 @@ class PickListValuesAssociationsResponseWrapper implements Model, PickListValues
 	 * The method to set the value to pickListValuesAssociations
 	 * @param array $pickListValuesAssociations A array
 	 */
-	public function setPickListValuesAssociations(array $pickListValuesAssociations)
+	public function setPickListValuesAssociations(?array $pickListValuesAssociations)
 	{
 		$this->pickListValuesAssociations=$pickListValuesAssociations; 
 		$this->keyModified['pick_list_values_associations'] = 1; 

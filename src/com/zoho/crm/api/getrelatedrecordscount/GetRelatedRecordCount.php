@@ -23,7 +23,7 @@ class GetRelatedRecordCount implements Model
 	 * The method to set the value to relatedList
 	 * @param RelatedList $relatedList An instance of RelatedList
 	 */
-	public function setRelatedList(RelatedList $relatedList)
+	public function setRelatedList(?RelatedList $relatedList)
 	{
 		$this->relatedList=$relatedList; 
 		$this->keyModified['related_list'] = 1; 

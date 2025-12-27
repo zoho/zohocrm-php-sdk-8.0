@@ -29,7 +29,7 @@ class Params implements Model
 	 * The method to set the value to approved
 	 * @param bool $approved A bool
 	 */
-	public function setApproved(bool $approved)
+	public function setApproved(?bool $approved)
 	{
 		$this->approved=$approved; 
 		$this->keyModified['approved'] = 1; 
@@ -50,7 +50,7 @@ class Params implements Model
 	 * The method to set the value to converted
 	 * @param bool $converted A bool
 	 */
-	public function setConverted(bool $converted)
+	public function setConverted(?bool $converted)
 	{
 		$this->converted=$converted; 
 		$this->keyModified['converted'] = 1; 
@@ -71,7 +71,7 @@ class Params implements Model
 	 * The method to set the value to associated
 	 * @param bool $associated A bool
 	 */
-	public function setAssociated(bool $associated)
+	public function setAssociated(?bool $associated)
 	{
 		$this->associated=$associated; 
 		$this->keyModified['associated'] = 1; 
@@ -92,7 +92,7 @@ class Params implements Model
 	 * The method to set the value to category
 	 * @param Choice $category An instance of Choice
 	 */
-	public function setCategory(Choice $category)
+	public function setCategory(?Choice $category)
 	{
 		$this->category=$category; 
 		$this->keyModified['category'] = 1; 
@@ -113,7 +113,7 @@ class Params implements Model
 	 * The method to set the value to approvalState
 	 * @param Choice $approvalState An instance of Choice
 	 */
-	public function setApprovalState(Choice $approvalState)
+	public function setApprovalState(?Choice $approvalState)
 	{
 		$this->approvalState=$approvalState; 
 		$this->keyModified['approval_state'] = 1; 
@@ -134,7 +134,7 @@ class Params implements Model
 	 * The method to set the value to filters
 	 * @param Filters $filters An instance of Filters
 	 */
-	public function setFilters(Filters $filters)
+	public function setFilters(?Filters $filters)
 	{
 		$this->filters=$filters; 
 		$this->keyModified['filters'] = 1; 

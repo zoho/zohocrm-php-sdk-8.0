@@ -26,7 +26,7 @@ class Year implements Model
 	 * The method to set the value to startMonth
 	 * @param Choice $startMonth An instance of Choice
 	 */
-	public function setStartMonth(Choice $startMonth)
+	public function setStartMonth(?Choice $startMonth)
 	{
 		$this->startMonth=$startMonth; 
 		$this->keyModified['start_month'] = 1; 
@@ -47,7 +47,7 @@ class Year implements Model
 	 * The method to set the value to displayBasedOn
 	 * @param Choice $displayBasedOn An instance of Choice
 	 */
-	public function setDisplayBasedOn(Choice $displayBasedOn)
+	public function setDisplayBasedOn(?Choice $displayBasedOn)
 	{
 		$this->displayBasedOn=$displayBasedOn; 
 		$this->keyModified['display_based_on'] = 1; 
@@ -68,7 +68,7 @@ class Year implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

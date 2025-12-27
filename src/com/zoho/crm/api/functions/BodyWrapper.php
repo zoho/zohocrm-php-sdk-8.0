@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to body
 	 * @param array $body A array
 	 */
-	public function setBody(array $body)
+	public function setBody(?array $body)
 	{
 		$this->body=$body; 
 		$this->keyModified['body'] = 1; 

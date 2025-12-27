@@ -25,7 +25,7 @@ class CarryOverTags implements Model
 	 * The method to set the value to contacts
 	 * @param array $contacts A array
 	 */
-	public function setContacts(array $contacts)
+	public function setContacts(?array $contacts)
 	{
 		$this->contacts=$contacts; 
 		$this->keyModified['Contacts'] = 1; 
@@ -46,7 +46,7 @@ class CarryOverTags implements Model
 	 * The method to set the value to accounts
 	 * @param array $accounts A array
 	 */
-	public function setAccounts(array $accounts)
+	public function setAccounts(?array $accounts)
 	{
 		$this->accounts=$accounts; 
 		$this->keyModified['Accounts'] = 1; 
@@ -67,7 +67,7 @@ class CarryOverTags implements Model
 	 * The method to set the value to deals
 	 * @param array $deals A array
 	 */
-	public function setDeals(array $deals)
+	public function setDeals(?array $deals)
 	{
 		$this->deals=$deals; 
 		$this->keyModified['Deals'] = 1; 

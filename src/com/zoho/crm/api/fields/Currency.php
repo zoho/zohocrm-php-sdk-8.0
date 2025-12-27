@@ -25,7 +25,7 @@ class Currency implements Model
 	 * The method to set the value to roundingOption
 	 * @param Choice $roundingOption An instance of Choice
 	 */
-	public function setRoundingOption(Choice $roundingOption)
+	public function setRoundingOption(?Choice $roundingOption)
 	{
 		$this->roundingOption=$roundingOption; 
 		$this->keyModified['rounding_option'] = 1; 
@@ -46,7 +46,7 @@ class Currency implements Model
 	 * The method to set the value to precision
 	 * @param int $precision A int
 	 */
-	public function setPrecision(int $precision)
+	public function setPrecision(?int $precision)
 	{
 		$this->precision=$precision; 
 		$this->keyModified['precision'] = 1; 

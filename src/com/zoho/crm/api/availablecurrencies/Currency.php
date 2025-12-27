@@ -29,7 +29,7 @@ class Currency implements Model
 	 * The method to set the value to displayValue
 	 * @param string $displayValue A string
 	 */
-	public function setDisplayValue(string $displayValue)
+	public function setDisplayValue(?string $displayValue)
 	{
 		$this->displayValue=$displayValue; 
 		$this->keyModified['display_value'] = 1; 
@@ -50,7 +50,7 @@ class Currency implements Model
 	 * The method to set the value to decimalSeparator
 	 * @param string $decimalSeparator A string
 	 */
-	public function setDecimalSeparator(string $decimalSeparator)
+	public function setDecimalSeparator(?string $decimalSeparator)
 	{
 		$this->decimalSeparator=$decimalSeparator; 
 		$this->keyModified['decimal_separator'] = 1; 
@@ -71,7 +71,7 @@ class Currency implements Model
 	 * The method to set the value to symbol
 	 * @param string $symbol A string
 	 */
-	public function setSymbol(string $symbol)
+	public function setSymbol(?string $symbol)
 	{
 		$this->symbol=$symbol; 
 		$this->keyModified['symbol'] = 1; 
@@ -92,7 +92,7 @@ class Currency implements Model
 	 * The method to set the value to thousandSeparator
 	 * @param string $thousandSeparator A string
 	 */
-	public function setThousandSeparator(string $thousandSeparator)
+	public function setThousandSeparator(?string $thousandSeparator)
 	{
 		$this->thousandSeparator=$thousandSeparator; 
 		$this->keyModified['thousand_separator'] = 1; 
@@ -113,7 +113,7 @@ class Currency implements Model
 	 * The method to set the value to displayName
 	 * @param string $displayName A string
 	 */
-	public function setDisplayName(string $displayName)
+	public function setDisplayName(?string $displayName)
 	{
 		$this->displayName=$displayName; 
 		$this->keyModified['display_name'] = 1; 
@@ -134,7 +134,7 @@ class Currency implements Model
 	 * The method to set the value to isoCode
 	 * @param string $isoCode A string
 	 */
-	public function setIsoCode(string $isoCode)
+	public function setIsoCode(?string $isoCode)
 	{
 		$this->isoCode=$isoCode; 
 		$this->keyModified['iso_code'] = 1; 
@@ -155,7 +155,7 @@ class Currency implements Model
 	 * The method to set the value to decimalPlaces
 	 * @param string $decimalPlaces A string
 	 */
-	public function setDecimalPlaces(string $decimalPlaces)
+	public function setDecimalPlaces(?string $decimalPlaces)
 	{
 		$this->decimalPlaces=$decimalPlaces; 
 		$this->keyModified['decimal_places'] = 1; 

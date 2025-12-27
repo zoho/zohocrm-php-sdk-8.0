@@ -28,7 +28,7 @@ class Formula implements Model
 	 * The method to set the value to returnType
 	 * @param string $returnType A string
 	 */
-	public function setReturnType(string $returnType)
+	public function setReturnType(?string $returnType)
 	{
 		$this->returnType=$returnType; 
 		$this->keyModified['return_type'] = 1; 
@@ -49,7 +49,7 @@ class Formula implements Model
 	 * The method to set the value to assumeDefault
 	 * @param bool $assumeDefault A bool
 	 */
-	public function setAssumeDefault(bool $assumeDefault)
+	public function setAssumeDefault(?bool $assumeDefault)
 	{
 		$this->assumeDefault=$assumeDefault; 
 		$this->keyModified['assume_default'] = 1; 
@@ -70,7 +70,7 @@ class Formula implements Model
 	 * The method to set the value to expression
 	 * @param string $expression A string
 	 */
-	public function setExpression(string $expression)
+	public function setExpression(?string $expression)
 	{
 		$this->expression=$expression; 
 		$this->keyModified['expression'] = 1; 
@@ -91,7 +91,7 @@ class Formula implements Model
 	 * The method to set the value to dynamic
 	 * @param bool $dynamic A bool
 	 */
-	public function setDynamic(bool $dynamic)
+	public function setDynamic(?bool $dynamic)
 	{
 		$this->dynamic=$dynamic; 
 		$this->keyModified['dynamic'] = 1; 
@@ -112,7 +112,7 @@ class Formula implements Model
 	 * The method to set the value to stopComputeConditionally
 	 * @param bool $stopComputeConditionally A bool
 	 */
-	public function setStopComputeConditionally(bool $stopComputeConditionally)
+	public function setStopComputeConditionally(?bool $stopComputeConditionally)
 	{
 		$this->stopComputeConditionally=$stopComputeConditionally; 
 		$this->keyModified['stop_compute_conditionally'] = 1; 
@@ -133,7 +133,7 @@ class Formula implements Model
 	 * The method to set the value to stopComputeExpression
 	 * @param string $stopComputeExpression A string
 	 */
-	public function setStopComputeExpression(string $stopComputeExpression)
+	public function setStopComputeExpression(?string $stopComputeExpression)
 	{
 		$this->stopComputeExpression=$stopComputeExpression; 
 		$this->keyModified['stop_compute_expression'] = 1; 

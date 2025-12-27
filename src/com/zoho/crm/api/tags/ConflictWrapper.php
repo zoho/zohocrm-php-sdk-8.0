@@ -23,7 +23,7 @@ class ConflictWrapper implements Model
 	 * The method to set the value to conflictId
 	 * @param string $conflictId A string
 	 */
-	public function setConflictId(string $conflictId)
+	public function setConflictId(?string $conflictId)
 	{
 		$this->conflictId=$conflictId; 
 		$this->keyModified['conflict_id'] = 1; 

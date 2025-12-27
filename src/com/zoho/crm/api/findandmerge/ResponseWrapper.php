@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to merge
 	 * @param array $merge A array
 	 */
-	public function setMerge(array $merge)
+	public function setMerge(?array $merge)
 	{
 		$this->merge=$merge; 
 		$this->keyModified['merge'] = 1; 

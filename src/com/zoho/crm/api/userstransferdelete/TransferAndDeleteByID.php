@@ -24,7 +24,7 @@ class TransferAndDeleteByID implements Model
 	 * The method to set the value to transfer
 	 * @param Transfer $transfer An instance of Transfer
 	 */
-	public function setTransfer(Transfer $transfer)
+	public function setTransfer(?Transfer $transfer)
 	{
 		$this->transfer=$transfer; 
 		$this->keyModified['transfer'] = 1; 
@@ -45,7 +45,7 @@ class TransferAndDeleteByID implements Model
 	 * The method to set the value to moveSubordinate
 	 * @param MoveSubordinate $moveSubordinate An instance of MoveSubordinate
 	 */
-	public function setMoveSubordinate(MoveSubordinate $moveSubordinate)
+	public function setMoveSubordinate(?MoveSubordinate $moveSubordinate)
 	{
 		$this->moveSubordinate=$moveSubordinate; 
 		$this->keyModified['move_subordinate'] = 1; 

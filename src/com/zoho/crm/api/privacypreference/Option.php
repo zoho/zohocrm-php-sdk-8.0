@@ -26,7 +26,7 @@ class Option implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -47,7 +47,7 @@ class Option implements Model
 	 * The method to set the value to tooltip
 	 * @param string $tooltip A string
 	 */
-	public function setTooltip(string $tooltip)
+	public function setTooltip(?string $tooltip)
 	{
 		$this->tooltip=$tooltip; 
 		$this->keyModified['tooltip'] = 1; 
@@ -68,7 +68,7 @@ class Option implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -89,7 +89,7 @@ class Option implements Model
 	 * The method to set the value to suboptions
 	 * @param array $suboptions A array
 	 */
-	public function setSuboptions(array $suboptions)
+	public function setSuboptions(?array $suboptions)
 	{
 		$this->suboptions=$suboptions; 
 		$this->keyModified['suboptions'] = 1; 

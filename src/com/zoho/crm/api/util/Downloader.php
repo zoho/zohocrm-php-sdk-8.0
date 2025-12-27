@@ -25,22 +25,11 @@ class Downloader extends Converter
         return null;
     }
 
-    public function getWrappedResponse($response, $pack)
+    public function getWrappedResponse($response, $pack, $headerMap)
     {
-        list ($headers, $content) = explode("\r\n\r\n", strval($response), 2);
-        $headerArray = (explode("\r\n", $headers, 50));
-        $headerMap = array();
         $responseBody = array();
-        foreach ($headerArray as $key)
-        {
-            if (strpos($key, ":") != false)
-            {
-                $splitArray = explode(":", $key);
-                $headerMap[$splitArray[0]] = $splitArray[1];
-            }
-        }
         $responseBody[Constants::HEADERS] = $headerMap;
-        $responseBody[Constants::CONTENT] = $content;
+        $responseBody[Constants::CONTENT] = $response;
         return [$this->getResponse($responseBody, $pack)];
     }
 

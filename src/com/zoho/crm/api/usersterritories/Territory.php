@@ -26,7 +26,7 @@ class Territory implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -47,7 +47,7 @@ class Territory implements Model
 	 * The method to set the value to manager
 	 * @param Manager $manager An instance of Manager
 	 */
-	public function setManager(Manager $manager)
+	public function setManager(?Manager $manager)
 	{
 		$this->manager=$manager; 
 		$this->keyModified['Manager'] = 1; 
@@ -68,7 +68,7 @@ class Territory implements Model
 	 * The method to set the value to reportingTo
 	 * @param Manager $reportingTo An instance of Manager
 	 */
-	public function setReportingTo(Manager $reportingTo)
+	public function setReportingTo(?Manager $reportingTo)
 	{
 		$this->reportingTo=$reportingTo; 
 		$this->keyModified['Reporting_To'] = 1; 
@@ -89,7 +89,7 @@ class Territory implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['Name'] = 1; 

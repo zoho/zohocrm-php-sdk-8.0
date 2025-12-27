@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to emailTemplates
 	 * @param array $emailTemplates A array
 	 */
-	public function setEmailTemplates(array $emailTemplates)
+	public function setEmailTemplates(?array $emailTemplates)
 	{
 		$this->emailTemplates=$emailTemplates; 
 		$this->keyModified['email_templates'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

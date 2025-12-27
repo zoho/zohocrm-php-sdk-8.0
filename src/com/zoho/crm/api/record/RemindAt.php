@@ -23,7 +23,7 @@ class RemindAt implements Model
 	 * The method to set the value to alarm
 	 * @param string $alarm A string
 	 */
-	public function setAlarm(string $alarm)
+	public function setAlarm(?string $alarm)
 	{
 		$this->alarm=$alarm; 
 		$this->keyModified['ALARM'] = 1; 

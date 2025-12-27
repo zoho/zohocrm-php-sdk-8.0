@@ -27,7 +27,7 @@ class SharedTo implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -48,7 +48,7 @@ class SharedTo implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -69,7 +69,7 @@ class SharedTo implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -90,7 +90,7 @@ class SharedTo implements Model
 	 * The method to set the value to subordinates
 	 * @param bool $subordinates A bool
 	 */
-	public function setSubordinates(bool $subordinates)
+	public function setSubordinates(?bool $subordinates)
 	{
 		$this->subordinates=$subordinates; 
 		$this->keyModified['subordinates'] = 1; 

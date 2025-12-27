@@ -25,7 +25,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to share
 	 * @param array $share A array
 	 */
-	public function setShare(array $share)
+	public function setShare(?array $share)
 	{
 		$this->share=$share; 
 		$this->keyModified['share'] = 1; 
@@ -46,7 +46,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to shareableUser
 	 * @param array $shareableUser A array
 	 */
-	public function setShareableUser(array $shareableUser)
+	public function setShareableUser(?array $shareableUser)
 	{
 		$this->shareableUser=$shareableUser; 
 		$this->keyModified['shareable_user'] = 1; 

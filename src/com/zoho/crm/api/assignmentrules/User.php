@@ -27,7 +27,7 @@ class User extends MinifiedUser implements Model
 	 * The method to set the value to zuid
 	 * @param int $zuid A int
 	 */
-	public function setZuid(int $zuid)
+	public function setZuid(?int $zuid)
 	{
 		$this->zuid=$zuid; 
 		$this->keyModified['zuid'] = 1; 
@@ -48,7 +48,7 @@ class User extends MinifiedUser implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -69,7 +69,7 @@ class User extends MinifiedUser implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -90,7 +90,7 @@ class User extends MinifiedUser implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 

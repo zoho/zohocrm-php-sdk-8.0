@@ -24,7 +24,7 @@ class AllowedOutputData implements Model
 	 * The method to set the value to enrichField
 	 * @param EnrichField $enrichField An instance of EnrichField
 	 */
-	public function setEnrichField(EnrichField $enrichField)
+	public function setEnrichField(?EnrichField $enrichField)
 	{
 		$this->enrichField=$enrichField; 
 		$this->keyModified['enrich_field'] = 1; 
@@ -45,7 +45,7 @@ class AllowedOutputData implements Model
 	 * The method to set the value to crmFields
 	 * @param array $crmFields A array
 	 */
-	public function setCrmFields(array $crmFields)
+	public function setCrmFields(?array $crmFields)
 	{
 		$this->crmFields=$crmFields; 
 		$this->keyModified['crm_fields'] = 1; 

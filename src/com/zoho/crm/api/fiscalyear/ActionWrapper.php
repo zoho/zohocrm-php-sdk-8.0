@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to fiscalYear
 	 * @param ActionResponse $fiscalYear An instance of ActionResponse
 	 */
-	public function setFiscalYear(ActionResponse $fiscalYear)
+	public function setFiscalYear(?ActionResponse $fiscalYear)
 	{
 		$this->fiscalYear=$fiscalYear; 
 		$this->keyModified['fiscal_year'] = 1; 

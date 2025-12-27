@@ -26,7 +26,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -47,7 +47,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to jsonPath
 	 * @param string $jsonPath A string
 	 */
-	public function setJsonPath(string $jsonPath)
+	public function setJsonPath(?string $jsonPath)
 	{
 		$this->jsonPath=$jsonPath; 
 		$this->keyModified['json_path'] = 1; 
@@ -68,7 +68,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to range
 	 * @param RangeStructure $range An instance of RangeStructure
 	 */
-	public function setRange(RangeStructure $range)
+	public function setRange(?RangeStructure $range)
 	{
 		$this->range=$range; 
 		$this->keyModified['range'] = 1; 
@@ -89,7 +89,7 @@ class ErrorDetails implements Model
 	 * The method to set the value to supportedValues
 	 * @param array $supportedValues A array
 	 */
-	public function setSupportedValues(array $supportedValues)
+	public function setSupportedValues(?array $supportedValues)
 	{
 		$this->supportedValues=$supportedValues; 
 		$this->keyModified['supported_values'] = 1; 

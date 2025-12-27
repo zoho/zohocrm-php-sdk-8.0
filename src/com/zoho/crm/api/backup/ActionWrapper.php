@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to backup
 	 * @param ActionResponse $backup An instance of ActionResponse
 	 */
-	public function setBackup(ActionResponse $backup)
+	public function setBackup(?ActionResponse $backup)
 	{
 		$this->backup=$backup; 
 		$this->keyModified['backup'] = 1; 

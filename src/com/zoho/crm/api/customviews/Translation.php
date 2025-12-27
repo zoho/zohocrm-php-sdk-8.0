@@ -26,7 +26,7 @@ class Translation implements Model
 	 * The method to set the value to publicViews
 	 * @param string $publicViews A string
 	 */
-	public function setPublicViews(string $publicViews)
+	public function setPublicViews(?string $publicViews)
 	{
 		$this->publicViews=$publicViews; 
 		$this->keyModified['public_views'] = 1; 
@@ -47,7 +47,7 @@ class Translation implements Model
 	 * The method to set the value to otherUsersViews
 	 * @param string $otherUsersViews A string
 	 */
-	public function setOtherUsersViews(string $otherUsersViews)
+	public function setOtherUsersViews(?string $otherUsersViews)
 	{
 		$this->otherUsersViews=$otherUsersViews; 
 		$this->keyModified['other_users_views'] = 1; 
@@ -68,7 +68,7 @@ class Translation implements Model
 	 * The method to set the value to sharedWithMe
 	 * @param string $sharedWithMe A string
 	 */
-	public function setSharedWithMe(string $sharedWithMe)
+	public function setSharedWithMe(?string $sharedWithMe)
 	{
 		$this->sharedWithMe=$sharedWithMe; 
 		$this->keyModified['shared_with_me'] = 1; 
@@ -89,7 +89,7 @@ class Translation implements Model
 	 * The method to set the value to createdByMe
 	 * @param string $createdByMe A string
 	 */
-	public function setCreatedByMe(string $createdByMe)
+	public function setCreatedByMe(?string $createdByMe)
 	{
 		$this->createdByMe=$createdByMe; 
 		$this->keyModified['created_by_me'] = 1; 

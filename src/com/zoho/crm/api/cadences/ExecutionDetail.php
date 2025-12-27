@@ -27,7 +27,7 @@ class ExecutionDetail implements Model
 	 * The method to set the value to unenrollProperties
 	 * @param UnenrollProperty $unenrollProperties An instance of UnenrollProperty
 	 */
-	public function setUnenrollProperties(UnenrollProperty $unenrollProperties)
+	public function setUnenrollProperties(?UnenrollProperty $unenrollProperties)
 	{
 		$this->unenrollProperties=$unenrollProperties; 
 		$this->keyModified['unenroll_properties'] = 1; 
@@ -48,7 +48,7 @@ class ExecutionDetail implements Model
 	 * The method to set the value to endDate
 	 * @param string $endDate A string
 	 */
-	public function setEndDate(string $endDate)
+	public function setEndDate(?string $endDate)
 	{
 		$this->endDate=$endDate; 
 		$this->keyModified['end_date'] = 1; 
@@ -69,7 +69,7 @@ class ExecutionDetail implements Model
 	 * The method to set the value to automaticUnenroll
 	 * @param bool $automaticUnenroll A bool
 	 */
-	public function setAutomaticUnenroll(bool $automaticUnenroll)
+	public function setAutomaticUnenroll(?bool $automaticUnenroll)
 	{
 		$this->automaticUnenroll=$automaticUnenroll; 
 		$this->keyModified['automatic_unenroll'] = 1; 
@@ -90,7 +90,7 @@ class ExecutionDetail implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -111,7 +111,7 @@ class ExecutionDetail implements Model
 	 * The method to set the value to executeEvery
 	 * @param ExecuteEvery $executeEvery An instance of ExecuteEvery
 	 */
-	public function setExecuteEvery(ExecuteEvery $executeEvery)
+	public function setExecuteEvery(?ExecuteEvery $executeEvery)
 	{
 		$this->executeEvery=$executeEvery; 
 		$this->keyModified['execute_every'] = 1; 

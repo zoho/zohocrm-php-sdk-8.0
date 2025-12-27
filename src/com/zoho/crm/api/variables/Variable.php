@@ -32,7 +32,7 @@ class Variable implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -53,7 +53,7 @@ class Variable implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -74,7 +74,7 @@ class Variable implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -95,7 +95,7 @@ class Variable implements Model
 	 * The method to set the value to source
 	 * @param string $source A string
 	 */
-	public function setSource(string $source)
+	public function setSource(?string $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 
@@ -116,7 +116,7 @@ class Variable implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -137,7 +137,7 @@ class Variable implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -158,7 +158,7 @@ class Variable implements Model
 	 * The method to set the value to variableGroup
 	 * @param VariableGroup $variableGroup An instance of VariableGroup
 	 */
-	public function setVariableGroup(VariableGroup $variableGroup)
+	public function setVariableGroup(?VariableGroup $variableGroup)
 	{
 		$this->variableGroup=$variableGroup; 
 		$this->keyModified['variable_group'] = 1; 
@@ -179,7 +179,7 @@ class Variable implements Model
 	 * The method to set the value to readOnly
 	 * @param bool $readOnly A bool
 	 */
-	public function setReadOnly(bool $readOnly)
+	public function setReadOnly(?bool $readOnly)
 	{
 		$this->readOnly=$readOnly; 
 		$this->keyModified['read_only'] = 1; 

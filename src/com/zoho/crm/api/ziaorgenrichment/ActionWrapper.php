@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to ziaOrgEnrichment
 	 * @param array $ziaOrgEnrichment A array
 	 */
-	public function setZiaOrgEnrichment(array $ziaOrgEnrichment)
+	public function setZiaOrgEnrichment(?array $ziaOrgEnrichment)
 	{
 		$this->ziaOrgEnrichment=$ziaOrgEnrichment; 
 		$this->keyModified['__zia_org_enrichment'] = 1; 

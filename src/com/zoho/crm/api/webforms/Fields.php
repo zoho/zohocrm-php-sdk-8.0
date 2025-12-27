@@ -9,19 +9,21 @@ class Fields implements Model
 	private  $layout;
 	private  $help;
 	private  $field;
-	private  $module;
-	private  $secretKey;
-	private  $recaptchaLabel;
 	private  $hidden;
-	private  $siteKey;
 	private  $advanced;
+	private  $module;
+	private  $dateFormat;
+	private  $required;
+	private  $properties;
+	private  $fieldName;
 	private  $apiName;
 	private  $fieldLabel;
-	private  $theme;
 	private  $id;
-	private  $required;
-	private  $fieldName;
-	private  $dateFormat;
+	private  $secretKey;
+	private  $recaptchaLabel;
+	private  $siteKey;
+	private  $theme;
+	private  $defaultValue;
 	private  $keyModified=array();
 
 	/**
@@ -38,7 +40,7 @@ class Fields implements Model
 	 * The method to set the value to layout
 	 * @param Layout $layout An instance of Layout
 	 */
-	public function setLayout(Layout $layout)
+	public function setLayout(?Layout $layout)
 	{
 		$this->layout=$layout; 
 		$this->keyModified['layout'] = 1; 
@@ -59,7 +61,7 @@ class Fields implements Model
 	 * The method to set the value to help
 	 * @param string $help A string
 	 */
-	public function setHelp(string $help)
+	public function setHelp(?string $help)
 	{
 		$this->help=$help; 
 		$this->keyModified['help'] = 1; 
@@ -80,73 +82,10 @@ class Fields implements Model
 	 * The method to set the value to field
 	 * @param Fields $field An instance of Fields
 	 */
-	public function setField(Fields $field)
+	public function setField(?Fields $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
-
-	}
-
-	/**
-	 * The method to get the module
-	 * @return Module An instance of Module
-	 */
-	public function getModule()
-	{
-		return $this->module; 
-
-	}
-
-	/**
-	 * The method to set the value to module
-	 * @param Module $module An instance of Module
-	 */
-	public function setModule(Module $module)
-	{
-		$this->module=$module; 
-		$this->keyModified['module'] = 1; 
-
-	}
-
-	/**
-	 * The method to get the secretKey
-	 * @return string A string representing the secretKey
-	 */
-	public function getSecretKey()
-	{
-		return $this->secretKey; 
-
-	}
-
-	/**
-	 * The method to set the value to secretKey
-	 * @param string $secretKey A string
-	 */
-	public function setSecretKey(string $secretKey)
-	{
-		$this->secretKey=$secretKey; 
-		$this->keyModified['secret_key'] = 1; 
-
-	}
-
-	/**
-	 * The method to get the recaptchaLabel
-	 * @return string A string representing the recaptchaLabel
-	 */
-	public function getRecaptchaLabel()
-	{
-		return $this->recaptchaLabel; 
-
-	}
-
-	/**
-	 * The method to set the value to recaptchaLabel
-	 * @param string $recaptchaLabel A string
-	 */
-	public function setRecaptchaLabel(string $recaptchaLabel)
-	{
-		$this->recaptchaLabel=$recaptchaLabel; 
-		$this->keyModified['recaptcha_label'] = 1; 
 
 	}
 
@@ -164,31 +103,10 @@ class Fields implements Model
 	 * The method to set the value to hidden
 	 * @param bool $hidden A bool
 	 */
-	public function setHidden(bool $hidden)
+	public function setHidden(?bool $hidden)
 	{
 		$this->hidden=$hidden; 
 		$this->keyModified['hidden'] = 1; 
-
-	}
-
-	/**
-	 * The method to get the siteKey
-	 * @return string A string representing the siteKey
-	 */
-	public function getSiteKey()
-	{
-		return $this->siteKey; 
-
-	}
-
-	/**
-	 * The method to set the value to siteKey
-	 * @param string $siteKey A string
-	 */
-	public function setSiteKey(string $siteKey)
-	{
-		$this->siteKey=$siteKey; 
-		$this->keyModified['site_key'] = 1; 
 
 	}
 
@@ -206,10 +124,114 @@ class Fields implements Model
 	 * The method to set the value to advanced
 	 * @param bool $advanced A bool
 	 */
-	public function setAdvanced(bool $advanced)
+	public function setAdvanced(?bool $advanced)
 	{
 		$this->advanced=$advanced; 
 		$this->keyModified['advanced'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the module
+	 * @return Module An instance of Module
+	 */
+	public function getModule()
+	{
+		return $this->module; 
+
+	}
+
+	/**
+	 * The method to set the value to module
+	 * @param Module $module An instance of Module
+	 */
+	public function setModule(?Module $module)
+	{
+		$this->module=$module; 
+		$this->keyModified['module'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the dateFormat
+	 * @return string A string representing the dateFormat
+	 */
+	public function getDateFormat()
+	{
+		return $this->dateFormat; 
+
+	}
+
+	/**
+	 * The method to set the value to dateFormat
+	 * @param string $dateFormat A string
+	 */
+	public function setDateFormat(?string $dateFormat)
+	{
+		$this->dateFormat=$dateFormat; 
+		$this->keyModified['date_format'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the required
+	 * @return bool A bool representing the required
+	 */
+	public function getRequired()
+	{
+		return $this->required; 
+
+	}
+
+	/**
+	 * The method to set the value to required
+	 * @param bool $required A bool
+	 */
+	public function setRequired(?bool $required)
+	{
+		$this->required=$required; 
+		$this->keyModified['required'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the properties
+	 */
+	public function getProperties()
+	{
+		return $this->properties; 
+
+	}
+
+	/**
+	 * The method to set the value to properties
+	 * @param 
+	 */
+	public function setProperties( $properties)
+	{
+		$this->properties=$properties; 
+		$this->keyModified['properties'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the fieldName
+	 * @return string A string representing the fieldName
+	 */
+	public function getFieldName()
+	{
+		return $this->fieldName; 
+
+	}
+
+	/**
+	 * The method to set the value to fieldName
+	 * @param string $fieldName A string
+	 */
+	public function setFieldName(?string $fieldName)
+	{
+		$this->fieldName=$fieldName; 
+		$this->keyModified['field_name'] = 1; 
 
 	}
 
@@ -227,7 +249,7 @@ class Fields implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -248,31 +270,10 @@ class Fields implements Model
 	 * The method to set the value to fieldLabel
 	 * @param string $fieldLabel A string
 	 */
-	public function setFieldLabel(string $fieldLabel)
+	public function setFieldLabel(?string $fieldLabel)
 	{
 		$this->fieldLabel=$fieldLabel; 
 		$this->keyModified['field_label'] = 1; 
-
-	}
-
-	/**
-	 * The method to get the theme
-	 * @return string A string representing the theme
-	 */
-	public function getTheme()
-	{
-		return $this->theme; 
-
-	}
-
-	/**
-	 * The method to set the value to theme
-	 * @param string $theme A string
-	 */
-	public function setTheme(string $theme)
-	{
-		$this->theme=$theme; 
-		$this->keyModified['theme'] = 1; 
 
 	}
 
@@ -290,7 +291,7 @@ class Fields implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -298,65 +299,106 @@ class Fields implements Model
 	}
 
 	/**
-	 * The method to get the required
-	 * @return bool A bool representing the required
+	 * The method to get the secretKey
+	 * @return string A string representing the secretKey
 	 */
-	public function getRequired()
+	public function getSecretKey()
 	{
-		return $this->required; 
+		return $this->secretKey; 
 
 	}
 
 	/**
-	 * The method to set the value to required
-	 * @param bool $required A bool
+	 * The method to set the value to secretKey
+	 * @param string $secretKey A string
 	 */
-	public function setRequired(bool $required)
+	public function setSecretKey(?string $secretKey)
 	{
-		$this->required=$required; 
-		$this->keyModified['required'] = 1; 
+		$this->secretKey=$secretKey; 
+		$this->keyModified['secret_key'] = 1; 
 
 	}
 
 	/**
-	 * The method to get the fieldName
-	 * @return string A string representing the fieldName
+	 * The method to get the recaptchaLabel
+	 * @return string A string representing the recaptchaLabel
 	 */
-	public function getFieldName()
+	public function getRecaptchaLabel()
 	{
-		return $this->fieldName; 
+		return $this->recaptchaLabel; 
 
 	}
 
 	/**
-	 * The method to set the value to fieldName
-	 * @param string $fieldName A string
+	 * The method to set the value to recaptchaLabel
+	 * @param string $recaptchaLabel A string
 	 */
-	public function setFieldName(string $fieldName)
+	public function setRecaptchaLabel(?string $recaptchaLabel)
 	{
-		$this->fieldName=$fieldName; 
-		$this->keyModified['field_name'] = 1; 
+		$this->recaptchaLabel=$recaptchaLabel; 
+		$this->keyModified['recaptcha_label'] = 1; 
 
 	}
 
 	/**
-	 * The method to get the dateFormat
-	 * @return string A string representing the dateFormat
+	 * The method to get the siteKey
+	 * @return string A string representing the siteKey
 	 */
-	public function getDateFormat()
+	public function getSiteKey()
 	{
-		return $this->dateFormat; 
+		return $this->siteKey; 
 
 	}
 
 	/**
-	 * The method to set the value to dateFormat
-	 * @param string $dateFormat A string
+	 * The method to set the value to siteKey
+	 * @param string $siteKey A string
 	 */
-	public function setDateFormat(string $dateFormat)
+	public function setSiteKey(?string $siteKey)
 	{
-		$this->dateFormat=$dateFormat; 
-		$this->keyModified['date_format'] = 1; 
+		$this->siteKey=$siteKey; 
+		$this->keyModified['site_key'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the theme
+	 * @return string A string representing the theme
+	 */
+	public function getTheme()
+	{
+		return $this->theme; 
+
+	}
+
+	/**
+	 * The method to set the value to theme
+	 * @param string $theme A string
+	 */
+	public function setTheme(?string $theme)
+	{
+		$this->theme=$theme; 
+		$this->keyModified['theme'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the defaultValue
+	 */
+	public function getDefaultValue()
+	{
+		return $this->defaultValue; 
+
+	}
+
+	/**
+	 * The method to set the value to defaultValue
+	 * @param 
+	 */
+	public function setDefaultValue( $defaultValue)
+	{
+		$this->defaultValue=$defaultValue; 
+		$this->keyModified['default_value'] = 1; 
 
 	}
 

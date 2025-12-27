@@ -25,7 +25,7 @@ class BreakHoursCustomTiming implements Model
 	 * The method to set the value to days
 	 * @param Choice $days An instance of Choice
 	 */
-	public function setDays(Choice $days)
+	public function setDays(?Choice $days)
 	{
 		$this->days=$days; 
 		$this->keyModified['days'] = 1; 
@@ -46,7 +46,7 @@ class BreakHoursCustomTiming implements Model
 	 * The method to set the value to businessTiming
 	 * @param array $businessTiming A array
 	 */
-	public function setBusinessTiming(array $businessTiming)
+	public function setBusinessTiming(?array $businessTiming)
 	{
 		$this->businessTiming=$businessTiming; 
 		$this->keyModified['business_timing'] = 1; 

@@ -25,7 +25,7 @@ class CurrentPicklist implements Model
 	 * The method to set the value to colourCode
 	 * @param string $colourCode A string
 	 */
-	public function setColourCode(string $colourCode)
+	public function setColourCode(?string $colourCode)
 	{
 		$this->colourCode=$colourCode; 
 		$this->keyModified['colour_code'] = 1; 
@@ -46,7 +46,7 @@ class CurrentPicklist implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -67,7 +67,7 @@ class CurrentPicklist implements Model
 	 * The method to set the value to value
 	 * @param string $value A string
 	 */
-	public function setValue(string $value)
+	public function setValue(?string $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 

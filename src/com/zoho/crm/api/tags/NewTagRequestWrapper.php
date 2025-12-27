@@ -25,7 +25,7 @@ class NewTagRequestWrapper implements Model
 	 * The method to set the value to tags
 	 * @param array $tags A array
 	 */
-	public function setTags(array $tags)
+	public function setTags(?array $tags)
 	{
 		$this->tags=$tags; 
 		$this->keyModified['tags'] = 1; 
@@ -46,7 +46,7 @@ class NewTagRequestWrapper implements Model
 	 * The method to set the value to overWrite
 	 * @param bool $overWrite A bool
 	 */
-	public function setOverWrite(bool $overWrite)
+	public function setOverWrite(?bool $overWrite)
 	{
 		$this->overWrite=$overWrite; 
 		$this->keyModified['over_write'] = 1; 
@@ -67,7 +67,7 @@ class NewTagRequestWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 

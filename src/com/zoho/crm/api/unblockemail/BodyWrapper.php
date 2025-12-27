@@ -24,7 +24,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 
@@ -45,7 +45,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to unblockFields
 	 * @param array $unblockFields A array
 	 */
-	public function setUnblockFields(array $unblockFields)
+	public function setUnblockFields(?array $unblockFields)
 	{
 		$this->unblockFields=$unblockFields; 
 		$this->keyModified['unblock_fields'] = 1; 

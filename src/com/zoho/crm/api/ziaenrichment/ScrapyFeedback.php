@@ -27,7 +27,7 @@ class ScrapyFeedback implements Model
 	 * The method to set the value to enrichId
 	 * @param Choice $enrichId An instance of Choice
 	 */
-	public function setEnrichId(Choice $enrichId)
+	public function setEnrichId(?Choice $enrichId)
 	{
 		$this->enrichId=$enrichId; 
 		$this->keyModified['enrich_id'] = 1; 
@@ -48,7 +48,7 @@ class ScrapyFeedback implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -69,7 +69,7 @@ class ScrapyFeedback implements Model
 	 * The method to set the value to feedback
 	 * @param Choice $feedback An instance of Choice
 	 */
-	public function setFeedback(Choice $feedback)
+	public function setFeedback(?Choice $feedback)
 	{
 		$this->feedback=$feedback; 
 		$this->keyModified['feedback'] = 1; 
@@ -90,7 +90,7 @@ class ScrapyFeedback implements Model
 	 * The method to set the value to comment
 	 * @param string $comment A string
 	 */
-	public function setComment(string $comment)
+	public function setComment(?string $comment)
 	{
 		$this->comment=$comment; 
 		$this->keyModified['comment'] = 1; 

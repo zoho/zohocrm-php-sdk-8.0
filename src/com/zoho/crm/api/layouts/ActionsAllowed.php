@@ -34,7 +34,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to edit
 	 * @param bool $edit A bool
 	 */
-	public function setEdit(bool $edit)
+	public function setEdit(?bool $edit)
 	{
 		$this->edit=$edit; 
 		$this->keyModified['edit'] = 1; 
@@ -55,7 +55,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to rename
 	 * @param bool $rename A bool
 	 */
-	public function setRename(bool $rename)
+	public function setRename(?bool $rename)
 	{
 		$this->rename=$rename; 
 		$this->keyModified['rename'] = 1; 
@@ -76,7 +76,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to clone
 	 * @param bool $clone A bool
 	 */
-	public function setClone(bool $clone)
+	public function setClone(?bool $clone)
 	{
 		$this->clone=$clone; 
 		$this->keyModified['clone'] = 1; 
@@ -97,7 +97,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to downgrade
 	 * @param bool $downgrade A bool
 	 */
-	public function setDowngrade(bool $downgrade)
+	public function setDowngrade(?bool $downgrade)
 	{
 		$this->downgrade=$downgrade; 
 		$this->keyModified['downgrade'] = 1; 
@@ -118,7 +118,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to delete
 	 * @param bool $delete A bool
 	 */
-	public function setDelete($delete)
+	public function setDelete(?bool $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['delete'] = 1; 
@@ -139,7 +139,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to deactivate
 	 * @param bool $deactivate A bool
 	 */
-	public function setDeactivate(bool $deactivate)
+	public function setDeactivate(?bool $deactivate)
 	{
 		$this->deactivate=$deactivate; 
 		$this->keyModified['deactivate'] = 1; 
@@ -160,7 +160,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to setLayoutPermissions
 	 * @param bool $setLayoutPermissions A bool
 	 */
-	public function setSetLayoutPermissions(bool $setLayoutPermissions)
+	public function setSetLayoutPermissions(?bool $setLayoutPermissions)
 	{
 		$this->setLayoutPermissions=$setLayoutPermissions; 
 		$this->keyModified['set_layout_permissions'] = 1; 
@@ -181,7 +181,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to addField
 	 * @param bool $addField A bool
 	 */
-	public function setAddField(bool $addField)
+	public function setAddField(?bool $addField)
 	{
 		$this->addField=$addField; 
 		$this->keyModified['add_field'] = 1; 
@@ -202,7 +202,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to changeTabTraversal
 	 * @param bool $changeTabTraversal A bool
 	 */
-	public function setChangeTabTraversal(bool $changeTabTraversal)
+	public function setChangeTabTraversal(?bool $changeTabTraversal)
 	{
 		$this->changeTabTraversal=$changeTabTraversal; 
 		$this->keyModified['change_tab_traversal'] = 1; 
@@ -223,7 +223,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to reorder
 	 * @param bool $reorder A bool
 	 */
-	public function setReorder(bool $reorder)
+	public function setReorder(?bool $reorder)
 	{
 		$this->reorder=$reorder; 
 		$this->keyModified['reorder'] = 1; 
@@ -244,7 +244,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to removeField
 	 * @param bool $removeField A bool
 	 */
-	public function setRemoveField(bool $removeField)
+	public function setRemoveField(?bool $removeField)
 	{
 		$this->removeField=$removeField; 
 		$this->keyModified['remove_field'] = 1; 
@@ -265,7 +265,7 @@ class ActionsAllowed implements Model
 	 * The method to set the value to changeColumnCount
 	 * @param bool $changeColumnCount A bool
 	 */
-	public function setChangeColumnCount(bool $changeColumnCount)
+	public function setChangeColumnCount(?bool $changeColumnCount)
 	{
 		$this->changeColumnCount=$changeColumnCount; 
 		$this->keyModified['change_column_count'] = 1; 

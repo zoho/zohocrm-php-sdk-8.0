@@ -3,11 +3,12 @@ namespace com\zoho\crm\api\webforms;
 
 use com\zoho\crm\api\util\Model;
 
-class SpamControll implements Model
+class SpamControl implements Model
 {
 
 	private  $status;
 	private  $excludeScore;
+	private  $spamPossibilityThreshold;
 	private  $keyModified=array();
 
 	/**
@@ -24,7 +25,7 @@ class SpamControll implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -45,10 +46,31 @@ class SpamControll implements Model
 	 * The method to set the value to excludeScore
 	 * @param string $excludeScore A string
 	 */
-	public function setExcludeScore(string $excludeScore)
+	public function setExcludeScore(?string $excludeScore)
 	{
 		$this->excludeScore=$excludeScore; 
 		$this->keyModified['exclude_score'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the spamPossibilityThreshold
+	 * @return int A int representing the spamPossibilityThreshold
+	 */
+	public function getSpamPossibilityThreshold()
+	{
+		return $this->spamPossibilityThreshold; 
+
+	}
+
+	/**
+	 * The method to set the value to spamPossibilityThreshold
+	 * @param int $spamPossibilityThreshold A int
+	 */
+	public function setSpamPossibilityThreshold(?int $spamPossibilityThreshold)
+	{
+		$this->spamPossibilityThreshold=$spamPossibilityThreshold; 
+		$this->keyModified['spam_possibility_threshold'] = 1; 
 
 	}
 

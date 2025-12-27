@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to sharingRules
 	 * @param array $sharingRules A array
 	 */
-	public function setSharingRules(array $sharingRules)
+	public function setSharingRules(?array $sharingRules)
 	{
 		$this->sharingRules=$sharingRules; 
 		$this->keyModified['sharing_rules'] = 1; 

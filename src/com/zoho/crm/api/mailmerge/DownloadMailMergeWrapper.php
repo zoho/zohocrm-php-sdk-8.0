@@ -23,7 +23,7 @@ class DownloadMailMergeWrapper implements Model
 	 * The method to set the value to downloadMailMerge
 	 * @param array $downloadMailMerge A array
 	 */
-	public function setDownloadMailMerge(array $downloadMailMerge)
+	public function setDownloadMailMerge(?array $downloadMailMerge)
 	{
 		$this->downloadMailMerge=$downloadMailMerge; 
 		$this->keyModified['download_mail_merge'] = 1; 

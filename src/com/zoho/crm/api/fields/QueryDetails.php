@@ -24,7 +24,7 @@ class QueryDetails implements Model
 	 * The method to set the value to queryId
 	 * @param string $queryId A string
 	 */
-	public function setQueryId(string $queryId)
+	public function setQueryId(?string $queryId)
 	{
 		$this->queryId=$queryId; 
 		$this->keyModified['query_id'] = 1; 
@@ -45,7 +45,7 @@ class QueryDetails implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 

@@ -25,7 +25,7 @@ class Available implements Model
 	 * The method to set the value to available
 	 * @param bool $available A bool
 	 */
-	public function setAvailable(bool $available)
+	public function setAvailable(?bool $available)
 	{
 		$this->available=$available; 
 		$this->keyModified['available'] = 1; 
@@ -46,7 +46,7 @@ class Available implements Model
 	 * The method to set the value to record
 	 * @param Record $record An instance of Record
 	 */
-	public function setRecord(Record $record)
+	public function setRecord(?Record $record)
 	{
 		$this->record=$record; 
 		$this->keyModified['record'] = 1; 
@@ -67,7 +67,7 @@ class Available implements Model
 	 * The method to set the value to linkedRecord
 	 * @param LinkedRecord $linkedRecord An instance of LinkedRecord
 	 */
-	public function setLinkedRecord(LinkedRecord $linkedRecord)
+	public function setLinkedRecord(?LinkedRecord $linkedRecord)
 	{
 		$this->linkedRecord=$linkedRecord; 
 		$this->keyModified['linked_record'] = 1; 

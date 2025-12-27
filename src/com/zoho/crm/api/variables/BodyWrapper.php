@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to variables
 	 * @param array $variables A array
 	 */
-	public function setVariables(array $variables)
+	public function setVariables(?array $variables)
 	{
 		$this->variables=$variables; 
 		$this->keyModified['variables'] = 1; 

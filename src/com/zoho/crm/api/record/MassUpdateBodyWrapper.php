@@ -28,7 +28,7 @@ class MassUpdateBodyWrapper implements Model
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -49,7 +49,7 @@ class MassUpdateBodyWrapper implements Model
 	 * The method to set the value to cvid
 	 * @param string $cvid A string
 	 */
-	public function setCvid(string $cvid)
+	public function setCvid(?string $cvid)
 	{
 		$this->cvid=$cvid; 
 		$this->keyModified['cvid'] = 1; 
@@ -70,7 +70,7 @@ class MassUpdateBodyWrapper implements Model
 	 * The method to set the value to ids
 	 * @param array $ids A array
 	 */
-	public function setIds(array $ids)
+	public function setIds(?array $ids)
 	{
 		$this->ids=$ids; 
 		$this->keyModified['ids'] = 1; 
@@ -91,7 +91,7 @@ class MassUpdateBodyWrapper implements Model
 	 * The method to set the value to territory
 	 * @param MassUpdateTerritory $territory An instance of MassUpdateTerritory
 	 */
-	public function setTerritory(MassUpdateTerritory $territory)
+	public function setTerritory(?MassUpdateTerritory $territory)
 	{
 		$this->territory=$territory; 
 		$this->keyModified['territory'] = 1; 
@@ -112,7 +112,7 @@ class MassUpdateBodyWrapper implements Model
 	 * The method to set the value to overWrite
 	 * @param bool $overWrite A bool
 	 */
-	public function setOverWrite(bool $overWrite)
+	public function setOverWrite(?bool $overWrite)
 	{
 		$this->overWrite=$overWrite; 
 		$this->keyModified['over_write'] = 1; 
@@ -133,7 +133,7 @@ class MassUpdateBodyWrapper implements Model
 	 * The method to set the value to criteria
 	 * @param array $criteria A array
 	 */
-	public function setCriteria(array $criteria)
+	public function setCriteria(?array $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 

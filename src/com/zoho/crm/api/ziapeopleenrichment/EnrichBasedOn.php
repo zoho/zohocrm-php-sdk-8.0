@@ -26,7 +26,7 @@ class EnrichBasedOn implements Model
 	 * The method to set the value to social
 	 * @param Social $social An instance of Social
 	 */
-	public function setSocial(Social $social)
+	public function setSocial(?Social $social)
 	{
 		$this->social=$social; 
 		$this->keyModified['social'] = 1; 
@@ -47,7 +47,7 @@ class EnrichBasedOn implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -68,7 +68,7 @@ class EnrichBasedOn implements Model
 	 * The method to set the value to company
 	 * @param Company $company An instance of Company
 	 */
-	public function setCompany(Company $company)
+	public function setCompany(?Company $company)
 	{
 		$this->company=$company; 
 		$this->keyModified['company'] = 1; 
@@ -89,7 +89,7 @@ class EnrichBasedOn implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 

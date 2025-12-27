@@ -66,7 +66,7 @@ class Org implements Model
 	 * The method to set the value to country
 	 * @param string $country A string
 	 */
-	public function setCountry(string $country)
+	public function setCountry(?string $country)
 	{
 		$this->country=$country; 
 		$this->keyModified['country'] = 1; 
@@ -87,7 +87,7 @@ class Org implements Model
 	 * The method to set the value to photoId
 	 * @param string $photoId A string
 	 */
-	public function setPhotoId(string $photoId)
+	public function setPhotoId(?string $photoId)
 	{
 		$this->photoId=$photoId; 
 		$this->keyModified['photo_id'] = 1; 
@@ -108,7 +108,7 @@ class Org implements Model
 	 * The method to set the value to city
 	 * @param string $city A string
 	 */
-	public function setCity(string $city)
+	public function setCity(?string $city)
 	{
 		$this->city=$city; 
 		$this->keyModified['city'] = 1; 
@@ -129,7 +129,7 @@ class Org implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -150,7 +150,7 @@ class Org implements Model
 	 * The method to set the value to mcStatus
 	 * @param bool $mcStatus A bool
 	 */
-	public function setMcStatus(bool $mcStatus)
+	public function setMcStatus(?bool $mcStatus)
 	{
 		$this->mcStatus=$mcStatus; 
 		$this->keyModified['mc_status'] = 1; 
@@ -171,7 +171,7 @@ class Org implements Model
 	 * The method to set the value to gappsEnabled
 	 * @param bool $gappsEnabled A bool
 	 */
-	public function setGappsEnabled(bool $gappsEnabled)
+	public function setGappsEnabled(?bool $gappsEnabled)
 	{
 		$this->gappsEnabled=$gappsEnabled; 
 		$this->keyModified['gapps_enabled'] = 1; 
@@ -192,7 +192,7 @@ class Org implements Model
 	 * The method to set the value to translationEnabled
 	 * @param bool $translationEnabled A bool
 	 */
-	public function setTranslationEnabled(bool $translationEnabled)
+	public function setTranslationEnabled(?bool $translationEnabled)
 	{
 		$this->translationEnabled=$translationEnabled; 
 		$this->keyModified['translation_enabled'] = 1; 
@@ -213,7 +213,7 @@ class Org implements Model
 	 * The method to set the value to street
 	 * @param string $street A string
 	 */
-	public function setStreet(string $street)
+	public function setStreet(?string $street)
 	{
 		$this->street=$street; 
 		$this->keyModified['street'] = 1; 
@@ -234,7 +234,7 @@ class Org implements Model
 	 * The method to set the value to domainName
 	 * @param string $domainName A string
 	 */
-	public function setDomainName(string $domainName)
+	public function setDomainName(?string $domainName)
 	{
 		$this->domainName=$domainName; 
 		$this->keyModified['domain_name'] = 1; 
@@ -255,7 +255,7 @@ class Org implements Model
 	 * The method to set the value to alias
 	 * @param string $alias A string
 	 */
-	public function setAlias(string $alias)
+	public function setAlias(?string $alias)
 	{
 		$this->alias=$alias; 
 		$this->keyModified['alias'] = 1; 
@@ -276,7 +276,7 @@ class Org implements Model
 	 * The method to set the value to currency
 	 * @param string $currency A string
 	 */
-	public function setCurrency(string $currency)
+	public function setCurrency(?string $currency)
 	{
 		$this->currency=$currency; 
 		$this->keyModified['currency'] = 1; 
@@ -297,7 +297,7 @@ class Org implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -318,7 +318,7 @@ class Org implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['state'] = 1; 
@@ -339,7 +339,7 @@ class Org implements Model
 	 * The method to set the value to fax
 	 * @param string $fax A string
 	 */
-	public function setFax(string $fax)
+	public function setFax(?string $fax)
 	{
 		$this->fax=$fax; 
 		$this->keyModified['fax'] = 1; 
@@ -360,7 +360,7 @@ class Org implements Model
 	 * The method to set the value to zip
 	 * @param string $zip A string
 	 */
-	public function setZip(string $zip)
+	public function setZip(?string $zip)
 	{
 		$this->zip=$zip; 
 		$this->keyModified['zip'] = 1; 
@@ -381,7 +381,7 @@ class Org implements Model
 	 * The method to set the value to employeeCount
 	 * @param string $employeeCount A string
 	 */
-	public function setEmployeeCount(string $employeeCount)
+	public function setEmployeeCount(?string $employeeCount)
 	{
 		$this->employeeCount=$employeeCount; 
 		$this->keyModified['employee_count'] = 1; 
@@ -402,7 +402,7 @@ class Org implements Model
 	 * The method to set the value to website
 	 * @param string $website A string
 	 */
-	public function setWebsite(string $website)
+	public function setWebsite(?string $website)
 	{
 		$this->website=$website; 
 		$this->keyModified['website'] = 1; 
@@ -423,7 +423,7 @@ class Org implements Model
 	 * The method to set the value to currencySymbol
 	 * @param string $currencySymbol A string
 	 */
-	public function setCurrencySymbol(string $currencySymbol)
+	public function setCurrencySymbol(?string $currencySymbol)
 	{
 		$this->currencySymbol=$currencySymbol; 
 		$this->keyModified['currency_symbol'] = 1; 
@@ -444,7 +444,7 @@ class Org implements Model
 	 * The method to set the value to mobile
 	 * @param string $mobile A string
 	 */
-	public function setMobile(string $mobile)
+	public function setMobile(?string $mobile)
 	{
 		$this->mobile=$mobile; 
 		$this->keyModified['mobile'] = 1; 
@@ -465,7 +465,7 @@ class Org implements Model
 	 * The method to set the value to currencyLocale
 	 * @param string $currencyLocale A string
 	 */
-	public function setCurrencyLocale(string $currencyLocale)
+	public function setCurrencyLocale(?string $currencyLocale)
 	{
 		$this->currencyLocale=$currencyLocale; 
 		$this->keyModified['currency_locale'] = 1; 
@@ -486,7 +486,7 @@ class Org implements Model
 	 * The method to set the value to primaryZuid
 	 * @param string $primaryZuid A string
 	 */
-	public function setPrimaryZuid(string $primaryZuid)
+	public function setPrimaryZuid(?string $primaryZuid)
 	{
 		$this->primaryZuid=$primaryZuid; 
 		$this->keyModified['primary_zuid'] = 1; 
@@ -507,7 +507,7 @@ class Org implements Model
 	 * The method to set the value to ziaPortalId
 	 * @param string $ziaPortalId A string
 	 */
-	public function setZiaPortalId(string $ziaPortalId)
+	public function setZiaPortalId(?string $ziaPortalId)
 	{
 		$this->ziaPortalId=$ziaPortalId; 
 		$this->keyModified['zia_portal_id'] = 1; 
@@ -528,7 +528,7 @@ class Org implements Model
 	 * The method to set the value to timeZone
 	 * @param string $timeZone A string
 	 */
-	public function setTimeZone(string $timeZone)
+	public function setTimeZone(?string $timeZone)
 	{
 		$this->timeZone=$timeZone; 
 		$this->keyModified['time_zone'] = 1; 
@@ -549,7 +549,7 @@ class Org implements Model
 	 * The method to set the value to zgid
 	 * @param string $zgid A string
 	 */
-	public function setZgid(string $zgid)
+	public function setZgid(?string $zgid)
 	{
 		$this->zgid=$zgid; 
 		$this->keyModified['zgid'] = 1; 
@@ -570,7 +570,7 @@ class Org implements Model
 	 * The method to set the value to countryCode
 	 * @param string $countryCode A string
 	 */
-	public function setCountryCode(string $countryCode)
+	public function setCountryCode(?string $countryCode)
 	{
 		$this->countryCode=$countryCode; 
 		$this->keyModified['country_code'] = 1; 
@@ -591,7 +591,7 @@ class Org implements Model
 	 * The method to set the value to deletableOrgAccount
 	 * @param bool $deletableOrgAccount A bool
 	 */
-	public function setDeletableOrgAccount(bool $deletableOrgAccount)
+	public function setDeletableOrgAccount(?bool $deletableOrgAccount)
 	{
 		$this->deletableOrgAccount=$deletableOrgAccount; 
 		$this->keyModified['deletable_org_account'] = 1; 
@@ -612,7 +612,7 @@ class Org implements Model
 	 * The method to set the value to licenseDetails
 	 * @param LicenseDetails $licenseDetails An instance of LicenseDetails
 	 */
-	public function setLicenseDetails(LicenseDetails $licenseDetails)
+	public function setLicenseDetails(?LicenseDetails $licenseDetails)
 	{
 		$this->licenseDetails=$licenseDetails; 
 		$this->keyModified['license_details'] = 1; 
@@ -633,7 +633,7 @@ class Org implements Model
 	 * The method to set the value to hierarchyPreferences
 	 * @param HierarchyPreferences $hierarchyPreferences An instance of HierarchyPreferences
 	 */
-	public function setHierarchyPreferences(HierarchyPreferences $hierarchyPreferences)
+	public function setHierarchyPreferences(?HierarchyPreferences $hierarchyPreferences)
 	{
 		$this->hierarchyPreferences=$hierarchyPreferences; 
 		$this->keyModified['hierarchy_preferences'] = 1; 
@@ -654,7 +654,7 @@ class Org implements Model
 	 * The method to set the value to phone
 	 * @param string $phone A string
 	 */
-	public function setPhone(string $phone)
+	public function setPhone(?string $phone)
 	{
 		$this->phone=$phone; 
 		$this->keyModified['phone'] = 1; 
@@ -675,7 +675,7 @@ class Org implements Model
 	 * The method to set the value to companyName
 	 * @param string $companyName A string
 	 */
-	public function setCompanyName(string $companyName)
+	public function setCompanyName(?string $companyName)
 	{
 		$this->companyName=$companyName; 
 		$this->keyModified['company_name'] = 1; 
@@ -696,7 +696,7 @@ class Org implements Model
 	 * The method to set the value to privacySettings
 	 * @param bool $privacySettings A bool
 	 */
-	public function setPrivacySettings(bool $privacySettings)
+	public function setPrivacySettings(?bool $privacySettings)
 	{
 		$this->privacySettings=$privacySettings; 
 		$this->keyModified['privacy_settings'] = 1; 
@@ -717,7 +717,7 @@ class Org implements Model
 	 * The method to set the value to primaryEmail
 	 * @param string $primaryEmail A string
 	 */
-	public function setPrimaryEmail(string $primaryEmail)
+	public function setPrimaryEmail(?string $primaryEmail)
 	{
 		$this->primaryEmail=$primaryEmail; 
 		$this->keyModified['primary_email'] = 1; 
@@ -738,7 +738,7 @@ class Org implements Model
 	 * The method to set the value to isoCode
 	 * @param string $isoCode A string
 	 */
-	public function setIsoCode(string $isoCode)
+	public function setIsoCode(?string $isoCode)
 	{
 		$this->isoCode=$isoCode; 
 		$this->keyModified['iso_code'] = 1; 
@@ -759,7 +759,7 @@ class Org implements Model
 	 * The method to set the value to hipaaComplianceEnabled
 	 * @param bool $hipaaComplianceEnabled A bool
 	 */
-	public function setHipaaComplianceEnabled(bool $hipaaComplianceEnabled)
+	public function setHipaaComplianceEnabled(?bool $hipaaComplianceEnabled)
 	{
 		$this->hipaaComplianceEnabled=$hipaaComplianceEnabled; 
 		$this->keyModified['hipaa_compliance_enabled'] = 1; 
@@ -780,7 +780,7 @@ class Org implements Model
 	 * The method to set the value to liteUsersEnabled
 	 * @param bool $liteUsersEnabled A bool
 	 */
-	public function setLiteUsersEnabled(bool $liteUsersEnabled)
+	public function setLiteUsersEnabled(?bool $liteUsersEnabled)
 	{
 		$this->liteUsersEnabled=$liteUsersEnabled; 
 		$this->keyModified['lite_users_enabled'] = 1; 
@@ -801,7 +801,7 @@ class Org implements Model
 	 * The method to set the value to maxPerPage
 	 * @param int $maxPerPage A int
 	 */
-	public function setMaxPerPage(int $maxPerPage)
+	public function setMaxPerPage(?int $maxPerPage)
 	{
 		$this->maxPerPage=$maxPerPage; 
 		$this->keyModified['max_per_page'] = 1; 
@@ -822,7 +822,7 @@ class Org implements Model
 	 * The method to set the value to ezgid
 	 * @param string $ezgid A string
 	 */
-	public function setEzgid(string $ezgid)
+	public function setEzgid(?string $ezgid)
 	{
 		$this->ezgid=$ezgid; 
 		$this->keyModified['ezgid'] = 1; 
@@ -843,7 +843,7 @@ class Org implements Model
 	 * The method to set the value to callIcon
 	 * @param string $callIcon A string
 	 */
-	public function setCallIcon(string $callIcon)
+	public function setCallIcon(?string $callIcon)
 	{
 		$this->callIcon=$callIcon; 
 		$this->keyModified['call_icon'] = 1; 
@@ -864,7 +864,7 @@ class Org implements Model
 	 * The method to set the value to oauthPresence
 	 * @param bool $oauthPresence A bool
 	 */
-	public function setOauthPresence(bool $oauthPresence)
+	public function setOauthPresence(?bool $oauthPresence)
 	{
 		$this->oauthPresence=$oauthPresence; 
 		$this->keyModified['oauth_presence'] = 1; 
@@ -885,7 +885,7 @@ class Org implements Model
 	 * The method to set the value to ziaZgid
 	 * @param int $ziaZgid A int
 	 */
-	public function setZiaZgid(int $ziaZgid)
+	public function setZiaZgid(?int $ziaZgid)
 	{
 		$this->ziaZgid=$ziaZgid; 
 		$this->keyModified['zia_zgid'] = 1; 
@@ -906,7 +906,7 @@ class Org implements Model
 	 * The method to set the value to checkinPreferences
 	 * @param CheckinPreferences $checkinPreferences An instance of CheckinPreferences
 	 */
-	public function setCheckinPreferences(CheckinPreferences $checkinPreferences)
+	public function setCheckinPreferences(?CheckinPreferences $checkinPreferences)
 	{
 		$this->checkinPreferences=$checkinPreferences; 
 		$this->keyModified['checkin_preferences'] = 1; 
@@ -927,7 +927,7 @@ class Org implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -948,7 +948,7 @@ class Org implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 

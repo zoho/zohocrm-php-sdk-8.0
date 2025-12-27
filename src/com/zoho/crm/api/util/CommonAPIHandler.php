@@ -261,7 +261,7 @@ class CommonAPIHandler
                     $responseContentType = $splitArray[0];
                 }
                 $converterInstance = $this->getConverterClassInstance(strtolower($responseContentType));
-                $responseObject = $converterInstance->getWrappedResponse($response[Constants::RESPONSE], $className);
+                $responseObject = $converterInstance->getWrappedResponse($response[Constants::RESPONSE], $className, $headerMap);
                 if($responseObject != null)
                 {
                     if($responseObject[0] != null)

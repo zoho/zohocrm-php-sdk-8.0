@@ -21,7 +21,7 @@ class XMLConverter extends Converter
         return null;
     }
 
-    public function getWrappedResponse($responseObject, $pack)
+    public function getWrappedResponse($responseObject, $pack, $headers)
     {
         return [$this->getResponse($responseObject, $pack)];
     }

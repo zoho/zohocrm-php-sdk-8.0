@@ -23,7 +23,7 @@ class SignActionWrapper implements Model, SignActionHandler
 	 * The method to set the value to signMailMerge
 	 * @param array $signMailMerge A array
 	 */
-	public function setSignMailMerge(array $signMailMerge)
+	public function setSignMailMerge(?array $signMailMerge)
 	{
 		$this->signMailMerge=$signMailMerge; 
 		$this->keyModified['sign_mail_merge'] = 1; 

@@ -27,7 +27,7 @@ class User implements Model
 	 * The method to set the value to fullName
 	 * @param string $fullName A string
 	 */
-	public function setFullName(string $fullName)
+	public function setFullName(?string $fullName)
 	{
 		$this->fullName=$fullName; 
 		$this->keyModified['full_name'] = 1; 
@@ -48,7 +48,7 @@ class User implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 
@@ -69,7 +69,7 @@ class User implements Model
 	 * The method to set the value to zuid
 	 * @param string $zuid A string
 	 */
-	public function setZuid(string $zuid)
+	public function setZuid(?string $zuid)
 	{
 		$this->zuid=$zuid; 
 		$this->keyModified['zuid'] = 1; 
@@ -90,7 +90,7 @@ class User implements Model
 	 * The method to set the value to zgid
 	 * @param string $zgid A string
 	 */
-	public function setZgid(string $zgid)
+	public function setZgid(?string $zgid)
 	{
 		$this->zgid=$zgid; 
 		$this->keyModified['zgid'] = 1; 
@@ -111,7 +111,7 @@ class User implements Model
 	 * The method to set the value to signature
 	 * @param Signature $signature An instance of Signature
 	 */
-	public function setSignature(Signature $signature)
+	public function setSignature(?Signature $signature)
 	{
 		$this->signature=$signature; 
 		$this->keyModified['signature'] = 1; 

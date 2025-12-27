@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to auditLogExport
 	 * @param array $auditLogExport A array
 	 */
-	public function setAuditLogExport(array $auditLogExport)
+	public function setAuditLogExport(?array $auditLogExport)
 	{
 		$this->auditLogExport=$auditLogExport; 
 		$this->keyModified['audit_log_export'] = 1; 

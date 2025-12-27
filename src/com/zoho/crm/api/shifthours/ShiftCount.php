@@ -24,7 +24,7 @@ class ShiftCount implements Model
 	 * The method to set the value to totalShiftWithUser
 	 * @param int $totalShiftWithUser A int
 	 */
-	public function setTotalShiftWithUser(int $totalShiftWithUser)
+	public function setTotalShiftWithUser(?int $totalShiftWithUser)
 	{
 		$this->totalShiftWithUser=$totalShiftWithUser; 
 		$this->keyModified['total_shift_with_user'] = 1; 
@@ -45,7 +45,7 @@ class ShiftCount implements Model
 	 * The method to set the value to totalShift
 	 * @param int $totalShift A int
 	 */
-	public function setTotalShift(int $totalShift)
+	public function setTotalShift(?int $totalShift)
 	{
 		$this->totalShift=$totalShift; 
 		$this->keyModified['total_shift'] = 1; 

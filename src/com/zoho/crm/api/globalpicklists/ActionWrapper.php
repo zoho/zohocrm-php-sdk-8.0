@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to globalPicklists
 	 * @param array $globalPicklists A array
 	 */
-	public function setGlobalPicklists(array $globalPicklists)
+	public function setGlobalPicklists(?array $globalPicklists)
 	{
 		$this->globalPicklists=$globalPicklists; 
 		$this->keyModified['global_picklists'] = 1; 

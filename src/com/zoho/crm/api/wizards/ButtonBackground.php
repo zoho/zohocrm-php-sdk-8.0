@@ -23,7 +23,7 @@ class ButtonBackground implements Model
 	 * The method to set the value to buttonBackground
 	 * @param array $buttonBackground A array
 	 */
-	public function setButtonBackground(array $buttonBackground)
+	public function setButtonBackground(?array $buttonBackground)
 	{
 		$this->buttonBackground=$buttonBackground; 
 		$this->keyModified['button_background'] = 1; 

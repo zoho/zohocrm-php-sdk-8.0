@@ -24,7 +24,7 @@ class TypeConfiguration implements Model
 	 * The method to set the value to fieldMappings
 	 * @param array $fieldMappings A array
 	 */
-	public function setFieldMappings(array $fieldMappings)
+	public function setFieldMappings(?array $fieldMappings)
 	{
 		$this->fieldMappings=$fieldMappings; 
 		$this->keyModified['field_mappings'] = 1; 
@@ -45,7 +45,7 @@ class TypeConfiguration implements Model
 	 * The method to set the value to mappedModule
 	 * @param MappedModule $mappedModule An instance of MappedModule
 	 */
-	public function setMappedModule(MappedModule $mappedModule)
+	public function setMappedModule(?MappedModule $mappedModule)
 	{
 		$this->mappedModule=$mappedModule; 
 		$this->keyModified['mapped_module'] = 1; 

@@ -25,7 +25,7 @@ class ParseErrorDetails implements Model, DetailsWrapper
 	 * The method to set the value to line
 	 * @param int $line A int
 	 */
-	public function setLine(int $line)
+	public function setLine(?int $line)
 	{
 		$this->line=$line; 
 		$this->keyModified['line'] = 1; 
@@ -46,7 +46,7 @@ class ParseErrorDetails implements Model, DetailsWrapper
 	 * The method to set the value to column
 	 * @param int $column A int
 	 */
-	public function setColumn(int $column)
+	public function setColumn(?int $column)
 	{
 		$this->column=$column; 
 		$this->keyModified['column'] = 1; 
@@ -67,7 +67,7 @@ class ParseErrorDetails implements Model, DetailsWrapper
 	 * The method to set the value to near
 	 * @param string $near A string
 	 */
-	public function setNear(string $near)
+	public function setNear(?string $near)
 	{
 		$this->near=$near; 
 		$this->keyModified['near'] = 1; 

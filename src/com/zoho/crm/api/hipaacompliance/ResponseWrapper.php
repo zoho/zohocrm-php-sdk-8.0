@@ -23,7 +23,7 @@ class ResponseWrapper implements Model
 	 * The method to set the value to hipaaCompliance
 	 * @param HipaaCompliance $hipaaCompliance An instance of HipaaCompliance
 	 */
-	public function setHipaaCompliance(HipaaCompliance $hipaaCompliance)
+	public function setHipaaCompliance(?HipaaCompliance $hipaaCompliance)
 	{
 		$this->hipaaCompliance=$hipaaCompliance; 
 		$this->keyModified['hipaa_compliance'] = 1; 

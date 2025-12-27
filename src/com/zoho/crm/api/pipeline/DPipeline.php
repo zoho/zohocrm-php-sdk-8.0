@@ -23,7 +23,7 @@ class DPipeline implements Model
 	 * The method to set the value to delete
 	 * @param Delete $delete An instance of Delete
 	 */
-	public function setDelete(Delete $delete)
+	public function setDelete(?Delete $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 

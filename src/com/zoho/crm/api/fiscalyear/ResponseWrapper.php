@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to fiscalYear
 	 * @param Year $fiscalYear An instance of Year
 	 */
-	public function setFiscalYear(Year $fiscalYear)
+	public function setFiscalYear(?Year $fiscalYear)
 	{
 		$this->fiscalYear=$fiscalYear; 
 		$this->keyModified['fiscal_year'] = 1; 

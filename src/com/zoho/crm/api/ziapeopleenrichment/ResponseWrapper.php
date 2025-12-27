@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to ziaPeopleEnrichment
 	 * @param array $ziaPeopleEnrichment A array
 	 */
-	public function setZiaPeopleEnrichment(array $ziaPeopleEnrichment)
+	public function setZiaPeopleEnrichment(?array $ziaPeopleEnrichment)
 	{
 		$this->ziaPeopleEnrichment=$ziaPeopleEnrichment; 
 		$this->keyModified['__zia_people_enrichment'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to usersUnavailability
 	 * @param array $usersUnavailability A array
 	 */
-	public function setUsersUnavailability(array $usersUnavailability)
+	public function setUsersUnavailability(?array $usersUnavailability)
 	{
 		$this->usersUnavailability=$usersUnavailability; 
 		$this->keyModified['users_unavailability'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

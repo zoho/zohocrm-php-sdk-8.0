@@ -26,7 +26,7 @@ class OperationType implements Model
 	 * The method to set the value to webUpdate
 	 * @param bool $webUpdate A bool
 	 */
-	public function setWebUpdate(bool $webUpdate)
+	public function setWebUpdate(?bool $webUpdate)
 	{
 		$this->webUpdate=$webUpdate; 
 		$this->keyModified['web_update'] = 1; 
@@ -47,7 +47,7 @@ class OperationType implements Model
 	 * The method to set the value to aPICreate
 	 * @param bool $apiCreate A bool
 	 */
-	public function setAPICreate(bool $apiCreate)
+	public function setAPICreate(?bool $apiCreate)
 	{
 		$this->apiCreate=$apiCreate; 
 		$this->keyModified['api_create'] = 1; 
@@ -68,7 +68,7 @@ class OperationType implements Model
 	 * The method to set the value to webCreate
 	 * @param bool $webCreate A bool
 	 */
-	public function setWebCreate(bool $webCreate)
+	public function setWebCreate(?bool $webCreate)
 	{
 		$this->webCreate=$webCreate; 
 		$this->keyModified['web_create'] = 1; 
@@ -89,7 +89,7 @@ class OperationType implements Model
 	 * The method to set the value to aPIUpdate
 	 * @param bool $apiUpdate A bool
 	 */
-	public function setAPIUpdate(bool $apiUpdate)
+	public function setAPIUpdate(?bool $apiUpdate)
 	{
 		$this->apiUpdate=$apiUpdate; 
 		$this->keyModified['api_update'] = 1; 

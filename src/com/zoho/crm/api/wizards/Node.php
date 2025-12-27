@@ -26,7 +26,7 @@ class Node implements Model
 	 * The method to set the value to posY
 	 * @param int $posY A int
 	 */
-	public function setPosY(int $posY)
+	public function setPosY(?int $posY)
 	{
 		$this->posY=$posY; 
 		$this->keyModified['pos_y'] = 1; 
@@ -47,7 +47,7 @@ class Node implements Model
 	 * The method to set the value to posX
 	 * @param int $posX A int
 	 */
-	public function setPosX(int $posX)
+	public function setPosX(?int $posX)
 	{
 		$this->posX=$posX; 
 		$this->keyModified['pos_x'] = 1; 
@@ -68,7 +68,7 @@ class Node implements Model
 	 * The method to set the value to startNode
 	 * @param bool $startNode A bool
 	 */
-	public function setStartNode(bool $startNode)
+	public function setStartNode(?bool $startNode)
 	{
 		$this->startNode=$startNode; 
 		$this->keyModified['start_node'] = 1; 
@@ -89,7 +89,7 @@ class Node implements Model
 	 * The method to set the value to screen
 	 * @param Screen $screen An instance of Screen
 	 */
-	public function setScreen(Screen $screen)
+	public function setScreen(?Screen $screen)
 	{
 		$this->screen=$screen; 
 		$this->keyModified['screen'] = 1; 

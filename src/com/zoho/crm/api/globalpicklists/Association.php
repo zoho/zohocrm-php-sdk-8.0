@@ -25,7 +25,7 @@ class Association implements Model
 	 * The method to set the value to field
 	 * @param Field $field An instance of Field
 	 */
-	public function setField(Field $field)
+	public function setField(?Field $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -46,7 +46,7 @@ class Association implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -67,7 +67,7 @@ class Association implements Model
 	 * The method to set the value to layouts
 	 * @param array $layouts A array
 	 */
-	public function setLayouts(array $layouts)
+	public function setLayouts(?array $layouts)
 	{
 		$this->layouts=$layouts; 
 		$this->keyModified['layouts'] = 1; 

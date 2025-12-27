@@ -25,7 +25,7 @@ class HierarchyPreferences implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -46,7 +46,7 @@ class HierarchyPreferences implements Model
 	 * The method to set the value to strictlyReporting
 	 * @param bool $strictlyReporting A bool
 	 */
-	public function setStrictlyReporting(bool $strictlyReporting)
+	public function setStrictlyReporting(?bool $strictlyReporting)
 	{
 		$this->strictlyReporting=$strictlyReporting; 
 		$this->keyModified['strictly_reporting'] = 1; 

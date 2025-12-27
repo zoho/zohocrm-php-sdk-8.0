@@ -24,7 +24,7 @@ class AssociatedUser implements Model
 	 * The method to set the value to userGroup
 	 * @param UserGroup $userGroup An instance of UserGroup
 	 */
-	public function setUserGroup(UserGroup $userGroup)
+	public function setUserGroup(?UserGroup $userGroup)
 	{
 		$this->userGroup=$userGroup; 
 		$this->keyModified['user_group'] = 1; 
@@ -45,7 +45,7 @@ class AssociatedUser implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 

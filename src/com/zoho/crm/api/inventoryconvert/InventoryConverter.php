@@ -23,7 +23,7 @@ class InventoryConverter implements Model
 	 * The method to set the value to convertTo
 	 * @param array $convertTo A array
 	 */
-	public function setConvertTo(array $convertTo)
+	public function setConvertTo(?array $convertTo)
 	{
 		$this->convertTo=$convertTo; 
 		$this->keyModified['convert_to'] = 1; 

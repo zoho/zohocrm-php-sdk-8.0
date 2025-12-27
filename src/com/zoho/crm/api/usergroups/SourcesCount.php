@@ -26,7 +26,7 @@ class SourcesCount implements Model
 	 * The method to set the value to territories
 	 * @param int $territories A int
 	 */
-	public function setTerritories(int $territories)
+	public function setTerritories(?int $territories)
 	{
 		$this->territories=$territories; 
 		$this->keyModified['territories'] = 1; 
@@ -47,7 +47,7 @@ class SourcesCount implements Model
 	 * The method to set the value to roles
 	 * @param int $roles A int
 	 */
-	public function setRoles(int $roles)
+	public function setRoles(?int $roles)
 	{
 		$this->roles=$roles; 
 		$this->keyModified['roles'] = 1; 
@@ -68,7 +68,7 @@ class SourcesCount implements Model
 	 * The method to set the value to groups
 	 * @param int $groups A int
 	 */
-	public function setGroups(int $groups)
+	public function setGroups(?int $groups)
 	{
 		$this->groups=$groups; 
 		$this->keyModified['groups'] = 1; 
@@ -89,7 +89,7 @@ class SourcesCount implements Model
 	 * The method to set the value to users
 	 * @param Users $users An instance of Users
 	 */
-	public function setUsers(Users $users)
+	public function setUsers(?Users $users)
 	{
 		$this->users=$users; 
 		$this->keyModified['users'] = 1; 

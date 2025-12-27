@@ -32,7 +32,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -53,7 +53,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to characterEncoding
 	 * @param string $characterEncoding A string
 	 */
-	public function setCharacterEncoding(string $characterEncoding)
+	public function setCharacterEncoding(?string $characterEncoding)
 	{
 		$this->characterEncoding=$characterEncoding; 
 		$this->keyModified['character_encoding'] = 1; 
@@ -74,7 +74,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to resource
 	 * @param array $resource A array
 	 */
-	public function setResource(array $resource)
+	public function setResource(?array $resource)
 	{
 		$this->resource=$resource; 
 		$this->keyModified['resource'] = 1; 
@@ -95,7 +95,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -116,7 +116,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to result
 	 * @param Result $result An instance of Result
 	 */
-	public function setResult(Result $result)
+	public function setResult(?Result $result)
 	{
 		$this->result=$result; 
 		$this->keyModified['result'] = 1; 
@@ -137,7 +137,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -158,7 +158,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to operation
 	 * @param string $operation A string
 	 */
-	public function setOperation(string $operation)
+	public function setOperation(?string $operation)
 	{
 		$this->operation=$operation; 
 		$this->keyModified['operation'] = 1; 
@@ -179,7 +179,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -200,7 +200,7 @@ class BulkWriteResponse implements Model, ResponseWrapper
 	 * The method to set the value to callback
 	 * @param CallBack $callback An instance of CallBack
 	 */
-	public function setCallback(CallBack $callback)
+	public function setCallback(?CallBack $callback)
 	{
 		$this->callback=$callback; 
 		$this->keyModified['callback'] = 1; 

@@ -32,7 +32,7 @@ class ShareRecord implements Model
 	 * The method to set the value to sharedWith
 	 * @param Users $sharedWith An instance of Users
 	 */
-	public function setSharedWith(Users $sharedWith)
+	public function setSharedWith(?Users $sharedWith)
 	{
 		$this->sharedWith=$sharedWith; 
 		$this->keyModified['shared_with'] = 1; 
@@ -53,7 +53,7 @@ class ShareRecord implements Model
 	 * The method to set the value to shareRelatedRecords
 	 * @param bool $shareRelatedRecords A bool
 	 */
-	public function setShareRelatedRecords(bool $shareRelatedRecords)
+	public function setShareRelatedRecords(?bool $shareRelatedRecords)
 	{
 		$this->shareRelatedRecords=$shareRelatedRecords; 
 		$this->keyModified['share_related_records'] = 1; 
@@ -74,7 +74,7 @@ class ShareRecord implements Model
 	 * The method to set the value to sharedThrough
 	 * @param SharedThrough $sharedThrough An instance of SharedThrough
 	 */
-	public function setSharedThrough(SharedThrough $sharedThrough)
+	public function setSharedThrough(?SharedThrough $sharedThrough)
 	{
 		$this->sharedThrough=$sharedThrough; 
 		$this->keyModified['shared_through'] = 1; 
@@ -95,7 +95,7 @@ class ShareRecord implements Model
 	 * The method to set the value to sharedTime
 	 * @param \DateTime $sharedTime An instance of \DateTime
 	 */
-	public function setSharedTime(\DateTime $sharedTime)
+	public function setSharedTime(?\DateTime $sharedTime)
 	{
 		$this->sharedTime=$sharedTime; 
 		$this->keyModified['shared_time'] = 1; 
@@ -116,7 +116,7 @@ class ShareRecord implements Model
 	 * The method to set the value to permission
 	 * @param string $permission A string
 	 */
-	public function setPermission(string $permission)
+	public function setPermission(?string $permission)
 	{
 		$this->permission=$permission; 
 		$this->keyModified['permission'] = 1; 
@@ -137,7 +137,7 @@ class ShareRecord implements Model
 	 * The method to set the value to sharedBy
 	 * @param Users $sharedBy An instance of Users
 	 */
-	public function setSharedBy(Users $sharedBy)
+	public function setSharedBy(?Users $sharedBy)
 	{
 		$this->sharedBy=$sharedBy; 
 		$this->keyModified['shared_by'] = 1; 
@@ -158,7 +158,7 @@ class ShareRecord implements Model
 	 * The method to set the value to user
 	 * @param Users $user An instance of Users
 	 */
-	public function setUser(Users $user)
+	public function setUser(?Users $user)
 	{
 		$this->user=$user; 
 		$this->keyModified['user'] = 1; 
@@ -179,7 +179,7 @@ class ShareRecord implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

@@ -24,7 +24,7 @@ class Features implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -45,7 +45,7 @@ class Features implements Model
 	 * The method to set the value to resources
 	 * @param array $resources A array
 	 */
-	public function setResources(array $resources)
+	public function setResources(?array $resources)
 	{
 		$this->resources=$resources; 
 		$this->keyModified['resources'] = 1; 

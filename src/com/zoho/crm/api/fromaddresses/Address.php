@@ -27,7 +27,7 @@ class Address implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 
@@ -48,7 +48,7 @@ class Address implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -69,7 +69,7 @@ class Address implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -90,7 +90,7 @@ class Address implements Model
 	 * The method to set the value to userName
 	 * @param string $userName A string
 	 */
-	public function setUserName(string $userName)
+	public function setUserName(?string $userName)
 	{
 		$this->userName=$userName; 
 		$this->keyModified['user_name'] = 1; 
@@ -111,7 +111,7 @@ class Address implements Model
 	 * The method to set the value to default
 	 * @param bool $default A bool
 	 */
-	public function setDefault(bool $default)
+	public function setDefault(?bool $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 

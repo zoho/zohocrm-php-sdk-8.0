@@ -23,7 +23,7 @@ class Wrapper implements Model
 	 * The method to set the value to privacypreference
 	 * @param array $privacypreference A array
 	 */
-	public function setPrivacypreference(array $privacypreference)
+	public function setPrivacypreference(?array $privacypreference)
 	{
 		$this->privacypreference=$privacypreference; 
 		$this->keyModified['privacyPreference'] = 1; 

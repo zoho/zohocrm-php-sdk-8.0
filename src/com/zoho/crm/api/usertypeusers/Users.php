@@ -30,7 +30,7 @@ class Users implements Model
 	 * The method to set the value to personalityId
 	 * @param string $personalityId A string
 	 */
-	public function setPersonalityId(string $personalityId)
+	public function setPersonalityId(?string $personalityId)
 	{
 		$this->personalityId=$personalityId; 
 		$this->keyModified['personality_id'] = 1; 
@@ -51,7 +51,7 @@ class Users implements Model
 	 * The method to set the value to confirm
 	 * @param bool $confirm A bool
 	 */
-	public function setConfirm(bool $confirm)
+	public function setConfirm(?bool $confirm)
 	{
 		$this->confirm=$confirm; 
 		$this->keyModified['confirm'] = 1; 
@@ -72,7 +72,7 @@ class Users implements Model
 	 * The method to set the value to statusReasonS
 	 * @param string $statusReasonS A string
 	 */
-	public function setStatusReasonS(string $statusReasonS)
+	public function setStatusReasonS(?string $statusReasonS)
 	{
 		$this->statusReasonS=$statusReasonS; 
 		$this->keyModified['status_reason__s'] = 1; 
@@ -93,7 +93,7 @@ class Users implements Model
 	 * The method to set the value to invitedTime
 	 * @param \DateTime $invitedTime An instance of \DateTime
 	 */
-	public function setInvitedTime(\DateTime $invitedTime)
+	public function setInvitedTime(?\DateTime $invitedTime)
 	{
 		$this->invitedTime=$invitedTime; 
 		$this->keyModified['invited_time'] = 1; 
@@ -114,7 +114,7 @@ class Users implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -135,7 +135,7 @@ class Users implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -156,7 +156,7 @@ class Users implements Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -177,7 +177,7 @@ class Users implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 

@@ -34,7 +34,7 @@ class Resource implements Model
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -55,7 +55,7 @@ class Resource implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -76,7 +76,7 @@ class Resource implements Model
 	 * The method to set the value to module
 	 * @param MinifiedModule $module An instance of MinifiedModule
 	 */
-	public function setModule(MinifiedModule $module)
+	public function setModule(?MinifiedModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -97,7 +97,7 @@ class Resource implements Model
 	 * The method to set the value to code
 	 * @param string $code A string
 	 */
-	public function setCode(string $code)
+	public function setCode(?string $code)
 	{
 		$this->code=$code; 
 		$this->keyModified['code'] = 1; 
@@ -118,7 +118,7 @@ class Resource implements Model
 	 * The method to set the value to fileId
 	 * @param string $fileId A string
 	 */
-	public function setFileId(string $fileId)
+	public function setFileId(?string $fileId)
 	{
 		$this->fileId=$fileId; 
 		$this->keyModified['file_id'] = 1; 
@@ -139,7 +139,7 @@ class Resource implements Model
 	 * The method to set the value to fileNames
 	 * @param array $fileNames A array
 	 */
-	public function setFileNames(array $fileNames)
+	public function setFileNames(?array $fileNames)
 	{
 		$this->fileNames=$fileNames; 
 		$this->keyModified['file_names'] = 1; 
@@ -160,7 +160,7 @@ class Resource implements Model
 	 * The method to set the value to ignoreEmpty
 	 * @param bool $ignoreEmpty A bool
 	 */
-	public function setIgnoreEmpty(bool $ignoreEmpty)
+	public function setIgnoreEmpty(?bool $ignoreEmpty)
 	{
 		$this->ignoreEmpty=$ignoreEmpty; 
 		$this->keyModified['ignore_empty'] = 1; 
@@ -181,7 +181,7 @@ class Resource implements Model
 	 * The method to set the value to findBy
 	 * @param string $findBy A string
 	 */
-	public function setFindBy(string $findBy)
+	public function setFindBy(?string $findBy)
 	{
 		$this->findBy=$findBy; 
 		$this->keyModified['find_by'] = 1; 
@@ -202,7 +202,7 @@ class Resource implements Model
 	 * The method to set the value to fieldMappings
 	 * @param array $fieldMappings A array
 	 */
-	public function setFieldMappings(array $fieldMappings)
+	public function setFieldMappings(?array $fieldMappings)
 	{
 		$this->fieldMappings=$fieldMappings; 
 		$this->keyModified['field_mappings'] = 1; 
@@ -223,7 +223,7 @@ class Resource implements Model
 	 * The method to set the value to file
 	 * @param File $file An instance of File
 	 */
-	public function setFile(File $file)
+	public function setFile(?File $file)
 	{
 		$this->file=$file; 
 		$this->keyModified['file'] = 1; 

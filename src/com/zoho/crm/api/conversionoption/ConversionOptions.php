@@ -30,7 +30,7 @@ class ConversionOptions implements Model
 	 * The method to set the value to modulePreference
 	 * @param Modules $modulePreference An instance of Modules
 	 */
-	public function setModulePreference(Modules $modulePreference)
+	public function setModulePreference(?Modules $modulePreference)
 	{
 		$this->modulePreference=$modulePreference; 
 		$this->keyModified['module_preference'] = 1; 
@@ -51,7 +51,7 @@ class ConversionOptions implements Model
 	 * The method to set the value to contacts
 	 * @param array $contacts A array
 	 */
-	public function setContacts(array $contacts)
+	public function setContacts(?array $contacts)
 	{
 		$this->contacts=$contacts; 
 		$this->keyModified['Contacts'] = 1; 
@@ -72,7 +72,7 @@ class ConversionOptions implements Model
 	 * The method to set the value to deals
 	 * @param array $deals A array
 	 */
-	public function setDeals(array $deals)
+	public function setDeals(?array $deals)
 	{
 		$this->deals=$deals; 
 		$this->keyModified['Deals'] = 1; 
@@ -93,7 +93,7 @@ class ConversionOptions implements Model
 	 * The method to set the value to accounts
 	 * @param array $accounts A array
 	 */
-	public function setAccounts(array $accounts)
+	public function setAccounts(?array $accounts)
 	{
 		$this->accounts=$accounts; 
 		$this->keyModified['Accounts'] = 1; 
@@ -114,7 +114,7 @@ class ConversionOptions implements Model
 	 * The method to set the value to preferenceFieldMatchedValue
 	 * @param PreferenceFieldMatchedValue $preferenceFieldMatchedValue An instance of PreferenceFieldMatchedValue
 	 */
-	public function setPreferenceFieldMatchedValue(PreferenceFieldMatchedValue $preferenceFieldMatchedValue)
+	public function setPreferenceFieldMatchedValue(?PreferenceFieldMatchedValue $preferenceFieldMatchedValue)
 	{
 		$this->preferenceFieldMatchedValue=$preferenceFieldMatchedValue; 
 		$this->keyModified['preference_field_matched_value'] = 1; 
@@ -135,7 +135,7 @@ class ConversionOptions implements Model
 	 * The method to set the value to modulesWithMultipleLayouts
 	 * @param array $modulesWithMultipleLayouts A array
 	 */
-	public function setModulesWithMultipleLayouts(array $modulesWithMultipleLayouts)
+	public function setModulesWithMultipleLayouts(?array $modulesWithMultipleLayouts)
 	{
 		$this->modulesWithMultipleLayouts=$modulesWithMultipleLayouts; 
 		$this->keyModified['modules_with_multiple_layouts'] = 1; 

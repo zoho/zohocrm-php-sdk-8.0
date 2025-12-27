@@ -29,7 +29,7 @@ class Assign implements Model
 	 * The method to set the value to feature
 	 * @param Choice $feature An instance of Choice
 	 */
-	public function setFeature(Choice $feature)
+	public function setFeature(?Choice $feature)
 	{
 		$this->feature=$feature; 
 		$this->keyModified['feature'] = 1; 
@@ -50,7 +50,7 @@ class Assign implements Model
 	 * The method to set the value to relatedEntityId
 	 * @param string $relatedEntityId A string
 	 */
-	public function setRelatedEntityId(string $relatedEntityId)
+	public function setRelatedEntityId(?string $relatedEntityId)
 	{
 		$this->relatedEntityId=$relatedEntityId; 
 		$this->keyModified['related_entity_id'] = 1; 
@@ -71,7 +71,7 @@ class Assign implements Model
 	 * The method to set the value to page
 	 * @param int $page A int
 	 */
-	public function setPage(int $page)
+	public function setPage(?int $page)
 	{
 		$this->page=$page; 
 		$this->keyModified['page'] = 1; 
@@ -92,7 +92,7 @@ class Assign implements Model
 	 * The method to set the value to perPage
 	 * @param int $perPage A int
 	 */
-	public function setPerPage(int $perPage)
+	public function setPerPage(?int $perPage)
 	{
 		$this->perPage=$perPage; 
 		$this->keyModified['per_page'] = 1; 
@@ -113,7 +113,7 @@ class Assign implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -134,7 +134,7 @@ class Assign implements Model
 	 * The method to set the value to filters
 	 * @param Criteria $filters An instance of Criteria
 	 */
-	public function setFilters(Criteria $filters)
+	public function setFilters(?Criteria $filters)
 	{
 		$this->filters=$filters; 
 		$this->keyModified['filters'] = 1; 

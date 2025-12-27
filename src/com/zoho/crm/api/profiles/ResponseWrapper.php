@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to profiles
 	 * @param array $profiles A array
 	 */
-	public function setProfiles(array $profiles)
+	public function setProfiles(?array $profiles)
 	{
 		$this->profiles=$profiles; 
 		$this->keyModified['profiles'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

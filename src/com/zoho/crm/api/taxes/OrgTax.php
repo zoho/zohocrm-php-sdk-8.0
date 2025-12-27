@@ -24,7 +24,7 @@ class OrgTax implements Model
 	 * The method to set the value to taxes
 	 * @param array $taxes A array
 	 */
-	public function setTaxes(array $taxes)
+	public function setTaxes(?array $taxes)
 	{
 		$this->taxes=$taxes; 
 		$this->keyModified['taxes'] = 1; 
@@ -45,7 +45,7 @@ class OrgTax implements Model
 	 * The method to set the value to preference
 	 * @param Preference $preference An instance of Preference
 	 */
-	public function setPreference(Preference $preference)
+	public function setPreference(?Preference $preference)
 	{
 		$this->preference=$preference; 
 		$this->keyModified['preference'] = 1; 

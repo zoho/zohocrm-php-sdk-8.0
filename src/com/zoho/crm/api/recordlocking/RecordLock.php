@@ -25,7 +25,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to lockSourceS
 	 * @param Choice $lockSourceS An instance of Choice
 	 */
-	public function setLockSourceS(Choice $lockSourceS)
+	public function setLockSourceS(?Choice $lockSourceS)
 	{
 		$this->addKeyValue('lock_source__s', $lockSourceS); 
 
@@ -45,7 +45,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to lockedByS
 	 * @param MinifiedUser $lockedByS An instance of MinifiedUser
 	 */
-	public function setLockedByS(MinifiedUser $lockedByS)
+	public function setLockedByS(?MinifiedUser $lockedByS)
 	{
 		$this->addKeyValue('locked_by__s', $lockedByS); 
 
@@ -65,7 +65,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to lockedForS
 	 * @param LockedForS $lockedForS An instance of LockedForS
 	 */
-	public function setLockedForS(LockedForS $lockedForS)
+	public function setLockedForS(?LockedForS $lockedForS)
 	{
 		$this->addKeyValue('locked_for_s', $lockedForS); 
 
@@ -85,7 +85,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to lockedReasonS
 	 * @param string $lockedReasonS A string
 	 */
-	public function setLockedReasonS(string $lockedReasonS)
+	public function setLockedReasonS(?string $lockedReasonS)
 	{
 		$this->addKeyValue('locked_reason__s', $lockedReasonS); 
 
@@ -105,7 +105,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to lockedTimeS
 	 * @param string $lockedTimeS A string
 	 */
-	public function setLockedTimeS(string $lockedTimeS)
+	public function setLockedTimeS(?string $lockedTimeS)
 	{
 		$this->addKeyValue('Locked_time__s', $lockedTimeS); 
 
@@ -125,7 +125,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to recordLockingConfigurationIdS
 	 * @param string $recordLockingConfigurationIdS A string
 	 */
-	public function setRecordLockingConfigurationIdS(string $recordLockingConfigurationIdS)
+	public function setRecordLockingConfigurationIdS(?string $recordLockingConfigurationIdS)
 	{
 		$this->addKeyValue('record_locking_configuration_id__s', $recordLockingConfigurationIdS); 
 
@@ -145,7 +145,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to recordLockingRuleIdS
 	 * @param string $recordLockingRuleIdS A string
 	 */
-	public function setRecordLockingRuleIdS(string $recordLockingRuleIdS)
+	public function setRecordLockingRuleIdS(?string $recordLockingRuleIdS)
 	{
 		$this->addKeyValue('record_locking_rule_id__s', $recordLockingRuleIdS); 
 
@@ -165,7 +165,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->addKeyValue('id', $id); 
 
@@ -185,7 +185,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->addKeyValue('Created_By', $createdBy); 
 
@@ -205,7 +205,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->addKeyValue('Created_Time', $createdTime); 
 
@@ -225,7 +225,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->addKeyValue('Modified_By', $modifiedBy); 
 
@@ -245,7 +245,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->addKeyValue('Modified_Time', $modifiedTime); 
 
@@ -265,7 +265,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to tag
 	 * @param array $tag A array
 	 */
-	public function setTag(array $tag)
+	public function setTag(?array $tag)
 	{
 		$this->addKeyValue('Tag', $tag); 
 
@@ -285,7 +285,7 @@ class RecordLock extends Record implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->addKeyValue('name', $name); 
 

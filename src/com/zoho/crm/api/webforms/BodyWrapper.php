@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to webforms
 	 * @param array $webforms A array
 	 */
-	public function setWebforms(array $webforms)
+	public function setWebforms(?array $webforms)
 	{
 		$this->webforms=$webforms; 
 		$this->keyModified['webforms'] = 1; 

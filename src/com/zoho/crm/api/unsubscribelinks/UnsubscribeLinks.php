@@ -38,7 +38,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -59,7 +59,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -80,7 +80,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to pageType
 	 * @param Choice $pageType An instance of Choice
 	 */
-	public function setPageType(Choice $pageType)
+	public function setPageType(?Choice $pageType)
 	{
 		$this->pageType=$pageType; 
 		$this->keyModified['page_type'] = 1; 
@@ -101,7 +101,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to customLocationUrl
 	 * @param string $customLocationUrl A string
 	 */
-	public function setCustomLocationUrl(string $customLocationUrl)
+	public function setCustomLocationUrl(?string $customLocationUrl)
 	{
 		$this->customLocationUrl=$customLocationUrl; 
 		$this->keyModified['custom_location_url'] = 1; 
@@ -122,7 +122,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to standardPageMessage
 	 * @param string $standardPageMessage A string
 	 */
-	public function setStandardPageMessage(string $standardPageMessage)
+	public function setStandardPageMessage(?string $standardPageMessage)
 	{
 		$this->standardPageMessage=$standardPageMessage; 
 		$this->keyModified['standard_page_message'] = 1; 
@@ -143,7 +143,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to submissionActionType
 	 * @param Choice $submissionActionType An instance of Choice
 	 */
-	public function setSubmissionActionType(Choice $submissionActionType)
+	public function setSubmissionActionType(?Choice $submissionActionType)
 	{
 		$this->submissionActionType=$submissionActionType; 
 		$this->keyModified['submission_action_type'] = 1; 
@@ -164,7 +164,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to submissionMessage
 	 * @param string $submissionMessage A string
 	 */
-	public function setSubmissionMessage(string $submissionMessage)
+	public function setSubmissionMessage(?string $submissionMessage)
 	{
 		$this->submissionMessage=$submissionMessage; 
 		$this->keyModified['submission_message'] = 1; 
@@ -185,7 +185,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to submissionRedirectUrl
 	 * @param string $submissionRedirectUrl A string
 	 */
-	public function setSubmissionRedirectUrl(string $submissionRedirectUrl)
+	public function setSubmissionRedirectUrl(?string $submissionRedirectUrl)
 	{
 		$this->submissionRedirectUrl=$submissionRedirectUrl; 
 		$this->keyModified['submission_redirect_url'] = 1; 
@@ -206,7 +206,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to locationUrlType
 	 * @param string $locationUrlType A string
 	 */
-	public function setLocationUrlType(string $locationUrlType)
+	public function setLocationUrlType(?string $locationUrlType)
 	{
 		$this->locationUrlType=$locationUrlType; 
 		$this->keyModified['location_url_type'] = 1; 
@@ -227,7 +227,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to actionOnUnsubscribe
 	 * @param string $actionOnUnsubscribe A string
 	 */
-	public function setActionOnUnsubscribe(string $actionOnUnsubscribe)
+	public function setActionOnUnsubscribe(?string $actionOnUnsubscribe)
 	{
 		$this->actionOnUnsubscribe=$actionOnUnsubscribe; 
 		$this->keyModified['action_on_unsubscribe'] = 1; 
@@ -248,7 +248,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -269,7 +269,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to modifiedBy
 	 * @param User $modifiedBy An instance of User
 	 */
-	public function setModifiedBy(User $modifiedBy)
+	public function setModifiedBy(?User $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -290,7 +290,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -311,7 +311,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -332,7 +332,7 @@ class UnsubscribeLinks implements Model
 	 * The method to set the value to landingUrl
 	 * @param string $landingUrl A string
 	 */
-	public function setLandingUrl(string $landingUrl)
+	public function setLandingUrl(?string $landingUrl)
 	{
 		$this->landingUrl=$landingUrl; 
 		$this->keyModified['landing_url'] = 1; 

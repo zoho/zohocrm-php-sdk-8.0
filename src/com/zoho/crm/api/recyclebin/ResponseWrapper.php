@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to recycleBin
 	 * @param array $recycleBin A array
 	 */
-	public function setRecycleBin(array $recycleBin)
+	public function setRecycleBin(?array $recycleBin)
 	{
 		$this->recycleBin=$recycleBin; 
 		$this->keyModified['recycle_bin'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

@@ -38,7 +38,7 @@ class ImageUpload implements Model
 	 * The method to set the value to previewIdS
 	 * @param string $previewIdS A string
 	 */
-	public function setPreviewIdS(string $previewIdS)
+	public function setPreviewIdS(?string $previewIdS)
 	{
 		$this->previewIdS=$previewIdS; 
 		$this->keyModified['Preview_Id__s'] = 1; 
@@ -59,7 +59,7 @@ class ImageUpload implements Model
 	 * The method to set the value to fileNameS
 	 * @param string $fileNameS A string
 	 */
-	public function setFileNameS(string $fileNameS)
+	public function setFileNameS(?string $fileNameS)
 	{
 		$this->fileNameS=$fileNameS; 
 		$this->keyModified['File_Name__s'] = 1; 
@@ -80,7 +80,7 @@ class ImageUpload implements Model
 	 * The method to set the value to descriptionS
 	 * @param string $descriptionS A string
 	 */
-	public function setDescriptionS(string $descriptionS)
+	public function setDescriptionS(?string $descriptionS)
 	{
 		$this->descriptionS=$descriptionS; 
 		$this->keyModified['Description__s'] = 1; 
@@ -101,7 +101,7 @@ class ImageUpload implements Model
 	 * The method to set the value to sizeS
 	 * @param string $sizeS A string
 	 */
-	public function setSizeS(string $sizeS)
+	public function setSizeS(?string $sizeS)
 	{
 		$this->sizeS=$sizeS; 
 		$this->keyModified['Size__s'] = 1; 
@@ -122,7 +122,7 @@ class ImageUpload implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -143,7 +143,7 @@ class ImageUpload implements Model
 	 * The method to set the value to sequenceNumberS
 	 * @param string $sequenceNumberS A string
 	 */
-	public function setSequenceNumberS(string $sequenceNumberS)
+	public function setSequenceNumberS(?string $sequenceNumberS)
 	{
 		$this->sequenceNumberS=$sequenceNumberS; 
 		$this->keyModified['Sequence_Number__s'] = 1; 
@@ -164,7 +164,7 @@ class ImageUpload implements Model
 	 * The method to set the value to stateS
 	 * @param string $stateS A string
 	 */
-	public function setStateS(string $stateS)
+	public function setStateS(?string $stateS)
 	{
 		$this->stateS=$stateS; 
 		$this->keyModified['State__s'] = 1; 
@@ -185,7 +185,7 @@ class ImageUpload implements Model
 	 * The method to set the value to fileIdS
 	 * @param string $fileIdS A string
 	 */
-	public function setFileIdS(string $fileIdS)
+	public function setFileIdS(?string $fileIdS)
 	{
 		$this->fileIdS=$fileIdS; 
 		$this->keyModified['File_Id__s'] = 1; 
@@ -206,7 +206,7 @@ class ImageUpload implements Model
 	 * The method to set the value to delete
 	 * @param string $delete A string
 	 */
-	public function setDelete($delete)
+	public function setDelete(?string $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 
@@ -227,7 +227,7 @@ class ImageUpload implements Model
 	 * The method to set the value to createdTimeS
 	 * @param \DateTime $createdTimeS An instance of \DateTime
 	 */
-	public function setCreatedTimeS(\DateTime $createdTimeS)
+	public function setCreatedTimeS(?\DateTime $createdTimeS)
 	{
 		$this->createdTimeS=$createdTimeS; 
 		$this->keyModified['Created_Time__s'] = 1; 
@@ -248,7 +248,7 @@ class ImageUpload implements Model
 	 * The method to set the value to modifiedTimeS
 	 * @param \DateTime $modifiedTimeS An instance of \DateTime
 	 */
-	public function setModifiedTimeS(\DateTime $modifiedTimeS)
+	public function setModifiedTimeS(?\DateTime $modifiedTimeS)
 	{
 		$this->modifiedTimeS=$modifiedTimeS; 
 		$this->keyModified['Modified_Time__s'] = 1; 
@@ -269,7 +269,7 @@ class ImageUpload implements Model
 	 * The method to set the value to createdByS
 	 * @param MinifiedUser $createdByS An instance of MinifiedUser
 	 */
-	public function setCreatedByS(MinifiedUser $createdByS)
+	public function setCreatedByS(?MinifiedUser $createdByS)
 	{
 		$this->createdByS=$createdByS; 
 		$this->keyModified['Created_By__s'] = 1; 
@@ -290,7 +290,7 @@ class ImageUpload implements Model
 	 * The method to set the value to ownerS
 	 * @param MinifiedUser $ownerS An instance of MinifiedUser
 	 */
-	public function setOwnerS(MinifiedUser $ownerS)
+	public function setOwnerS(?MinifiedUser $ownerS)
 	{
 		$this->ownerS=$ownerS; 
 		$this->keyModified['Owner__s'] = 1; 
@@ -311,7 +311,7 @@ class ImageUpload implements Model
 	 * The method to set the value to modifiedByS
 	 * @param MinifiedUser $modifiedByS An instance of MinifiedUser
 	 */
-	public function setModifiedByS(MinifiedUser $modifiedByS)
+	public function setModifiedByS(?MinifiedUser $modifiedByS)
 	{
 		$this->modifiedByS=$modifiedByS; 
 		$this->keyModified['Modified_By__s'] = 1; 
@@ -332,7 +332,7 @@ class ImageUpload implements Model
 	 * The method to set the value to attachmentSourceS
 	 * @param string $attachmentSourceS A string
 	 */
-	public function setAttachmentSourceS(string $attachmentSourceS)
+	public function setAttachmentSourceS(?string $attachmentSourceS)
 	{
 		$this->attachmentSourceS=$attachmentSourceS; 
 		$this->keyModified['Attachment_Source__s'] = 1; 

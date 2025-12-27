@@ -23,7 +23,7 @@ class ActionWrapper implements Model
 	 * The method to set the value to hipaaCompliance
 	 * @param ActionResponse $hipaaCompliance An instance of ActionResponse
 	 */
-	public function setHipaaCompliance(ActionResponse $hipaaCompliance)
+	public function setHipaaCompliance(?ActionResponse $hipaaCompliance)
 	{
 		$this->hipaaCompliance=$hipaaCompliance; 
 		$this->keyModified['hipaa_compliance'] = 1; 

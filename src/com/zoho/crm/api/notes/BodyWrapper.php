@@ -24,7 +24,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -45,7 +45,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to trigger
 	 * @param array $trigger A array
 	 */
-	public function setTrigger(array $trigger)
+	public function setTrigger(?array $trigger)
 	{
 		$this->trigger=$trigger; 
 		$this->keyModified['trigger'] = 1; 

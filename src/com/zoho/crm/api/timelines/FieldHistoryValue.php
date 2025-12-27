@@ -24,7 +24,7 @@ class FieldHistoryValue implements Model
 	 * The method to set the value to new
 	 * @param string $new A string
 	 */
-	public function setNew(string $new)
+	public function setNew(?string $new)
 	{
 		$this->new=$new; 
 		$this->keyModified['new'] = 1; 
@@ -45,7 +45,7 @@ class FieldHistoryValue implements Model
 	 * The method to set the value to old
 	 * @param string $old A string
 	 */
-	public function setOld(string $old)
+	public function setOld(?string $old)
 	{
 		$this->old=$old; 
 		$this->keyModified['old'] = 1; 

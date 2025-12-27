@@ -8,6 +8,8 @@ class FromAddress implements Model
 
 	private  $id;
 	private  $type;
+	private  $apiName;
+	private  $email;
 	private  $keyModified=array();
 
 	/**
@@ -24,7 +26,7 @@ class FromAddress implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -45,10 +47,52 @@ class FromAddress implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the aPIName
+	 * @return string A string representing the apiName
+	 */
+	public function getAPIName()
+	{
+		return $this->apiName; 
+
+	}
+
+	/**
+	 * The method to set the value to aPIName
+	 * @param string $apiName A string
+	 */
+	public function setAPIName(?string $apiName)
+	{
+		$this->apiName=$apiName; 
+		$this->keyModified['api_name'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the email
+	 * @return string A string representing the email
+	 */
+	public function getEmail()
+	{
+		return $this->email; 
+
+	}
+
+	/**
+	 * The method to set the value to email
+	 * @param string $email A string
+	 */
+	public function setEmail(?string $email)
+	{
+		$this->email=$email; 
+		$this->keyModified['email'] = 1; 
 
 	}
 

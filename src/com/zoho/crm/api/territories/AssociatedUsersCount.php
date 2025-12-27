@@ -24,7 +24,7 @@ class AssociatedUsersCount implements Model
 	 * The method to set the value to count
 	 * @param string $count A string
 	 */
-	public function setCount(string $count)
+	public function setCount(?string $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -45,7 +45,7 @@ class AssociatedUsersCount implements Model
 	 * The method to set the value to territory
 	 * @param MinifiedTerritory $territory An instance of MinifiedTerritory
 	 */
-	public function setTerritory(MinifiedTerritory $territory)
+	public function setTerritory(?MinifiedTerritory $territory)
 	{
 		$this->territory=$territory; 
 		$this->keyModified['territory'] = 1; 

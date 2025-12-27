@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to getRelatedRecordsCount
 	 * @param array $getRelatedRecordsCount A array
 	 */
-	public function setGetRelatedRecordsCount(array $getRelatedRecordsCount)
+	public function setGetRelatedRecordsCount(?array $getRelatedRecordsCount)
 	{
 		$this->getRelatedRecordsCount=$getRelatedRecordsCount; 
 		$this->keyModified['get_related_records_count'] = 1; 

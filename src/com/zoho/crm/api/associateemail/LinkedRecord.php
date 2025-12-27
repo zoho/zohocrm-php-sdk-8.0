@@ -24,7 +24,7 @@ class LinkedRecord implements Model
 	 * The method to set the value to module
 	 * @param ModuleMap $module An instance of ModuleMap
 	 */
-	public function setModule(ModuleMap $module)
+	public function setModule(?ModuleMap $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -45,7 +45,7 @@ class LinkedRecord implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

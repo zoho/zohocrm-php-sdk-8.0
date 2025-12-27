@@ -24,7 +24,7 @@ class ExpectedField implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -45,7 +45,7 @@ class ExpectedField implements Model
 	 * The method to set the value to jsonPath
 	 * @param string $jsonPath A string
 	 */
-	public function setJsonPath(string $jsonPath)
+	public function setJsonPath(?string $jsonPath)
 	{
 		$this->jsonPath=$jsonPath; 
 		$this->keyModified['json_path'] = 1; 

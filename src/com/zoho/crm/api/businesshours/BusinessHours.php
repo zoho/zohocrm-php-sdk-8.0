@@ -31,7 +31,7 @@ class BusinessHours implements Model
 	 * The method to set the value to weekStartsOn
 	 * @param Choice $weekStartsOn An instance of Choice
 	 */
-	public function setWeekStartsOn(Choice $weekStartsOn)
+	public function setWeekStartsOn(?Choice $weekStartsOn)
 	{
 		$this->weekStartsOn=$weekStartsOn; 
 		$this->keyModified['week_starts_on'] = 1; 
@@ -52,7 +52,7 @@ class BusinessHours implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -73,7 +73,7 @@ class BusinessHours implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -94,7 +94,7 @@ class BusinessHours implements Model
 	 * The method to set the value to businessDays
 	 * @param array $businessDays A array
 	 */
-	public function setBusinessDays(array $businessDays)
+	public function setBusinessDays(?array $businessDays)
 	{
 		$this->businessDays=$businessDays; 
 		$this->keyModified['business_days'] = 1; 
@@ -115,7 +115,7 @@ class BusinessHours implements Model
 	 * The method to set the value to sameAsEveryday
 	 * @param bool $sameAsEveryday A bool
 	 */
-	public function setSameAsEveryday(bool $sameAsEveryday)
+	public function setSameAsEveryday(?bool $sameAsEveryday)
 	{
 		$this->sameAsEveryday=$sameAsEveryday; 
 		$this->keyModified['same_as_everyday'] = 1; 
@@ -136,7 +136,7 @@ class BusinessHours implements Model
 	 * The method to set the value to dailyTiming
 	 * @param array $dailyTiming A array
 	 */
-	public function setDailyTiming(array $dailyTiming)
+	public function setDailyTiming(?array $dailyTiming)
 	{
 		$this->dailyTiming=$dailyTiming; 
 		$this->keyModified['daily_timing'] = 1; 
@@ -157,7 +157,7 @@ class BusinessHours implements Model
 	 * The method to set the value to customTiming
 	 * @param array $customTiming A array
 	 */
-	public function setCustomTiming(array $customTiming)
+	public function setCustomTiming(?array $customTiming)
 	{
 		$this->customTiming=$customTiming; 
 		$this->keyModified['custom_timing'] = 1; 
@@ -178,7 +178,7 @@ class BusinessHours implements Model
 	 * The method to set the value to timezone
 	 * @param string $timezone A string
 	 */
-	public function setTimezone(string $timezone)
+	public function setTimezone(?string $timezone)
 	{
 		$this->timezone=$timezone; 
 		$this->keyModified['timezone'] = 1; 

@@ -27,7 +27,7 @@ class Address implements Model
 	 * The method to set the value to country
 	 * @param string $country A string
 	 */
-	public function setCountry(string $country)
+	public function setCountry(?string $country)
 	{
 		$this->country=$country; 
 		$this->keyModified['country'] = 1; 
@@ -48,7 +48,7 @@ class Address implements Model
 	 * The method to set the value to city
 	 * @param string $city A string
 	 */
-	public function setCity(string $city)
+	public function setCity(?string $city)
 	{
 		$this->city=$city; 
 		$this->keyModified['city'] = 1; 
@@ -69,7 +69,7 @@ class Address implements Model
 	 * The method to set the value to pinCode
 	 * @param string $pinCode A string
 	 */
-	public function setPinCode(string $pinCode)
+	public function setPinCode(?string $pinCode)
 	{
 		$this->pinCode=$pinCode; 
 		$this->keyModified['pin_code'] = 1; 
@@ -90,7 +90,7 @@ class Address implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['state'] = 1; 
@@ -111,7 +111,7 @@ class Address implements Model
 	 * The method to set the value to fillAddress
 	 * @param string $fillAddress A string
 	 */
-	public function setFillAddress(string $fillAddress)
+	public function setFillAddress(?string $fillAddress)
 	{
 		$this->fillAddress=$fillAddress; 
 		$this->keyModified['fill_address'] = 1; 

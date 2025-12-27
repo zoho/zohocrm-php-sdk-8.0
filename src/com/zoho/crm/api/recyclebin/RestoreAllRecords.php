@@ -24,7 +24,7 @@ class RestoreAllRecords implements Model
 	 * The method to set the value to restoreAllRecords
 	 * @param Choice $restoreAllRecords An instance of Choice
 	 */
-	public function setRestoreAllRecords(Choice $restoreAllRecords)
+	public function setRestoreAllRecords(?Choice $restoreAllRecords)
 	{
 		$this->restoreAllRecords=$restoreAllRecords; 
 		$this->keyModified['restore_all_records'] = 1; 

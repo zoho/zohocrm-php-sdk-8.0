@@ -26,7 +26,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to cvid
 	 * @param string $cvid A string
 	 */
-	public function setCvid(string $cvid)
+	public function setCvid(?string $cvid)
 	{
 		$this->cvid=$cvid; 
 		$this->keyModified['cvid'] = 1; 
@@ -47,7 +47,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to owner
 	 * @param Owner $owner An instance of Owner
 	 */
-	public function setOwner(Owner $owner)
+	public function setOwner(?Owner $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['owner'] = 1; 
@@ -68,7 +68,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -89,7 +89,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to territory
 	 * @param Territory $territory An instance of Territory
 	 */
-	public function setTerritory(Territory $territory)
+	public function setTerritory(?Territory $territory)
 	{
 		$this->territory=$territory; 
 		$this->keyModified['territory'] = 1; 

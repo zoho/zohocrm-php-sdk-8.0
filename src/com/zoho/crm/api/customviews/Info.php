@@ -28,7 +28,7 @@ class Info implements Model
 	 * The method to set the value to perPage
 	 * @param int $perPage A int
 	 */
-	public function setPerPage(int $perPage)
+	public function setPerPage(?int $perPage)
 	{
 		$this->perPage=$perPage; 
 		$this->keyModified['per_page'] = 1; 
@@ -49,7 +49,7 @@ class Info implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -70,7 +70,7 @@ class Info implements Model
 	 * The method to set the value to page
 	 * @param int $page A int
 	 */
-	public function setPage(int $page)
+	public function setPage(?int $page)
 	{
 		$this->page=$page; 
 		$this->keyModified['page'] = 1; 
@@ -91,7 +91,7 @@ class Info implements Model
 	 * The method to set the value to moreRecords
 	 * @param bool $moreRecords A bool
 	 */
-	public function setMoreRecords(bool $moreRecords)
+	public function setMoreRecords(?bool $moreRecords)
 	{
 		$this->moreRecords=$moreRecords; 
 		$this->keyModified['more_records'] = 1; 
@@ -112,7 +112,7 @@ class Info implements Model
 	 * The method to set the value to default
 	 * @param string $default A string
 	 */
-	public function setDefault(string $default)
+	public function setDefault(?string $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 
@@ -133,7 +133,7 @@ class Info implements Model
 	 * The method to set the value to translation
 	 * @param Translation $translation An instance of Translation
 	 */
-	public function setTranslation(Translation $translation)
+	public function setTranslation(?Translation $translation)
 	{
 		$this->translation=$translation; 
 		$this->keyModified['translation'] = 1; 

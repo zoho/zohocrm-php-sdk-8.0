@@ -50,7 +50,7 @@ class Email implements Model
 	 * The method to set the value to attachments
 	 * @param array $attachments A array
 	 */
-	public function setAttachments(array $attachments)
+	public function setAttachments(?array $attachments)
 	{
 		$this->attachments=$attachments; 
 		$this->keyModified['attachments'] = 1; 
@@ -71,7 +71,7 @@ class Email implements Model
 	 * The method to set the value to threadId
 	 * @param string $threadId A string
 	 */
-	public function setThreadId(string $threadId)
+	public function setThreadId(?string $threadId)
 	{
 		$this->threadId=$threadId; 
 		$this->keyModified['thread_id'] = 1; 
@@ -92,7 +92,7 @@ class Email implements Model
 	 * The method to set the value to cc
 	 * @param array $cc A array
 	 */
-	public function setCc(array $cc)
+	public function setCc(?array $cc)
 	{
 		$this->cc=$cc; 
 		$this->keyModified['cc'] = 1; 
@@ -113,7 +113,7 @@ class Email implements Model
 	 * The method to set the value to summary
 	 * @param string $summary A string
 	 */
-	public function setSummary(string $summary)
+	public function setSummary(?string $summary)
 	{
 		$this->summary=$summary; 
 		$this->keyModified['summary'] = 1; 
@@ -134,7 +134,7 @@ class Email implements Model
 	 * The method to set the value to owner
 	 * @param MinifiedUser $owner An instance of MinifiedUser
 	 */
-	public function setOwner(MinifiedUser $owner)
+	public function setOwner(?MinifiedUser $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['owner'] = 1; 
@@ -155,7 +155,7 @@ class Email implements Model
 	 * The method to set the value to read
 	 * @param bool $read A bool
 	 */
-	public function setRead(bool $read)
+	public function setRead(?bool $read)
 	{
 		$this->read=$read; 
 		$this->keyModified['read'] = 1; 
@@ -176,7 +176,7 @@ class Email implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 
@@ -197,7 +197,7 @@ class Email implements Model
 	 * The method to set the value to sent
 	 * @param bool $sent A bool
 	 */
-	public function setSent(bool $sent)
+	public function setSent(?bool $sent)
 	{
 		$this->sent=$sent; 
 		$this->keyModified['sent'] = 1; 
@@ -218,7 +218,7 @@ class Email implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -259,7 +259,7 @@ class Email implements Model
 	 * The method to set the value to intent
 	 * @param Choice $intent An instance of Choice
 	 */
-	public function setIntent(Choice $intent)
+	public function setIntent(?Choice $intent)
 	{
 		$this->intent=$intent; 
 		$this->keyModified['intent'] = 1; 
@@ -280,7 +280,7 @@ class Email implements Model
 	 * The method to set the value to sentimentInfo
 	 * @param Choice $sentimentInfo An instance of Choice
 	 */
-	public function setSentimentInfo(Choice $sentimentInfo)
+	public function setSentimentInfo(?Choice $sentimentInfo)
 	{
 		$this->sentimentInfo=$sentimentInfo; 
 		$this->keyModified['sentiment_info'] = 1; 
@@ -301,7 +301,7 @@ class Email implements Model
 	 * The method to set the value to messageId
 	 * @param string $messageId A string
 	 */
-	public function setMessageId(string $messageId)
+	public function setMessageId(?string $messageId)
 	{
 		$this->messageId=$messageId; 
 		$this->keyModified['message_id'] = 1; 
@@ -322,7 +322,7 @@ class Email implements Model
 	 * The method to set the value to source
 	 * @param string $source A string
 	 */
-	public function setSource(string $source)
+	public function setSource(?string $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 
@@ -343,7 +343,7 @@ class Email implements Model
 	 * The method to set the value to linkedRecord
 	 * @param LinkedRecord $linkedRecord An instance of LinkedRecord
 	 */
-	public function setLinkedRecord(LinkedRecord $linkedRecord)
+	public function setLinkedRecord(?LinkedRecord $linkedRecord)
 	{
 		$this->linkedRecord=$linkedRecord; 
 		$this->keyModified['linked_record'] = 1; 
@@ -364,7 +364,7 @@ class Email implements Model
 	 * The method to set the value to sentTime
 	 * @param string $sentTime A string
 	 */
-	public function setSentTime(string $sentTime)
+	public function setSentTime(?string $sentTime)
 	{
 		$this->sentTime=$sentTime; 
 		$this->keyModified['sent_time'] = 1; 
@@ -385,7 +385,7 @@ class Email implements Model
 	 * The method to set the value to emotion
 	 * @param string $emotion A string
 	 */
-	public function setEmotion(string $emotion)
+	public function setEmotion(?string $emotion)
 	{
 		$this->emotion=$emotion; 
 		$this->keyModified['emotion'] = 1; 
@@ -406,7 +406,7 @@ class Email implements Model
 	 * The method to set the value to from
 	 * @param UserDetails $from An instance of UserDetails
 	 */
-	public function setFrom(UserDetails $from)
+	public function setFrom(?UserDetails $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -427,7 +427,7 @@ class Email implements Model
 	 * The method to set the value to to
 	 * @param array $to A array
 	 */
-	public function setTo(array $to)
+	public function setTo(?array $to)
 	{
 		$this->to=$to; 
 		$this->keyModified['to'] = 1; 
@@ -448,7 +448,7 @@ class Email implements Model
 	 * The method to set the value to time
 	 * @param \DateTime $time An instance of \DateTime
 	 */
-	public function setTime(\DateTime $time)
+	public function setTime(?\DateTime $time)
 	{
 		$this->time=$time; 
 		$this->keyModified['time'] = 1; 
@@ -469,7 +469,7 @@ class Email implements Model
 	 * The method to set the value to status
 	 * @param array $status A array
 	 */
-	public function setStatus(array $status)
+	public function setStatus(?array $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -490,7 +490,7 @@ class Email implements Model
 	 * The method to set the value to hasAttachment
 	 * @param bool $hasAttachment A bool
 	 */
-	public function setHasAttachment(bool $hasAttachment)
+	public function setHasAttachment(?bool $hasAttachment)
 	{
 		$this->hasAttachment=$hasAttachment; 
 		$this->keyModified['has_attachment'] = 1; 
@@ -511,7 +511,7 @@ class Email implements Model
 	 * The method to set the value to hasThreadAttachment
 	 * @param bool $hasThreadAttachment A bool
 	 */
-	public function setHasThreadAttachment(bool $hasThreadAttachment)
+	public function setHasThreadAttachment(?bool $hasThreadAttachment)
 	{
 		$this->hasThreadAttachment=$hasThreadAttachment; 
 		$this->keyModified['has_thread_attachment'] = 1; 
@@ -532,7 +532,7 @@ class Email implements Model
 	 * The method to set the value to editable
 	 * @param bool $editable A bool
 	 */
-	public function setEditable(bool $editable)
+	public function setEditable(?bool $editable)
 	{
 		$this->editable=$editable; 
 		$this->keyModified['editable'] = 1; 
@@ -553,7 +553,7 @@ class Email implements Model
 	 * The method to set the value to mailFormat
 	 * @param string $mailFormat A string
 	 */
-	public function setMailFormat(string $mailFormat)
+	public function setMailFormat(?string $mailFormat)
 	{
 		$this->mailFormat=$mailFormat; 
 		$this->keyModified['mail_format'] = 1; 
@@ -574,7 +574,7 @@ class Email implements Model
 	 * The method to set the value to replyTo
 	 * @param UserDetails $replyTo An instance of UserDetails
 	 */
-	public function setReplyTo(UserDetails $replyTo)
+	public function setReplyTo(?UserDetails $replyTo)
 	{
 		$this->replyTo=$replyTo; 
 		$this->keyModified['reply_to'] = 1; 

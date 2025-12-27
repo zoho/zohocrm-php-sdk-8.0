@@ -23,7 +23,7 @@ class CountResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to count
 	 * @param string $count A string
 	 */
-	public function setCount(string $count)
+	public function setCount(?string $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 

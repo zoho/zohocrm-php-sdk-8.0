@@ -28,7 +28,7 @@ class MassDeleteDetails implements Model, StatusActionResponse
 	 * The method to set the value to jobId
 	 * @param string $jobId A string
 	 */
-	public function setJobId(string $jobId)
+	public function setJobId(?string $jobId)
 	{
 		$this->jobId=$jobId; 
 		$this->keyModified['job_id'] = 1; 
@@ -49,7 +49,7 @@ class MassDeleteDetails implements Model, StatusActionResponse
 	 * The method to set the value to totalCount
 	 * @param int $totalCount A int
 	 */
-	public function setTotalCount(int $totalCount)
+	public function setTotalCount(?int $totalCount)
 	{
 		$this->totalCount=$totalCount; 
 		$this->keyModified['total_count'] = 1; 
@@ -70,7 +70,7 @@ class MassDeleteDetails implements Model, StatusActionResponse
 	 * The method to set the value to failedCount
 	 * @param int $failedCount A int
 	 */
-	public function setFailedCount(int $failedCount)
+	public function setFailedCount(?int $failedCount)
 	{
 		$this->failedCount=$failedCount; 
 		$this->keyModified['failed_count'] = 1; 
@@ -91,7 +91,7 @@ class MassDeleteDetails implements Model, StatusActionResponse
 	 * The method to set the value to deletedCount
 	 * @param int $deletedCount A int
 	 */
-	public function setDeletedCount(int $deletedCount)
+	public function setDeletedCount(?int $deletedCount)
 	{
 		$this->deletedCount=$deletedCount; 
 		$this->keyModified['deleted_count'] = 1; 
@@ -112,7 +112,7 @@ class MassDeleteDetails implements Model, StatusActionResponse
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

@@ -27,7 +27,7 @@ class Sources implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -48,7 +48,7 @@ class Sources implements Model
 	 * The method to set the value to source
 	 * @param Source $source An instance of Source
 	 */
-	public function setSource(Source $source)
+	public function setSource(?Source $source)
 	{
 		$this->source=$source; 
 		$this->keyModified['source'] = 1; 
@@ -69,7 +69,7 @@ class Sources implements Model
 	 * The method to set the value to subordinates
 	 * @param bool $subordinates A bool
 	 */
-	public function setSubordinates(bool $subordinates)
+	public function setSubordinates(?bool $subordinates)
 	{
 		$this->subordinates=$subordinates; 
 		$this->keyModified['subordinates'] = 1; 
@@ -90,7 +90,7 @@ class Sources implements Model
 	 * The method to set the value to subTerritories
 	 * @param bool $subTerritories A bool
 	 */
-	public function setSubTerritories(bool $subTerritories)
+	public function setSubTerritories(?bool $subTerritories)
 	{
 		$this->subTerritories=$subTerritories; 
 		$this->keyModified['sub_territories'] = 1; 

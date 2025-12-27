@@ -25,7 +25,7 @@ class Expression implements Model
 	 * The method to set the value to functionParameters
 	 * @param array $functionParameters A array
 	 */
-	public function setFunctionParameters(array $functionParameters)
+	public function setFunctionParameters(?array $functionParameters)
 	{
 		$this->functionParameters=$functionParameters; 
 		$this->keyModified['function_parameters'] = 1; 
@@ -46,7 +46,7 @@ class Expression implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -67,7 +67,7 @@ class Expression implements Model
 	 * The method to set the value to function
 	 * @param string $function A string
 	 */
-	public function setFunction(string $function)
+	public function setFunction(?string $function)
 	{
 		$this->function=$function; 
 		$this->keyModified['function'] = 1; 

@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to customViews
 	 * @param array $customViews A array
 	 */
-	public function setCustomViews(array $customViews)
+	public function setCustomViews(?array $customViews)
 	{
 		$this->customViews=$customViews; 
 		$this->keyModified['custom_views'] = 1; 

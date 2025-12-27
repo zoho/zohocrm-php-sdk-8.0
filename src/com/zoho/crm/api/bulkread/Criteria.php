@@ -31,7 +31,7 @@ class Criteria implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -52,7 +52,7 @@ class Criteria implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -93,7 +93,7 @@ class Criteria implements Model
 	 * The method to set the value to groupOperator
 	 * @param Choice $groupOperator An instance of Choice
 	 */
-	public function setGroupOperator(Choice $groupOperator)
+	public function setGroupOperator(?Choice $groupOperator)
 	{
 		$this->groupOperator=$groupOperator; 
 		$this->keyModified['group_operator'] = 1; 
@@ -114,7 +114,7 @@ class Criteria implements Model
 	 * The method to set the value to group
 	 * @param array $group A array
 	 */
-	public function setGroup(array $group)
+	public function setGroup(?array $group)
 	{
 		$this->group=$group; 
 		$this->keyModified['group'] = 1; 
@@ -135,7 +135,7 @@ class Criteria implements Model
 	 * The method to set the value to field
 	 * @param MinifiedField $field An instance of MinifiedField
 	 */
-	public function setField(MinifiedField $field)
+	public function setField(?MinifiedField $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -156,7 +156,7 @@ class Criteria implements Model
 	 * The method to set the value to comparator
 	 * @param Choice $comparator An instance of Choice
 	 */
-	public function setComparator(Choice $comparator)
+	public function setComparator(?Choice $comparator)
 	{
 		$this->comparator=$comparator; 
 		$this->keyModified['comparator'] = 1; 

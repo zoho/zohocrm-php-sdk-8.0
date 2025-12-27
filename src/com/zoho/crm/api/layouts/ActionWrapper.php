@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to layouts
 	 * @param array $layouts A array
 	 */
-	public function setLayouts(array $layouts)
+	public function setLayouts(?array $layouts)
 	{
 		$this->layouts=$layouts; 
 		$this->keyModified['layouts'] = 1; 

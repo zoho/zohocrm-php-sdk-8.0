@@ -49,7 +49,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to currencySymbol
 	 * @param string $currencySymbol A string
 	 */
-	public function setCurrencySymbol(string $currencySymbol)
+	public function setCurrencySymbol(?string $currencySymbol)
 	{
 		$this->currencySymbol=$currencySymbol; 
 		$this->keyModified['$currency_symbol'] = 1; 
@@ -70,7 +70,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to rescheduledTo
 	 * @param \DateTime $rescheduledTo An instance of \DateTime
 	 */
-	public function setRescheduledTo(\DateTime $rescheduledTo)
+	public function setRescheduledTo(?\DateTime $rescheduledTo)
 	{
 		$this->rescheduledTo=$rescheduledTo; 
 		$this->keyModified['Rescheduled_To'] = 1; 
@@ -91,7 +91,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to reviewProcess
 	 * @param bool $reviewProcess A bool
 	 */
-	public function setReviewProcess(bool $reviewProcess)
+	public function setReviewProcess(?bool $reviewProcess)
 	{
 		$this->reviewProcess=$reviewProcess; 
 		$this->keyModified['$review_process'] = 1; 
@@ -112,7 +112,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to rescheduleReason
 	 * @param string $rescheduleReason A string
 	 */
-	public function setRescheduleReason(string $rescheduleReason)
+	public function setRescheduleReason(?string $rescheduleReason)
 	{
 		$this->rescheduleReason=$rescheduleReason; 
 		$this->keyModified['Reschedule_Reason'] = 1; 
@@ -133,7 +133,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to sharingPermission
 	 * @param string $sharingPermission A string
 	 */
-	public function setSharingPermission(string $sharingPermission)
+	public function setSharingPermission(?string $sharingPermission)
 	{
 		$this->sharingPermission=$sharingPermission; 
 		$this->keyModified['$sharing_permission'] = 1; 
@@ -154,7 +154,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['Name'] = 1; 
@@ -175,7 +175,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to modifiedBy
 	 * @param User $modifiedBy An instance of User
 	 */
-	public function setModifiedBy(User $modifiedBy)
+	public function setModifiedBy(?User $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['Modified_By'] = 1; 
@@ -196,7 +196,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to review
 	 * @param bool $review A bool
 	 */
-	public function setReview(bool $review)
+	public function setReview(?bool $review)
 	{
 		$this->review=$review; 
 		$this->keyModified['$review'] = 1; 
@@ -217,7 +217,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to rescheduledBy
 	 * @param User $rescheduledBy An instance of User
 	 */
-	public function setRescheduledBy(User $rescheduledBy)
+	public function setRescheduledBy(?User $rescheduledBy)
 	{
 		$this->rescheduledBy=$rescheduledBy; 
 		$this->keyModified['Rescheduled_By'] = 1; 
@@ -238,7 +238,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['$state'] = 1; 
@@ -259,7 +259,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to canvasId
 	 * @param string $canvasId A string
 	 */
-	public function setCanvasId(string $canvasId)
+	public function setCanvasId(?string $canvasId)
 	{
 		$this->canvasId=$canvasId; 
 		$this->keyModified['$canvas_id'] = 1; 
@@ -280,7 +280,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to processFlow
 	 * @param bool $processFlow A bool
 	 */
-	public function setProcessFlow(bool $processFlow)
+	public function setProcessFlow(?bool $processFlow)
 	{
 		$this->processFlow=$processFlow; 
 		$this->keyModified['$process_flow'] = 1; 
@@ -301,7 +301,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -322,7 +322,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to rescheduledTime
 	 * @param \DateTime $rescheduledTime An instance of \DateTime
 	 */
-	public function setRescheduledTime(\DateTime $rescheduledTime)
+	public function setRescheduledTime(?\DateTime $rescheduledTime)
 	{
 		$this->rescheduledTime=$rescheduledTime; 
 		$this->keyModified['Rescheduled_Time'] = 1; 
@@ -343,7 +343,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to ziaVisions
 	 * @param bool $ziaVisions A bool
 	 */
-	public function setZiaVisions(bool $ziaVisions)
+	public function setZiaVisions(?bool $ziaVisions)
 	{
 		$this->ziaVisions=$ziaVisions; 
 		$this->keyModified['$zia_visions'] = 1; 
@@ -364,7 +364,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to approved
 	 * @param bool $approved A bool
 	 */
-	public function setApproved(bool $approved)
+	public function setApproved(?bool $approved)
 	{
 		$this->approved=$approved; 
 		$this->keyModified['$approved'] = 1; 
@@ -385,7 +385,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['Modified_Time'] = 1; 
@@ -406,7 +406,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to approval
 	 * @param Approval $approval An instance of Approval
 	 */
-	public function setApproval(Approval $approval)
+	public function setApproval(?Approval $approval)
 	{
 		$this->approval=$approval; 
 		$this->keyModified['$approval'] = 1; 
@@ -427,7 +427,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['Created_Time'] = 1; 
@@ -448,7 +448,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to rescheduledFrom
 	 * @param \DateTime $rescheduledFrom An instance of \DateTime
 	 */
-	public function setRescheduledFrom(\DateTime $rescheduledFrom)
+	public function setRescheduledFrom(?\DateTime $rescheduledFrom)
 	{
 		$this->rescheduledFrom=$rescheduledFrom; 
 		$this->keyModified['Rescheduled_From'] = 1; 
@@ -469,7 +469,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to appointmentName
 	 * @param AppointmentName $appointmentName An instance of AppointmentName
 	 */
-	public function setAppointmentName(AppointmentName $appointmentName)
+	public function setAppointmentName(?AppointmentName $appointmentName)
 	{
 		$this->appointmentName=$appointmentName; 
 		$this->keyModified['Appointment_Name'] = 1; 
@@ -490,7 +490,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to editable
 	 * @param bool $editable A bool
 	 */
-	public function setEditable(bool $editable)
+	public function setEditable(?bool $editable)
 	{
 		$this->editable=$editable; 
 		$this->keyModified['$editable'] = 1; 
@@ -511,7 +511,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to orchestration
 	 * @param bool $orchestration A bool
 	 */
-	public function setOrchestration(bool $orchestration)
+	public function setOrchestration(?bool $orchestration)
 	{
 		$this->orchestration=$orchestration; 
 		$this->keyModified['$orchestration'] = 1; 
@@ -532,7 +532,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to inMerge
 	 * @param bool $inMerge A bool
 	 */
-	public function setInMerge(bool $inMerge)
+	public function setInMerge(?bool $inMerge)
 	{
 		$this->inMerge=$inMerge; 
 		$this->keyModified['$in_merge'] = 1; 
@@ -553,7 +553,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['Created_By'] = 1; 
@@ -574,7 +574,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to approvalState
 	 * @param string $approvalState A string
 	 */
-	public function setApprovalState(string $approvalState)
+	public function setApprovalState(?string $approvalState)
 	{
 		$this->approvalState=$approvalState; 
 		$this->keyModified['$approval_state'] = 1; 
@@ -595,7 +595,7 @@ class RescheduleHistory implements Model
 	 * The method to set the value to rescheduleNote
 	 * @param string $rescheduleNote A string
 	 */
-	public function setRescheduleNote(string $rescheduleNote)
+	public function setRescheduleNote(?string $rescheduleNote)
 	{
 		$this->rescheduleNote=$rescheduleNote; 
 		$this->keyModified['Reschedule_Note'] = 1; 

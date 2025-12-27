@@ -45,7 +45,7 @@ class Attachment implements Model
 	 * The method to set the value to owner
 	 * @param MinifiedUser $owner An instance of MinifiedUser
 	 */
-	public function setOwner(MinifiedUser $owner)
+	public function setOwner(?MinifiedUser $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['Owner'] = 1; 
@@ -66,7 +66,7 @@ class Attachment implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['Modified_By'] = 1; 
@@ -87,7 +87,7 @@ class Attachment implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['Created_By'] = 1; 
@@ -108,7 +108,7 @@ class Attachment implements Model
 	 * The method to set the value to parentId
 	 * @param ParentId $parentId An instance of ParentId
 	 */
-	public function setParentId(ParentId $parentId)
+	public function setParentId(?ParentId $parentId)
 	{
 		$this->parentId=$parentId; 
 		$this->keyModified['Parent_Id'] = 1; 
@@ -129,7 +129,7 @@ class Attachment implements Model
 	 * The method to set the value to sharingPermission
 	 * @param string $sharingPermission A string
 	 */
-	public function setSharingPermission(string $sharingPermission)
+	public function setSharingPermission(?string $sharingPermission)
 	{
 		$this->sharingPermission=$sharingPermission; 
 		$this->keyModified['$sharing_permission'] = 1; 
@@ -150,7 +150,7 @@ class Attachment implements Model
 	 * The method to set the value to recordStatusS
 	 * @param string $recordStatusS A string
 	 */
-	public function setRecordStatusS(string $recordStatusS)
+	public function setRecordStatusS(?string $recordStatusS)
 	{
 		$this->recordStatusS=$recordStatusS; 
 		$this->keyModified['Record_Status__s'] = 1; 
@@ -171,7 +171,7 @@ class Attachment implements Model
 	 * The method to set the value to attachmentType
 	 * @param int $attachmentType A int
 	 */
-	public function setAttachmentType(int $attachmentType)
+	public function setAttachmentType(?int $attachmentType)
 	{
 		$this->attachmentType=$attachmentType; 
 		$this->keyModified['$attachment_type'] = 1; 
@@ -192,7 +192,7 @@ class Attachment implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -213,7 +213,7 @@ class Attachment implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['Modified_Time'] = 1; 
@@ -234,7 +234,7 @@ class Attachment implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['Created_Time'] = 1; 
@@ -255,7 +255,7 @@ class Attachment implements Model
 	 * The method to set the value to fileName
 	 * @param string $fileName A string
 	 */
-	public function setFileName(string $fileName)
+	public function setFileName(?string $fileName)
 	{
 		$this->fileName=$fileName; 
 		$this->keyModified['File_Name'] = 1; 
@@ -276,7 +276,7 @@ class Attachment implements Model
 	 * The method to set the value to size
 	 * @param string $size A string
 	 */
-	public function setSize(string $size)
+	public function setSize(?string $size)
 	{
 		$this->size=$size; 
 		$this->keyModified['Size'] = 1; 
@@ -297,7 +297,7 @@ class Attachment implements Model
 	 * The method to set the value to editable
 	 * @param bool $editable A bool
 	 */
-	public function setEditable(bool $editable)
+	public function setEditable(?bool $editable)
 	{
 		$this->editable=$editable; 
 		$this->keyModified['$editable'] = 1; 
@@ -318,7 +318,7 @@ class Attachment implements Model
 	 * The method to set the value to fileId
 	 * @param string $fileId A string
 	 */
-	public function setFileId(string $fileId)
+	public function setFileId(?string $fileId)
 	{
 		$this->fileId=$fileId; 
 		$this->keyModified['$file_id'] = 1; 
@@ -339,7 +339,7 @@ class Attachment implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['$type'] = 1; 
@@ -360,7 +360,7 @@ class Attachment implements Model
 	 * The method to set the value to seModule
 	 * @param string $seModule A string
 	 */
-	public function setSeModule(string $seModule)
+	public function setSeModule(?string $seModule)
 	{
 		$this->seModule=$seModule; 
 		$this->keyModified['$se_module'] = 1; 
@@ -381,7 +381,7 @@ class Attachment implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['$state'] = 1; 
@@ -402,7 +402,7 @@ class Attachment implements Model
 	 * The method to set the value to linkUrl
 	 * @param string $linkUrl A string
 	 */
-	public function setLinkUrl(string $linkUrl)
+	public function setLinkUrl(?string $linkUrl)
 	{
 		$this->linkUrl=$linkUrl; 
 		$this->keyModified['$link_url'] = 1; 
@@ -423,7 +423,7 @@ class Attachment implements Model
 	 * The method to set the value to attachmentSourceS
 	 * @param string $attachmentSourceS A string
 	 */
-	public function setAttachmentSourceS(string $attachmentSourceS)
+	public function setAttachmentSourceS(?string $attachmentSourceS)
 	{
 		$this->attachmentSourceS=$attachmentSourceS; 
 		$this->keyModified['Attachment_Source__s'] = 1; 
@@ -444,7 +444,7 @@ class Attachment implements Model
 	 * The method to set the value to fileIdS
 	 * @param string $fileIdS A string
 	 */
-	public function setFileIdS(string $fileIdS)
+	public function setFileIdS(?string $fileIdS)
 	{
 		$this->fileIdS=$fileIdS; 
 		$this->keyModified['File_Id__s'] = 1; 
@@ -465,7 +465,7 @@ class Attachment implements Model
 	 * The method to set the value to fieldStates
 	 * @param string $fieldStates A string
 	 */
-	public function setFieldStates(string $fieldStates)
+	public function setFieldStates(?string $fieldStates)
 	{
 		$this->fieldStates=$fieldStates; 
 		$this->keyModified['$field_states'] = 1; 
@@ -486,7 +486,7 @@ class Attachment implements Model
 	 * The method to set the value to ziaVisions
 	 * @param string $ziaVisions A string
 	 */
-	public function setZiaVisions(string $ziaVisions)
+	public function setZiaVisions(?string $ziaVisions)
 	{
 		$this->ziaVisions=$ziaVisions; 
 		$this->keyModified['$zia_visions'] = 1; 

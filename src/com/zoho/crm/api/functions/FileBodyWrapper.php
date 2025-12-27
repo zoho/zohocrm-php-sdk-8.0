@@ -24,7 +24,7 @@ class FileBodyWrapper implements Model
 	 * The method to set the value to inputfile
 	 * @param StreamWrapper $inputfile An instance of StreamWrapper
 	 */
-	public function setInputfile(StreamWrapper $inputfile)
+	public function setInputfile(?StreamWrapper $inputfile)
 	{
 		$this->inputfile=$inputfile; 
 		$this->keyModified['inputFile'] = 1; 

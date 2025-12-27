@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to emailCompose
 	 * @param array $emailCompose A array
 	 */
-	public function setEmailCompose(array $emailCompose)
+	public function setEmailCompose(?array $emailCompose)
 	{
 		$this->emailCompose=$emailCompose; 
 		$this->keyModified['email_compose'] = 1; 

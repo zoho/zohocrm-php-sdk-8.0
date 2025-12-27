@@ -36,7 +36,7 @@ class Cadences implements Model
 	 * The method to set the value to summary
 	 * @param Summary $summary An instance of Summary
 	 */
-	public function setSummary(Summary $summary)
+	public function setSummary(?Summary $summary)
 	{
 		$this->summary=$summary; 
 		$this->keyModified['summary'] = 1; 
@@ -57,7 +57,7 @@ class Cadences implements Model
 	 * The method to set the value to createdTime
 	 * @param string $createdTime A string
 	 */
-	public function setCreatedTime(string $createdTime)
+	public function setCreatedTime(?string $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -78,7 +78,7 @@ class Cadences implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -99,7 +99,7 @@ class Cadences implements Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -120,7 +120,7 @@ class Cadences implements Model
 	 * The method to set the value to executionDetails
 	 * @param ExecutionDetail $executionDetails An instance of ExecutionDetail
 	 */
-	public function setExecutionDetails(ExecutionDetail $executionDetails)
+	public function setExecutionDetails(?ExecutionDetail $executionDetails)
 	{
 		$this->executionDetails=$executionDetails; 
 		$this->keyModified['execution_details'] = 1; 
@@ -141,7 +141,7 @@ class Cadences implements Model
 	 * The method to set the value to published
 	 * @param bool $published A bool
 	 */
-	public function setPublished(bool $published)
+	public function setPublished(?bool $published)
 	{
 		$this->published=$published; 
 		$this->keyModified['published'] = 1; 
@@ -162,7 +162,7 @@ class Cadences implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -183,7 +183,7 @@ class Cadences implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -204,7 +204,7 @@ class Cadences implements Model
 	 * The method to set the value to modifiedTime
 	 * @param string $modifiedTime A string
 	 */
-	public function setModifiedTime(string $modifiedTime)
+	public function setModifiedTime(?string $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -225,7 +225,7 @@ class Cadences implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -246,7 +246,7 @@ class Cadences implements Model
 	 * The method to set the value to modifiedBy
 	 * @param User $modifiedBy An instance of User
 	 */
-	public function setModifiedBy(User $modifiedBy)
+	public function setModifiedBy(?User $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -267,7 +267,7 @@ class Cadences implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -288,7 +288,7 @@ class Cadences implements Model
 	 * The method to set the value to customView
 	 * @param CustomView $customView An instance of CustomView
 	 */
-	public function setCustomView(CustomView $customView)
+	public function setCustomView(?CustomView $customView)
 	{
 		$this->customView=$customView; 
 		$this->keyModified['custom_view'] = 1; 
@@ -309,7 +309,7 @@ class Cadences implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

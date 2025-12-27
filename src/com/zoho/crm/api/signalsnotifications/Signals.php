@@ -29,7 +29,7 @@ class Signals implements Model
 	 * The method to set the value to signalNamespace
 	 * @param string $signalNamespace A string
 	 */
-	public function setSignalNamespace(string $signalNamespace)
+	public function setSignalNamespace(?string $signalNamespace)
 	{
 		$this->signalNamespace=$signalNamespace; 
 		$this->keyModified['signal_namespace'] = 1; 
@@ -50,7 +50,7 @@ class Signals implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 
@@ -71,7 +71,7 @@ class Signals implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -92,7 +92,7 @@ class Signals implements Model
 	 * The method to set the value to message
 	 * @param string $message A string
 	 */
-	public function setMessage(string $message)
+	public function setMessage(?string $message)
 	{
 		$this->message=$message; 
 		$this->keyModified['message'] = 1; 
@@ -113,7 +113,7 @@ class Signals implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -134,7 +134,7 @@ class Signals implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -155,7 +155,7 @@ class Signals implements Model
 	 * The method to set the value to actions
 	 * @param array $actions A array
 	 */
-	public function setActions(array $actions)
+	public function setActions(?array $actions)
 	{
 		$this->actions=$actions; 
 		$this->keyModified['actions'] = 1; 

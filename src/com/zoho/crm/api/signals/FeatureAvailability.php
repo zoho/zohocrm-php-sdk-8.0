@@ -24,7 +24,7 @@ class FeatureAvailability implements Model
 	 * The method to set the value to scoring
 	 * @param bool $scoring A bool
 	 */
-	public function setScoring(bool $scoring)
+	public function setScoring(?bool $scoring)
 	{
 		$this->scoring=$scoring; 
 		$this->keyModified['scoring'] = 1; 
@@ -45,7 +45,7 @@ class FeatureAvailability implements Model
 	 * The method to set the value to signals
 	 * @param bool $signals A bool
 	 */
-	public function setSignals(bool $signals)
+	public function setSignals(?bool $signals)
 	{
 		$this->signals=$signals; 
 		$this->keyModified['signals'] = 1; 

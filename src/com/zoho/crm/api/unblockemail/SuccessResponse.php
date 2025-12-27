@@ -26,7 +26,7 @@ class SuccessResponse implements Model, ActionResponse
 	 * The method to set the value to code
 	 * @param string $code A string
 	 */
-	public function setCode(string $code)
+	public function setCode(?string $code)
 	{
 		$this->code=$code; 
 		$this->keyModified['code'] = 1; 
@@ -47,7 +47,7 @@ class SuccessResponse implements Model, ActionResponse
 	 * The method to set the value to details
 	 * @param array $details A array
 	 */
-	public function setDetails(array $details)
+	public function setDetails(?array $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 
@@ -68,7 +68,7 @@ class SuccessResponse implements Model, ActionResponse
 	 * The method to set the value to message
 	 * @param string $message A string
 	 */
-	public function setMessage(string $message)
+	public function setMessage(?string $message)
 	{
 		$this->message=$message; 
 		$this->keyModified['message'] = 1; 
@@ -89,7 +89,7 @@ class SuccessResponse implements Model, ActionResponse
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

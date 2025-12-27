@@ -24,7 +24,7 @@ class AssociationDetails implements Model
 	 * The method to set the value to lookupField
 	 * @param LookupField $lookupField An instance of LookupField
 	 */
-	public function setLookupField(LookupField $lookupField)
+	public function setLookupField(?LookupField $lookupField)
 	{
 		$this->lookupField=$lookupField; 
 		$this->keyModified['lookup_field'] = 1; 
@@ -45,7 +45,7 @@ class AssociationDetails implements Model
 	 * The method to set the value to relatedField
 	 * @param LookupField $relatedField An instance of LookupField
 	 */
-	public function setRelatedField(LookupField $relatedField)
+	public function setRelatedField(?LookupField $relatedField)
 	{
 		$this->relatedField=$relatedField; 
 		$this->keyModified['related_field'] = 1; 

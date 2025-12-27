@@ -24,7 +24,7 @@ class Cc implements Model
 	 * The method to set the value to userName
 	 * @param string $userName A string
 	 */
-	public function setUserName(string $userName)
+	public function setUserName(?string $userName)
 	{
 		$this->userName=$userName; 
 		$this->keyModified['user_name'] = 1; 
@@ -45,7 +45,7 @@ class Cc implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 

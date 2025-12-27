@@ -23,7 +23,7 @@ class SourcesCountWrapper implements Model, ResponseHandler
 	 * The method to set the value to sourcesCount
 	 * @param array $sourcesCount A array
 	 */
-	public function setSourcesCount(array $sourcesCount)
+	public function setSourcesCount(?array $sourcesCount)
 	{
 		$this->sourcesCount=$sourcesCount; 
 		$this->keyModified['sources_count'] = 1; 

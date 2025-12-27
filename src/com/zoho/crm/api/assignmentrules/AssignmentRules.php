@@ -33,7 +33,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -54,7 +54,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -75,7 +75,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to defaultAssignee
 	 * @param DefaultAssignee $defaultAssignee An instance of DefaultAssignee
 	 */
-	public function setDefaultAssignee(DefaultAssignee $defaultAssignee)
+	public function setDefaultAssignee(?DefaultAssignee $defaultAssignee)
 	{
 		$this->defaultAssignee=$defaultAssignee; 
 		$this->keyModified['default_assignee'] = 1; 
@@ -96,7 +96,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -117,7 +117,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to modifiedBy
 	 * @param User $modifiedBy An instance of User
 	 */
-	public function setModifiedBy(User $modifiedBy)
+	public function setModifiedBy(?User $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -138,7 +138,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -159,7 +159,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -180,7 +180,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -201,7 +201,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to module
 	 * @param MinifiedModule $module An instance of MinifiedModule
 	 */
-	public function setModule(MinifiedModule $module)
+	public function setModule(?MinifiedModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -222,7 +222,7 @@ class AssignmentRules implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 

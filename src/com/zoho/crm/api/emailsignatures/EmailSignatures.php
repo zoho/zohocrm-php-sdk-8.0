@@ -28,7 +28,7 @@ class EmailSignatures implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -49,7 +49,7 @@ class EmailSignatures implements Model
 	 * The method to set the value to from
 	 * @param array $from A array
 	 */
-	public function setFrom(array $from)
+	public function setFrom(?array $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -70,7 +70,7 @@ class EmailSignatures implements Model
 	 * The method to set the value to editorMode
 	 * @param Choice $editorMode An instance of Choice
 	 */
-	public function setEditorMode(Choice $editorMode)
+	public function setEditorMode(?Choice $editorMode)
 	{
 		$this->editorMode=$editorMode; 
 		$this->keyModified['editor_mode'] = 1; 
@@ -91,7 +91,7 @@ class EmailSignatures implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -112,7 +112,7 @@ class EmailSignatures implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 

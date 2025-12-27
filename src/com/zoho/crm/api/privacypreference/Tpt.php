@@ -25,7 +25,7 @@ class Tpt implements Model
 	 * The method to set the value to isenabled
 	 * @param string $isenabled A string
 	 */
-	public function setIsenabled(string $isenabled)
+	public function setIsenabled(?string $isenabled)
 	{
 		$this->isenabled=$isenabled; 
 		$this->keyModified['isEnabled'] = 1; 
@@ -46,7 +46,7 @@ class Tpt implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -67,7 +67,7 @@ class Tpt implements Model
 	 * The method to set the value to issupported
 	 * @param string $issupported A string
 	 */
-	public function setIssupported(string $issupported)
+	public function setIssupported(?string $issupported)
 	{
 		$this->issupported=$issupported; 
 		$this->keyModified['isSupported'] = 1; 

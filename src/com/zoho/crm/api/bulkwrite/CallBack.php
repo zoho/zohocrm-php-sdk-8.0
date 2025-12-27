@@ -25,7 +25,7 @@ class CallBack implements Model
 	 * The method to set the value to url
 	 * @param string $url A string
 	 */
-	public function setUrl(string $url)
+	public function setUrl(?string $url)
 	{
 		$this->url=$url; 
 		$this->keyModified['url'] = 1; 
@@ -46,7 +46,7 @@ class CallBack implements Model
 	 * The method to set the value to method
 	 * @param Choice $method An instance of Choice
 	 */
-	public function setMethod(Choice $method)
+	public function setMethod(?Choice $method)
 	{
 		$this->method=$method; 
 		$this->keyModified['method'] = 1; 

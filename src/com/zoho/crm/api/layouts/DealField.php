@@ -26,7 +26,7 @@ class DealField implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -47,7 +47,7 @@ class DealField implements Model
 	 * The method to set the value to fieldLabel
 	 * @param string $fieldLabel A string
 	 */
-	public function setFieldLabel(string $fieldLabel)
+	public function setFieldLabel(?string $fieldLabel)
 	{
 		$this->fieldLabel=$fieldLabel; 
 		$this->keyModified['field_label'] = 1; 
@@ -68,7 +68,7 @@ class DealField implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -89,7 +89,7 @@ class DealField implements Model
 	 * The method to set the value to required
 	 * @param bool $required A bool
 	 */
-	public function setRequired(bool $required)
+	public function setRequired(?bool $required)
 	{
 		$this->required=$required; 
 		$this->keyModified['required'] = 1; 

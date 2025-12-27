@@ -24,7 +24,7 @@ class Message implements Model
 	 * The method to set the value to title
 	 * @param string $title A string
 	 */
-	public function setTitle(string $title)
+	public function setTitle(?string $title)
 	{
 		$this->title=$title; 
 		$this->keyModified['title'] = 1; 
@@ -45,7 +45,7 @@ class Message implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 

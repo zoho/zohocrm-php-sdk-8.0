@@ -23,7 +23,7 @@ class SummaryResponseWrapper implements Model, SummaryResponseHandler
 	 * The method to set the value to sharingRulesSummary
 	 * @param array $sharingRulesSummary A array
 	 */
-	public function setSharingRulesSummary(array $sharingRulesSummary)
+	public function setSharingRulesSummary(?array $sharingRulesSummary)
 	{
 		$this->sharingRulesSummary=$sharingRulesSummary; 
 		$this->keyModified['sharing_rules_summary'] = 1; 

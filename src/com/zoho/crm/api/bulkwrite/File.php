@@ -29,7 +29,7 @@ class File implements Model
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -50,7 +50,7 @@ class File implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -71,7 +71,7 @@ class File implements Model
 	 * The method to set the value to addedCount
 	 * @param int $addedCount A int
 	 */
-	public function setAddedCount(int $addedCount)
+	public function setAddedCount(?int $addedCount)
 	{
 		$this->addedCount=$addedCount; 
 		$this->keyModified['added_count'] = 1; 
@@ -92,7 +92,7 @@ class File implements Model
 	 * The method to set the value to skippedCount
 	 * @param int $skippedCount A int
 	 */
-	public function setSkippedCount(int $skippedCount)
+	public function setSkippedCount(?int $skippedCount)
 	{
 		$this->skippedCount=$skippedCount; 
 		$this->keyModified['skipped_count'] = 1; 
@@ -113,7 +113,7 @@ class File implements Model
 	 * The method to set the value to updatedCount
 	 * @param int $updatedCount A int
 	 */
-	public function setUpdatedCount(int $updatedCount)
+	public function setUpdatedCount(?int $updatedCount)
 	{
 		$this->updatedCount=$updatedCount; 
 		$this->keyModified['updated_count'] = 1; 
@@ -134,7 +134,7 @@ class File implements Model
 	 * The method to set the value to totalCount
 	 * @param int $totalCount A int
 	 */
-	public function setTotalCount(int $totalCount)
+	public function setTotalCount(?int $totalCount)
 	{
 		$this->totalCount=$totalCount; 
 		$this->keyModified['total_count'] = 1; 

@@ -49,7 +49,7 @@ class EnrichedData implements Model
 	 * The method to set the value to orgStatus
 	 * @param string $orgStatus A string
 	 */
-	public function setOrgStatus(string $orgStatus)
+	public function setOrgStatus(?string $orgStatus)
 	{
 		$this->orgStatus=$orgStatus; 
 		$this->keyModified['org_status'] = 1; 
@@ -70,7 +70,7 @@ class EnrichedData implements Model
 	 * The method to set the value to description
 	 * @param array $description A array
 	 */
-	public function setDescription(array $description)
+	public function setDescription(?array $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -91,7 +91,7 @@ class EnrichedData implements Model
 	 * The method to set the value to ceo
 	 * @param string $ceo A string
 	 */
-	public function setCeo(string $ceo)
+	public function setCeo(?string $ceo)
 	{
 		$this->ceo=$ceo; 
 		$this->keyModified['ceo'] = 1; 
@@ -112,7 +112,7 @@ class EnrichedData implements Model
 	 * The method to set the value to secondaryEmail
 	 * @param string $secondaryEmail A string
 	 */
-	public function setSecondaryEmail(string $secondaryEmail)
+	public function setSecondaryEmail(?string $secondaryEmail)
 	{
 		$this->secondaryEmail=$secondaryEmail; 
 		$this->keyModified['secondary_email'] = 1; 
@@ -133,7 +133,7 @@ class EnrichedData implements Model
 	 * The method to set the value to revenue
 	 * @param string $revenue A string
 	 */
-	public function setRevenue(string $revenue)
+	public function setRevenue(?string $revenue)
 	{
 		$this->revenue=$revenue; 
 		$this->keyModified['revenue'] = 1; 
@@ -154,7 +154,7 @@ class EnrichedData implements Model
 	 * The method to set the value to yearsInIndustry
 	 * @param string $yearsInIndustry A string
 	 */
-	public function setYearsInIndustry(string $yearsInIndustry)
+	public function setYearsInIndustry(?string $yearsInIndustry)
 	{
 		$this->yearsInIndustry=$yearsInIndustry; 
 		$this->keyModified['years_in_industry'] = 1; 
@@ -175,7 +175,7 @@ class EnrichedData implements Model
 	 * The method to set the value to otherContacts
 	 * @param array $otherContacts A array
 	 */
-	public function setOtherContacts(array $otherContacts)
+	public function setOtherContacts(?array $otherContacts)
 	{
 		$this->otherContacts=$otherContacts; 
 		$this->keyModified['other_contacts'] = 1; 
@@ -196,7 +196,7 @@ class EnrichedData implements Model
 	 * The method to set the value to technoGraphicData
 	 * @param string $technoGraphicData A string
 	 */
-	public function setTechnoGraphicData(string $technoGraphicData)
+	public function setTechnoGraphicData(?string $technoGraphicData)
 	{
 		$this->technoGraphicData=$technoGraphicData; 
 		$this->keyModified['techno_graphic_data'] = 1; 
@@ -217,7 +217,7 @@ class EnrichedData implements Model
 	 * The method to set the value to logo
 	 * @param string $logo A string
 	 */
-	public function setLogo(string $logo)
+	public function setLogo(?string $logo)
 	{
 		$this->logo=$logo; 
 		$this->keyModified['logo'] = 1; 
@@ -238,7 +238,7 @@ class EnrichedData implements Model
 	 * The method to set the value to secondaryContact
 	 * @param string $secondaryContact A string
 	 */
-	public function setSecondaryContact(string $secondaryContact)
+	public function setSecondaryContact(?string $secondaryContact)
 	{
 		$this->secondaryContact=$secondaryContact; 
 		$this->keyModified['secondary_contact'] = 1; 
@@ -259,7 +259,7 @@ class EnrichedData implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -280,7 +280,7 @@ class EnrichedData implements Model
 	 * The method to set the value to otherEmails
 	 * @param array $otherEmails A array
 	 */
-	public function setOtherEmails(array $otherEmails)
+	public function setOtherEmails(?array $otherEmails)
 	{
 		$this->otherEmails=$otherEmails; 
 		$this->keyModified['other_emails'] = 1; 
@@ -301,7 +301,7 @@ class EnrichedData implements Model
 	 * The method to set the value to signIn
 	 * @param string $signIn A string
 	 */
-	public function setSignIn(string $signIn)
+	public function setSignIn(?string $signIn)
 	{
 		$this->signIn=$signIn; 
 		$this->keyModified['sign_in'] = 1; 
@@ -322,7 +322,7 @@ class EnrichedData implements Model
 	 * The method to set the value to website
 	 * @param string $website A string
 	 */
-	public function setWebsite(string $website)
+	public function setWebsite(?string $website)
 	{
 		$this->website=$website; 
 		$this->keyModified['website'] = 1; 
@@ -343,7 +343,7 @@ class EnrichedData implements Model
 	 * The method to set the value to address
 	 * @param array $address A array
 	 */
-	public function setAddress(array $address)
+	public function setAddress(?array $address)
 	{
 		$this->address=$address; 
 		$this->keyModified['address'] = 1; 
@@ -364,7 +364,7 @@ class EnrichedData implements Model
 	 * The method to set the value to signUp
 	 * @param string $signUp A string
 	 */
-	public function setSignUp(string $signUp)
+	public function setSignUp(?string $signUp)
 	{
 		$this->signUp=$signUp; 
 		$this->keyModified['sign_up'] = 1; 
@@ -385,7 +385,7 @@ class EnrichedData implements Model
 	 * The method to set the value to orgType
 	 * @param string $orgType A string
 	 */
-	public function setOrgType(string $orgType)
+	public function setOrgType(?string $orgType)
 	{
 		$this->orgType=$orgType; 
 		$this->keyModified['org_type'] = 1; 
@@ -406,7 +406,7 @@ class EnrichedData implements Model
 	 * The method to set the value to headQuarters
 	 * @param array $headQuarters A array
 	 */
-	public function setHeadQuarters(array $headQuarters)
+	public function setHeadQuarters(?array $headQuarters)
 	{
 		$this->headQuarters=$headQuarters; 
 		$this->keyModified['head_quarters'] = 1; 
@@ -427,7 +427,7 @@ class EnrichedData implements Model
 	 * The method to set the value to noOfEmployees
 	 * @param string $noOfEmployees A string
 	 */
-	public function setNoOfEmployees(string $noOfEmployees)
+	public function setNoOfEmployees(?string $noOfEmployees)
 	{
 		$this->noOfEmployees=$noOfEmployees; 
 		$this->keyModified['no_of_employees'] = 1; 
@@ -448,7 +448,7 @@ class EnrichedData implements Model
 	 * The method to set the value to territoryList
 	 * @param array $territoryList A array
 	 */
-	public function setTerritoryList(array $territoryList)
+	public function setTerritoryList(?array $territoryList)
 	{
 		$this->territoryList=$territoryList; 
 		$this->keyModified['territory_list'] = 1; 
@@ -469,7 +469,7 @@ class EnrichedData implements Model
 	 * The method to set the value to foundingYear
 	 * @param string $foundingYear A string
 	 */
-	public function setFoundingYear(string $foundingYear)
+	public function setFoundingYear(?string $foundingYear)
 	{
 		$this->foundingYear=$foundingYear; 
 		$this->keyModified['founding_year'] = 1; 
@@ -490,7 +490,7 @@ class EnrichedData implements Model
 	 * The method to set the value to industries
 	 * @param array $industries A array
 	 */
-	public function setIndustries(array $industries)
+	public function setIndustries(?array $industries)
 	{
 		$this->industries=$industries; 
 		$this->keyModified['industries'] = 1; 
@@ -511,7 +511,7 @@ class EnrichedData implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -532,7 +532,7 @@ class EnrichedData implements Model
 	 * The method to set the value to primaryEmail
 	 * @param string $primaryEmail A string
 	 */
-	public function setPrimaryEmail(string $primaryEmail)
+	public function setPrimaryEmail(?string $primaryEmail)
 	{
 		$this->primaryEmail=$primaryEmail; 
 		$this->keyModified['primary_email'] = 1; 
@@ -553,7 +553,7 @@ class EnrichedData implements Model
 	 * The method to set the value to businessModel
 	 * @param array $businessModel A array
 	 */
-	public function setBusinessModel(array $businessModel)
+	public function setBusinessModel(?array $businessModel)
 	{
 		$this->businessModel=$businessModel; 
 		$this->keyModified['business_model'] = 1; 
@@ -574,7 +574,7 @@ class EnrichedData implements Model
 	 * The method to set the value to primaryContact
 	 * @param string $primaryContact A string
 	 */
-	public function setPrimaryContact(string $primaryContact)
+	public function setPrimaryContact(?string $primaryContact)
 	{
 		$this->primaryContact=$primaryContact; 
 		$this->keyModified['primary_contact'] = 1; 
@@ -595,7 +595,7 @@ class EnrichedData implements Model
 	 * The method to set the value to socialMedia
 	 * @param array $socialMedia A array
 	 */
-	public function setSocialMedia(array $socialMedia)
+	public function setSocialMedia(?array $socialMedia)
 	{
 		$this->socialMedia=$socialMedia; 
 		$this->keyModified['social_media'] = 1; 

@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to relatedLists
 	 * @param array $relatedLists A array
 	 */
-	public function setRelatedLists(array $relatedLists)
+	public function setRelatedLists(?array $relatedLists)
 	{
 		$this->relatedLists=$relatedLists; 
 		$this->keyModified['related_lists'] = 1; 

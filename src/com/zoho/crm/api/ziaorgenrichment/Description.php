@@ -24,7 +24,7 @@ class Description implements Model
 	 * The method to set the value to title
 	 * @param string $title A string
 	 */
-	public function setTitle(string $title)
+	public function setTitle(?string $title)
 	{
 		$this->title=$title; 
 		$this->keyModified['title'] = 1; 
@@ -45,7 +45,7 @@ class Description implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 

@@ -29,7 +29,7 @@ class Info implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -50,7 +50,7 @@ class Info implements Model
 	 * The method to set the value to page
 	 * @param int $page A int
 	 */
-	public function setPage(int $page)
+	public function setPage(?int $page)
 	{
 		$this->page=$page; 
 		$this->keyModified['page'] = 1; 
@@ -71,7 +71,7 @@ class Info implements Model
 	 * The method to set the value to perPage
 	 * @param int $perPage A int
 	 */
-	public function setPerPage(int $perPage)
+	public function setPerPage(?int $perPage)
 	{
 		$this->perPage=$perPage; 
 		$this->keyModified['per_page'] = 1; 
@@ -92,7 +92,7 @@ class Info implements Model
 	 * The method to set the value to moreRecords
 	 * @param bool $moreRecords A bool
 	 */
-	public function setMoreRecords(bool $moreRecords)
+	public function setMoreRecords(?bool $moreRecords)
 	{
 		$this->moreRecords=$moreRecords; 
 		$this->keyModified['more_records'] = 1; 
@@ -113,7 +113,7 @@ class Info implements Model
 	 * The method to set the value to previousPageToken
 	 * @param string $previousPageToken A string
 	 */
-	public function setPreviousPageToken(string $previousPageToken)
+	public function setPreviousPageToken(?string $previousPageToken)
 	{
 		$this->previousPageToken=$previousPageToken; 
 		$this->keyModified['previous_page_token'] = 1; 
@@ -134,7 +134,7 @@ class Info implements Model
 	 * The method to set the value to pageTokenExpiry
 	 * @param string $pageTokenExpiry A string
 	 */
-	public function setPageTokenExpiry(string $pageTokenExpiry)
+	public function setPageTokenExpiry(?string $pageTokenExpiry)
 	{
 		$this->pageTokenExpiry=$pageTokenExpiry; 
 		$this->keyModified['page_token_expiry'] = 1; 
@@ -155,7 +155,7 @@ class Info implements Model
 	 * The method to set the value to nextPageToken
 	 * @param string $nextPageToken A string
 	 */
-	public function setNextPageToken(string $nextPageToken)
+	public function setNextPageToken(?string $nextPageToken)
 	{
 		$this->nextPageToken=$nextPageToken; 
 		$this->keyModified['next_page_token'] = 1; 

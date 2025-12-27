@@ -237,7 +237,7 @@ class FormDataConverter extends Converter
         }
     }
 
-    public function getWrappedResponse($responseObject, $pack)
+    public function getWrappedResponse($responseObject, $pack, $headers)
     {
         return [$this->getResponse($responseObject, $pack)];
     }

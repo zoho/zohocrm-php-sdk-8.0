@@ -23,7 +23,7 @@ class GetUnassignBodyWrapper implements Model
 	 * The method to set the value to getUnassigned
 	 * @param Assign $getUnassigned An instance of Assign
 	 */
-	public function setGetUnassigned(Assign $getUnassigned)
+	public function setGetUnassigned(?Assign $getUnassigned)
 	{
 		$this->getUnassigned=$getUnassigned; 
 		$this->keyModified['get_unassigned'] = 1; 

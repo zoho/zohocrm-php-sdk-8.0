@@ -28,7 +28,7 @@ class APIException implements Model, ResponseHandler, ActionHandler, ActionRespo
 	 * The method to set the value to code
 	 * @param Choice $code An instance of Choice
 	 */
-	public function setCode(Choice $code)
+	public function setCode(?Choice $code)
 	{
 		$this->code=$code; 
 		$this->keyModified['code'] = 1; 
@@ -49,7 +49,7 @@ class APIException implements Model, ResponseHandler, ActionHandler, ActionRespo
 	 * The method to set the value to message
 	 * @param string $message A string
 	 */
-	public function setMessage(string $message)
+	public function setMessage(?string $message)
 	{
 		$this->message=$message; 
 		$this->keyModified['message'] = 1; 
@@ -70,7 +70,7 @@ class APIException implements Model, ResponseHandler, ActionHandler, ActionRespo
 	 * The method to set the value to status
 	 * @param Choice $status An instance of Choice
 	 */
-	public function setStatus(Choice $status)
+	public function setStatus(?Choice $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -91,7 +91,7 @@ class APIException implements Model, ResponseHandler, ActionHandler, ActionRespo
 	 * The method to set the value to details
 	 * @param array $details A array
 	 */
-	public function setDetails(array $details)
+	public function setDetails(?array $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 
@@ -139,7 +139,7 @@ class APIException implements Model, ResponseHandler, ActionHandler, ActionRespo
 	 * The method to set the value to regex
 	 * @param string $regex A string
 	 */
-	public function setRegex(string $regex)
+	public function setRegex(?string $regex)
 	{
 		$this->regex=$regex; 
 		$this->keyModified['regex'] = 1; 

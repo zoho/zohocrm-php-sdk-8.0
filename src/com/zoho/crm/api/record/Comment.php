@@ -26,7 +26,7 @@ class Comment implements Model
 	 * The method to set the value to commentedBy
 	 * @param string $commentedBy A string
 	 */
-	public function setCommentedBy(string $commentedBy)
+	public function setCommentedBy(?string $commentedBy)
 	{
 		$this->commentedBy=$commentedBy; 
 		$this->keyModified['commented_by'] = 1; 
@@ -47,7 +47,7 @@ class Comment implements Model
 	 * The method to set the value to commentedTime
 	 * @param \DateTime $commentedTime An instance of \DateTime
 	 */
-	public function setCommentedTime(\DateTime $commentedTime)
+	public function setCommentedTime(?\DateTime $commentedTime)
 	{
 		$this->commentedTime=$commentedTime; 
 		$this->keyModified['commented_time'] = 1; 
@@ -68,7 +68,7 @@ class Comment implements Model
 	 * The method to set the value to commentContent
 	 * @param string $commentContent A string
 	 */
-	public function setCommentContent(string $commentContent)
+	public function setCommentContent(?string $commentContent)
 	{
 		$this->commentContent=$commentContent; 
 		$this->keyModified['comment_content'] = 1; 
@@ -89,7 +89,7 @@ class Comment implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

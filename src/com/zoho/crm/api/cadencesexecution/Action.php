@@ -24,7 +24,7 @@ class Action implements Model
 	 * The method to set the value to details
 	 * @param Details $details An instance of Details
 	 */
-	public function setDetails(Details $details)
+	public function setDetails(?Details $details)
 	{
 		$this->details=$details; 
 		$this->keyModified['details'] = 1; 
@@ -45,7 +45,7 @@ class Action implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

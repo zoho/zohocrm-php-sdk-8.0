@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to userType
 	 * @param array $userType A array
 	 */
-	public function setUserType(array $userType)
+	public function setUserType(?array $userType)
 	{
 		$this->userType=$userType; 
 		$this->keyModified['user_type'] = 1; 

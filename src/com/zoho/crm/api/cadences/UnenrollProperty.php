@@ -24,7 +24,7 @@ class UnenrollProperty implements Model
 	 * The method to set the value to endDate
 	 * @param string $endDate A string
 	 */
-	public function setEndDate(string $endDate)
+	public function setEndDate(?string $endDate)
 	{
 		$this->endDate=$endDate; 
 		$this->keyModified['end_date'] = 1; 
@@ -45,7 +45,7 @@ class UnenrollProperty implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

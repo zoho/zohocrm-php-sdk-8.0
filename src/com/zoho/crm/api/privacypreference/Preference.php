@@ -44,7 +44,7 @@ class Preference implements Model
 	 * The method to set the value to consentModules
 	 * @param string $consentModules A string
 	 */
-	public function setConsentModules(string $consentModules)
+	public function setConsentModules(?string $consentModules)
 	{
 		$this->consentModules=$consentModules; 
 		$this->keyModified['consent_modules'] = 1; 
@@ -65,7 +65,7 @@ class Preference implements Model
 	 * The method to set the value to restrictTptFields
 	 * @param string $restrictTptFields A string
 	 */
-	public function setRestrictTptFields(string $restrictTptFields)
+	public function setRestrictTptFields(?string $restrictTptFields)
 	{
 		$this->restrictTptFields=$restrictTptFields; 
 		$this->keyModified['restrict_tpt_fields'] = 1; 
@@ -86,7 +86,7 @@ class Preference implements Model
 	 * The method to set the value to excludeAPIZoho
 	 * @param string $excludeAPIZoho A string
 	 */
-	public function setExcludeAPIZoho(string $excludeAPIZoho)
+	public function setExcludeAPIZoho(?string $excludeAPIZoho)
 	{
 		$this->excludeAPIZoho=$excludeAPIZoho; 
 		$this->keyModified['exclude_api_zoho'] = 1; 
@@ -107,7 +107,7 @@ class Preference implements Model
 	 * The method to set the value to awaitingPeriod
 	 * @param string $awaitingPeriod A string
 	 */
-	public function setAwaitingPeriod(string $awaitingPeriod)
+	public function setAwaitingPeriod(?string $awaitingPeriod)
 	{
 		$this->awaitingPeriod=$awaitingPeriod; 
 		$this->keyModified['awaiting_period'] = 1; 
@@ -128,7 +128,7 @@ class Preference implements Model
 	 * The method to set the value to consentMailSend
 	 * @param string $consentMailSend A string
 	 */
-	public function setConsentMailSend(string $consentMailSend)
+	public function setConsentMailSend(?string $consentMailSend)
 	{
 		$this->consentMailSend=$consentMailSend; 
 		$this->keyModified['consent_mail_send'] = 1; 
@@ -149,7 +149,7 @@ class Preference implements Model
 	 * The method to set the value to excludeExportFields
 	 * @param string $excludeExportFields A string
 	 */
-	public function setExcludeExportFields(string $excludeExportFields)
+	public function setExcludeExportFields(?string $excludeExportFields)
 	{
 		$this->excludeExportFields=$excludeExportFields; 
 		$this->keyModified['exclude_export_fields'] = 1; 
@@ -170,7 +170,7 @@ class Preference implements Model
 	 * The method to set the value to limitActions
 	 * @param string $limitActions A string
 	 */
-	public function setLimitActions(string $limitActions)
+	public function setLimitActions(?string $limitActions)
 	{
 		$this->limitActions=$limitActions; 
 		$this->keyModified['limit_actions'] = 1; 
@@ -191,7 +191,7 @@ class Preference implements Model
 	 * The method to set the value to excludeExport
 	 * @param string $excludeExport A string
 	 */
-	public function setExcludeExport(string $excludeExport)
+	public function setExcludeExport(?string $excludeExport)
 	{
 		$this->excludeExport=$excludeExport; 
 		$this->keyModified['exclude_export'] = 1; 
@@ -212,7 +212,7 @@ class Preference implements Model
 	 * The method to set the value to restrictZohoInteg
 	 * @param string $restrictZohoInteg A string
 	 */
-	public function setRestrictZohoInteg(string $restrictZohoInteg)
+	public function setRestrictZohoInteg(?string $restrictZohoInteg)
 	{
 		$this->restrictZohoInteg=$restrictZohoInteg; 
 		$this->keyModified['restrict_zoho_integ'] = 1; 
@@ -233,7 +233,7 @@ class Preference implements Model
 	 * The method to set the value to excludeAPIZohoFields
 	 * @param string $excludeAPIZohoFields A string
 	 */
-	public function setExcludeAPIZohoFields(string $excludeAPIZohoFields)
+	public function setExcludeAPIZohoFields(?string $excludeAPIZohoFields)
 	{
 		$this->excludeAPIZohoFields=$excludeAPIZohoFields; 
 		$this->keyModified['exclude_api_zoho_fields'] = 1; 
@@ -254,7 +254,7 @@ class Preference implements Model
 	 * The method to set the value to durationTiming
 	 * @param string $durationTiming A string
 	 */
-	public function setDurationTiming(string $durationTiming)
+	public function setDurationTiming(?string $durationTiming)
 	{
 		$this->durationTiming=$durationTiming; 
 		$this->keyModified['duration_timing'] = 1; 
@@ -275,7 +275,7 @@ class Preference implements Model
 	 * The method to set the value to dataProcessingDuration
 	 * @param string $dataProcessingDuration A string
 	 */
-	public function setDataProcessingDuration(string $dataProcessingDuration)
+	public function setDataProcessingDuration(?string $dataProcessingDuration)
 	{
 		$this->dataProcessingDuration=$dataProcessingDuration; 
 		$this->keyModified['data_processing_duration'] = 1; 
@@ -296,7 +296,7 @@ class Preference implements Model
 	 * The method to set the value to restrictTptServices
 	 * @param string $restrictTptServices A string
 	 */
-	public function setRestrictTptServices(string $restrictTptServices)
+	public function setRestrictTptServices(?string $restrictTptServices)
 	{
 		$this->restrictTptServices=$restrictTptServices; 
 		$this->keyModified['restrict_tpt_services'] = 1; 
@@ -317,7 +317,7 @@ class Preference implements Model
 	 * The method to set the value to excludeAPITptFields
 	 * @param string $excludeAPITptFields A string
 	 */
-	public function setExcludeAPITptFields(string $excludeAPITptFields)
+	public function setExcludeAPITptFields(?string $excludeAPITptFields)
 	{
 		$this->excludeAPITptFields=$excludeAPITptFields; 
 		$this->keyModified['exclude_api_tpt_fields'] = 1; 
@@ -338,7 +338,7 @@ class Preference implements Model
 	 * The method to set the value to restrictZohoIntegServices
 	 * @param string $restrictZohoIntegServices A string
 	 */
-	public function setRestrictZohoIntegServices(string $restrictZohoIntegServices)
+	public function setRestrictZohoIntegServices(?string $restrictZohoIntegServices)
 	{
 		$this->restrictZohoIntegServices=$restrictZohoIntegServices; 
 		$this->keyModified['restrict_zoho_integ_services'] = 1; 
@@ -359,7 +359,7 @@ class Preference implements Model
 	 * The method to set the value to privacySettingStatus
 	 * @param string $privacySettingStatus A string
 	 */
-	public function setPrivacySettingStatus(string $privacySettingStatus)
+	public function setPrivacySettingStatus(?string $privacySettingStatus)
 	{
 		$this->privacySettingStatus=$privacySettingStatus; 
 		$this->keyModified['privacy_setting_status'] = 1; 
@@ -380,7 +380,7 @@ class Preference implements Model
 	 * The method to set the value to doubleOptIn
 	 * @param string $doubleOptIn A string
 	 */
-	public function setDoubleOptIn(string $doubleOptIn)
+	public function setDoubleOptIn(?string $doubleOptIn)
 	{
 		$this->doubleOptIn=$doubleOptIn; 
 		$this->keyModified['double_opt_in'] = 1; 
@@ -401,7 +401,7 @@ class Preference implements Model
 	 * The method to set the value to restrictZohoIntegFields
 	 * @param string $restrictZohoIntegFields A string
 	 */
-	public function setRestrictZohoIntegFields(string $restrictZohoIntegFields)
+	public function setRestrictZohoIntegFields(?string $restrictZohoIntegFields)
 	{
 		$this->restrictZohoIntegFields=$restrictZohoIntegFields; 
 		$this->keyModified['restrict_zoho_integ_fields'] = 1; 
@@ -422,7 +422,7 @@ class Preference implements Model
 	 * The method to set the value to excludeAPITpt
 	 * @param string $excludeAPITpt A string
 	 */
-	public function setExcludeAPITpt(string $excludeAPITpt)
+	public function setExcludeAPITpt(?string $excludeAPITpt)
 	{
 		$this->excludeAPITpt=$excludeAPITpt; 
 		$this->keyModified['exclude_api_tpt'] = 1; 
@@ -443,7 +443,7 @@ class Preference implements Model
 	 * The method to set the value to blockList
 	 * @param string $blockList A string
 	 */
-	public function setBlockList(string $blockList)
+	public function setBlockList(?string $blockList)
 	{
 		$this->blockList=$blockList; 
 		$this->keyModified['block_list'] = 1; 
@@ -464,7 +464,7 @@ class Preference implements Model
 	 * The method to set the value to restrictTpt
 	 * @param string $restrictTpt A string
 	 */
-	public function setRestrictTpt(string $restrictTpt)
+	public function setRestrictTpt(?string $restrictTpt)
 	{
 		$this->restrictTpt=$restrictTpt; 
 		$this->keyModified['restrict_tpt'] = 1; 
@@ -485,7 +485,7 @@ class Preference implements Model
 	 * The method to set the value to actionsWhileAwaiting
 	 * @param string $actionsWhileAwaiting A string
 	 */
-	public function setActionsWhileAwaiting(string $actionsWhileAwaiting)
+	public function setActionsWhileAwaiting(?string $actionsWhileAwaiting)
 	{
 		$this->actionsWhileAwaiting=$actionsWhileAwaiting; 
 		$this->keyModified['actions_while_awaiting'] = 1; 

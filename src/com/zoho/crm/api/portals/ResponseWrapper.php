@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to portals
 	 * @param array $portals A array
 	 */
-	public function setPortals(array $portals)
+	public function setPortals(?array $portals)
 	{
 		$this->portals=$portals; 
 		$this->keyModified['portals'] = 1; 

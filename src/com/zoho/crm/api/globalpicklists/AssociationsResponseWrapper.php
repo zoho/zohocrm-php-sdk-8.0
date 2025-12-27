@@ -24,7 +24,7 @@ class AssociationsResponseWrapper implements Model, AssociationsResponseHandler
 	 * The method to set the value to associations
 	 * @param array $associations A array
 	 */
-	public function setAssociations(array $associations)
+	public function setAssociations(?array $associations)
 	{
 		$this->associations=$associations; 
 		$this->keyModified['associations'] = 1; 
@@ -45,7 +45,7 @@ class AssociationsResponseWrapper implements Model, AssociationsResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

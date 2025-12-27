@@ -28,7 +28,7 @@ class ZiaOrgEnrichment implements Model
 	 * The method to set the value to enrichedData
 	 * @param EnrichedData $enrichedData An instance of EnrichedData
 	 */
-	public function setEnrichedData(EnrichedData $enrichedData)
+	public function setEnrichedData(?EnrichedData $enrichedData)
 	{
 		$this->enrichedData=$enrichedData; 
 		$this->keyModified['enriched_data'] = 1; 
@@ -49,7 +49,7 @@ class ZiaOrgEnrichment implements Model
 	 * The method to set the value to createdTime
 	 * @param string $createdTime A string
 	 */
-	public function setCreatedTime(string $createdTime)
+	public function setCreatedTime(?string $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -70,7 +70,7 @@ class ZiaOrgEnrichment implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -91,7 +91,7 @@ class ZiaOrgEnrichment implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -112,7 +112,7 @@ class ZiaOrgEnrichment implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -133,7 +133,7 @@ class ZiaOrgEnrichment implements Model
 	 * The method to set the value to enrichBasedOn
 	 * @param EnrichBasedOn $enrichBasedOn An instance of EnrichBasedOn
 	 */
-	public function setEnrichBasedOn(EnrichBasedOn $enrichBasedOn)
+	public function setEnrichBasedOn(?EnrichBasedOn $enrichBasedOn)
 	{
 		$this->enrichBasedOn=$enrichBasedOn; 
 		$this->keyModified['enrich_based_on'] = 1; 

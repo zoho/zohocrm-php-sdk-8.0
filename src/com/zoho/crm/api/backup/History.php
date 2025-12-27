@@ -30,7 +30,7 @@ class History implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -51,7 +51,7 @@ class History implements Model
 	 * The method to set the value to logTime
 	 * @param \DateTime $logTime An instance of \DateTime
 	 */
-	public function setLogTime(\DateTime $logTime)
+	public function setLogTime(?\DateTime $logTime)
 	{
 		$this->logTime=$logTime; 
 		$this->keyModified['log_time'] = 1; 
@@ -72,7 +72,7 @@ class History implements Model
 	 * The method to set the value to action
 	 * @param string $action A string
 	 */
-	public function setAction(string $action)
+	public function setAction(?string $action)
 	{
 		$this->action=$action; 
 		$this->keyModified['action'] = 1; 
@@ -93,7 +93,7 @@ class History implements Model
 	 * The method to set the value to repeatType
 	 * @param string $repeatType A string
 	 */
-	public function setRepeatType(string $repeatType)
+	public function setRepeatType(?string $repeatType)
 	{
 		$this->repeatType=$repeatType; 
 		$this->keyModified['repeat_type'] = 1; 
@@ -114,7 +114,7 @@ class History implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -135,7 +135,7 @@ class History implements Model
 	 * The method to set the value to fileName
 	 * @param string $fileName A string
 	 */
-	public function setFileName(string $fileName)
+	public function setFileName(?string $fileName)
 	{
 		$this->fileName=$fileName; 
 		$this->keyModified['file_name'] = 1; 
@@ -156,7 +156,7 @@ class History implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['state'] = 1; 
@@ -177,7 +177,7 @@ class History implements Model
 	 * The method to set the value to doneBy
 	 * @param Requester $doneBy An instance of Requester
 	 */
-	public function setDoneBy(Requester $doneBy)
+	public function setDoneBy(?Requester $doneBy)
 	{
 		$this->doneBy=$doneBy; 
 		$this->keyModified['done_by'] = 1; 

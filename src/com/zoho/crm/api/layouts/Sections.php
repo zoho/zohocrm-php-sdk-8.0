@@ -36,7 +36,7 @@ class Sections implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -57,7 +57,7 @@ class Sections implements Model
 	 * The method to set the value to sequenceNumber
 	 * @param int $sequenceNumber A int
 	 */
-	public function setSequenceNumber(int $sequenceNumber)
+	public function setSequenceNumber(?int $sequenceNumber)
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
@@ -78,7 +78,7 @@ class Sections implements Model
 	 * The method to set the value to actionsAllowed
 	 * @param ActionsAllowed $actionsAllowed An instance of ActionsAllowed
 	 */
-	public function setActionsAllowed(ActionsAllowed $actionsAllowed)
+	public function setActionsAllowed(?ActionsAllowed $actionsAllowed)
 	{
 		$this->actionsAllowed=$actionsAllowed; 
 		$this->keyModified['actions_allowed'] = 1; 
@@ -99,7 +99,7 @@ class Sections implements Model
 	 * The method to set the value to issubformsection
 	 * @param bool $issubformsection A bool
 	 */
-	public function setIssubformsection(bool $issubformsection)
+	public function setIssubformsection(?bool $issubformsection)
 	{
 		$this->issubformsection=$issubformsection; 
 		$this->keyModified['isSubformSection'] = 1; 
@@ -120,7 +120,7 @@ class Sections implements Model
 	 * The method to set the value to tabTraversal
 	 * @param string $tabTraversal A string
 	 */
-	public function setTabTraversal(string $tabTraversal)
+	public function setTabTraversal(?string $tabTraversal)
 	{
 		$this->tabTraversal=$tabTraversal; 
 		$this->keyModified['tab_traversal'] = 1; 
@@ -141,7 +141,7 @@ class Sections implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -162,7 +162,7 @@ class Sections implements Model
 	 * The method to set the value to columnCount
 	 * @param int $columnCount A int
 	 */
-	public function setColumnCount(int $columnCount)
+	public function setColumnCount(?int $columnCount)
 	{
 		$this->columnCount=$columnCount; 
 		$this->keyModified['column_count'] = 1; 
@@ -183,7 +183,7 @@ class Sections implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -204,7 +204,7 @@ class Sections implements Model
 	 * The method to set the value to generatedType
 	 * @param string $generatedType A string
 	 */
-	public function setGeneratedType(string $generatedType)
+	public function setGeneratedType(?string $generatedType)
 	{
 		$this->generatedType=$generatedType; 
 		$this->keyModified['generated_type'] = 1; 
@@ -225,7 +225,7 @@ class Sections implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -246,7 +246,7 @@ class Sections implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -267,7 +267,7 @@ class Sections implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -288,7 +288,7 @@ class Sections implements Model
 	 * The method to set the value to properties
 	 * @param Properties $properties An instance of Properties
 	 */
-	public function setProperties(Properties $properties)
+	public function setProperties(?Properties $properties)
 	{
 		$this->properties=$properties; 
 		$this->keyModified['properties'] = 1; 
@@ -309,7 +309,7 @@ class Sections implements Model
 	 * The method to set the value to delete
 	 * @param Delete1 $delete An instance of Delete1
 	 */
-	public function setDelete(Delete1 $delete)
+	public function setDelete(?Delete1 $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 

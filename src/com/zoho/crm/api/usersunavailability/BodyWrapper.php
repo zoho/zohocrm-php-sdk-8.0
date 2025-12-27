@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to usersUnavailability
 	 * @param array $usersUnavailability A array
 	 */
-	public function setUsersUnavailability(array $usersUnavailability)
+	public function setUsersUnavailability(?array $usersUnavailability)
 	{
 		$this->usersUnavailability=$usersUnavailability; 
 		$this->keyModified['users_unavailability'] = 1; 

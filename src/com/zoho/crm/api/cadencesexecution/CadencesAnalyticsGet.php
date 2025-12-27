@@ -27,7 +27,7 @@ class CadencesAnalyticsGet implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -48,7 +48,7 @@ class CadencesAnalyticsGet implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -69,7 +69,7 @@ class CadencesAnalyticsGet implements Model
 	 * The method to set the value to followUps
 	 * @param array $followUps A array
 	 */
-	public function setFollowUps(array $followUps)
+	public function setFollowUps(?array $followUps)
 	{
 		$this->followUps=$followUps; 
 		$this->keyModified['follow_ups'] = 1; 
@@ -90,7 +90,7 @@ class CadencesAnalyticsGet implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -111,7 +111,7 @@ class CadencesAnalyticsGet implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 

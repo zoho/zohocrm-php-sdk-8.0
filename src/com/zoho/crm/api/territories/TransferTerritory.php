@@ -25,7 +25,7 @@ class TransferTerritory implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -46,7 +46,7 @@ class TransferTerritory implements Model
 	 * The method to set the value to transferToId
 	 * @param string $transferToId A string
 	 */
-	public function setTransferToId(string $transferToId)
+	public function setTransferToId(?string $transferToId)
 	{
 		$this->transferToId=$transferToId; 
 		$this->keyModified['transfer_to_id'] = 1; 
@@ -67,7 +67,7 @@ class TransferTerritory implements Model
 	 * The method to set the value to deletePreviousForecasts
 	 * @param bool $deletePreviousForecasts A bool
 	 */
-	public function setDeletePreviousForecasts(bool $deletePreviousForecasts)
+	public function setDeletePreviousForecasts(?bool $deletePreviousForecasts)
 	{
 		$this->deletePreviousForecasts=$deletePreviousForecasts; 
 		$this->keyModified['delete_previous_forecasts'] = 1; 

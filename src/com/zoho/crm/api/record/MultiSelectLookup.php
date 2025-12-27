@@ -25,7 +25,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -46,7 +46,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to fieldname
 	 * @param array $fieldname A array
 	 */
-	public function setFieldname(array $fieldname)
+	public function setFieldname(?array $fieldname)
 	{
 		$this->fieldname=$fieldname; 
 		$this->keyModified['fieldName'] = 1; 
@@ -67,7 +67,7 @@ class MultiSelectLookup implements Model
 	 * The method to set the value to hasMore
 	 * @param array $hasMore A array
 	 */
-	public function setHasMore(array $hasMore)
+	public function setHasMore(?array $hasMore)
 	{
 		$this->hasMore=$hasMore; 
 		$this->keyModified['$has_more'] = 1; 

@@ -30,7 +30,7 @@ class Status implements Model
 	 * The method to set the value to firstOpen
 	 * @param \DateTime $firstOpen An instance of \DateTime
 	 */
-	public function setFirstOpen(\DateTime $firstOpen)
+	public function setFirstOpen(?\DateTime $firstOpen)
 	{
 		$this->firstOpen=$firstOpen; 
 		$this->keyModified['first_open'] = 1; 
@@ -51,7 +51,7 @@ class Status implements Model
 	 * The method to set the value to count
 	 * @param string $count A string
 	 */
-	public function setCount(string $count)
+	public function setCount(?string $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -72,7 +72,7 @@ class Status implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -93,7 +93,7 @@ class Status implements Model
 	 * The method to set the value to lastOpen
 	 * @param \DateTime $lastOpen An instance of \DateTime
 	 */
-	public function setLastOpen(\DateTime $lastOpen)
+	public function setLastOpen(?\DateTime $lastOpen)
 	{
 		$this->lastOpen=$lastOpen; 
 		$this->keyModified['last_open'] = 1; 
@@ -114,7 +114,7 @@ class Status implements Model
 	 * The method to set the value to bouncedTime
 	 * @param \DateTime $bouncedTime An instance of \DateTime
 	 */
-	public function setBouncedTime(\DateTime $bouncedTime)
+	public function setBouncedTime(?\DateTime $bouncedTime)
 	{
 		$this->bouncedTime=$bouncedTime; 
 		$this->keyModified['bounced_time'] = 1; 
@@ -135,7 +135,7 @@ class Status implements Model
 	 * The method to set the value to bouncedReason
 	 * @param string $bouncedReason A string
 	 */
-	public function setBouncedReason(string $bouncedReason)
+	public function setBouncedReason(?string $bouncedReason)
 	{
 		$this->bouncedReason=$bouncedReason; 
 		$this->keyModified['bounced_reason'] = 1; 
@@ -156,7 +156,7 @@ class Status implements Model
 	 * The method to set the value to category
 	 * @param string $category A string
 	 */
-	public function setCategory(string $category)
+	public function setCategory(?string $category)
 	{
 		$this->category=$category; 
 		$this->keyModified['category'] = 1; 
@@ -177,7 +177,7 @@ class Status implements Model
 	 * The method to set the value to subCategory
 	 * @param string $subCategory A string
 	 */
-	public function setSubCategory(string $subCategory)
+	public function setSubCategory(?string $subCategory)
 	{
 		$this->subCategory=$subCategory; 
 		$this->keyModified['sub_category'] = 1; 

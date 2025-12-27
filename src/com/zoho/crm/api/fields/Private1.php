@@ -25,7 +25,7 @@ class Private1 implements Model
 	 * The method to set the value to restricted
 	 * @param bool $restricted A bool
 	 */
-	public function setRestricted(bool $restricted)
+	public function setRestricted(?bool $restricted)
 	{
 		$this->restricted=$restricted; 
 		$this->keyModified['restricted'] = 1; 
@@ -46,7 +46,7 @@ class Private1 implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -67,7 +67,7 @@ class Private1 implements Model
 	 * The method to set the value to export
 	 * @param bool $export A bool
 	 */
-	public function setExport(bool $export)
+	public function setExport(?bool $export)
 	{
 		$this->export=$export; 
 		$this->keyModified['export'] = 1; 

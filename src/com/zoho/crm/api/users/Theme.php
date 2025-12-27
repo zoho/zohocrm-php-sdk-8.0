@@ -29,7 +29,7 @@ class Theme implements Model
 	 * The method to set the value to normalTab
 	 * @param Tab $normalTab An instance of Tab
 	 */
-	public function setNormalTab(Tab $normalTab)
+	public function setNormalTab(?Tab $normalTab)
 	{
 		$this->normalTab=$normalTab; 
 		$this->keyModified['normal_tab'] = 1; 
@@ -50,7 +50,7 @@ class Theme implements Model
 	 * The method to set the value to selectedTab
 	 * @param Tab $selectedTab An instance of Tab
 	 */
-	public function setSelectedTab(Tab $selectedTab)
+	public function setSelectedTab(?Tab $selectedTab)
 	{
 		$this->selectedTab=$selectedTab; 
 		$this->keyModified['selected_tab'] = 1; 
@@ -71,7 +71,7 @@ class Theme implements Model
 	 * The method to set the value to newBackground
 	 * @param string $newBackground A string
 	 */
-	public function setNewBackground(string $newBackground)
+	public function setNewBackground(?string $newBackground)
 	{
 		$this->newBackground=$newBackground; 
 		$this->keyModified['new_background'] = 1; 
@@ -92,7 +92,7 @@ class Theme implements Model
 	 * The method to set the value to background
 	 * @param Choice $background An instance of Choice
 	 */
-	public function setBackground(Choice $background)
+	public function setBackground(?Choice $background)
 	{
 		$this->background=$background; 
 		$this->keyModified['background'] = 1; 
@@ -113,7 +113,7 @@ class Theme implements Model
 	 * The method to set the value to screen
 	 * @param Choice $screen An instance of Choice
 	 */
-	public function setScreen(Choice $screen)
+	public function setScreen(?Choice $screen)
 	{
 		$this->screen=$screen; 
 		$this->keyModified['screen'] = 1; 
@@ -134,7 +134,7 @@ class Theme implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

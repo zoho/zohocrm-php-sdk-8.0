@@ -25,7 +25,7 @@ class CompanyInfo implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -46,7 +46,7 @@ class CompanyInfo implements Model
 	 * The method to set the value to industries
 	 * @param array $industries A array
 	 */
-	public function setIndustries(array $industries)
+	public function setIndustries(?array $industries)
 	{
 		$this->industries=$industries; 
 		$this->keyModified['industries'] = 1; 
@@ -67,7 +67,7 @@ class CompanyInfo implements Model
 	 * The method to set the value to experiences
 	 * @param array $experiences A array
 	 */
-	public function setExperiences(array $experiences)
+	public function setExperiences(?array $experiences)
 	{
 		$this->experiences=$experiences; 
 		$this->keyModified['experiences'] = 1; 

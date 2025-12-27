@@ -178,6 +178,8 @@ class APIHTTPConnector
         $response[Constants::HTTP_CODE] = curl_getinfo($curl_pointer)[Constants::HTTP_CODE];
         $header_size = curl_getinfo($curl_pointer, CURLINFO_HEADER_SIZE);
         $responseHeaders = substr($response[Constants::RESPONSE], 0, $header_size);
+        $content = substr($response[Constants::RESPONSE], $header_size);
+        $response[Constants::RESPONSE] = $content;
         curl_close($curl_pointer);
         $responseHeaders = explode("\r\n", $responseHeaders);
         $responseHeaders = array_filter($responseHeaders);

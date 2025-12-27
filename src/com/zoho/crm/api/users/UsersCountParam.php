@@ -2,7 +2,6 @@
 namespace com\zoho\crm\api\users;
 
 use com\zoho\crm\api\Param;
-use com\zoho\crm\api\util\Choice;
 
 class UsersCountParam
 {

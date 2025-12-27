@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to servicePreferences
 	 * @param ActionResponse $servicePreferences An instance of ActionResponse
 	 */
-	public function setServicePreferences(ActionResponse $servicePreferences)
+	public function setServicePreferences(?ActionResponse $servicePreferences)
 	{
 		$this->servicePreferences=$servicePreferences; 
 		$this->keyModified['service_preferences'] = 1; 

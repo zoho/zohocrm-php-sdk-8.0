@@ -25,7 +25,7 @@ class Tooltip implements Model
 	 * The method to set the value to name
 	 * @param Choice $name An instance of Choice
 	 */
-	public function setName(Choice $name)
+	public function setName(?Choice $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -46,7 +46,7 @@ class Tooltip implements Model
 	 * The method to set the value to value
 	 * @param string $value A string
 	 */
-	public function setValue(string $value)
+	public function setValue(?string $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 

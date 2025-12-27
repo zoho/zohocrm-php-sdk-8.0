@@ -26,7 +26,7 @@ class Approval implements Model
 	 * The method to set the value to delegate
 	 * @param bool $delegate A bool
 	 */
-	public function setDelegate(bool $delegate)
+	public function setDelegate(?bool $delegate)
 	{
 		$this->delegate=$delegate; 
 		$this->keyModified['delegate'] = 1; 
@@ -47,7 +47,7 @@ class Approval implements Model
 	 * The method to set the value to approve
 	 * @param bool $approve A bool
 	 */
-	public function setApprove(bool $approve)
+	public function setApprove(?bool $approve)
 	{
 		$this->approve=$approve; 
 		$this->keyModified['approve'] = 1; 
@@ -68,7 +68,7 @@ class Approval implements Model
 	 * The method to set the value to reject
 	 * @param bool $reject A bool
 	 */
-	public function setReject(bool $reject)
+	public function setReject(?bool $reject)
 	{
 		$this->reject=$reject; 
 		$this->keyModified['reject'] = 1; 
@@ -89,7 +89,7 @@ class Approval implements Model
 	 * The method to set the value to resubmit
 	 * @param bool $resubmit A bool
 	 */
-	public function setResubmit(bool $resubmit)
+	public function setResubmit(?bool $resubmit)
 	{
 		$this->resubmit=$resubmit; 
 		$this->keyModified['resubmit'] = 1; 

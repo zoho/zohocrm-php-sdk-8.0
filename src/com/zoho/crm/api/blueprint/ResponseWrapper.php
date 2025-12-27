@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to blueprint
 	 * @param BluePrint $blueprint An instance of BluePrint
 	 */
-	public function setBlueprint(BluePrint $blueprint)
+	public function setBlueprint(?BluePrint $blueprint)
 	{
 		$this->blueprint=$blueprint; 
 		$this->keyModified['blueprint'] = 1; 

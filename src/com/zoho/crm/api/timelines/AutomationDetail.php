@@ -25,7 +25,7 @@ class AutomationDetail implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -46,7 +46,7 @@ class AutomationDetail implements Model
 	 * The method to set the value to rule
 	 * @param NameIdStructure $rule An instance of NameIdStructure
 	 */
-	public function setRule(NameIdStructure $rule)
+	public function setRule(?NameIdStructure $rule)
 	{
 		$this->rule=$rule; 
 		$this->keyModified['rule'] = 1; 
@@ -67,7 +67,7 @@ class AutomationDetail implements Model
 	 * The method to set the value to pathfinder
 	 * @param PathFinder $pathfinder An instance of PathFinder
 	 */
-	public function setPathfinder(PathFinder $pathfinder)
+	public function setPathfinder(?PathFinder $pathfinder)
 	{
 		$this->pathfinder=$pathfinder; 
 		$this->keyModified['pathfinder'] = 1; 

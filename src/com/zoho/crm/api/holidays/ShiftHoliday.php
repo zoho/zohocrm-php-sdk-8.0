@@ -27,7 +27,7 @@ class ShiftHoliday implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -48,7 +48,7 @@ class ShiftHoliday implements Model
 	 * The method to set the value to date
 	 * @param \DateTime $date An instance of \DateTime
 	 */
-	public function setDate(\DateTime $date)
+	public function setDate(?\DateTime $date)
 	{
 		$this->date=$date; 
 		$this->keyModified['date'] = 1; 
@@ -69,7 +69,7 @@ class ShiftHoliday implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -90,7 +90,7 @@ class ShiftHoliday implements Model
 	 * The method to set the value to shiftHour
 	 * @param ShiftHour $shiftHour An instance of ShiftHour
 	 */
-	public function setShiftHour(ShiftHour $shiftHour)
+	public function setShiftHour(?ShiftHour $shiftHour)
 	{
 		$this->shiftHour=$shiftHour; 
 		$this->keyModified['shift_hour'] = 1; 

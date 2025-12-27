@@ -23,7 +23,7 @@ class Wrapper implements Model
 	 * The method to set the value to templates
 	 * @param array $templates A array
 	 */
-	public function setTemplates(array $templates)
+	public function setTemplates(?array $templates)
 	{
 		$this->templates=$templates; 
 		$this->keyModified['templates'] = 1; 

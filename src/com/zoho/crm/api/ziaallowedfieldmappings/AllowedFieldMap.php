@@ -24,7 +24,7 @@ class AllowedFieldMap implements Model
 	 * The method to set the value to outputDataFieldMapping
 	 * @param array $outputDataFieldMapping A array
 	 */
-	public function setOutputDataFieldMapping(array $outputDataFieldMapping)
+	public function setOutputDataFieldMapping(?array $outputDataFieldMapping)
 	{
 		$this->outputDataFieldMapping=$outputDataFieldMapping; 
 		$this->keyModified['output_data_field_mapping'] = 1; 
@@ -45,7 +45,7 @@ class AllowedFieldMap implements Model
 	 * The method to set the value to inputDataFieldMapping
 	 * @param array $inputDataFieldMapping A array
 	 */
-	public function setInputDataFieldMapping(array $inputDataFieldMapping)
+	public function setInputDataFieldMapping(?array $inputDataFieldMapping)
 	{
 		$this->inputDataFieldMapping=$inputDataFieldMapping; 
 		$this->keyModified['input_data_field_mapping'] = 1; 

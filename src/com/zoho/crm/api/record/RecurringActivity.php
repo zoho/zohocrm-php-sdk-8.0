@@ -24,7 +24,7 @@ class RecurringActivity implements Model
 	 * The method to set the value to rrule
 	 * @param string $rrule A string
 	 */
-	public function setRrule(string $rrule)
+	public function setRrule(?string $rrule)
 	{
 		$this->rrule=$rrule; 
 		$this->keyModified['RRULE'] = 1; 
@@ -45,7 +45,7 @@ class RecurringActivity implements Model
 	 * The method to set the value to exdate
 	 * @param string $exdate A string
 	 */
-	public function setExdate(string $exdate)
+	public function setExdate(?string $exdate)
 	{
 		$this->exdate=$exdate; 
 		$this->keyModified['EXDATE'] = 1; 

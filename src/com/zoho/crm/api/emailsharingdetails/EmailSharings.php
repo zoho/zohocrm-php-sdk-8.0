@@ -24,7 +24,7 @@ class EmailSharings implements Model
 	 * The method to set the value to shareFromUsers
 	 * @param array $shareFromUsers A array
 	 */
-	public function setShareFromUsers(array $shareFromUsers)
+	public function setShareFromUsers(?array $shareFromUsers)
 	{
 		$this->shareFromUsers=$shareFromUsers; 
 		$this->keyModified['share_from_users'] = 1; 
@@ -45,7 +45,7 @@ class EmailSharings implements Model
 	 * The method to set the value to availableTypes
 	 * @param array $availableTypes A array
 	 */
-	public function setAvailableTypes(array $availableTypes)
+	public function setAvailableTypes(?array $availableTypes)
 	{
 		$this->availableTypes=$availableTypes; 
 		$this->keyModified['available_types'] = 1; 

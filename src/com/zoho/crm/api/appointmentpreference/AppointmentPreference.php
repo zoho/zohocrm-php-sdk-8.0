@@ -29,7 +29,7 @@ class AppointmentPreference implements Model
 	 * The method to set the value to showJobSheet
 	 * @param bool $showJobSheet A bool
 	 */
-	public function setShowJobSheet(bool $showJobSheet)
+	public function setShowJobSheet(?bool $showJobSheet)
 	{
 		$this->showJobSheet=$showJobSheet; 
 		$this->keyModified['show_job_sheet'] = 1; 
@@ -50,7 +50,7 @@ class AppointmentPreference implements Model
 	 * The method to set the value to whenDurationExceeds
 	 * @param string $whenDurationExceeds A string
 	 */
-	public function setWhenDurationExceeds(string $whenDurationExceeds)
+	public function setWhenDurationExceeds(?string $whenDurationExceeds)
 	{
 		$this->whenDurationExceeds=$whenDurationExceeds; 
 		$this->keyModified['when_duration_exceeds'] = 1; 
@@ -71,7 +71,7 @@ class AppointmentPreference implements Model
 	 * The method to set the value to whenAppointmentCompleted
 	 * @param Choice $whenAppointmentCompleted An instance of Choice
 	 */
-	public function setWhenAppointmentCompleted(Choice $whenAppointmentCompleted)
+	public function setWhenAppointmentCompleted(?Choice $whenAppointmentCompleted)
 	{
 		$this->whenAppointmentCompleted=$whenAppointmentCompleted; 
 		$this->keyModified['when_appointment_completed'] = 1; 
@@ -92,7 +92,7 @@ class AppointmentPreference implements Model
 	 * The method to set the value to allowBookingOutsideServiceAvailability
 	 * @param bool $allowBookingOutsideServiceAvailability A bool
 	 */
-	public function setAllowBookingOutsideServiceAvailability(bool $allowBookingOutsideServiceAvailability)
+	public function setAllowBookingOutsideServiceAvailability(?bool $allowBookingOutsideServiceAvailability)
 	{
 		$this->allowBookingOutsideServiceAvailability=$allowBookingOutsideServiceAvailability; 
 		$this->keyModified['allow_booking_outside_service_availability'] = 1; 
@@ -113,7 +113,7 @@ class AppointmentPreference implements Model
 	 * The method to set the value to allowBookingOutsideBusinesshours
 	 * @param bool $allowBookingOutsideBusinesshours A bool
 	 */
-	public function setAllowBookingOutsideBusinesshours(bool $allowBookingOutsideBusinesshours)
+	public function setAllowBookingOutsideBusinesshours(?bool $allowBookingOutsideBusinesshours)
 	{
 		$this->allowBookingOutsideBusinesshours=$allowBookingOutsideBusinesshours; 
 		$this->keyModified['allow_booking_outside_businesshours'] = 1; 
@@ -134,7 +134,7 @@ class AppointmentPreference implements Model
 	 * The method to set the value to dealRecordConfiguration
 	 * @param DealRecordConfiguration $dealRecordConfiguration An instance of DealRecordConfiguration
 	 */
-	public function setDealRecordConfiguration(DealRecordConfiguration $dealRecordConfiguration)
+	public function setDealRecordConfiguration(?DealRecordConfiguration $dealRecordConfiguration)
 	{
 		$this->dealRecordConfiguration=$dealRecordConfiguration; 
 		$this->keyModified['deal_record_configuration'] = 1; 

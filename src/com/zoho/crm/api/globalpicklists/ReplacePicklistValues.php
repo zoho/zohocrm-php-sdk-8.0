@@ -24,7 +24,7 @@ class ReplacePicklistValues implements Model
 	 * The method to set the value to newValue
 	 * @param ReplacePicklistValue $newValue An instance of ReplacePicklistValue
 	 */
-	public function setNewValue(ReplacePicklistValue $newValue)
+	public function setNewValue(?ReplacePicklistValue $newValue)
 	{
 		$this->newValue=$newValue; 
 		$this->keyModified['new_value'] = 1; 
@@ -45,7 +45,7 @@ class ReplacePicklistValues implements Model
 	 * The method to set the value to oldValue
 	 * @param ReplacePicklistValue $oldValue An instance of ReplacePicklistValue
 	 */
-	public function setOldValue(ReplacePicklistValue $oldValue)
+	public function setOldValue(?ReplacePicklistValue $oldValue)
 	{
 		$this->oldValue=$oldValue; 
 		$this->keyModified['old_value'] = 1; 

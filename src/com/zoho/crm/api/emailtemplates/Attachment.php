@@ -26,7 +26,7 @@ class Attachment implements Model
 	 * The method to set the value to size
 	 * @param string $size A string
 	 */
-	public function setSize(string $size)
+	public function setSize(?string $size)
 	{
 		$this->size=$size; 
 		$this->keyModified['size'] = 1; 
@@ -47,7 +47,7 @@ class Attachment implements Model
 	 * The method to set the value to fileName
 	 * @param string $fileName A string
 	 */
-	public function setFileName(string $fileName)
+	public function setFileName(?string $fileName)
 	{
 		$this->fileName=$fileName; 
 		$this->keyModified['file_name'] = 1; 
@@ -68,7 +68,7 @@ class Attachment implements Model
 	 * The method to set the value to fileId
 	 * @param string $fileId A string
 	 */
-	public function setFileId(string $fileId)
+	public function setFileId(?string $fileId)
 	{
 		$this->fileId=$fileId; 
 		$this->keyModified['file_id'] = 1; 
@@ -89,7 +89,7 @@ class Attachment implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

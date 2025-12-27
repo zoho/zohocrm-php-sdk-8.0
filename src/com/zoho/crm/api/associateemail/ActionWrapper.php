@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to emails
 	 * @param array $emails A array
 	 */
-	public function setEmails(array $emails)
+	public function setEmails(?array $emails)
 	{
 		$this->emails=$emails; 
 		$this->keyModified['Emails'] = 1; 

@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to scoringRules
 	 * @param array $scoringRules A array
 	 */
-	public function setScoringRules(array $scoringRules)
+	public function setScoringRules(?array $scoringRules)
 	{
 		$this->scoringRules=$scoringRules; 
 		$this->keyModified['scoring_rules'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

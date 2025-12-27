@@ -23,7 +23,7 @@ class ResponseWrapper implements Model
 	 * The method to set the value to portalInvite
 	 * @param array $portalInvite A array
 	 */
-	public function setPortalInvite(array $portalInvite)
+	public function setPortalInvite(?array $portalInvite)
 	{
 		$this->portalInvite=$portalInvite; 
 		$this->keyModified['portal_invite'] = 1; 

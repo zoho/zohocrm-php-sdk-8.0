@@ -28,7 +28,7 @@ class Tax implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -49,7 +49,7 @@ class Tax implements Model
 	 * The method to set the value to sequenceNumber
 	 * @param int $sequenceNumber A int
 	 */
-	public function setSequenceNumber(int $sequenceNumber)
+	public function setSequenceNumber(?int $sequenceNumber)
 	{
 		$this->sequenceNumber=$sequenceNumber; 
 		$this->keyModified['sequence_number'] = 1; 
@@ -70,7 +70,7 @@ class Tax implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -91,7 +91,7 @@ class Tax implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -112,7 +112,7 @@ class Tax implements Model
 	 * The method to set the value to value
 	 * @param float $value A float
 	 */
-	public function setValue(float $value)
+	public function setValue(?float $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 
@@ -133,7 +133,7 @@ class Tax implements Model
 	 * The method to set the value to delete
 	 * @param bool $delete A bool
 	 */
-	public function setDelete($delete)
+	public function setDelete(?bool $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 

@@ -12,6 +12,10 @@ class BodyWrapper implements Model
 	private  $duplicateCheckFields;
 	private  $wfTrigger;
 	private  $larId;
+	private  $applyFeatureExecution;
+	private  $applyValidationRule;
+	private  $applyFunctionValidationRule;
+	private  $skipFeatureExecution;
 	private  $keyModified=array();
 
 	/**
@@ -28,7 +32,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -49,7 +53,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to trigger
 	 * @param array $trigger A array
 	 */
-	public function setTrigger(array $trigger)
+	public function setTrigger(?array $trigger)
 	{
 		$this->trigger=$trigger; 
 		$this->keyModified['trigger'] = 1; 
@@ -70,7 +74,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to process
 	 * @param array $process A array
 	 */
-	public function setProcess(array $process)
+	public function setProcess(?array $process)
 	{
 		$this->process=$process; 
 		$this->keyModified['process'] = 1; 
@@ -91,7 +95,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to duplicateCheckFields
 	 * @param array $duplicateCheckFields A array
 	 */
-	public function setDuplicateCheckFields(array $duplicateCheckFields)
+	public function setDuplicateCheckFields(?array $duplicateCheckFields)
 	{
 		$this->duplicateCheckFields=$duplicateCheckFields; 
 		$this->keyModified['duplicate_check_fields'] = 1; 
@@ -112,7 +116,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to wfTrigger
 	 * @param string $wfTrigger A string
 	 */
-	public function setWfTrigger(string $wfTrigger)
+	public function setWfTrigger(?string $wfTrigger)
 	{
 		$this->wfTrigger=$wfTrigger; 
 		$this->keyModified['wf_trigger'] = 1; 
@@ -133,10 +137,94 @@ class BodyWrapper implements Model
 	 * The method to set the value to larId
 	 * @param string $larId A string
 	 */
-	public function setLarId(string $larId)
+	public function setLarId(?string $larId)
 	{
 		$this->larId=$larId; 
 		$this->keyModified['lar_id'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the applyFeatureExecution
+	 * @return array A array representing the applyFeatureExecution
+	 */
+	public function getApplyFeatureExecution()
+	{
+		return $this->applyFeatureExecution; 
+
+	}
+
+	/**
+	 * The method to set the value to applyFeatureExecution
+	 * @param array $applyFeatureExecution A array
+	 */
+	public function setApplyFeatureExecution(?array $applyFeatureExecution)
+	{
+		$this->applyFeatureExecution=$applyFeatureExecution; 
+		$this->keyModified['apply_feature_execution'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the applyValidationRule
+	 * @return string A string representing the applyValidationRule
+	 */
+	public function getApplyValidationRule()
+	{
+		return $this->applyValidationRule; 
+
+	}
+
+	/**
+	 * The method to set the value to applyValidationRule
+	 * @param string $applyValidationRule A string
+	 */
+	public function setApplyValidationRule(?string $applyValidationRule)
+	{
+		$this->applyValidationRule=$applyValidationRule; 
+		$this->keyModified['apply_validation_rule'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the applyFunctionValidationRule
+	 * @return string A string representing the applyFunctionValidationRule
+	 */
+	public function getApplyFunctionValidationRule()
+	{
+		return $this->applyFunctionValidationRule; 
+
+	}
+
+	/**
+	 * The method to set the value to applyFunctionValidationRule
+	 * @param string $applyFunctionValidationRule A string
+	 */
+	public function setApplyFunctionValidationRule(?string $applyFunctionValidationRule)
+	{
+		$this->applyFunctionValidationRule=$applyFunctionValidationRule; 
+		$this->keyModified['apply_function_validation_rule'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the skipFeatureExecution
+	 * @return array A array representing the skipFeatureExecution
+	 */
+	public function getSkipFeatureExecution()
+	{
+		return $this->skipFeatureExecution; 
+
+	}
+
+	/**
+	 * The method to set the value to skipFeatureExecution
+	 * @param array $skipFeatureExecution A array
+	 */
+	public function setSkipFeatureExecution(?array $skipFeatureExecution)
+	{
+		$this->skipFeatureExecution=$skipFeatureExecution; 
+		$this->keyModified['skip_feature_execution'] = 1; 
 
 	}
 

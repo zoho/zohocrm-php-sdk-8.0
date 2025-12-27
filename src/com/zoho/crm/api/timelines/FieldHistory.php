@@ -29,7 +29,7 @@ class FieldHistory implements Model
 	 * The method to set the value to dataType
 	 * @param string $dataType A string
 	 */
-	public function setDataType(string $dataType)
+	public function setDataType(?string $dataType)
 	{
 		$this->dataType=$dataType; 
 		$this->keyModified['data_type'] = 1; 
@@ -50,7 +50,7 @@ class FieldHistory implements Model
 	 * The method to set the value to enableColourCode
 	 * @param bool $enableColourCode A bool
 	 */
-	public function setEnableColourCode(bool $enableColourCode)
+	public function setEnableColourCode(?bool $enableColourCode)
 	{
 		$this->enableColourCode=$enableColourCode; 
 		$this->keyModified['enable_colour_code'] = 1; 
@@ -71,7 +71,7 @@ class FieldHistory implements Model
 	 * The method to set the value to pickListValues
 	 * @param array $pickListValues A array
 	 */
-	public function setPickListValues(array $pickListValues)
+	public function setPickListValues(?array $pickListValues)
 	{
 		$this->pickListValues=$pickListValues; 
 		$this->keyModified['pick_list_values'] = 1; 
@@ -92,7 +92,7 @@ class FieldHistory implements Model
 	 * The method to set the value to fieldLabel
 	 * @param string $fieldLabel A string
 	 */
-	public function setFieldLabel(string $fieldLabel)
+	public function setFieldLabel(?string $fieldLabel)
 	{
 		$this->fieldLabel=$fieldLabel; 
 		$this->keyModified['field_label'] = 1; 
@@ -113,7 +113,7 @@ class FieldHistory implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -134,7 +134,7 @@ class FieldHistory implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -155,7 +155,7 @@ class FieldHistory implements Model
 	 * The method to set the value to value
 	 * @param FieldHistoryValue $value An instance of FieldHistoryValue
 	 */
-	public function setValue(FieldHistoryValue $value)
+	public function setValue(?FieldHistoryValue $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['_value'] = 1; 

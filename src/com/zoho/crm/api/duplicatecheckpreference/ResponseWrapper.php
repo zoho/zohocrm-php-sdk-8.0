@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to duplicateCheckPreference
 	 * @param DuplicateCheckPreference $duplicateCheckPreference An instance of DuplicateCheckPreference
 	 */
-	public function setDuplicateCheckPreference(DuplicateCheckPreference $duplicateCheckPreference)
+	public function setDuplicateCheckPreference(?DuplicateCheckPreference $duplicateCheckPreference)
 	{
 		$this->duplicateCheckPreference=$duplicateCheckPreference; 
 		$this->keyModified['duplicate_check_preference'] = 1; 

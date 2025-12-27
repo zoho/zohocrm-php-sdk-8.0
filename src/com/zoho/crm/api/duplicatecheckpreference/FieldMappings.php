@@ -24,7 +24,7 @@ class FieldMappings implements Model
 	 * The method to set the value to currentField
 	 * @param CurrentField $currentField An instance of CurrentField
 	 */
-	public function setCurrentField(CurrentField $currentField)
+	public function setCurrentField(?CurrentField $currentField)
 	{
 		$this->currentField=$currentField; 
 		$this->keyModified['current_field'] = 1; 
@@ -45,7 +45,7 @@ class FieldMappings implements Model
 	 * The method to set the value to mappedField
 	 * @param MappedField $mappedField An instance of MappedField
 	 */
-	public function setMappedField(MappedField $mappedField)
+	public function setMappedField(?MappedField $mappedField)
 	{
 		$this->mappedField=$mappedField; 
 		$this->keyModified['mapped_field'] = 1; 

@@ -25,7 +25,7 @@ class LinkingDetails implements Model
 	 * The method to set the value to module
 	 * @param LinkingModule $module An instance of LinkingModule
 	 */
-	public function setModule(LinkingModule $module)
+	public function setModule(?LinkingModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -46,7 +46,7 @@ class LinkingDetails implements Model
 	 * The method to set the value to lookupField
 	 * @param LookupField $lookupField An instance of LookupField
 	 */
-	public function setLookupField(LookupField $lookupField)
+	public function setLookupField(?LookupField $lookupField)
 	{
 		$this->lookupField=$lookupField; 
 		$this->keyModified['lookup_field'] = 1; 
@@ -67,7 +67,7 @@ class LinkingDetails implements Model
 	 * The method to set the value to connectedLookupField
 	 * @param LookupField $connectedLookupField An instance of LookupField
 	 */
-	public function setConnectedLookupField(LookupField $connectedLookupField)
+	public function setConnectedLookupField(?LookupField $connectedLookupField)
 	{
 		$this->connectedLookupField=$connectedLookupField; 
 		$this->keyModified['connected_lookup_field'] = 1; 

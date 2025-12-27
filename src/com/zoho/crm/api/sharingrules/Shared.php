@@ -26,7 +26,7 @@ class Shared implements Model
 	 * The method to set the value to resource
 	 * @param Resource $resource An instance of Resource
 	 */
-	public function setResource(Resource $resource)
+	public function setResource(?Resource $resource)
 	{
 		$this->resource=$resource; 
 		$this->keyModified['resource'] = 1; 
@@ -47,7 +47,7 @@ class Shared implements Model
 	 * The method to set the value to subordinates
 	 * @param bool $subordinates A bool
 	 */
-	public function setSubordinates(bool $subordinates)
+	public function setSubordinates(?bool $subordinates)
 	{
 		$this->subordinates=$subordinates; 
 		$this->keyModified['subordinates'] = 1; 
@@ -68,7 +68,7 @@ class Shared implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to contactRoles
 	 * @param array $contactRoles A array
 	 */
-	public function setContactRoles(array $contactRoles)
+	public function setContactRoles(?array $contactRoles)
 	{
 		$this->contactRoles=$contactRoles; 
 		$this->keyModified['contact_roles'] = 1; 

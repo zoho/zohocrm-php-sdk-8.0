@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to scoringRules
 	 * @param array $scoringRules A array
 	 */
-	public function setScoringRules(array $scoringRules)
+	public function setScoringRules(?array $scoringRules)
 	{
 		$this->scoringRules=$scoringRules; 
 		$this->keyModified['scoring_rules'] = 1; 

@@ -45,7 +45,7 @@ class CustomViews implements Model
 	 * The method to set the value to displayValue
 	 * @param string $displayValue A string
 	 */
-	public function setDisplayValue(string $displayValue)
+	public function setDisplayValue(?string $displayValue)
 	{
 		$this->displayValue=$displayValue; 
 		$this->keyModified['display_value'] = 1; 
@@ -66,7 +66,7 @@ class CustomViews implements Model
 	 * The method to set the value to systemName
 	 * @param string $systemName A string
 	 */
-	public function setSystemName(string $systemName)
+	public function setSystemName(?string $systemName)
 	{
 		$this->systemName=$systemName; 
 		$this->keyModified['system_name'] = 1; 
@@ -87,7 +87,7 @@ class CustomViews implements Model
 	 * The method to set the value to category
 	 * @param string $category A string
 	 */
-	public function setCategory(string $category)
+	public function setCategory(?string $category)
 	{
 		$this->category=$category; 
 		$this->keyModified['category'] = 1; 
@@ -108,7 +108,7 @@ class CustomViews implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -129,7 +129,7 @@ class CustomViews implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -150,7 +150,7 @@ class CustomViews implements Model
 	 * The method to set the value to lastAccessedTime
 	 * @param \DateTime $lastAccessedTime An instance of \DateTime
 	 */
-	public function setLastAccessedTime(\DateTime $lastAccessedTime)
+	public function setLastAccessedTime(?\DateTime $lastAccessedTime)
 	{
 		$this->lastAccessedTime=$lastAccessedTime; 
 		$this->keyModified['last_accessed_time'] = 1; 
@@ -171,7 +171,7 @@ class CustomViews implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -192,7 +192,7 @@ class CustomViews implements Model
 	 * The method to set the value to createdBy
 	 * @param Owner $createdBy An instance of Owner
 	 */
-	public function setCreatedBy(Owner $createdBy)
+	public function setCreatedBy(?Owner $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -213,7 +213,7 @@ class CustomViews implements Model
 	 * The method to set the value to modifiedBy
 	 * @param Owner $modifiedBy An instance of Owner
 	 */
-	public function setModifiedBy(Owner $modifiedBy)
+	public function setModifiedBy(?Owner $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -234,7 +234,7 @@ class CustomViews implements Model
 	 * The method to set the value to module
 	 * @param Owner $module An instance of Owner
 	 */
-	public function setModule(Owner $module)
+	public function setModule(?Owner $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -255,7 +255,7 @@ class CustomViews implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -276,7 +276,7 @@ class CustomViews implements Model
 	 * The method to set the value to default
 	 * @param bool $default A bool
 	 */
-	public function setDefault(bool $default)
+	public function setDefault(?bool $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 
@@ -297,7 +297,7 @@ class CustomViews implements Model
 	 * The method to set the value to systemDefined
 	 * @param bool $systemDefined A bool
 	 */
-	public function setSystemDefined(bool $systemDefined)
+	public function setSystemDefined(?bool $systemDefined)
 	{
 		$this->systemDefined=$systemDefined; 
 		$this->keyModified['system_defined'] = 1; 
@@ -318,7 +318,7 @@ class CustomViews implements Model
 	 * The method to set the value to locked
 	 * @param bool $locked A bool
 	 */
-	public function setLocked(bool $locked)
+	public function setLocked(?bool $locked)
 	{
 		$this->locked=$locked; 
 		$this->keyModified['locked'] = 1; 
@@ -339,7 +339,7 @@ class CustomViews implements Model
 	 * The method to set the value to favorite
 	 * @param int $favorite A int
 	 */
-	public function setFavorite(int $favorite)
+	public function setFavorite(?int $favorite)
 	{
 		$this->favorite=$favorite; 
 		$this->keyModified['favorite'] = 1; 
@@ -360,7 +360,7 @@ class CustomViews implements Model
 	 * The method to set the value to offline
 	 * @param bool $offline A bool
 	 */
-	public function setOffline(bool $offline)
+	public function setOffline(?bool $offline)
 	{
 		$this->offline=$offline; 
 		$this->keyModified['offline'] = 1; 
@@ -381,7 +381,7 @@ class CustomViews implements Model
 	 * The method to set the value to accessType
 	 * @param Choice $accessType An instance of Choice
 	 */
-	public function setAccessType(Choice $accessType)
+	public function setAccessType(?Choice $accessType)
 	{
 		$this->accessType=$accessType; 
 		$this->keyModified['access_type'] = 1; 
@@ -402,7 +402,7 @@ class CustomViews implements Model
 	 * The method to set the value to sharedTo
 	 * @param array $sharedTo A array
 	 */
-	public function setSharedTo(array $sharedTo)
+	public function setSharedTo(?array $sharedTo)
 	{
 		$this->sharedTo=$sharedTo; 
 		$this->keyModified['shared_to'] = 1; 
@@ -423,7 +423,7 @@ class CustomViews implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -444,7 +444,7 @@ class CustomViews implements Model
 	 * The method to set the value to sortBy
 	 * @param SortBy $sortBy An instance of SortBy
 	 */
-	public function setSortBy(SortBy $sortBy)
+	public function setSortBy(?SortBy $sortBy)
 	{
 		$this->sortBy=$sortBy; 
 		$this->keyModified['sort_by'] = 1; 
@@ -465,7 +465,7 @@ class CustomViews implements Model
 	 * The method to set the value to sortOrder
 	 * @param Choice $sortOrder An instance of Choice
 	 */
-	public function setSortOrder(Choice $sortOrder)
+	public function setSortOrder(?Choice $sortOrder)
 	{
 		$this->sortOrder=$sortOrder; 
 		$this->keyModified['sort_order'] = 1; 
@@ -486,7 +486,7 @@ class CustomViews implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

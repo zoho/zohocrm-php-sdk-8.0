@@ -21,4 +21,9 @@ class GetRelatedRecordsParam
 		return new Param('fields', 'com.zoho.crm.api.RelatedRecords.GetRelatedRecordsParam'); 
 
 	}
+	public static final function ids()
+	{
+		return new Param('ids', 'com.zoho.crm.api.RelatedRecords.GetRelatedRecordsParam'); 
+
+	}
 } 

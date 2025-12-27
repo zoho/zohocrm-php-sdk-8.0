@@ -24,7 +24,7 @@ class DeletedAssociatedWrapper implements Model
 	 * The method to set the value to territories
 	 * @param array $territories A array
 	 */
-	public function setTerritories(array $territories)
+	public function setTerritories(?array $territories)
 	{
 		$this->territories=$territories; 
 		$this->keyModified['territories'] = 1; 
@@ -45,7 +45,7 @@ class DeletedAssociatedWrapper implements Model
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

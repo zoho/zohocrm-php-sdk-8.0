@@ -24,7 +24,7 @@ class SupportedAPI implements Model
 	 * The method to set the value to path
 	 * @param string $path A string
 	 */
-	public function setPath(string $path)
+	public function setPath(?string $path)
 	{
 		$this->path=$path; 
 		$this->keyModified['path'] = 1; 
@@ -45,7 +45,7 @@ class SupportedAPI implements Model
 	 * The method to set the value to operationTypes
 	 * @param array $operationTypes A array
 	 */
-	public function setOperationTypes(array $operationTypes)
+	public function setOperationTypes(?array $operationTypes)
 	{
 		$this->operationTypes=$operationTypes; 
 		$this->keyModified['operation_types'] = 1; 

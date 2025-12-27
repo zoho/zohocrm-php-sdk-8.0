@@ -25,7 +25,7 @@ class NotificationCondition implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -46,7 +46,7 @@ class NotificationCondition implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -67,7 +67,7 @@ class NotificationCondition implements Model
 	 * The method to set the value to fieldSelection
 	 * @param Criteria $fieldSelection An instance of Criteria
 	 */
-	public function setFieldSelection(Criteria $fieldSelection)
+	public function setFieldSelection(?Criteria $fieldSelection)
 	{
 		$this->fieldSelection=$fieldSelection; 
 		$this->keyModified['field_selection'] = 1; 

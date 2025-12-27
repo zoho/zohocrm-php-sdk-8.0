@@ -29,7 +29,7 @@ class Pipeline implements Model
 	 * The method to set the value to displayValue
 	 * @param string $displayValue A string
 	 */
-	public function setDisplayValue(string $displayValue)
+	public function setDisplayValue(?string $displayValue)
 	{
 		$this->displayValue=$displayValue; 
 		$this->keyModified['display_value'] = 1; 
@@ -50,7 +50,7 @@ class Pipeline implements Model
 	 * The method to set the value to default
 	 * @param bool $default A bool
 	 */
-	public function setDefault(bool $default)
+	public function setDefault(?bool $default)
 	{
 		$this->default=$default; 
 		$this->keyModified['default'] = 1; 
@@ -71,7 +71,7 @@ class Pipeline implements Model
 	 * The method to set the value to maps
 	 * @param array $maps A array
 	 */
-	public function setMaps(array $maps)
+	public function setMaps(?array $maps)
 	{
 		$this->maps=$maps; 
 		$this->keyModified['maps'] = 1; 
@@ -92,7 +92,7 @@ class Pipeline implements Model
 	 * The method to set the value to actualValue
 	 * @param string $actualValue A string
 	 */
-	public function setActualValue(string $actualValue)
+	public function setActualValue(?string $actualValue)
 	{
 		$this->actualValue=$actualValue; 
 		$this->keyModified['actual_value'] = 1; 
@@ -113,7 +113,7 @@ class Pipeline implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -134,7 +134,7 @@ class Pipeline implements Model
 	 * The method to set the value to childAvailable
 	 * @param bool $childAvailable A bool
 	 */
-	public function setChildAvailable(bool $childAvailable)
+	public function setChildAvailable(?bool $childAvailable)
 	{
 		$this->childAvailable=$childAvailable; 
 		$this->keyModified['child_available'] = 1; 
@@ -155,7 +155,7 @@ class Pipeline implements Model
 	 * The method to set the value to parent
 	 * @param Pipeline $parent An instance of Pipeline
 	 */
-	public function setParent(Pipeline $parent)
+	public function setParent(?Pipeline $parent)
 	{
 		$this->parent=$parent; 
 		$this->keyModified['parent'] = 1; 

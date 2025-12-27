@@ -27,7 +27,7 @@ class AnalyticsData implements Model
 	 * The method to set the value to iframeUrlTrackingCode
 	 * @param string $iframeUrlTrackingCode A string
 	 */
-	public function setIframeUrlTrackingCode(string $iframeUrlTrackingCode)
+	public function setIframeUrlTrackingCode(?string $iframeUrlTrackingCode)
 	{
 		$this->iframeUrlTrackingCode=$iframeUrlTrackingCode; 
 		$this->keyModified['iframe_url_tracking_code'] = 1; 
@@ -48,7 +48,7 @@ class AnalyticsData implements Model
 	 * The method to set the value to urlAnalyticsEnabled
 	 * @param bool $urlAnalyticsEnabled A bool
 	 */
-	public function setUrlAnalyticsEnabled(bool $urlAnalyticsEnabled)
+	public function setUrlAnalyticsEnabled(?bool $urlAnalyticsEnabled)
 	{
 		$this->urlAnalyticsEnabled=$urlAnalyticsEnabled; 
 		$this->keyModified['url_analytics_enabled'] = 1; 
@@ -69,7 +69,7 @@ class AnalyticsData implements Model
 	 * The method to set the value to analyticsEnabled
 	 * @param bool $analyticsEnabled A bool
 	 */
-	public function setAnalyticsEnabled(bool $analyticsEnabled)
+	public function setAnalyticsEnabled(?bool $analyticsEnabled)
 	{
 		$this->analyticsEnabled=$analyticsEnabled; 
 		$this->keyModified['analytics_enabled'] = 1; 
@@ -90,7 +90,7 @@ class AnalyticsData implements Model
 	 * The method to set the value to analyticsEnabledTime
 	 * @param \DateTime $analyticsEnabledTime An instance of \DateTime
 	 */
-	public function setAnalyticsEnabledTime(\DateTime $analyticsEnabledTime)
+	public function setAnalyticsEnabledTime(?\DateTime $analyticsEnabledTime)
 	{
 		$this->analyticsEnabledTime=$analyticsEnabledTime; 
 		$this->keyModified['analytics_enabled_time'] = 1; 
@@ -111,7 +111,7 @@ class AnalyticsData implements Model
 	 * The method to set the value to trackingCode
 	 * @param string $trackingCode A string
 	 */
-	public function setTrackingCode(string $trackingCode)
+	public function setTrackingCode(?string $trackingCode)
 	{
 		$this->trackingCode=$trackingCode; 
 		$this->keyModified['tracking_code'] = 1; 

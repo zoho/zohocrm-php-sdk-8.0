@@ -27,7 +27,7 @@ class ConditionalRules implements Model
 	 * The method to set the value to queryId
 	 * @param string $queryId A string
 	 */
-	public function setQueryId(string $queryId)
+	public function setQueryId(?string $queryId)
 	{
 		$this->queryId=$queryId; 
 		$this->keyModified['query_id'] = 1; 
@@ -48,7 +48,7 @@ class ConditionalRules implements Model
 	 * The method to set the value to executeOn
 	 * @param Choice $executeOn An instance of Choice
 	 */
-	public function setExecuteOn(Choice $executeOn)
+	public function setExecuteOn(?Choice $executeOn)
 	{
 		$this->executeOn=$executeOn; 
 		$this->keyModified['execute_on'] = 1; 
@@ -69,7 +69,7 @@ class ConditionalRules implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -90,7 +90,7 @@ class ConditionalRules implements Model
 	 * The method to set the value to actions
 	 * @param array $actions A array
 	 */
-	public function setActions(array $actions)
+	public function setActions(?array $actions)
 	{
 		$this->actions=$actions; 
 		$this->keyModified['actions'] = 1; 

@@ -27,7 +27,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to contacts
 	 * @param MinifiedLayout $contacts An instance of MinifiedLayout
 	 */
-	public function setContacts(MinifiedLayout $contacts)
+	public function setContacts(?MinifiedLayout $contacts)
 	{
 		$this->contacts=$contacts; 
 		$this->keyModified['Contacts'] = 1; 
@@ -48,7 +48,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to deals
 	 * @param DealLayoutMapping $deals An instance of DealLayoutMapping
 	 */
-	public function setDeals(DealLayoutMapping $deals)
+	public function setDeals(?DealLayoutMapping $deals)
 	{
 		$this->deals=$deals; 
 		$this->keyModified['Deals'] = 1; 
@@ -69,7 +69,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to accounts
 	 * @param MinifiedLayout $accounts An instance of MinifiedLayout
 	 */
-	public function setAccounts(MinifiedLayout $accounts)
+	public function setAccounts(?MinifiedLayout $accounts)
 	{
 		$this->accounts=$accounts; 
 		$this->keyModified['Accounts'] = 1; 
@@ -90,7 +90,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to invoices
 	 * @param MinifiedLayout $invoices An instance of MinifiedLayout
 	 */
-	public function setInvoices(MinifiedLayout $invoices)
+	public function setInvoices(?MinifiedLayout $invoices)
 	{
 		$this->invoices=$invoices; 
 		$this->keyModified['Invoices'] = 1; 
@@ -111,7 +111,7 @@ class ConvertMapping implements Model
 	 * The method to set the value to salesorders
 	 * @param MinifiedLayout $salesorders An instance of MinifiedLayout
 	 */
-	public function setSalesorders(MinifiedLayout $salesorders)
+	public function setSalesorders(?MinifiedLayout $salesorders)
 	{
 		$this->salesorders=$salesorders; 
 		$this->keyModified['SalesOrders'] = 1; 

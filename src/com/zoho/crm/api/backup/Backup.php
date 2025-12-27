@@ -28,7 +28,7 @@ class Backup implements Model
 	 * The method to set the value to rrule
 	 * @param string $rrule A string
 	 */
-	public function setRrule(string $rrule)
+	public function setRrule(?string $rrule)
 	{
 		$this->rrule=$rrule; 
 		$this->keyModified['rrule'] = 1; 
@@ -49,7 +49,7 @@ class Backup implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -70,7 +70,7 @@ class Backup implements Model
 	 * The method to set the value to startDate
 	 * @param \DateTime $startDate An instance of \DateTime
 	 */
-	public function setStartDate(\DateTime $startDate)
+	public function setStartDate(?\DateTime $startDate)
 	{
 		$this->startDate=$startDate; 
 		$this->keyModified['start_date'] = 1; 
@@ -91,7 +91,7 @@ class Backup implements Model
 	 * The method to set the value to scheduledDate
 	 * @param \DateTime $scheduledDate An instance of \DateTime
 	 */
-	public function setScheduledDate(\DateTime $scheduledDate)
+	public function setScheduledDate(?\DateTime $scheduledDate)
 	{
 		$this->scheduledDate=$scheduledDate; 
 		$this->keyModified['scheduled_date'] = 1; 
@@ -112,7 +112,7 @@ class Backup implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -133,7 +133,7 @@ class Backup implements Model
 	 * The method to set the value to requester
 	 * @param Requester $requester An instance of Requester
 	 */
-	public function setRequester(Requester $requester)
+	public function setRequester(?Requester $requester)
 	{
 		$this->requester=$requester; 
 		$this->keyModified['requester'] = 1; 

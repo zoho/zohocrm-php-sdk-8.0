@@ -25,7 +25,7 @@ class Detail implements Model
 	 * The method to set the value to availableCount
 	 * @param Limit $availableCount An instance of Limit
 	 */
-	public function setAvailableCount(Limit $availableCount)
+	public function setAvailableCount(?Limit $availableCount)
 	{
 		$this->availableCount=$availableCount; 
 		$this->keyModified['available_count'] = 1; 
@@ -46,7 +46,7 @@ class Detail implements Model
 	 * The method to set the value to limits
 	 * @param Limit $limits An instance of Limit
 	 */
-	public function setLimits(Limit $limits)
+	public function setLimits(?Limit $limits)
 	{
 		$this->limits=$limits; 
 		$this->keyModified['limits'] = 1; 
@@ -67,7 +67,7 @@ class Detail implements Model
 	 * The method to set the value to usedCount
 	 * @param Limit $usedCount An instance of Limit
 	 */
-	public function setUsedCount(Limit $usedCount)
+	public function setUsedCount(?Limit $usedCount)
 	{
 		$this->usedCount=$usedCount; 
 		$this->keyModified['used_count'] = 1; 

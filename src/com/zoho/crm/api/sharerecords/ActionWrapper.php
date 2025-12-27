@@ -24,7 +24,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to share
 	 * @param array $share A array
 	 */
-	public function setShare(array $share)
+	public function setShare(?array $share)
 	{
 		$this->share=$share; 
 		$this->keyModified['share'] = 1; 
@@ -45,7 +45,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to notify
 	 * @param bool $notify A bool
 	 */
-	public function setNotify(bool $notify)
+	public function setNotify(?bool $notify)
 	{
 		$this->notify=$notify; 
 		$this->keyModified['notify'] = 1; 

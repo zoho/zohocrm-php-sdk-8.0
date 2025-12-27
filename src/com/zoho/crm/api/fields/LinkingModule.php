@@ -26,7 +26,7 @@ class LinkingModule implements Model
 	 * The method to set the value to pluralLabel
 	 * @param string $pluralLabel A string
 	 */
-	public function setPluralLabel(string $pluralLabel)
+	public function setPluralLabel(?string $pluralLabel)
 	{
 		$this->pluralLabel=$pluralLabel; 
 		$this->keyModified['plural_label'] = 1; 
@@ -47,7 +47,7 @@ class LinkingModule implements Model
 	 * The method to set the value to visibility
 	 * @param int $visibility A int
 	 */
-	public function setVisibility(int $visibility)
+	public function setVisibility(?int $visibility)
 	{
 		$this->visibility=$visibility; 
 		$this->keyModified['visibility'] = 1; 
@@ -68,7 +68,7 @@ class LinkingModule implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -89,7 +89,7 @@ class LinkingModule implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

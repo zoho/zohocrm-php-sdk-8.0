@@ -27,7 +27,7 @@ class InventoryDetails implements Model
 	 * The method to set the value to inventoryTemplate
 	 * @param InventoryTemplate $inventoryTemplate An instance of InventoryTemplate
 	 */
-	public function setInventoryTemplate(InventoryTemplate $inventoryTemplate)
+	public function setInventoryTemplate(?InventoryTemplate $inventoryTemplate)
 	{
 		$this->inventoryTemplate=$inventoryTemplate; 
 		$this->keyModified['inventory_template'] = 1; 
@@ -48,7 +48,7 @@ class InventoryDetails implements Model
 	 * The method to set the value to record
 	 * @param Record $record An instance of Record
 	 */
-	public function setRecord(Record $record)
+	public function setRecord(?Record $record)
 	{
 		$this->record=$record; 
 		$this->keyModified['record'] = 1; 
@@ -69,7 +69,7 @@ class InventoryDetails implements Model
 	 * The method to set the value to paperType
 	 * @param string $paperType A string
 	 */
-	public function setPaperType(string $paperType)
+	public function setPaperType(?string $paperType)
 	{
 		$this->paperType=$paperType; 
 		$this->keyModified['paper_type'] = 1; 
@@ -90,7 +90,7 @@ class InventoryDetails implements Model
 	 * The method to set the value to viewType
 	 * @param string $viewType A string
 	 */
-	public function setViewType(string $viewType)
+	public function setViewType(?string $viewType)
 	{
 		$this->viewType=$viewType; 
 		$this->keyModified['view_type'] = 1; 

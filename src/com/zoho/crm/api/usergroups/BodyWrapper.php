@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to userGroups
 	 * @param array $userGroups A array
 	 */
-	public function setUserGroups(array $userGroups)
+	public function setUserGroups(?array $userGroups)
 	{
 		$this->userGroups=$userGroups; 
 		$this->keyModified['user_groups'] = 1; 

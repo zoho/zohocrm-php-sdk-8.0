@@ -24,7 +24,7 @@ class RangeStructure implements Model
 	 * The method to set the value to from
 	 * @param string $from A string
 	 */
-	public function setFrom(string $from)
+	public function setFrom(?string $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -45,7 +45,7 @@ class RangeStructure implements Model
 	 * The method to set the value to to
 	 * @param string $to A string
 	 */
-	public function setTo(string $to)
+	public function setTo(?string $to)
 	{
 		$this->to=$to; 
 		$this->keyModified['to'] = 1; 

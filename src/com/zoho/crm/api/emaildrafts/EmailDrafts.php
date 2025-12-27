@@ -39,7 +39,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -60,7 +60,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -81,7 +81,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -102,7 +102,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to from
 	 * @param string $from A string
 	 */
-	public function setFrom(string $from)
+	public function setFrom(?string $from)
 	{
 		$this->from=$from; 
 		$this->keyModified['from'] = 1; 
@@ -123,7 +123,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to to
 	 * @param array $to A array
 	 */
-	public function setTo(array $to)
+	public function setTo(?array $to)
 	{
 		$this->to=$to; 
 		$this->keyModified['to'] = 1; 
@@ -144,7 +144,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to replyTo
 	 * @param string $replyTo A string
 	 */
-	public function setReplyTo(string $replyTo)
+	public function setReplyTo(?string $replyTo)
 	{
 		$this->replyTo=$replyTo; 
 		$this->keyModified['reply_to'] = 1; 
@@ -165,7 +165,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to cc
 	 * @param array $cc A array
 	 */
-	public function setCc(array $cc)
+	public function setCc(?array $cc)
 	{
 		$this->cc=$cc; 
 		$this->keyModified['cc'] = 1; 
@@ -186,7 +186,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to bcc
 	 * @param array $bcc A array
 	 */
-	public function setBcc(array $bcc)
+	public function setBcc(?array $bcc)
 	{
 		$this->bcc=$bcc; 
 		$this->keyModified['bcc'] = 1; 
@@ -207,7 +207,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to template
 	 * @param Template $template An instance of Template
 	 */
-	public function setTemplate(Template $template)
+	public function setTemplate(?Template $template)
 	{
 		$this->template=$template; 
 		$this->keyModified['template'] = 1; 
@@ -228,7 +228,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to inventoryDetails
 	 * @param InventoryDetails $inventoryDetails An instance of InventoryDetails
 	 */
-	public function setInventoryDetails(InventoryDetails $inventoryDetails)
+	public function setInventoryDetails(?InventoryDetails $inventoryDetails)
 	{
 		$this->inventoryDetails=$inventoryDetails; 
 		$this->keyModified['inventory_details'] = 1; 
@@ -249,7 +249,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to attachments
 	 * @param array $attachments A array
 	 */
-	public function setAttachments(array $attachments)
+	public function setAttachments(?array $attachments)
 	{
 		$this->attachments=$attachments; 
 		$this->keyModified['attachments'] = 1; 
@@ -270,7 +270,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to scheduleDetails
 	 * @param ScheduleDetails $scheduleDetails An instance of ScheduleDetails
 	 */
-	public function setScheduleDetails(ScheduleDetails $scheduleDetails)
+	public function setScheduleDetails(?ScheduleDetails $scheduleDetails)
 	{
 		$this->scheduleDetails=$scheduleDetails; 
 		$this->keyModified['schedule_details'] = 1; 
@@ -291,7 +291,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to richText
 	 * @param bool $richText A bool
 	 */
-	public function setRichText(bool $richText)
+	public function setRichText(?bool $richText)
 	{
 		$this->richText=$richText; 
 		$this->keyModified['rich_text'] = 1; 
@@ -312,7 +312,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to emailOptOut
 	 * @param bool $emailOptOut A bool
 	 */
-	public function setEmailOptOut(bool $emailOptOut)
+	public function setEmailOptOut(?bool $emailOptOut)
 	{
 		$this->emailOptOut=$emailOptOut; 
 		$this->keyModified['email_opt_out'] = 1; 
@@ -333,7 +333,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -354,7 +354,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 
@@ -375,7 +375,7 @@ class EmailDrafts implements Model
 	 * The method to set the value to summary
 	 * @param string $summary A string
 	 */
-	public function setSummary(string $summary)
+	public function setSummary(?string $summary)
 	{
 		$this->summary=$summary; 
 		$this->keyModified['summary'] = 1; 

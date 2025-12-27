@@ -33,7 +33,7 @@ class ShiftHours implements Model
 	 * The method to set the value to sameAsEveryday
 	 * @param bool $sameAsEveryday A bool
 	 */
-	public function setSameAsEveryday(bool $sameAsEveryday)
+	public function setSameAsEveryday(?bool $sameAsEveryday)
 	{
 		$this->sameAsEveryday=$sameAsEveryday; 
 		$this->keyModified['same_as_everyday'] = 1; 
@@ -54,7 +54,7 @@ class ShiftHours implements Model
 	 * The method to set the value to shiftDays
 	 * @param array $shiftDays A array
 	 */
-	public function setShiftDays(array $shiftDays)
+	public function setShiftDays(?array $shiftDays)
 	{
 		$this->shiftDays=$shiftDays; 
 		$this->keyModified['shift_days'] = 1; 
@@ -75,7 +75,7 @@ class ShiftHours implements Model
 	 * The method to set the value to dailyTiming
 	 * @param array $dailyTiming A array
 	 */
-	public function setDailyTiming(array $dailyTiming)
+	public function setDailyTiming(?array $dailyTiming)
 	{
 		$this->dailyTiming=$dailyTiming; 
 		$this->keyModified['daily_timing'] = 1; 
@@ -96,7 +96,7 @@ class ShiftHours implements Model
 	 * The method to set the value to customTiming
 	 * @param array $customTiming A array
 	 */
-	public function setCustomTiming(array $customTiming)
+	public function setCustomTiming(?array $customTiming)
 	{
 		$this->customTiming=$customTiming; 
 		$this->keyModified['custom_timing'] = 1; 
@@ -117,7 +117,7 @@ class ShiftHours implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -138,7 +138,7 @@ class ShiftHours implements Model
 	 * The method to set the value to breakHours
 	 * @param array $breakHours A array
 	 */
-	public function setBreakHours(array $breakHours)
+	public function setBreakHours(?array $breakHours)
 	{
 		$this->breakHours=$breakHours; 
 		$this->keyModified['break_hours'] = 1; 
@@ -159,7 +159,7 @@ class ShiftHours implements Model
 	 * The method to set the value to users
 	 * @param array $users A array
 	 */
-	public function setUsers(array $users)
+	public function setUsers(?array $users)
 	{
 		$this->users=$users; 
 		$this->keyModified['users'] = 1; 
@@ -180,7 +180,7 @@ class ShiftHours implements Model
 	 * The method to set the value to holidays
 	 * @param array $holidays A array
 	 */
-	public function setHolidays(array $holidays)
+	public function setHolidays(?array $holidays)
 	{
 		$this->holidays=$holidays; 
 		$this->keyModified['holidays'] = 1; 
@@ -201,7 +201,7 @@ class ShiftHours implements Model
 	 * The method to set the value to usersCount
 	 * @param int $usersCount A int
 	 */
-	public function setUsersCount(int $usersCount)
+	public function setUsersCount(?int $usersCount)
 	{
 		$this->usersCount=$usersCount; 
 		$this->keyModified['users_count'] = 1; 
@@ -222,7 +222,7 @@ class ShiftHours implements Model
 	 * The method to set the value to timezone
 	 * @param \DateTimeZone $timezone An instance of \DateTimeZone
 	 */
-	public function setTimezone(\DateTimeZone $timezone)
+	public function setTimezone(?\DateTimeZone $timezone)
 	{
 		$this->timezone=$timezone; 
 		$this->keyModified['timezone'] = 1; 
@@ -243,7 +243,7 @@ class ShiftHours implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 

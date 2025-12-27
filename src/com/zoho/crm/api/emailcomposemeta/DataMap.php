@@ -27,7 +27,7 @@ class DataMap implements Model
 	 * The method to set the value to user
 	 * @param User $user An instance of User
 	 */
-	public function setUser(User $user)
+	public function setUser(?User $user)
 	{
 		$this->user=$user; 
 		$this->keyModified['user'] = 1; 
@@ -48,7 +48,7 @@ class DataMap implements Model
 	 * The method to set the value to featuresAvailable
 	 * @param FeaturesAvailable $featuresAvailable An instance of FeaturesAvailable
 	 */
-	public function setFeaturesAvailable(FeaturesAvailable $featuresAvailable)
+	public function setFeaturesAvailable(?FeaturesAvailable $featuresAvailable)
 	{
 		$this->featuresAvailable=$featuresAvailable; 
 		$this->keyModified['features_available'] = 1; 
@@ -69,7 +69,7 @@ class DataMap implements Model
 	 * The method to set the value to fromAddress
 	 * @param array $fromAddress A array
 	 */
-	public function setFromAddress(array $fromAddress)
+	public function setFromAddress(?array $fromAddress)
 	{
 		$this->fromAddress=$fromAddress; 
 		$this->keyModified['from_address'] = 1; 
@@ -90,7 +90,7 @@ class DataMap implements Model
 	 * The method to set the value to relayDomains
 	 * @param array $relayDomains A array
 	 */
-	public function setRelayDomains(array $relayDomains)
+	public function setRelayDomains(?array $relayDomains)
 	{
 		$this->relayDomains=$relayDomains; 
 		$this->keyModified['relay_domains'] = 1; 
@@ -111,7 +111,7 @@ class DataMap implements Model
 	 * The method to set the value to mergefieldsdata
 	 * @param string $mergefieldsdata A string
 	 */
-	public function setMergefieldsdata(string $mergefieldsdata)
+	public function setMergefieldsdata(?string $mergefieldsdata)
 	{
 		$this->mergefieldsdata=$mergefieldsdata; 
 		$this->keyModified['mergeFieldsData'] = 1; 

@@ -26,7 +26,7 @@ class SharingProperties implements Model
 	 * The method to set the value to schedulerStatus
 	 * @param string $schedulerStatus A string
 	 */
-	public function setSchedulerStatus(string $schedulerStatus)
+	public function setSchedulerStatus(?string $schedulerStatus)
 	{
 		$this->schedulerStatus=$schedulerStatus; 
 		$this->keyModified['scheduler_status'] = 1; 
@@ -47,7 +47,7 @@ class SharingProperties implements Model
 	 * The method to set the value to sharePreferenceEnabled
 	 * @param bool $sharePreferenceEnabled A bool
 	 */
-	public function setSharePreferenceEnabled(bool $sharePreferenceEnabled)
+	public function setSharePreferenceEnabled(?bool $sharePreferenceEnabled)
 	{
 		$this->sharePreferenceEnabled=$sharePreferenceEnabled; 
 		$this->keyModified['share_preference_enabled'] = 1; 
@@ -68,7 +68,7 @@ class SharingProperties implements Model
 	 * The method to set the value to sharePermission
 	 * @param Choice $sharePermission An instance of Choice
 	 */
-	public function setSharePermission(Choice $sharePermission)
+	public function setSharePermission(?Choice $sharePermission)
 	{
 		$this->sharePermission=$sharePermission; 
 		$this->keyModified['share_permission'] = 1; 

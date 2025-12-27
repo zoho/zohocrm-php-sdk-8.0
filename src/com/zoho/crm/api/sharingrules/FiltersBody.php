@@ -23,7 +23,7 @@ class FiltersBody implements Model
 	 * The method to set the value to filters
 	 * @param array $filters A array
 	 */
-	public function setFilters(array $filters)
+	public function setFilters(?array $filters)
 	{
 		$this->filters=$filters; 
 		$this->keyModified['filters'] = 1; 

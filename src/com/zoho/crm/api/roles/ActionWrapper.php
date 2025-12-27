@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to roles
 	 * @param array $roles A array
 	 */
-	public function setRoles(array $roles)
+	public function setRoles(?array $roles)
 	{
 		$this->roles=$roles; 
 		$this->keyModified['roles'] = 1; 

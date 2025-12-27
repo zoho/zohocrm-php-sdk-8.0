@@ -32,7 +32,7 @@ class Templates implements Model
 	 * The method to set the value to folder
 	 * @param Folder $folder An instance of Folder
 	 */
-	public function setFolder(Folder $folder)
+	public function setFolder(?Folder $folder)
 	{
 		$this->folder=$folder; 
 		$this->keyModified['folder'] = 1; 
@@ -53,7 +53,7 @@ class Templates implements Model
 	 * The method to set the value to modifiedBy
 	 * @param Folder $modifiedBy An instance of Folder
 	 */
-	public function setModifiedBy(Folder $modifiedBy)
+	public function setModifiedBy(?Folder $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -74,7 +74,7 @@ class Templates implements Model
 	 * The method to set the value to module
 	 * @param string $module A string
 	 */
-	public function setModule(string $module)
+	public function setModule(?string $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -95,7 +95,7 @@ class Templates implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -116,7 +116,7 @@ class Templates implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -137,7 +137,7 @@ class Templates implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -158,7 +158,7 @@ class Templates implements Model
 	 * The method to set the value to consentLinked
 	 * @param bool $consentLinked A bool
 	 */
-	public function setConsentLinked(bool $consentLinked)
+	public function setConsentLinked(?bool $consentLinked)
 	{
 		$this->consentLinked=$consentLinked; 
 		$this->keyModified['consent_linked'] = 1; 
@@ -179,7 +179,7 @@ class Templates implements Model
 	 * The method to set the value to favourite
 	 * @param bool $favourite A bool
 	 */
-	public function setFavourite(bool $favourite)
+	public function setFavourite(?bool $favourite)
 	{
 		$this->favourite=$favourite; 
 		$this->keyModified['favourite'] = 1; 
@@ -200,7 +200,7 @@ class Templates implements Model
 	 * The method to set the value to attachmentPresent
 	 * @param bool $attachmentPresent A bool
 	 */
-	public function setAttachmentPresent(bool $attachmentPresent)
+	public function setAttachmentPresent(?bool $attachmentPresent)
 	{
 		$this->attachmentPresent=$attachmentPresent; 
 		$this->keyModified['attachment_present'] = 1; 
@@ -221,7 +221,7 @@ class Templates implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

@@ -1,10 +1,9 @@
 <?php 
 namespace com\zoho\crm\api\users;
 
-use com\zoho\crm\api\territoryusers\ActionHandler;
 use com\zoho\crm\api\util\Model;
 
-class ActionWrapper implements ActionHandler, Model
+class ActionWrapper implements Model, ActionHandler
 {
 
 	private  $users;
@@ -24,7 +23,7 @@ class ActionWrapper implements ActionHandler, Model
 	 * The method to set the value to users
 	 * @param array $users A array
 	 */
-	public function setUsers(array $users)
+	public function setUsers(?array $users)
 	{
 		$this->users=$users; 
 		$this->keyModified['users'] = 1; 

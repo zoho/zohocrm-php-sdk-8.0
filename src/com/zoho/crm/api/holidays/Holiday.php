@@ -28,7 +28,7 @@ class Holiday implements Model
 	 * The method to set the value to year
 	 * @param int $year A int
 	 */
-	public function setYear(int $year)
+	public function setYear(?int $year)
 	{
 		$this->year=$year; 
 		$this->keyModified['year'] = 1; 
@@ -49,7 +49,7 @@ class Holiday implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -70,7 +70,7 @@ class Holiday implements Model
 	 * The method to set the value to date
 	 * @param \DateTime $date An instance of \DateTime
 	 */
-	public function setDate(\DateTime $date)
+	public function setDate(?\DateTime $date)
 	{
 		$this->date=$date; 
 		$this->keyModified['date'] = 1; 
@@ -91,7 +91,7 @@ class Holiday implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -112,7 +112,7 @@ class Holiday implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -133,7 +133,7 @@ class Holiday implements Model
 	 * The method to set the value to shiftHour
 	 * @param ShiftHour $shiftHour An instance of ShiftHour
 	 */
-	public function setShiftHour(ShiftHour $shiftHour)
+	public function setShiftHour(?ShiftHour $shiftHour)
 	{
 		$this->shiftHour=$shiftHour; 
 		$this->keyModified['shift_hour'] = 1; 

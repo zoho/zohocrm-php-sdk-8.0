@@ -27,7 +27,7 @@ class Container implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -48,7 +48,7 @@ class Container implements Model
 	 * The method to set the value to layout
 	 * @param Layouts $layout An instance of Layouts
 	 */
-	public function setLayout(Layouts $layout)
+	public function setLayout(?Layouts $layout)
 	{
 		$this->layout=$layout; 
 		$this->keyModified['layout'] = 1; 
@@ -69,7 +69,7 @@ class Container implements Model
 	 * The method to set the value to chartData
 	 * @param ChartData $chartData An instance of ChartData
 	 */
-	public function setChartData(ChartData $chartData)
+	public function setChartData(?ChartData $chartData)
 	{
 		$this->chartData=$chartData; 
 		$this->keyModified['chart_data'] = 1; 
@@ -90,7 +90,7 @@ class Container implements Model
 	 * The method to set the value to screens
 	 * @param array $screens A array
 	 */
-	public function setScreens(array $screens)
+	public function setScreens(?array $screens)
 	{
 		$this->screens=$screens; 
 		$this->keyModified['screens'] = 1; 

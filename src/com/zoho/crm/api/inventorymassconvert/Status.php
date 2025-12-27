@@ -27,7 +27,7 @@ class Status implements Model
 	 * The method to set the value to totalCount
 	 * @param int $totalCount A int
 	 */
-	public function setTotalCount(int $totalCount)
+	public function setTotalCount(?int $totalCount)
 	{
 		$this->totalCount=$totalCount; 
 		$this->keyModified['total_count'] = 1; 
@@ -48,7 +48,7 @@ class Status implements Model
 	 * The method to set the value to convertedCount
 	 * @param int $convertedCount A int
 	 */
-	public function setConvertedCount(int $convertedCount)
+	public function setConvertedCount(?int $convertedCount)
 	{
 		$this->convertedCount=$convertedCount; 
 		$this->keyModified['converted_count'] = 1; 
@@ -69,7 +69,7 @@ class Status implements Model
 	 * The method to set the value to notConvertedCount
 	 * @param int $notConvertedCount A int
 	 */
-	public function setNotConvertedCount(int $notConvertedCount)
+	public function setNotConvertedCount(?int $notConvertedCount)
 	{
 		$this->notConvertedCount=$notConvertedCount; 
 		$this->keyModified['not_converted_count'] = 1; 
@@ -90,7 +90,7 @@ class Status implements Model
 	 * The method to set the value to failedCount
 	 * @param int $failedCount A int
 	 */
-	public function setFailedCount(int $failedCount)
+	public function setFailedCount(?int $failedCount)
 	{
 		$this->failedCount=$failedCount; 
 		$this->keyModified['failed_count'] = 1; 
@@ -111,7 +111,7 @@ class Status implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to assignmentRules
 	 * @param array $assignmentRules A array
 	 */
-	public function setAssignmentRules(array $assignmentRules)
+	public function setAssignmentRules(?array $assignmentRules)
 	{
 		$this->assignmentRules=$assignmentRules; 
 		$this->keyModified['assignment_rules'] = 1; 

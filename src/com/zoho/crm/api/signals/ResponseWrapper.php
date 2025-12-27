@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to signals
 	 * @param array $signals A array
 	 */
-	public function setSignals(array $signals)
+	public function setSignals(?array $signals)
 	{
 		$this->signals=$signals; 
 		$this->keyModified['signals'] = 1; 

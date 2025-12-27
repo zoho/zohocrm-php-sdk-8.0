@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to appointmentPreferences
 	 * @param AppointmentPreference $appointmentPreferences An instance of AppointmentPreference
 	 */
-	public function setAppointmentPreferences(AppointmentPreference $appointmentPreferences)
+	public function setAppointmentPreferences(?AppointmentPreference $appointmentPreferences)
 	{
 		$this->appointmentPreferences=$appointmentPreferences; 
 		$this->keyModified['appointment_preferences'] = 1; 

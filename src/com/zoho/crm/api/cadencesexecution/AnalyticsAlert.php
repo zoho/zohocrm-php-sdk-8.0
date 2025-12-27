@@ -31,7 +31,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to emailCount
 	 * @param int $emailCount A int
 	 */
-	public function setEmailCount(int $emailCount)
+	public function setEmailCount(?int $emailCount)
 	{
 		$this->emailCount=$emailCount; 
 		$this->keyModified['email_count'] = 1; 
@@ -52,7 +52,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to clikedEmailCount
 	 * @param int $clikedEmailCount A int
 	 */
-	public function setClikedEmailCount(int $clikedEmailCount)
+	public function setClikedEmailCount(?int $clikedEmailCount)
 	{
 		$this->clikedEmailCount=$clikedEmailCount; 
 		$this->keyModified['cliked_email_count'] = 1; 
@@ -73,7 +73,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to bouncedEmailCount
 	 * @param int $bouncedEmailCount A int
 	 */
-	public function setBouncedEmailCount(int $bouncedEmailCount)
+	public function setBouncedEmailCount(?int $bouncedEmailCount)
 	{
 		$this->bouncedEmailCount=$bouncedEmailCount; 
 		$this->keyModified['bounced_email_count'] = 1; 
@@ -94,7 +94,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to repliedEmailCount
 	 * @param int $repliedEmailCount A int
 	 */
-	public function setRepliedEmailCount(int $repliedEmailCount)
+	public function setRepliedEmailCount(?int $repliedEmailCount)
 	{
 		$this->repliedEmailCount=$repliedEmailCount; 
 		$this->keyModified['replied_email_count'] = 1; 
@@ -115,7 +115,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to emailSpamCount
 	 * @param int $emailSpamCount A int
 	 */
-	public function setEmailSpamCount(int $emailSpamCount)
+	public function setEmailSpamCount(?int $emailSpamCount)
 	{
 		$this->emailSpamCount=$emailSpamCount; 
 		$this->keyModified['email_spam_count'] = 1; 
@@ -136,7 +136,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to sentEmailCount
 	 * @param int $sentEmailCount A int
 	 */
-	public function setSentEmailCount(int $sentEmailCount)
+	public function setSentEmailCount(?int $sentEmailCount)
 	{
 		$this->sentEmailCount=$sentEmailCount; 
 		$this->keyModified['sent_email_count'] = 1; 
@@ -157,7 +157,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to unsentEmailCount
 	 * @param int $unsentEmailCount A int
 	 */
-	public function setUnsentEmailCount(int $unsentEmailCount)
+	public function setUnsentEmailCount(?int $unsentEmailCount)
 	{
 		$this->unsentEmailCount=$unsentEmailCount; 
 		$this->keyModified['unsent_email_count'] = 1; 
@@ -178,7 +178,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to openedEmailCount
 	 * @param int $openedEmailCount A int
 	 */
-	public function setOpenedEmailCount(int $openedEmailCount)
+	public function setOpenedEmailCount(?int $openedEmailCount)
 	{
 		$this->openedEmailCount=$openedEmailCount; 
 		$this->keyModified['opened_email_count'] = 1; 
@@ -199,7 +199,7 @@ class AnalyticsAlert implements Model
 	 * The method to set the value to unsubscribedEmailCount
 	 * @param int $unsubscribedEmailCount A int
 	 */
-	public function setUnsubscribedEmailCount(int $unsubscribedEmailCount)
+	public function setUnsubscribedEmailCount(?int $unsubscribedEmailCount)
 	{
 		$this->unsubscribedEmailCount=$unsubscribedEmailCount; 
 		$this->keyModified['unsubscribed_email_count'] = 1; 

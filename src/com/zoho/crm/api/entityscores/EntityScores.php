@@ -33,7 +33,7 @@ class EntityScores implements Model
 	 * The method to set the value to entity
 	 * @param Entity $entity An instance of Entity
 	 */
-	public function setEntity(Entity $entity)
+	public function setEntity(?Entity $entity)
 	{
 		$this->entity=$entity; 
 		$this->keyModified['Entity'] = 1; 
@@ -54,7 +54,7 @@ class EntityScores implements Model
 	 * The method to set the value to positiveScore
 	 * @param int $positiveScore A int
 	 */
-	public function setPositiveScore(int $positiveScore)
+	public function setPositiveScore(?int $positiveScore)
 	{
 		$this->positiveScore=$positiveScore; 
 		$this->keyModified['Positive_Score'] = 1; 
@@ -75,7 +75,7 @@ class EntityScores implements Model
 	 * The method to set the value to touchPointScore
 	 * @param int $touchPointScore A int
 	 */
-	public function setTouchPointScore(int $touchPointScore)
+	public function setTouchPointScore(?int $touchPointScore)
 	{
 		$this->touchPointScore=$touchPointScore; 
 		$this->keyModified['Touch_Point_Score'] = 1; 
@@ -96,7 +96,7 @@ class EntityScores implements Model
 	 * The method to set the value to score
 	 * @param int $score A int
 	 */
-	public function setScore(int $score)
+	public function setScore(?int $score)
 	{
 		$this->score=$score; 
 		$this->keyModified['Score'] = 1; 
@@ -117,7 +117,7 @@ class EntityScores implements Model
 	 * The method to set the value to negativeScore
 	 * @param int $negativeScore A int
 	 */
-	public function setNegativeScore(int $negativeScore)
+	public function setNegativeScore(?int $negativeScore)
 	{
 		$this->negativeScore=$negativeScore; 
 		$this->keyModified['Negative_Score'] = 1; 
@@ -138,7 +138,7 @@ class EntityScores implements Model
 	 * The method to set the value to touchPointNegativeScore
 	 * @param int $touchPointNegativeScore A int
 	 */
-	public function setTouchPointNegativeScore(int $touchPointNegativeScore)
+	public function setTouchPointNegativeScore(?int $touchPointNegativeScore)
 	{
 		$this->touchPointNegativeScore=$touchPointNegativeScore; 
 		$this->keyModified['Touch_Point_Negative_Score'] = 1; 
@@ -159,7 +159,7 @@ class EntityScores implements Model
 	 * The method to set the value to scoringRule
 	 * @param ScoringRule $scoringRule An instance of ScoringRule
 	 */
-	public function setScoringRule(ScoringRule $scoringRule)
+	public function setScoringRule(?ScoringRule $scoringRule)
 	{
 		$this->scoringRule=$scoringRule; 
 		$this->keyModified['Scoring_Rule'] = 1; 
@@ -180,7 +180,7 @@ class EntityScores implements Model
 	 * The method to set the value to fieldStates
 	 * @param array $fieldStates A array
 	 */
-	public function setFieldStates(array $fieldStates)
+	public function setFieldStates(?array $fieldStates)
 	{
 		$this->fieldStates=$fieldStates; 
 		$this->keyModified['$field_states'] = 1; 
@@ -201,7 +201,7 @@ class EntityScores implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -222,7 +222,7 @@ class EntityScores implements Model
 	 * The method to set the value to ziaVisions
 	 * @param bool $ziaVisions A bool
 	 */
-	public function setZiaVisions(bool $ziaVisions)
+	public function setZiaVisions(?bool $ziaVisions)
 	{
 		$this->ziaVisions=$ziaVisions; 
 		$this->keyModified['$zia_visions'] = 1; 
@@ -243,7 +243,7 @@ class EntityScores implements Model
 	 * The method to set the value to touchPointPositiveScore
 	 * @param int $touchPointPositiveScore A int
 	 */
-	public function setTouchPointPositiveScore(int $touchPointPositiveScore)
+	public function setTouchPointPositiveScore(?int $touchPointPositiveScore)
 	{
 		$this->touchPointPositiveScore=$touchPointPositiveScore; 
 		$this->keyModified['Touch_Point_Positive_Score'] = 1; 

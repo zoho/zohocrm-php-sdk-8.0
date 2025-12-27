@@ -24,7 +24,7 @@ class BreakCustomTiming implements Model
 	 * The method to set the value to days
 	 * @param string $days A string
 	 */
-	public function setDays(string $days)
+	public function setDays(?string $days)
 	{
 		$this->days=$days; 
 		$this->keyModified['days'] = 1; 
@@ -45,7 +45,7 @@ class BreakCustomTiming implements Model
 	 * The method to set the value to breakTiming
 	 * @param array $breakTiming A array
 	 */
-	public function setBreakTiming(array $breakTiming)
+	public function setBreakTiming(?array $breakTiming)
 	{
 		$this->breakTiming=$breakTiming; 
 		$this->keyModified['break_timing'] = 1; 

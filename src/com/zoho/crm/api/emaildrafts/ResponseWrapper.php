@@ -23,7 +23,7 @@ class ResponseWrapper implements Model
 	 * The method to set the value to emailDrafts
 	 * @param array $emailDrafts A array
 	 */
-	public function setEmailDrafts(array $emailDrafts)
+	public function setEmailDrafts(?array $emailDrafts)
 	{
 		$this->emailDrafts=$emailDrafts; 
 		$this->keyModified['__email_drafts'] = 1; 

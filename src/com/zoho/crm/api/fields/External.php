@@ -25,7 +25,7 @@ class External implements Model
 	 * The method to set the value to show
 	 * @param bool $show A bool
 	 */
-	public function setShow(bool $show)
+	public function setShow(?bool $show)
 	{
 		$this->show=$show; 
 		$this->keyModified['show'] = 1; 
@@ -46,7 +46,7 @@ class External implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -67,7 +67,7 @@ class External implements Model
 	 * The method to set the value to allowMultipleConfig
 	 * @param bool $allowMultipleConfig A bool
 	 */
-	public function setAllowMultipleConfig(bool $allowMultipleConfig)
+	public function setAllowMultipleConfig(?bool $allowMultipleConfig)
 	{
 		$this->allowMultipleConfig=$allowMultipleConfig; 
 		$this->keyModified['allow_multiple_config'] = 1; 

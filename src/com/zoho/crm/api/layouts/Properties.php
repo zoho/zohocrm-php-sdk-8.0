@@ -25,7 +25,7 @@ class Properties implements Model
 	 * The method to set the value to reorderRows
 	 * @param bool $reorderRows A bool
 	 */
-	public function setReorderRows(bool $reorderRows)
+	public function setReorderRows(?bool $reorderRows)
 	{
 		$this->reorderRows=$reorderRows; 
 		$this->keyModified['reorder_rows'] = 1; 
@@ -46,7 +46,7 @@ class Properties implements Model
 	 * The method to set the value to maximumRows
 	 * @param int $maximumRows A int
 	 */
-	public function setMaximumRows(int $maximumRows)
+	public function setMaximumRows(?int $maximumRows)
 	{
 		$this->maximumRows=$maximumRows; 
 		$this->keyModified['maximum_rows'] = 1; 
@@ -67,7 +67,7 @@ class Properties implements Model
 	 * The method to set the value to tooltip
 	 * @param Tooltip $tooltip An instance of Tooltip
 	 */
-	public function setTooltip(Tooltip $tooltip)
+	public function setTooltip(?Tooltip $tooltip)
 	{
 		$this->tooltip=$tooltip; 
 		$this->keyModified['tooltip'] = 1; 

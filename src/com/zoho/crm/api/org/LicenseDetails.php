@@ -29,7 +29,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to paidExpiry
 	 * @param \DateTime $paidExpiry An instance of \DateTime
 	 */
-	public function setPaidExpiry(\DateTime $paidExpiry)
+	public function setPaidExpiry(?\DateTime $paidExpiry)
 	{
 		$this->paidExpiry=$paidExpiry; 
 		$this->keyModified['paid_expiry'] = 1; 
@@ -50,7 +50,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to usersLicensePurchased
 	 * @param int $usersLicensePurchased A int
 	 */
-	public function setUsersLicensePurchased(int $usersLicensePurchased)
+	public function setUsersLicensePurchased(?int $usersLicensePurchased)
 	{
 		$this->usersLicensePurchased=$usersLicensePurchased; 
 		$this->keyModified['users_license_purchased'] = 1; 
@@ -71,7 +71,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to trialType
 	 * @param string $trialType A string
 	 */
-	public function setTrialType(string $trialType)
+	public function setTrialType(?string $trialType)
 	{
 		$this->trialType=$trialType; 
 		$this->keyModified['trial_type'] = 1; 
@@ -92,7 +92,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to trialExpiry
 	 * @param string $trialExpiry A string
 	 */
-	public function setTrialExpiry(string $trialExpiry)
+	public function setTrialExpiry(?string $trialExpiry)
 	{
 		$this->trialExpiry=$trialExpiry; 
 		$this->keyModified['trial_expiry'] = 1; 
@@ -113,7 +113,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to paid
 	 * @param bool $paid A bool
 	 */
-	public function setPaid(bool $paid)
+	public function setPaid(?bool $paid)
 	{
 		$this->paid=$paid; 
 		$this->keyModified['paid'] = 1; 
@@ -134,7 +134,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to paidType
 	 * @param string $paidType A string
 	 */
-	public function setPaidType(string $paidType)
+	public function setPaidType(?string $paidType)
 	{
 		$this->paidType=$paidType; 
 		$this->keyModified['paid_type'] = 1; 
@@ -155,7 +155,7 @@ class LicenseDetails implements Model
 	 * The method to set the value to trialAction
 	 * @param string $trialAction A string
 	 */
-	public function setTrialAction(string $trialAction)
+	public function setTrialAction(?string $trialAction)
 	{
 		$this->trialAction=$trialAction; 
 		$this->keyModified['trial_action'] = 1; 

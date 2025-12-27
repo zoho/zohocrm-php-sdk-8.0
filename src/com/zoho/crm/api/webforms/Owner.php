@@ -8,6 +8,8 @@ class Owner implements Model
 
 	private  $name;
 	private  $id;
+	private  $systemMail;
+	private  $emailTemplate;
 	private  $keyModified=array();
 
 	/**
@@ -24,7 +26,7 @@ class Owner implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -45,10 +47,52 @@ class Owner implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the systemMail
+	 * @return bool A bool representing the systemMail
+	 */
+	public function getSystemMail()
+	{
+		return $this->systemMail; 
+
+	}
+
+	/**
+	 * The method to set the value to systemMail
+	 * @param bool $systemMail A bool
+	 */
+	public function setSystemMail(?bool $systemMail)
+	{
+		$this->systemMail=$systemMail; 
+		$this->keyModified['system_mail'] = 1; 
+
+	}
+
+	/**
+	 * The method to get the emailTemplate
+	 * @return array A array representing the emailTemplate
+	 */
+	public function getEmailTemplate()
+	{
+		return $this->emailTemplate; 
+
+	}
+
+	/**
+	 * The method to set the value to emailTemplate
+	 * @param array $emailTemplate A array
+	 */
+	public function setEmailTemplate(?array $emailTemplate)
+	{
+		$this->emailTemplate=$emailTemplate; 
+		$this->keyModified['email_template'] = 1; 
 
 	}
 

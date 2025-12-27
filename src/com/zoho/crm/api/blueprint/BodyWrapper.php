@@ -23,7 +23,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to blueprint
 	 * @param array $blueprint A array
 	 */
-	public function setBlueprint(array $blueprint)
+	public function setBlueprint(?array $blueprint)
 	{
 		$this->blueprint=$blueprint; 
 		$this->keyModified['blueprint'] = 1; 

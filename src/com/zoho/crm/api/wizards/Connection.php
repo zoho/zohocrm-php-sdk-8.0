@@ -25,7 +25,7 @@ class Connection implements Model
 	 * The method to set the value to sourceButton
 	 * @param Button $sourceButton An instance of Button
 	 */
-	public function setSourceButton(Button $sourceButton)
+	public function setSourceButton(?Button $sourceButton)
 	{
 		$this->sourceButton=$sourceButton; 
 		$this->keyModified['source_button'] = 1; 
@@ -46,7 +46,7 @@ class Connection implements Model
 	 * The method to set the value to targetScreen
 	 * @param Screen $targetScreen An instance of Screen
 	 */
-	public function setTargetScreen(Screen $targetScreen)
+	public function setTargetScreen(?Screen $targetScreen)
 	{
 		$this->targetScreen=$targetScreen; 
 		$this->keyModified['target_screen'] = 1; 
@@ -67,7 +67,7 @@ class Connection implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

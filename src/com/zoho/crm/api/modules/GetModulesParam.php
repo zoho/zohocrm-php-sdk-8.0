@@ -2,7 +2,6 @@
 namespace com\zoho\crm\api\modules;
 
 use com\zoho\crm\api\Param;
-use com\zoho\crm\api\util\Choice;
 
 class GetModulesParam
 {

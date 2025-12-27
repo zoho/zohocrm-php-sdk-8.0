@@ -23,7 +23,7 @@ class Delete implements Model
 	 * The method to set the value to permanent
 	 * @param bool $permanent A bool
 	 */
-	public function setPermanent(bool $permanent)
+	public function setPermanent(?bool $permanent)
 	{
 		$this->permanent=$permanent; 
 		$this->keyModified['permanent'] = 1; 

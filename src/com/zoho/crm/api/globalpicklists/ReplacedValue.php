@@ -24,7 +24,7 @@ class ReplacedValue implements Model
 	 * The method to set the value to displayValue
 	 * @param string $displayValue A string
 	 */
-	public function setDisplayValue(string $displayValue)
+	public function setDisplayValue(?string $displayValue)
 	{
 		$this->displayValue=$displayValue; 
 		$this->keyModified['display_value'] = 1; 
@@ -45,7 +45,7 @@ class ReplacedValue implements Model
 	 * The method to set the value to actualValue
 	 * @param string $actualValue A string
 	 */
-	public function setActualValue(string $actualValue)
+	public function setActualValue(?string $actualValue)
 	{
 		$this->actualValue=$actualValue; 
 		$this->keyModified['actual_value'] = 1; 

@@ -25,7 +25,7 @@ class MinifiedProfile implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -46,7 +46,7 @@ class MinifiedProfile implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -55,7 +55,7 @@ class MinifiedProfile implements Model
 
 	/**
 	 * The method to get the delete
-	 * @return bool A bool representing the delete
+	 * @return Delete An instance of Delete
 	 */
 	public function getDelete()
 	{
@@ -65,9 +65,9 @@ class MinifiedProfile implements Model
 
 	/**
 	 * The method to set the value to delete
-	 * @param bool $delete A bool
+	 * @param Delete $delete An instance of Delete
 	 */
-	public function setDelete($delete)
+	public function setDelete(?Delete $delete)
 	{
 		$this->delete=$delete; 
 		$this->keyModified['_delete'] = 1; 

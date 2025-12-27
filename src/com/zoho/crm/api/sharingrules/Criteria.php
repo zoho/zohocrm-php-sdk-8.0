@@ -28,7 +28,7 @@ class Criteria implements Model
 	 * The method to set the value to groupOperator
 	 * @param string $groupOperator A string
 	 */
-	public function setGroupOperator(string $groupOperator)
+	public function setGroupOperator(?string $groupOperator)
 	{
 		$this->groupOperator=$groupOperator; 
 		$this->keyModified['group_operator'] = 1; 
@@ -49,7 +49,7 @@ class Criteria implements Model
 	 * The method to set the value to group
 	 * @param array $group A array
 	 */
-	public function setGroup(array $group)
+	public function setGroup(?array $group)
 	{
 		$this->group=$group; 
 		$this->keyModified['group'] = 1; 
@@ -70,7 +70,7 @@ class Criteria implements Model
 	 * The method to set the value to comparator
 	 * @param string $comparator A string
 	 */
-	public function setComparator(string $comparator)
+	public function setComparator(?string $comparator)
 	{
 		$this->comparator=$comparator; 
 		$this->keyModified['comparator'] = 1; 
@@ -91,7 +91,7 @@ class Criteria implements Model
 	 * The method to set the value to field
 	 * @param Field $field An instance of Field
 	 */
-	public function setField(Field $field)
+	public function setField(?Field $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -132,7 +132,7 @@ class Criteria implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

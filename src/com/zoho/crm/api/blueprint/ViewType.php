@@ -26,7 +26,7 @@ class ViewType implements Model
 	 * The method to set the value to view
 	 * @param bool $view A bool
 	 */
-	public function setView(bool $view)
+	public function setView(?bool $view)
 	{
 		$this->view=$view; 
 		$this->keyModified['view'] = 1; 
@@ -47,7 +47,7 @@ class ViewType implements Model
 	 * The method to set the value to edit
 	 * @param bool $edit A bool
 	 */
-	public function setEdit(bool $edit)
+	public function setEdit(?bool $edit)
 	{
 		$this->edit=$edit; 
 		$this->keyModified['edit'] = 1; 
@@ -68,7 +68,7 @@ class ViewType implements Model
 	 * The method to set the value to create
 	 * @param bool $create A bool
 	 */
-	public function setCreate(bool $create)
+	public function setCreate(?bool $create)
 	{
 		$this->create=$create; 
 		$this->keyModified['create'] = 1; 
@@ -89,7 +89,7 @@ class ViewType implements Model
 	 * The method to set the value to quickCreate
 	 * @param bool $quickCreate A bool
 	 */
-	public function setQuickCreate(bool $quickCreate)
+	public function setQuickCreate(?bool $quickCreate)
 	{
 		$this->quickCreate=$quickCreate; 
 		$this->keyModified['quick_create'] = 1; 

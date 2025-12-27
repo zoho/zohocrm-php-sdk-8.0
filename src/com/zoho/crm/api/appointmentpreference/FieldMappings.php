@@ -26,7 +26,7 @@ class FieldMappings implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -47,7 +47,7 @@ class FieldMappings implements Model
 	 * The method to set the value to value
 	 * @param string $value A string
 	 */
-	public function setValue(string $value)
+	public function setValue(?string $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 
@@ -68,7 +68,7 @@ class FieldMappings implements Model
 	 * The method to set the value to field
 	 * @param Field $field An instance of Field
 	 */
-	public function setField(Field $field)
+	public function setField(?Field $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 

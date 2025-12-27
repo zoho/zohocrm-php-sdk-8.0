@@ -23,7 +23,7 @@ class LayoutRequestWrapper implements Model
 	 * The method to set the value to layout
 	 * @param Layout $layout An instance of Layout
 	 */
-	public function setLayout(Layout $layout)
+	public function setLayout(?Layout $layout)
 	{
 		$this->layout=$layout; 
 		$this->keyModified['layout'] = 1; 

@@ -24,7 +24,7 @@ class MassDelete implements Model
 	 * The method to set the value to module
 	 * @param Module $module An instance of Module
 	 */
-	public function setModule(Module $module)
+	public function setModule(?Module $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -45,7 +45,7 @@ class MassDelete implements Model
 	 * The method to set the value to tags
 	 * @param array $tags A array
 	 */
-	public function setTags(array $tags)
+	public function setTags(?array $tags)
 	{
 		$this->tags=$tags; 
 		$this->keyModified['tags'] = 1; 

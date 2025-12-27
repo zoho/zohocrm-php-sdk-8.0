@@ -24,7 +24,7 @@ class Info implements Model
 	 * The method to set the value to count
 	 * @param int $count A int
 	 */
-	public function setCount(int $count)
+	public function setCount(?int $count)
 	{
 		$this->count=$count; 
 		$this->keyModified['count'] = 1; 
@@ -45,7 +45,7 @@ class Info implements Model
 	 * The method to set the value to allowedCount
 	 * @param int $allowedCount A int
 	 */
-	public function setAllowedCount(int $allowedCount)
+	public function setAllowedCount(?int $allowedCount)
 	{
 		$this->allowedCount=$allowedCount; 
 		$this->keyModified['allowed_count'] = 1; 

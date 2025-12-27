@@ -27,7 +27,7 @@ class LineTax implements Model
 	 * The method to set the value to percentage
 	 * @param float $percentage A float
 	 */
-	public function setPercentage(float $percentage)
+	public function setPercentage(?float $percentage)
 	{
 		$this->percentage=$percentage; 
 		$this->keyModified['percentage'] = 1; 
@@ -48,7 +48,7 @@ class LineTax implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -69,7 +69,7 @@ class LineTax implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -90,7 +90,7 @@ class LineTax implements Model
 	 * The method to set the value to value
 	 * @param float $value A float
 	 */
-	public function setValue(float $value)
+	public function setValue(?float $value)
 	{
 		$this->value=$value; 
 		$this->keyModified['value'] = 1; 
@@ -111,7 +111,7 @@ class LineTax implements Model
 	 * The method to set the value to displayName
 	 * @param string $displayName A string
 	 */
-	public function setDisplayName(string $displayName)
+	public function setDisplayName(?string $displayName)
 	{
 		$this->displayName=$displayName; 
 		$this->keyModified['display_name'] = 1; 

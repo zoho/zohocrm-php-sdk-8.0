@@ -23,7 +23,7 @@ class LockRecord implements Model
 	 * The method to set the value to lockedReasonS
 	 * @param string $lockedReasonS A string
 	 */
-	public function setLockedReasonS(string $lockedReasonS)
+	public function setLockedReasonS(?string $lockedReasonS)
 	{
 		$this->lockedReasonS=$lockedReasonS; 
 		$this->keyModified['Locked_Reason__s'] = 1; 

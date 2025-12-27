@@ -24,7 +24,7 @@ class Company implements Model
 	 * The method to set the value to website
 	 * @param string $website A string
 	 */
-	public function setWebsite(string $website)
+	public function setWebsite(?string $website)
 	{
 		$this->website=$website; 
 		$this->keyModified['website'] = 1; 
@@ -45,7 +45,7 @@ class Company implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 

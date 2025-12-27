@@ -32,7 +32,7 @@ class JobDetail implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -53,7 +53,7 @@ class JobDetail implements Model
 	 * The method to set the value to operation
 	 * @param string $operation A string
 	 */
-	public function setOperation(string $operation)
+	public function setOperation(?string $operation)
 	{
 		$this->operation=$operation; 
 		$this->keyModified['operation'] = 1; 
@@ -74,7 +74,7 @@ class JobDetail implements Model
 	 * The method to set the value to state
 	 * @param Choice $state An instance of Choice
 	 */
-	public function setState(Choice $state)
+	public function setState(?Choice $state)
 	{
 		$this->state=$state; 
 		$this->keyModified['state'] = 1; 
@@ -95,7 +95,7 @@ class JobDetail implements Model
 	 * The method to set the value to query
 	 * @param Query $query An instance of Query
 	 */
-	public function setQuery(Query $query)
+	public function setQuery(?Query $query)
 	{
 		$this->query=$query; 
 		$this->keyModified['query'] = 1; 
@@ -116,7 +116,7 @@ class JobDetail implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -137,7 +137,7 @@ class JobDetail implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -158,7 +158,7 @@ class JobDetail implements Model
 	 * The method to set the value to result
 	 * @param Result $result An instance of Result
 	 */
-	public function setResult(Result $result)
+	public function setResult(?Result $result)
 	{
 		$this->result=$result; 
 		$this->keyModified['result'] = 1; 
@@ -167,7 +167,7 @@ class JobDetail implements Model
 
 	/**
 	 * The method to get the fileType
-	 * @return Choice An instance of Choice
+	 * @return string A string representing the fileType
 	 */
 	public function getFileType()
 	{
@@ -177,9 +177,9 @@ class JobDetail implements Model
 
 	/**
 	 * The method to set the value to fileType
-	 * @param Choice $fileType An instance of Choice
+	 * @param string $fileType A string
 	 */
-	public function setFileType(Choice $fileType)
+	public function setFileType(?string $fileType)
 	{
 		$this->fileType=$fileType; 
 		$this->keyModified['file_type'] = 1; 

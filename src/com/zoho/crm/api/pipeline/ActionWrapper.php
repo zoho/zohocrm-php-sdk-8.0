@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to pipeline
 	 * @param array $pipeline A array
 	 */
-	public function setPipeline(array $pipeline)
+	public function setPipeline(?array $pipeline)
 	{
 		$this->pipeline=$pipeline; 
 		$this->keyModified['pipeline'] = 1; 

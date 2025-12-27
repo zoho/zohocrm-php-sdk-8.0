@@ -26,7 +26,7 @@ class Merge implements Model
 	 * The method to set the value to jobId
 	 * @param string $jobId A string
 	 */
-	public function setJobId(string $jobId)
+	public function setJobId(?string $jobId)
 	{
 		$this->jobId=$jobId; 
 		$this->keyModified['job_id'] = 1; 
@@ -47,7 +47,7 @@ class Merge implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -68,7 +68,7 @@ class Merge implements Model
 	 * The method to set the value to data
 	 * @param array $data A array
 	 */
-	public function setData(array $data)
+	public function setData(?array $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -89,7 +89,7 @@ class Merge implements Model
 	 * The method to set the value to masterRecordFields
 	 * @param array $masterRecordFields A array
 	 */
-	public function setMasterRecordFields(array $masterRecordFields)
+	public function setMasterRecordFields(?array $masterRecordFields)
 	{
 		$this->masterRecordFields=$masterRecordFields; 
 		$this->keyModified['master_record_fields'] = 1; 

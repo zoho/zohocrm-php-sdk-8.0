@@ -23,7 +23,7 @@ class Info implements Model
 	 * The method to set the value to licenseLimit
 	 * @param int $licenseLimit A int
 	 */
-	public function setLicenseLimit(int $licenseLimit)
+	public function setLicenseLimit(?int $licenseLimit)
 	{
 		$this->licenseLimit=$licenseLimit; 
 		$this->keyModified['license_limit'] = 1; 

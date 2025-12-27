@@ -6,8 +6,30 @@ use com\zoho\crm\api\util\Model;
 class AutoResponseRule implements Model
 {
 
+	private  $name;
 	private  $id;
 	private  $keyModified=array();
+
+	/**
+	 * The method to get the name
+	 * @return string A string representing the name
+	 */
+	public function getName()
+	{
+		return $this->name; 
+
+	}
+
+	/**
+	 * The method to set the value to name
+	 * @param string $name A string
+	 */
+	public function setName(?string $name)
+	{
+		$this->name=$name; 
+		$this->keyModified['name'] = 1; 
+
+	}
 
 	/**
 	 * The method to get the id
@@ -23,7 +45,7 @@ class AutoResponseRule implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to sendMailMerge
 	 * @param array $sendMailMerge A array
 	 */
-	public function setSendMailMerge(array $sendMailMerge)
+	public function setSendMailMerge(?array $sendMailMerge)
 	{
 		$this->sendMailMerge=$sendMailMerge; 
 		$this->keyModified['send_mail_merge'] = 1; 

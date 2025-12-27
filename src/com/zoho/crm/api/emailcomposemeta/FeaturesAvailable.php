@@ -39,7 +39,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to zsurveyEnabled
 	 * @param Choice $zsurveyEnabled An instance of Choice
 	 */
-	public function setZsurveyEnabled(Choice $zsurveyEnabled)
+	public function setZsurveyEnabled(?Choice $zsurveyEnabled)
 	{
 		$this->zsurveyEnabled=$zsurveyEnabled; 
 		$this->keyModified['zsurvey_enabled'] = 1; 
@@ -60,7 +60,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to inlineComposeWindow
 	 * @param Choice $inlineComposeWindow An instance of Choice
 	 */
-	public function setInlineComposeWindow(Choice $inlineComposeWindow)
+	public function setInlineComposeWindow(?Choice $inlineComposeWindow)
 	{
 		$this->inlineComposeWindow=$inlineComposeWindow; 
 		$this->keyModified['inline_compose_window'] = 1; 
@@ -81,7 +81,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to scheduleMail
 	 * @param Choice $scheduleMail An instance of Choice
 	 */
-	public function setScheduleMail(Choice $scheduleMail)
+	public function setScheduleMail(?Choice $scheduleMail)
 	{
 		$this->scheduleMail=$scheduleMail; 
 		$this->keyModified['Schedule_Mail'] = 1; 
@@ -102,7 +102,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to emailCloudPicker
 	 * @param Choice $emailCloudPicker An instance of Choice
 	 */
-	public function setEmailCloudPicker(Choice $emailCloudPicker)
+	public function setEmailCloudPicker(?Choice $emailCloudPicker)
 	{
 		$this->emailCloudPicker=$emailCloudPicker; 
 		$this->keyModified['EMAIL_CLOUD_PICKER'] = 1; 
@@ -123,7 +123,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to formIntegrationEnabled
 	 * @param Choice $formIntegrationEnabled An instance of Choice
 	 */
-	public function setFormIntegrationEnabled(Choice $formIntegrationEnabled)
+	public function setFormIntegrationEnabled(?Choice $formIntegrationEnabled)
 	{
 		$this->formIntegrationEnabled=$formIntegrationEnabled; 
 		$this->keyModified['form_integration_enabled'] = 1; 
@@ -144,7 +144,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to isprivacyenabled
 	 * @param Choice $isprivacyenabled An instance of Choice
 	 */
-	public function setIsprivacyenabled(Choice $isprivacyenabled)
+	public function setIsprivacyenabled(?Choice $isprivacyenabled)
 	{
 		$this->isprivacyenabled=$isprivacyenabled; 
 		$this->keyModified['isPrivacyEnabled'] = 1; 
@@ -165,7 +165,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to autoSuggestion
 	 * @param Choice $autoSuggestion An instance of Choice
 	 */
-	public function setAutoSuggestion(Choice $autoSuggestion)
+	public function setAutoSuggestion(?Choice $autoSuggestion)
 	{
 		$this->autoSuggestion=$autoSuggestion; 
 		$this->keyModified['auto_suggestion'] = 1; 
@@ -186,7 +186,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to unsubscribeLink
 	 * @param Choice $unsubscribeLink An instance of Choice
 	 */
-	public function setUnsubscribeLink(Choice $unsubscribeLink)
+	public function setUnsubscribeLink(?Choice $unsubscribeLink)
 	{
 		$this->unsubscribeLink=$unsubscribeLink; 
 		$this->keyModified['UNSUBSCRIBE_LINK'] = 1; 
@@ -207,7 +207,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to bestTimeToContact
 	 * @param Choice $bestTimeToContact An instance of Choice
 	 */
-	public function setBestTimeToContact(Choice $bestTimeToContact)
+	public function setBestTimeToContact(?Choice $bestTimeToContact)
 	{
 		$this->bestTimeToContact=$bestTimeToContact; 
 		$this->keyModified['best_time_to_contact'] = 1; 
@@ -228,7 +228,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to attachTeamdrive
 	 * @param Choice $attachTeamdrive An instance of Choice
 	 */
-	public function setAttachTeamdrive(Choice $attachTeamdrive)
+	public function setAttachTeamdrive(?Choice $attachTeamdrive)
 	{
 		$this->attachTeamdrive=$attachTeamdrive; 
 		$this->keyModified['attach_teamdrive'] = 1; 
@@ -249,7 +249,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to islivedeskenabled
 	 * @param Choice $islivedeskenabled An instance of Choice
 	 */
-	public function setIslivedeskenabled(Choice $islivedeskenabled)
+	public function setIslivedeskenabled(?Choice $islivedeskenabled)
 	{
 		$this->islivedeskenabled=$islivedeskenabled; 
 		$this->keyModified['isLiveDeskEnabled'] = 1; 
@@ -270,7 +270,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to subjectLineSuggestion
 	 * @param bool $subjectLineSuggestion A bool
 	 */
-	public function setSubjectLineSuggestion(bool $subjectLineSuggestion)
+	public function setSubjectLineSuggestion(?bool $subjectLineSuggestion)
 	{
 		$this->subjectLineSuggestion=$subjectLineSuggestion; 
 		$this->keyModified['subject_line_suggestion'] = 1; 
@@ -291,7 +291,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to emailPreference
 	 * @param bool $emailPreference A bool
 	 */
-	public function setEmailPreference(bool $emailPreference)
+	public function setEmailPreference(?bool $emailPreference)
 	{
 		$this->emailPreference=$emailPreference; 
 		$this->keyModified['EMAIL_PREFERENCE'] = 1; 
@@ -312,7 +312,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to attachment
 	 * @param bool $attachment A bool
 	 */
-	public function setAttachment(bool $attachment)
+	public function setAttachment(?bool $attachment)
 	{
 		$this->attachment=$attachment; 
 		$this->keyModified['ATTACHMENT'] = 1; 
@@ -333,7 +333,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to mandateunsublink
 	 * @param bool $mandateunsublink A bool
 	 */
-	public function setMandateunsublink(bool $mandateunsublink)
+	public function setMandateunsublink(?bool $mandateunsublink)
 	{
 		$this->mandateunsublink=$mandateunsublink; 
 		$this->keyModified['mandateUnsubLink'] = 1; 
@@ -354,7 +354,7 @@ class FeaturesAvailable implements Model
 	 * The method to set the value to oldComposeRevert
 	 * @param bool $oldComposeRevert A bool
 	 */
-	public function setOldComposeRevert(bool $oldComposeRevert)
+	public function setOldComposeRevert(?bool $oldComposeRevert)
 	{
 		$this->oldComposeRevert=$oldComposeRevert; 
 		$this->keyModified['OLD_COMPOSE_REVERT'] = 1; 

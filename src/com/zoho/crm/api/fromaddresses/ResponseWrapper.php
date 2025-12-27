@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to fromAddresses
 	 * @param array $fromAddresses A array
 	 */
-	public function setFromAddresses(array $fromAddresses)
+	public function setFromAddresses(?array $fromAddresses)
 	{
 		$this->fromAddresses=$fromAddresses; 
 		$this->keyModified['from_addresses'] = 1; 

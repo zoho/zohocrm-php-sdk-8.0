@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to emailsSharingDetails
 	 * @param array $emailsSharingDetails A array
 	 */
-	public function setEmailsSharingDetails(array $emailsSharingDetails)
+	public function setEmailsSharingDetails(?array $emailsSharingDetails)
 	{
 		$this->emailsSharingDetails=$emailsSharingDetails; 
 		$this->keyModified['__emails_sharing_details'] = 1; 

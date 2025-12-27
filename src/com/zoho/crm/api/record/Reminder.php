@@ -25,7 +25,7 @@ class Reminder implements Model
 	 * The method to set the value to period
 	 * @param string $period A string
 	 */
-	public function setPeriod(string $period)
+	public function setPeriod(?string $period)
 	{
 		$this->period=$period; 
 		$this->keyModified['period'] = 1; 
@@ -46,7 +46,7 @@ class Reminder implements Model
 	 * The method to set the value to unit
 	 * @param int $unit A int
 	 */
-	public function setUnit(int $unit)
+	public function setUnit(?int $unit)
 	{
 		$this->unit=$unit; 
 		$this->keyModified['unit'] = 1; 
@@ -67,7 +67,7 @@ class Reminder implements Model
 	 * The method to set the value to time
 	 * @param string $time A string
 	 */
-	public function setTime(string $time)
+	public function setTime(?string $time)
 	{
 		$this->time=$time; 
 		$this->keyModified['time'] = 1; 

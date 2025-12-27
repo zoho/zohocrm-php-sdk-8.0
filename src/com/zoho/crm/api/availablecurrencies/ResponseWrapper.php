@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to availableCurrencies
 	 * @param array $availableCurrencies A array
 	 */
-	public function setAvailableCurrencies(array $availableCurrencies)
+	public function setAvailableCurrencies(?array $availableCurrencies)
 	{
 		$this->availableCurrencies=$availableCurrencies; 
 		$this->keyModified['available_currencies'] = 1; 

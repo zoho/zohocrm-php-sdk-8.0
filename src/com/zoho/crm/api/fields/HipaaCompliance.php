@@ -24,7 +24,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to restrictedInExport
 	 * @param bool $restrictedInExport A bool
 	 */
-	public function setRestrictedInExport(bool $restrictedInExport)
+	public function setRestrictedInExport(?bool $restrictedInExport)
 	{
 		$this->restrictedInExport=$restrictedInExport; 
 		$this->keyModified['restricted_in_export'] = 1; 
@@ -45,7 +45,7 @@ class HipaaCompliance implements Model
 	 * The method to set the value to restricted
 	 * @param bool $restricted A bool
 	 */
-	public function setRestricted(bool $restricted)
+	public function setRestricted(?bool $restricted)
 	{
 		$this->restricted=$restricted; 
 		$this->keyModified['restricted'] = 1; 

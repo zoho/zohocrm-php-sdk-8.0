@@ -24,7 +24,7 @@ class Limit implements Model
 	 * The method to set the value to total
 	 * @param int $total A int
 	 */
-	public function setTotal(int $total)
+	public function setTotal(?int $total)
 	{
 		$this->total=$total; 
 		$this->keyModified['total'] = 1; 
@@ -45,7 +45,7 @@ class Limit implements Model
 	 * The method to set the value to editionLimit
 	 * @param int $editionLimit A int
 	 */
-	public function setEditionLimit(int $editionLimit)
+	public function setEditionLimit(?int $editionLimit)
 	{
 		$this->editionLimit=$editionLimit; 
 		$this->keyModified['edition_limit'] = 1; 

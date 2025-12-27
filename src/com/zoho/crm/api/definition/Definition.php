@@ -25,7 +25,7 @@ class Definition implements Model
 	 * The method to set the value to rootElementName
 	 * @param string $rootElementName A string
 	 */
-	public function setRootElementName(string $rootElementName)
+	public function setRootElementName(?string $rootElementName)
 	{
 		$this->rootElementName=$rootElementName; 
 		$this->keyModified['root_element_name'] = 1; 
@@ -46,7 +46,7 @@ class Definition implements Model
 	 * The method to set the value to extradetails
 	 * @param array $extradetails A array
 	 */
-	public function setExtradetails(array $extradetails)
+	public function setExtradetails(?array $extradetails)
 	{
 		$this->extradetails=$extradetails; 
 		$this->keyModified['extraDetails'] = 1; 
@@ -67,7 +67,7 @@ class Definition implements Model
 	 * The method to set the value to properties
 	 * @param array $properties A array
 	 */
-	public function setProperties(array $properties)
+	public function setProperties(?array $properties)
 	{
 		$this->properties=$properties; 
 		$this->keyModified['properties'] = 1; 

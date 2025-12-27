@@ -35,7 +35,7 @@ class LeadConverter implements Model
 	 * The method to set the value to overwrite
 	 * @param bool $overwrite A bool
 	 */
-	public function setOverwrite(bool $overwrite)
+	public function setOverwrite(?bool $overwrite)
 	{
 		$this->overwrite=$overwrite; 
 		$this->keyModified['overwrite'] = 1; 
@@ -56,7 +56,7 @@ class LeadConverter implements Model
 	 * The method to set the value to notifyLeadOwner
 	 * @param bool $notifyLeadOwner A bool
 	 */
-	public function setNotifyLeadOwner(bool $notifyLeadOwner)
+	public function setNotifyLeadOwner(?bool $notifyLeadOwner)
 	{
 		$this->notifyLeadOwner=$notifyLeadOwner; 
 		$this->keyModified['notify_lead_owner'] = 1; 
@@ -77,7 +77,7 @@ class LeadConverter implements Model
 	 * The method to set the value to notifyNewEntityOwner
 	 * @param bool $notifyNewEntityOwner A bool
 	 */
-	public function setNotifyNewEntityOwner(bool $notifyNewEntityOwner)
+	public function setNotifyNewEntityOwner(?bool $notifyNewEntityOwner)
 	{
 		$this->notifyNewEntityOwner=$notifyNewEntityOwner; 
 		$this->keyModified['notify_new_entity_owner'] = 1; 
@@ -98,7 +98,7 @@ class LeadConverter implements Model
 	 * The method to set the value to moveAttachmentsTo
 	 * @param MoveAttachmentsTo $moveAttachmentsTo An instance of MoveAttachmentsTo
 	 */
-	public function setMoveAttachmentsTo(MoveAttachmentsTo $moveAttachmentsTo)
+	public function setMoveAttachmentsTo(?MoveAttachmentsTo $moveAttachmentsTo)
 	{
 		$this->moveAttachmentsTo=$moveAttachmentsTo; 
 		$this->keyModified['move_attachments_to'] = 1; 
@@ -119,7 +119,7 @@ class LeadConverter implements Model
 	 * The method to set the value to accounts
 	 * @param Record $accounts An instance of Record
 	 */
-	public function setAccounts(Record $accounts)
+	public function setAccounts(?Record $accounts)
 	{
 		$this->accounts=$accounts; 
 		$this->keyModified['Accounts'] = 1; 
@@ -140,7 +140,7 @@ class LeadConverter implements Model
 	 * The method to set the value to contacts
 	 * @param Record $contacts An instance of Record
 	 */
-	public function setContacts(Record $contacts)
+	public function setContacts(?Record $contacts)
 	{
 		$this->contacts=$contacts; 
 		$this->keyModified['Contacts'] = 1; 
@@ -161,7 +161,7 @@ class LeadConverter implements Model
 	 * The method to set the value to assignTo
 	 * @param MinifiedUser $assignTo An instance of MinifiedUser
 	 */
-	public function setAssignTo(MinifiedUser $assignTo)
+	public function setAssignTo(?MinifiedUser $assignTo)
 	{
 		$this->assignTo=$assignTo; 
 		$this->keyModified['assign_to'] = 1; 
@@ -182,7 +182,7 @@ class LeadConverter implements Model
 	 * The method to set the value to deals
 	 * @param Record $deals An instance of Record
 	 */
-	public function setDeals(Record $deals)
+	public function setDeals(?Record $deals)
 	{
 		$this->deals=$deals; 
 		$this->keyModified['Deals'] = 1; 
@@ -203,7 +203,7 @@ class LeadConverter implements Model
 	 * The method to set the value to addToExistingRecord
 	 * @param Choice $addToExistingRecord An instance of Choice
 	 */
-	public function setAddToExistingRecord(Choice $addToExistingRecord)
+	public function setAddToExistingRecord(?Choice $addToExistingRecord)
 	{
 		$this->addToExistingRecord=$addToExistingRecord; 
 		$this->keyModified['add_to_existing_record'] = 1; 
@@ -224,7 +224,7 @@ class LeadConverter implements Model
 	 * The method to set the value to carryOverTags
 	 * @param CarryOverTags $carryOverTags An instance of CarryOverTags
 	 */
-	public function setCarryOverTags(CarryOverTags $carryOverTags)
+	public function setCarryOverTags(?CarryOverTags $carryOverTags)
 	{
 		$this->carryOverTags=$carryOverTags; 
 		$this->keyModified['carry_over_tags'] = 1; 

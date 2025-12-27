@@ -35,7 +35,7 @@ class Role implements Model
 	 * The method to set the value to displayLabel
 	 * @param string $displayLabel A string
 	 */
-	public function setDisplayLabel(string $displayLabel)
+	public function setDisplayLabel(?string $displayLabel)
 	{
 		$this->displayLabel=$displayLabel; 
 		$this->keyModified['display_label'] = 1; 
@@ -56,7 +56,7 @@ class Role implements Model
 	 * The method to set the value to forecastManager
 	 * @param ReportingTo $forecastManager An instance of ReportingTo
 	 */
-	public function setForecastManager(ReportingTo $forecastManager)
+	public function setForecastManager(?ReportingTo $forecastManager)
 	{
 		$this->forecastManager=$forecastManager; 
 		$this->keyModified['forecast_manager'] = 1; 
@@ -77,7 +77,7 @@ class Role implements Model
 	 * The method to set the value to reportingTo
 	 * @param ReportingTo $reportingTo An instance of ReportingTo
 	 */
-	public function setReportingTo(ReportingTo $reportingTo)
+	public function setReportingTo(?ReportingTo $reportingTo)
 	{
 		$this->reportingTo=$reportingTo; 
 		$this->keyModified['reporting_to'] = 1; 
@@ -98,7 +98,7 @@ class Role implements Model
 	 * The method to set the value to shareWithPeers
 	 * @param bool $shareWithPeers A bool
 	 */
-	public function setShareWithPeers(bool $shareWithPeers)
+	public function setShareWithPeers(?bool $shareWithPeers)
 	{
 		$this->shareWithPeers=$shareWithPeers; 
 		$this->keyModified['share_with_peers'] = 1; 
@@ -119,7 +119,7 @@ class Role implements Model
 	 * The method to set the value to description
 	 * @param string $description A string
 	 */
-	public function setDescription(string $description)
+	public function setDescription(?string $description)
 	{
 		$this->description=$description; 
 		$this->keyModified['description'] = 1; 
@@ -140,7 +140,7 @@ class Role implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -161,7 +161,7 @@ class Role implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -182,7 +182,7 @@ class Role implements Model
 	 * The method to set the value to createdByS
 	 * @param MinifiedUser $createdByS An instance of MinifiedUser
 	 */
-	public function setCreatedByS(MinifiedUser $createdByS)
+	public function setCreatedByS(?MinifiedUser $createdByS)
 	{
 		$this->createdByS=$createdByS; 
 		$this->keyModified['created_by__s'] = 1; 
@@ -203,7 +203,7 @@ class Role implements Model
 	 * The method to set the value to modifiedByS
 	 * @param MinifiedUser $modifiedByS An instance of MinifiedUser
 	 */
-	public function setModifiedByS(MinifiedUser $modifiedByS)
+	public function setModifiedByS(?MinifiedUser $modifiedByS)
 	{
 		$this->modifiedByS=$modifiedByS; 
 		$this->keyModified['modified_by__s'] = 1; 
@@ -224,7 +224,7 @@ class Role implements Model
 	 * The method to set the value to modifiedTimeS
 	 * @param \DateTime $modifiedTimeS An instance of \DateTime
 	 */
-	public function setModifiedTimeS(\DateTime $modifiedTimeS)
+	public function setModifiedTimeS(?\DateTime $modifiedTimeS)
 	{
 		$this->modifiedTimeS=$modifiedTimeS; 
 		$this->keyModified['modified_time__s'] = 1; 
@@ -245,7 +245,7 @@ class Role implements Model
 	 * The method to set the value to createdTimeS
 	 * @param \DateTime $createdTimeS An instance of \DateTime
 	 */
-	public function setCreatedTimeS(\DateTime $createdTimeS)
+	public function setCreatedTimeS(?\DateTime $createdTimeS)
 	{
 		$this->createdTimeS=$createdTimeS; 
 		$this->keyModified['created_time__s'] = 1; 
@@ -266,7 +266,7 @@ class Role implements Model
 	 * The method to set the value to adminUser
 	 * @param bool $adminUser A bool
 	 */
-	public function setAdminUser(bool $adminUser)
+	public function setAdminUser(?bool $adminUser)
 	{
 		$this->adminUser=$adminUser; 
 		$this->keyModified['admin_user'] = 1; 

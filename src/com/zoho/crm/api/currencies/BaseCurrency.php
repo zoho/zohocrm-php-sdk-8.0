@@ -36,7 +36,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to isoCode
 	 * @param string $isoCode A string
 	 */
-	public function setIsoCode(string $isoCode)
+	public function setIsoCode(?string $isoCode)
 	{
 		$this->isoCode=$isoCode; 
 		$this->keyModified['iso_code'] = 1; 
@@ -57,7 +57,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to symbol
 	 * @param string $symbol A string
 	 */
-	public function setSymbol(string $symbol)
+	public function setSymbol(?string $symbol)
 	{
 		$this->symbol=$symbol; 
 		$this->keyModified['symbol'] = 1; 
@@ -78,7 +78,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -99,7 +99,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to isActive
 	 * @param bool $isActive A bool
 	 */
-	public function setIsActive(bool $isActive)
+	public function setIsActive(?bool $isActive)
 	{
 		$this->isActive=$isActive; 
 		$this->keyModified['is_active'] = 1; 
@@ -120,7 +120,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to exchangeRate
 	 * @param string $exchangeRate A string
 	 */
-	public function setExchangeRate(string $exchangeRate)
+	public function setExchangeRate(?string $exchangeRate)
 	{
 		$this->exchangeRate=$exchangeRate; 
 		$this->keyModified['exchange_rate'] = 1; 
@@ -141,7 +141,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to format
 	 * @param Format $format An instance of Format
 	 */
-	public function setFormat(Format $format)
+	public function setFormat(?Format $format)
 	{
 		$this->format=$format; 
 		$this->keyModified['format'] = 1; 
@@ -162,7 +162,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -183,7 +183,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to prefixSymbol
 	 * @param bool $prefixSymbol A bool
 	 */
-	public function setPrefixSymbol(bool $prefixSymbol)
+	public function setPrefixSymbol(?bool $prefixSymbol)
 	{
 		$this->prefixSymbol=$prefixSymbol; 
 		$this->keyModified['prefix_symbol'] = 1; 
@@ -204,7 +204,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to isBase
 	 * @param bool $isBase A bool
 	 */
-	public function setIsBase(bool $isBase)
+	public function setIsBase(?bool $isBase)
 	{
 		$this->isBase=$isBase; 
 		$this->keyModified['is_base'] = 1; 
@@ -225,7 +225,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -246,7 +246,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -267,7 +267,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -288,7 +288,7 @@ class BaseCurrency implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 

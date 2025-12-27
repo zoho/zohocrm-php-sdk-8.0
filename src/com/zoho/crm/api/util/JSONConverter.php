@@ -396,7 +396,7 @@ class JSONConverter extends Converter
                             $isArray = true;
                             foreach (array_keys($keyValue) as $key)
                             {
-                                if (gettype($key) == strtolower(Constants::STRING_NAMESPACE))
+                                if (!is_object($key))
                                 {
                                     $isArray = false;
                                 }
@@ -599,14 +599,14 @@ class JSONConverter extends Converter
         }
     }
 
-    public function getWrappedResponse($response, $pack)
+    public function getWrappedResponse($response, $pack, $headers)
     {
-        list ($headers, $content) = explode("\r\n\r\n", strval($response), 2);
-        $responseObject = json_decode($content, true);
-        if ($responseObject == NULL && $content != null && $content != "{}")
+        // list ($headers, $content) = explode("\r\n\r\n", strval($response), 2);
+        $responseObject = json_decode($response, true);
+        if ($responseObject == NULL && $response != null && $response != "{}")
         {
-            list ($headers, $content) = explode("\r\n\r\n", $content, 2);
-            $responseObject = json_decode($content, true);
+            list ($headers, $content) = explode("\r\n\r\n", $response, 2);
+            $responseObject = json_decode($response, true);
         }
         if ($responseObject != null)
         {

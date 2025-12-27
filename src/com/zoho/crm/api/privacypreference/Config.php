@@ -25,7 +25,7 @@ class Config implements Model
 	 * The method to set the value to tpt
 	 * @param array $tpt A array
 	 */
-	public function setTpt(array $tpt)
+	public function setTpt(?array $tpt)
 	{
 		$this->tpt=$tpt; 
 		$this->keyModified['tpt'] = 1; 
@@ -46,7 +46,7 @@ class Config implements Model
 	 * The method to set the value to section
 	 * @param array $section A array
 	 */
-	public function setSection(array $section)
+	public function setSection(?array $section)
 	{
 		$this->section=$section; 
 		$this->keyModified['section'] = 1; 
@@ -67,7 +67,7 @@ class Config implements Model
 	 * The method to set the value to zohoInteg
 	 * @param array $zohoInteg A array
 	 */
-	public function setZohoInteg(array $zohoInteg)
+	public function setZohoInteg(?array $zohoInteg)
 	{
 		$this->zohoInteg=$zohoInteg; 
 		$this->keyModified['zoho_integ'] = 1; 

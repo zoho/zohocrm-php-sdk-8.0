@@ -25,7 +25,7 @@ class ConnectedDetails implements Model
 	 * The method to set the value to module
 	 * @param LinkingModule $module An instance of LinkingModule
 	 */
-	public function setModule(LinkingModule $module)
+	public function setModule(?LinkingModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -46,7 +46,7 @@ class ConnectedDetails implements Model
 	 * The method to set the value to field
 	 * @param LookupField $field An instance of LookupField
 	 */
-	public function setField(LookupField $field)
+	public function setField(?LookupField $field)
 	{
 		$this->field=$field; 
 		$this->keyModified['field'] = 1; 
@@ -67,7 +67,7 @@ class ConnectedDetails implements Model
 	 * The method to set the value to layouts
 	 * @param array $layouts A array
 	 */
-	public function setLayouts(array $layouts)
+	public function setLayouts(?array $layouts)
 	{
 		$this->layouts=$layouts; 
 		$this->keyModified['layouts'] = 1; 

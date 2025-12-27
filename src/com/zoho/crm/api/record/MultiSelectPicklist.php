@@ -24,7 +24,7 @@ class MultiSelectPicklist implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -45,7 +45,7 @@ class MultiSelectPicklist implements Model
 	 * The method to set the value to fieldname
 	 * @param array $fieldname A array
 	 */
-	public function setFieldname(array $fieldname)
+	public function setFieldname(?array $fieldname)
 	{
 		$this->fieldname=$fieldname; 
 		$this->keyModified['fieldName'] = 1; 

@@ -24,7 +24,7 @@ class CvidBodyWrapper implements Model
 	 * The method to set the value to cvid
 	 * @param string $cvid A string
 	 */
-	public function setCvid(string $cvid)
+	public function setCvid(?string $cvid)
 	{
 		$this->cvid=$cvid; 
 		$this->keyModified['cvid'] = 1; 
@@ -45,7 +45,7 @@ class CvidBodyWrapper implements Model
 	 * The method to set the value to territory
 	 * @param Territory $territory An instance of Territory
 	 */
-	public function setTerritory(Territory $territory)
+	public function setTerritory(?Territory $territory)
 	{
 		$this->territory=$territory; 
 		$this->keyModified['territory'] = 1; 

@@ -25,7 +25,7 @@ class FontAttributes implements Model
 	 * The method to set the value to size
 	 * @param int $size A int
 	 */
-	public function setSize(int $size)
+	public function setSize(?int $size)
 	{
 		$this->size=$size; 
 		$this->keyModified['size'] = 1; 
@@ -46,7 +46,7 @@ class FontAttributes implements Model
 	 * The method to set the value to color
 	 * @param string $color A string
 	 */
-	public function setColor(string $color)
+	public function setColor(?string $color)
 	{
 		$this->color=$color; 
 		$this->keyModified['color'] = 1; 
@@ -67,7 +67,7 @@ class FontAttributes implements Model
 	 * The method to set the value to family
 	 * @param string $family A string
 	 */
-	public function setFamily(string $family)
+	public function setFamily(?string $family)
 	{
 		$this->family=$family; 
 		$this->keyModified['family'] = 1; 

@@ -257,7 +257,7 @@ class Constants
     const SET_API_URL_EXCEPTION = "Exception in setting API URL";
     const AUTHENTICATION_EXCEPTION = "Exception in authenticating current request : ";
     const FORM_REQUEST_EXCEPTION = "Exception in forming request body : ";
-    const SDK_VERSION = "4.0.0";
+    const SDK_VERSION = "5.0.0";
     const API_CALL_EXCEPTION = "Exception in current API call execution : ";
     const HTTP = "http";
     const CONTENT_API_URL = "content.zohoapis.com";

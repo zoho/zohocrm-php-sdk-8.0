@@ -27,7 +27,7 @@ class Address implements Model
 	 * The method to set the value to continent
 	 * @param string $continent A string
 	 */
-	public function setContinent(string $continent)
+	public function setContinent(?string $continent)
 	{
 		$this->continent=$continent; 
 		$this->keyModified['continent'] = 1; 
@@ -48,7 +48,7 @@ class Address implements Model
 	 * The method to set the value to country
 	 * @param string $country A string
 	 */
-	public function setCountry(string $country)
+	public function setCountry(?string $country)
 	{
 		$this->country=$country; 
 		$this->keyModified['country'] = 1; 
@@ -69,7 +69,7 @@ class Address implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -90,7 +90,7 @@ class Address implements Model
 	 * The method to set the value to region
 	 * @param string $region A string
 	 */
-	public function setRegion(string $region)
+	public function setRegion(?string $region)
 	{
 		$this->region=$region; 
 		$this->keyModified['region'] = 1; 
@@ -111,7 +111,7 @@ class Address implements Model
 	 * The method to set the value to primary
 	 * @param bool $primary A bool
 	 */
-	public function setPrimary(bool $primary)
+	public function setPrimary(?bool $primary)
 	{
 		$this->primary=$primary; 
 		$this->keyModified['primary'] = 1; 

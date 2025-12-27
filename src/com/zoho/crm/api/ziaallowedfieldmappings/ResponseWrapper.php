@@ -23,7 +23,7 @@ class ResponseWrapper implements Model
 	 * The method to set the value to allowedFieldMappings
 	 * @param AllowedFieldMap $allowedFieldMappings An instance of AllowedFieldMap
 	 */
-	public function setAllowedFieldMappings(AllowedFieldMap $allowedFieldMappings)
+	public function setAllowedFieldMappings(?AllowedFieldMap $allowedFieldMappings)
 	{
 		$this->allowedFieldMappings=$allowedFieldMappings; 
 		$this->keyModified['allowed_field_mappings'] = 1; 

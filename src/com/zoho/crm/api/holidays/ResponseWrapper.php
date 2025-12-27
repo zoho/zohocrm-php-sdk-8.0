@@ -24,7 +24,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to holidays
 	 * @param array $holidays A array
 	 */
-	public function setHolidays(array $holidays)
+	public function setHolidays(?array $holidays)
 	{
 		$this->holidays=$holidays; 
 		$this->keyModified['holidays'] = 1; 
@@ -45,7 +45,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to info
 	 * @param Info $info An instance of Info
 	 */
-	public function setInfo(Info $info)
+	public function setInfo(?Info $info)
 	{
 		$this->info=$info; 
 		$this->keyModified['info'] = 1; 

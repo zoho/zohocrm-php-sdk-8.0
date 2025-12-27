@@ -24,7 +24,7 @@ class Users extends Record implements Model
 	 * The method to set the value to country
 	 * @param string $country A string
 	 */
-	public function setCountry(string $country)
+	public function setCountry(?string $country)
 	{
 		$this->addKeyValue('country', $country); 
 
@@ -44,7 +44,7 @@ class Users extends Record implements Model
 	 * The method to set the value to language
 	 * @param string $language A string
 	 */
-	public function setLanguage(string $language)
+	public function setLanguage(?string $language)
 	{
 		$this->addKeyValue('language', $language); 
 
@@ -64,7 +64,7 @@ class Users extends Record implements Model
 	 * The method to set the value to microsoft
 	 * @param bool $microsoft A bool
 	 */
-	public function setMicrosoft(bool $microsoft)
+	public function setMicrosoft(?bool $microsoft)
 	{
 		$this->addKeyValue('microsoft', $microsoft); 
 
@@ -103,7 +103,7 @@ class Users extends Record implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->addKeyValue('id', $id); 
 
@@ -123,7 +123,7 @@ class Users extends Record implements Model
 	 * The method to set the value to state
 	 * @param string $state A string
 	 */
-	public function setState(string $state)
+	public function setState(?string $state)
 	{
 		$this->addKeyValue('state', $state); 
 
@@ -143,7 +143,7 @@ class Users extends Record implements Model
 	 * The method to set the value to fax
 	 * @param string $fax A string
 	 */
-	public function setFax(string $fax)
+	public function setFax(?string $fax)
 	{
 		$this->addKeyValue('fax', $fax); 
 
@@ -163,7 +163,7 @@ class Users extends Record implements Model
 	 * The method to set the value to countryLocale
 	 * @param string $countryLocale A string
 	 */
-	public function setCountryLocale(string $countryLocale)
+	public function setCountryLocale(?string $countryLocale)
 	{
 		$this->addKeyValue('country_locale', $countryLocale); 
 
@@ -183,7 +183,7 @@ class Users extends Record implements Model
 	 * The method to set the value to zip
 	 * @param string $zip A string
 	 */
-	public function setZip(string $zip)
+	public function setZip(?string $zip)
 	{
 		$this->addKeyValue('zip', $zip); 
 
@@ -203,7 +203,7 @@ class Users extends Record implements Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->addKeyValue('created_time', $createdTime); 
 
@@ -223,7 +223,7 @@ class Users extends Record implements Model
 	 * The method to set the value to timeFormat
 	 * @param Choice $timeFormat An instance of Choice
 	 */
-	public function setTimeFormat(Choice $timeFormat)
+	public function setTimeFormat(?Choice $timeFormat)
 	{
 		$this->addKeyValue('time_format', $timeFormat); 
 
@@ -243,7 +243,7 @@ class Users extends Record implements Model
 	 * The method to set the value to offset
 	 * @param int $offset A int
 	 */
-	public function setOffset(int $offset)
+	public function setOffset(?int $offset)
 	{
 		$this->addKeyValue('offset', $offset); 
 
@@ -263,7 +263,7 @@ class Users extends Record implements Model
 	 * The method to set the value to imapStatus
 	 * @param bool $imapStatus A bool
 	 */
-	public function setImapStatus(bool $imapStatus)
+	public function setImapStatus(?bool $imapStatus)
 	{
 		$this->addKeyValue('imap_status', $imapStatus); 
 
@@ -283,7 +283,7 @@ class Users extends Record implements Model
 	 * The method to set the value to imageLink
 	 * @param string $imageLink A string
 	 */
-	public function setImageLink(string $imageLink)
+	public function setImageLink(?string $imageLink)
 	{
 		$this->addKeyValue('image_link', $imageLink); 
 
@@ -303,7 +303,7 @@ class Users extends Record implements Model
 	 * The method to set the value to ezuid
 	 * @param string $ezuid A string
 	 */
-	public function setEzuid(string $ezuid)
+	public function setEzuid(?string $ezuid)
 	{
 		$this->addKeyValue('ezuid', $ezuid); 
 
@@ -323,7 +323,7 @@ class Users extends Record implements Model
 	 * The method to set the value to profile
 	 * @param Profile $profile An instance of Profile
 	 */
-	public function setProfile(Profile $profile)
+	public function setProfile(?Profile $profile)
 	{
 		$this->addKeyValue('profile', $profile); 
 
@@ -343,7 +343,7 @@ class Users extends Record implements Model
 	 * The method to set the value to role
 	 * @param Role $role An instance of Role
 	 */
-	public function setRole(Role $role)
+	public function setRole(?Role $role)
 	{
 		$this->addKeyValue('role', $role); 
 
@@ -363,7 +363,7 @@ class Users extends Record implements Model
 	 * The method to set the value to createdBy
 	 * @param MinifiedUser $createdBy An instance of MinifiedUser
 	 */
-	public function setCreatedBy(MinifiedUser $createdBy)
+	public function setCreatedBy(?MinifiedUser $createdBy)
 	{
 		$this->addKeyValue('created_by', $createdBy); 
 
@@ -383,7 +383,7 @@ class Users extends Record implements Model
 	 * The method to set the value to fullName
 	 * @param string $fullName A string
 	 */
-	public function setFullName(string $fullName)
+	public function setFullName(?string $fullName)
 	{
 		$this->addKeyValue('full_name', $fullName); 
 
@@ -403,7 +403,7 @@ class Users extends Record implements Model
 	 * The method to set the value to zuid
 	 * @param string $zuid A string
 	 */
-	public function setZuid(string $zuid)
+	public function setZuid(?string $zuid)
 	{
 		$this->addKeyValue('zuid', $zuid); 
 
@@ -423,7 +423,7 @@ class Users extends Record implements Model
 	 * The method to set the value to phone
 	 * @param string $phone A string
 	 */
-	public function setPhone(string $phone)
+	public function setPhone(?string $phone)
 	{
 		$this->addKeyValue('phone', $phone); 
 
@@ -443,7 +443,7 @@ class Users extends Record implements Model
 	 * The method to set the value to dob
 	 * @param \DateTime $dob An instance of \DateTime
 	 */
-	public function setDob(\DateTime $dob)
+	public function setDob(?\DateTime $dob)
 	{
 		$this->addKeyValue('dob', $dob); 
 
@@ -463,7 +463,7 @@ class Users extends Record implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->addKeyValue('status', $status); 
 
@@ -483,7 +483,7 @@ class Users extends Record implements Model
 	 * The method to set the value to customizeInfo
 	 * @param CustomizeInfo $customizeInfo An instance of CustomizeInfo
 	 */
-	public function setCustomizeInfo(CustomizeInfo $customizeInfo)
+	public function setCustomizeInfo(?CustomizeInfo $customizeInfo)
 	{
 		$this->addKeyValue('customize_info', $customizeInfo); 
 
@@ -503,7 +503,7 @@ class Users extends Record implements Model
 	 * The method to set the value to city
 	 * @param string $city A string
 	 */
-	public function setCity(string $city)
+	public function setCity(?string $city)
 	{
 		$this->addKeyValue('city', $city); 
 
@@ -523,7 +523,7 @@ class Users extends Record implements Model
 	 * The method to set the value to signature
 	 * @param string $signature A string
 	 */
-	public function setSignature(string $signature)
+	public function setSignature(?string $signature)
 	{
 		$this->addKeyValue('signature', $signature); 
 
@@ -543,7 +543,7 @@ class Users extends Record implements Model
 	 * The method to set the value to sortOrderPreferenceS
 	 * @param string $sortOrderPreferenceS A string
 	 */
-	public function setSortOrderPreferenceS(string $sortOrderPreferenceS)
+	public function setSortOrderPreferenceS(?string $sortOrderPreferenceS)
 	{
 		$this->addKeyValue('sort_order_preference__s', $sortOrderPreferenceS); 
 
@@ -563,7 +563,7 @@ class Users extends Record implements Model
 	 * The method to set the value to category
 	 * @param string $category A string
 	 */
-	public function setCategory(string $category)
+	public function setCategory(?string $category)
 	{
 		$this->addKeyValue('category', $category); 
 
@@ -583,7 +583,7 @@ class Users extends Record implements Model
 	 * The method to set the value to dateFormat
 	 * @param Choice $dateFormat An instance of Choice
 	 */
-	public function setDateFormat(Choice $dateFormat)
+	public function setDateFormat(?Choice $dateFormat)
 	{
 		$this->addKeyValue('date_format', $dateFormat); 
 
@@ -603,7 +603,7 @@ class Users extends Record implements Model
 	 * The method to set the value to confirm
 	 * @param bool $confirm A bool
 	 */
-	public function setConfirm(bool $confirm)
+	public function setConfirm(?bool $confirm)
 	{
 		$this->addKeyValue('confirm', $confirm); 
 
@@ -623,7 +623,7 @@ class Users extends Record implements Model
 	 * The method to set the value to decimalSeparator
 	 * @param Choice $decimalSeparator An instance of Choice
 	 */
-	public function setDecimalSeparator(Choice $decimalSeparator)
+	public function setDecimalSeparator(?Choice $decimalSeparator)
 	{
 		$this->addKeyValue('decimal_separator', $decimalSeparator); 
 
@@ -643,7 +643,7 @@ class Users extends Record implements Model
 	 * The method to set the value to numberSeparator
 	 * @param Choice $numberSeparator An instance of Choice
 	 */
-	public function setNumberSeparator(Choice $numberSeparator)
+	public function setNumberSeparator(?Choice $numberSeparator)
 	{
 		$this->addKeyValue('number_separator', $numberSeparator); 
 
@@ -663,7 +663,7 @@ class Users extends Record implements Model
 	 * The method to set the value to timeZone
 	 * @param \DateTimeZone $timeZone An instance of \DateTimeZone
 	 */
-	public function setTimeZone(\DateTimeZone $timeZone)
+	public function setTimeZone(?\DateTimeZone $timeZone)
 	{
 		$this->addKeyValue('time_zone', $timeZone); 
 
@@ -683,7 +683,7 @@ class Users extends Record implements Model
 	 * The method to set the value to lastName
 	 * @param string $lastName A string
 	 */
-	public function setLastName(string $lastName)
+	public function setLastName(?string $lastName)
 	{
 		$this->addKeyValue('last_name', $lastName); 
 
@@ -703,7 +703,7 @@ class Users extends Record implements Model
 	 * The method to set the value to mobile
 	 * @param string $mobile A string
 	 */
-	public function setMobile(string $mobile)
+	public function setMobile(?string $mobile)
 	{
 		$this->addKeyValue('mobile', $mobile); 
 
@@ -723,7 +723,7 @@ class Users extends Record implements Model
 	 * The method to set the value to currentShift
 	 * @param Shift $currentShift An instance of Shift
 	 */
-	public function setCurrentShift(Shift $currentShift)
+	public function setCurrentShift(?Shift $currentShift)
 	{
 		$this->addKeyValue('$current_shift', $currentShift); 
 
@@ -743,7 +743,7 @@ class Users extends Record implements Model
 	 * The method to set the value to reportingTo
 	 * @param MinifiedUser $reportingTo An instance of MinifiedUser
 	 */
-	public function setReportingTo(MinifiedUser $reportingTo)
+	public function setReportingTo(?MinifiedUser $reportingTo)
 	{
 		$this->addKeyValue('Reporting_To', $reportingTo); 
 
@@ -763,7 +763,7 @@ class Users extends Record implements Model
 	 * The method to set the value to currency
 	 * @param string $currency A string
 	 */
-	public function setCurrency(string $currency)
+	public function setCurrency(?string $currency)
 	{
 		$this->addKeyValue('Currency', $currency); 
 
@@ -783,7 +783,7 @@ class Users extends Record implements Model
 	 * The method to set the value to nextShift
 	 * @param Shift $nextShift An instance of Shift
 	 */
-	public function setNextShift(Shift $nextShift)
+	public function setNextShift(?Shift $nextShift)
 	{
 		$this->addKeyValue('$next_shift', $nextShift); 
 
@@ -803,7 +803,7 @@ class Users extends Record implements Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->addKeyValue('Modified_Time', $modifiedTime); 
 
@@ -823,7 +823,7 @@ class Users extends Record implements Model
 	 * The method to set the value to website
 	 * @param string $website A string
 	 */
-	public function setWebsite(string $website)
+	public function setWebsite(?string $website)
 	{
 		$this->addKeyValue('website', $website); 
 
@@ -843,7 +843,7 @@ class Users extends Record implements Model
 	 * The method to set the value to statusReasonS
 	 * @param string $statusReasonS A string
 	 */
-	public function setStatusReasonS(string $statusReasonS)
+	public function setStatusReasonS(?string $statusReasonS)
 	{
 		$this->addKeyValue('status_reason__s', $statusReasonS); 
 
@@ -863,7 +863,7 @@ class Users extends Record implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->addKeyValue('email', $email); 
 
@@ -883,7 +883,7 @@ class Users extends Record implements Model
 	 * The method to set the value to firstName
 	 * @param string $firstName A string
 	 */
-	public function setFirstName(string $firstName)
+	public function setFirstName(?string $firstName)
 	{
 		$this->addKeyValue('first_name', $firstName); 
 
@@ -903,7 +903,7 @@ class Users extends Record implements Model
 	 * The method to set the value to sandboxdeveloper
 	 * @param bool $sandboxdeveloper A bool
 	 */
-	public function setSandboxdeveloper(bool $sandboxdeveloper)
+	public function setSandboxdeveloper(?bool $sandboxdeveloper)
 	{
 		$this->addKeyValue('sandboxDeveloper', $sandboxdeveloper); 
 
@@ -923,7 +923,7 @@ class Users extends Record implements Model
 	 * The method to set the value to alias
 	 * @param string $alias A string
 	 */
-	public function setAlias(string $alias)
+	public function setAlias(?string $alias)
 	{
 		$this->addKeyValue('alias', $alias); 
 
@@ -943,7 +943,7 @@ class Users extends Record implements Model
 	 * The method to set the value to street
 	 * @param string $street A string
 	 */
-	public function setStreet(string $street)
+	public function setStreet(?string $street)
 	{
 		$this->addKeyValue('street', $street); 
 
@@ -963,7 +963,7 @@ class Users extends Record implements Model
 	 * The method to set the value to modifiedBy
 	 * @param MinifiedUser $modifiedBy An instance of MinifiedUser
 	 */
-	public function setModifiedBy(MinifiedUser $modifiedBy)
+	public function setModifiedBy(?MinifiedUser $modifiedBy)
 	{
 		$this->addKeyValue('Modified_By', $modifiedBy); 
 
@@ -983,7 +983,7 @@ class Users extends Record implements Model
 	 * The method to set the value to isonline
 	 * @param bool $isonline A bool
 	 */
-	public function setIsonline(bool $isonline)
+	public function setIsonline(?bool $isonline)
 	{
 		$this->addKeyValue('Isonline', $isonline); 
 
@@ -1003,7 +1003,7 @@ class Users extends Record implements Model
 	 * The method to set the value to locale
 	 * @param string $locale A string
 	 */
-	public function setLocale(string $locale)
+	public function setLocale(?string $locale)
 	{
 		$this->addKeyValue('locale', $locale); 
 
@@ -1023,7 +1023,7 @@ class Users extends Record implements Model
 	 * The method to set the value to nameFormatS
 	 * @param Choice $nameFormatS An instance of Choice
 	 */
-	public function setNameFormatS(Choice $nameFormatS)
+	public function setNameFormatS(?Choice $nameFormatS)
 	{
 		$this->addKeyValue('name_format__s', $nameFormatS); 
 
@@ -1043,7 +1043,7 @@ class Users extends Record implements Model
 	 * The method to set the value to personalAccount
 	 * @param bool $personalAccount A bool
 	 */
-	public function setPersonalAccount(bool $personalAccount)
+	public function setPersonalAccount(?bool $personalAccount)
 	{
 		$this->addKeyValue('personal_account', $personalAccount); 
 
@@ -1063,7 +1063,7 @@ class Users extends Record implements Model
 	 * The method to set the value to defaultTabGroup
 	 * @param string $defaultTabGroup A string
 	 */
-	public function setDefaultTabGroup(string $defaultTabGroup)
+	public function setDefaultTabGroup(?string $defaultTabGroup)
 	{
 		$this->addKeyValue('default_tab_group', $defaultTabGroup); 
 
@@ -1083,7 +1083,7 @@ class Users extends Record implements Model
 	 * The method to set the value to theme
 	 * @param Theme $theme An instance of Theme
 	 */
-	public function setTheme(Theme $theme)
+	public function setTheme(?Theme $theme)
 	{
 		$this->addKeyValue('theme', $theme); 
 
@@ -1103,7 +1103,7 @@ class Users extends Record implements Model
 	 * The method to set the value to ntcNotificationType
 	 * @param array $ntcNotificationType A array
 	 */
-	public function setNtcNotificationType(array $ntcNotificationType)
+	public function setNtcNotificationType(?array $ntcNotificationType)
 	{
 		$this->addKeyValue('ntc_notification_type', $ntcNotificationType); 
 
@@ -1123,7 +1123,7 @@ class Users extends Record implements Model
 	 * The method to set the value to ntcEnabled
 	 * @param bool $ntcEnabled A bool
 	 */
-	public function setNtcEnabled(bool $ntcEnabled)
+	public function setNtcEnabled(?bool $ntcEnabled)
 	{
 		$this->addKeyValue('ntc_enabled', $ntcEnabled); 
 
@@ -1143,7 +1143,7 @@ class Users extends Record implements Model
 	 * The method to set the value to rtlEnabled
 	 * @param bool $rtlEnabled A bool
 	 */
-	public function setRtlEnabled(bool $rtlEnabled)
+	public function setRtlEnabled(?bool $rtlEnabled)
 	{
 		$this->addKeyValue('rtl_enabled', $rtlEnabled); 
 
@@ -1163,7 +1163,7 @@ class Users extends Record implements Model
 	 * The method to set the value to telephonyEnabled
 	 * @param bool $telephonyEnabled A bool
 	 */
-	public function setTelephonyEnabled(bool $telephonyEnabled)
+	public function setTelephonyEnabled(?bool $telephonyEnabled)
 	{
 		$this->addKeyValue('telephony_enabled', $telephonyEnabled); 
 
@@ -1183,7 +1183,7 @@ class Users extends Record implements Model
 	 * The method to set the value to sortOrderPreference
 	 * @param string $sortOrderPreference A string
 	 */
-	public function setSortOrderPreference(string $sortOrderPreference)
+	public function setSortOrderPreference(?string $sortOrderPreference)
 	{
 		$this->addKeyValue('sort_order_preference', $sortOrderPreference); 
 
@@ -1203,7 +1203,7 @@ class Users extends Record implements Model
 	 * The method to set the value to createdBy17
 	 * @param MinifiedUser $createdBy17 An instance of MinifiedUser
 	 */
-	public function setCreatedBy17(MinifiedUser $createdBy17)
+	public function setCreatedBy17(?MinifiedUser $createdBy17)
 	{
 		$this->addKeyValue('Created_By', $createdBy17); 
 
@@ -1223,7 +1223,7 @@ class Users extends Record implements Model
 	 * The method to set the value to createdTime9
 	 * @param \DateTime $createdTime9 An instance of \DateTime
 	 */
-	public function setCreatedTime9(\DateTime $createdTime9)
+	public function setCreatedTime9(?\DateTime $createdTime9)
 	{
 		$this->addKeyValue('Created_Time', $createdTime9); 
 
@@ -1243,7 +1243,7 @@ class Users extends Record implements Model
 	 * The method to set the value to tag
 	 * @param array $tag A array
 	 */
-	public function setTag(array $tag)
+	public function setTag(?array $tag)
 	{
 		$this->addKeyValue('Tag', $tag); 
 
@@ -1263,7 +1263,7 @@ class Users extends Record implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->addKeyValue('name', $name); 
 

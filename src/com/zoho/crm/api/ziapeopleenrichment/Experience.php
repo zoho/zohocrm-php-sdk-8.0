@@ -27,7 +27,7 @@ class Experience implements Model
 	 * The method to set the value to endDate
 	 * @param string $endDate A string
 	 */
-	public function setEndDate(string $endDate)
+	public function setEndDate(?string $endDate)
 	{
 		$this->endDate=$endDate; 
 		$this->keyModified['end_date'] = 1; 
@@ -48,7 +48,7 @@ class Experience implements Model
 	 * The method to set the value to companyName
 	 * @param string $companyName A string
 	 */
-	public function setCompanyName(string $companyName)
+	public function setCompanyName(?string $companyName)
 	{
 		$this->companyName=$companyName; 
 		$this->keyModified['company_name'] = 1; 
@@ -69,7 +69,7 @@ class Experience implements Model
 	 * The method to set the value to title
 	 * @param string $title A string
 	 */
-	public function setTitle(string $title)
+	public function setTitle(?string $title)
 	{
 		$this->title=$title; 
 		$this->keyModified['title'] = 1; 
@@ -90,7 +90,7 @@ class Experience implements Model
 	 * The method to set the value to startDate
 	 * @param string $startDate A string
 	 */
-	public function setStartDate(string $startDate)
+	public function setStartDate(?string $startDate)
 	{
 		$this->startDate=$startDate; 
 		$this->keyModified['start_date'] = 1; 
@@ -111,7 +111,7 @@ class Experience implements Model
 	 * The method to set the value to primary
 	 * @param bool $primary A bool
 	 */
-	public function setPrimary(bool $primary)
+	public function setPrimary(?bool $primary)
 	{
 		$this->primary=$primary; 
 		$this->keyModified['primary'] = 1; 

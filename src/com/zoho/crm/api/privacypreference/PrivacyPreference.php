@@ -24,7 +24,7 @@ class PrivacyPreference implements Model
 	 * The method to set the value to preference
 	 * @param Preference $preference An instance of Preference
 	 */
-	public function setPreference(Preference $preference)
+	public function setPreference(?Preference $preference)
 	{
 		$this->preference=$preference; 
 		$this->keyModified['preference'] = 1; 
@@ -45,7 +45,7 @@ class PrivacyPreference implements Model
 	 * The method to set the value to config
 	 * @param Config $config An instance of Config
 	 */
-	public function setConfig(Config $config)
+	public function setConfig(?Config $config)
 	{
 		$this->config=$config; 
 		$this->keyModified['config'] = 1; 

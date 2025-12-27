@@ -23,7 +23,7 @@ class ServicePreference implements Model
 	 * The method to set the value to jobSheetEnabled
 	 * @param bool $jobSheetEnabled A bool
 	 */
-	public function setJobSheetEnabled(bool $jobSheetEnabled)
+	public function setJobSheetEnabled(?bool $jobSheetEnabled)
 	{
 		$this->jobSheetEnabled=$jobSheetEnabled; 
 		$this->keyModified['job_sheet_enabled'] = 1; 

@@ -26,7 +26,7 @@ class Crypt implements Model
 	 * The method to set the value to mode
 	 * @param string $mode A string
 	 */
-	public function setMode(string $mode)
+	public function setMode(?string $mode)
 	{
 		$this->mode=$mode; 
 		$this->keyModified['mode'] = 1; 
@@ -47,7 +47,7 @@ class Crypt implements Model
 	 * The method to set the value to column
 	 * @param string $column A string
 	 */
-	public function setColumn(string $column)
+	public function setColumn(?string $column)
 	{
 		$this->column=$column; 
 		$this->keyModified['column'] = 1; 
@@ -68,7 +68,7 @@ class Crypt implements Model
 	 * The method to set the value to table
 	 * @param string $table A string
 	 */
-	public function setTable(string $table)
+	public function setTable(?string $table)
 	{
 		$this->table=$table; 
 		$this->keyModified['table'] = 1; 
@@ -89,7 +89,7 @@ class Crypt implements Model
 	 * The method to set the value to status
 	 * @param int $status A int
 	 */
-	public function setStatus(int $status)
+	public function setStatus(?int $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 

@@ -23,7 +23,7 @@ class JobsWrapper implements Model
 	 * The method to set the value to deletionJobs
 	 * @param array $deletionJobs A array
 	 */
-	public function setDeletionJobs(array $deletionJobs)
+	public function setDeletionJobs(?array $deletionJobs)
 	{
 		$this->deletionJobs=$deletionJobs; 
 		$this->keyModified['deletion_jobs'] = 1; 

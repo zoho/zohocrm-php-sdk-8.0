@@ -2,7 +2,6 @@
 namespace com\zoho\crm\api\bulkread;
 
 use com\zoho\crm\api\modules\MinifiedModule;
-use com\zoho\crm\api\util\Choice;
 use com\zoho\crm\api\util\Model;
 
 class Query implements Model
@@ -31,7 +30,7 @@ class Query implements Model
 	 * The method to set the value to module
 	 * @param MinifiedModule $module An instance of MinifiedModule
 	 */
-	public function setModule(MinifiedModule $module)
+	public function setModule(?MinifiedModule $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -52,7 +51,7 @@ class Query implements Model
 	 * The method to set the value to cvid
 	 * @param string $cvid A string
 	 */
-	public function setCvid(string $cvid)
+	public function setCvid(?string $cvid)
 	{
 		$this->cvid=$cvid; 
 		$this->keyModified['cvid'] = 1; 
@@ -73,7 +72,7 @@ class Query implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -94,7 +93,7 @@ class Query implements Model
 	 * The method to set the value to page
 	 * @param int $page A int
 	 */
-	public function setPage(int $page)
+	public function setPage(?int $page)
 	{
 		$this->page=$page; 
 		$this->keyModified['page'] = 1; 
@@ -115,7 +114,7 @@ class Query implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -124,7 +123,7 @@ class Query implements Model
 
 	/**
 	 * The method to get the fileType
-	 * @return Choice An instance of Choice
+	 * @return string A string representing the fileType
 	 */
 	public function getFileType()
 	{
@@ -134,9 +133,9 @@ class Query implements Model
 
 	/**
 	 * The method to set the value to fileType
-	 * @param Choice $fileType An instance of Choice
+	 * @param string $fileType A string
 	 */
-	public function setFileType(Choice $fileType)
+	public function setFileType(?string $fileType)
 	{
 		$this->fileType=$fileType; 
 		$this->keyModified['file_type'] = 1; 
@@ -157,7 +156,7 @@ class Query implements Model
 	 * The method to set the value to pageToken
 	 * @param string $pageToken A string
 	 */
-	public function setPageToken(string $pageToken)
+	public function setPageToken(?string $pageToken)
 	{
 		$this->pageToken=$pageToken; 
 		$this->keyModified['page_token'] = 1; 

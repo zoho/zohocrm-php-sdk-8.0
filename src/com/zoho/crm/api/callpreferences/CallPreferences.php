@@ -24,7 +24,7 @@ class CallPreferences implements Model
 	 * The method to set the value to showFromNumber
 	 * @param bool $showFromNumber A bool
 	 */
-	public function setShowFromNumber(bool $showFromNumber)
+	public function setShowFromNumber(?bool $showFromNumber)
 	{
 		$this->showFromNumber=$showFromNumber; 
 		$this->keyModified['show_from_number'] = 1; 
@@ -45,7 +45,7 @@ class CallPreferences implements Model
 	 * The method to set the value to showToNumber
 	 * @param bool $showToNumber A bool
 	 */
-	public function setShowToNumber(bool $showToNumber)
+	public function setShowToNumber(?bool $showToNumber)
 	{
 		$this->showToNumber=$showToNumber; 
 		$this->keyModified['show_to_number'] = 1; 

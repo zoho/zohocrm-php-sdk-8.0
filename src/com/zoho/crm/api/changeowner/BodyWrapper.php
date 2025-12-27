@@ -25,7 +25,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to owner
 	 * @param Owner $owner An instance of Owner
 	 */
-	public function setOwner(Owner $owner)
+	public function setOwner(?Owner $owner)
 	{
 		$this->owner=$owner; 
 		$this->keyModified['owner'] = 1; 
@@ -46,7 +46,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to notify
 	 * @param bool $notify A bool
 	 */
-	public function setNotify(bool $notify)
+	public function setNotify(?bool $notify)
 	{
 		$this->notify=$notify; 
 		$this->keyModified['notify'] = 1; 
@@ -67,7 +67,7 @@ class BodyWrapper implements Model
 	 * The method to set the value to relatedModules
 	 * @param array $relatedModules A array
 	 */
-	public function setRelatedModules(array $relatedModules)
+	public function setRelatedModules(?array $relatedModules)
 	{
 		$this->relatedModules=$relatedModules; 
 		$this->keyModified['related_modules'] = 1; 

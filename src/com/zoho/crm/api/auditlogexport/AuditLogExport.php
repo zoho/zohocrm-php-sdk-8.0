@@ -30,7 +30,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to criteria
 	 * @param Criteria $criteria An instance of Criteria
 	 */
-	public function setCriteria(Criteria $criteria)
+	public function setCriteria(?Criteria $criteria)
 	{
 		$this->criteria=$criteria; 
 		$this->keyModified['criteria'] = 1; 
@@ -51,7 +51,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -72,7 +72,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to status
 	 * @param string $status A string
 	 */
-	public function setStatus(string $status)
+	public function setStatus(?string $status)
 	{
 		$this->status=$status; 
 		$this->keyModified['status'] = 1; 
@@ -93,7 +93,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -114,7 +114,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to downloadLinks
 	 * @param array $downloadLinks A array
 	 */
-	public function setDownloadLinks(array $downloadLinks)
+	public function setDownloadLinks(?array $downloadLinks)
 	{
 		$this->downloadLinks=$downloadLinks; 
 		$this->keyModified['download_links'] = 1; 
@@ -135,7 +135,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to jobStartTime
 	 * @param \DateTime $jobStartTime An instance of \DateTime
 	 */
-	public function setJobStartTime(\DateTime $jobStartTime)
+	public function setJobStartTime(?\DateTime $jobStartTime)
 	{
 		$this->jobStartTime=$jobStartTime; 
 		$this->keyModified['job_start_time'] = 1; 
@@ -156,7 +156,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to jobEndTime
 	 * @param \DateTime $jobEndTime An instance of \DateTime
 	 */
-	public function setJobEndTime(\DateTime $jobEndTime)
+	public function setJobEndTime(?\DateTime $jobEndTime)
 	{
 		$this->jobEndTime=$jobEndTime; 
 		$this->keyModified['job_end_time'] = 1; 
@@ -177,7 +177,7 @@ class AuditLogExport implements Model
 	 * The method to set the value to expiryDate
 	 * @param \DateTime $expiryDate An instance of \DateTime
 	 */
-	public function setExpiryDate(\DateTime $expiryDate)
+	public function setExpiryDate(?\DateTime $expiryDate)
 	{
 		$this->expiryDate=$expiryDate; 
 		$this->keyModified['expiry_date'] = 1; 

@@ -38,7 +38,7 @@ class Transition implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -59,7 +59,7 @@ class Transition implements Model
 	 * The method to set the value to executionTime
 	 * @param \DateTime $executionTime An instance of \DateTime
 	 */
-	public function setExecutionTime(\DateTime $executionTime)
+	public function setExecutionTime(?\DateTime $executionTime)
 	{
 		$this->executionTime=$executionTime; 
 		$this->keyModified['execution_time'] = 1; 
@@ -80,7 +80,7 @@ class Transition implements Model
 	 * The method to set the value to sequence
 	 * @param int $sequence A int
 	 */
-	public function setSequence(int $sequence)
+	public function setSequence(?int $sequence)
 	{
 		$this->sequence=$sequence; 
 		$this->keyModified['sequence'] = 1; 
@@ -101,7 +101,7 @@ class Transition implements Model
 	 * The method to set the value to nextTransitions
 	 * @param array $nextTransitions A array
 	 */
-	public function setNextTransitions(array $nextTransitions)
+	public function setNextTransitions(?array $nextTransitions)
 	{
 		$this->nextTransitions=$nextTransitions; 
 		$this->keyModified['next_transitions'] = 1; 
@@ -122,7 +122,7 @@ class Transition implements Model
 	 * The method to set the value to parentTransition
 	 * @param Transition $parentTransition An instance of Transition
 	 */
-	public function setParentTransition(Transition $parentTransition)
+	public function setParentTransition(?Transition $parentTransition)
 	{
 		$this->parentTransition=$parentTransition; 
 		$this->keyModified['parent_transition'] = 1; 
@@ -143,7 +143,7 @@ class Transition implements Model
 	 * The method to set the value to percentPartialSave
 	 * @param float $percentPartialSave A float
 	 */
-	public function setPercentPartialSave(float $percentPartialSave)
+	public function setPercentPartialSave(?float $percentPartialSave)
 	{
 		$this->percentPartialSave=$percentPartialSave; 
 		$this->keyModified['percent_partial_save'] = 1; 
@@ -164,7 +164,7 @@ class Transition implements Model
 	 * The method to set the value to data
 	 * @param Record $data An instance of Record
 	 */
-	public function setData(Record $data)
+	public function setData(?Record $data)
 	{
 		$this->data=$data; 
 		$this->keyModified['data'] = 1; 
@@ -185,7 +185,7 @@ class Transition implements Model
 	 * The method to set the value to nextFieldValue
 	 * @param string $nextFieldValue A string
 	 */
-	public function setNextFieldValue(string $nextFieldValue)
+	public function setNextFieldValue(?string $nextFieldValue)
 	{
 		$this->nextFieldValue=$nextFieldValue; 
 		$this->keyModified['next_field_value'] = 1; 
@@ -206,7 +206,7 @@ class Transition implements Model
 	 * The method to set the value to textColorCode
 	 * @param string $textColorCode A string
 	 */
-	public function setTextColorCode(string $textColorCode)
+	public function setTextColorCode(?string $textColorCode)
 	{
 		$this->textColorCode=$textColorCode; 
 		$this->keyModified['text_color_code'] = 1; 
@@ -227,7 +227,7 @@ class Transition implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -248,7 +248,7 @@ class Transition implements Model
 	 * The method to set the value to criteriaMatched
 	 * @param bool $criteriaMatched A bool
 	 */
-	public function setCriteriaMatched(bool $criteriaMatched)
+	public function setCriteriaMatched(?bool $criteriaMatched)
 	{
 		$this->criteriaMatched=$criteriaMatched; 
 		$this->keyModified['criteria_matched'] = 1; 
@@ -269,7 +269,7 @@ class Transition implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -290,7 +290,7 @@ class Transition implements Model
 	 * The method to set the value to fields
 	 * @param array $fields A array
 	 */
-	public function setFields(array $fields)
+	public function setFields(?array $fields)
 	{
 		$this->fields=$fields; 
 		$this->keyModified['fields'] = 1; 
@@ -311,7 +311,7 @@ class Transition implements Model
 	 * The method to set the value to colorCode
 	 * @param string $colorCode A string
 	 */
-	public function setColorCode(string $colorCode)
+	public function setColorCode(?string $colorCode)
 	{
 		$this->colorCode=$colorCode; 
 		$this->keyModified['color_code'] = 1; 
@@ -332,7 +332,7 @@ class Transition implements Model
 	 * The method to set the value to criteriaMessage
 	 * @param string $criteriaMessage A string
 	 */
-	public function setCriteriaMessage(string $criteriaMessage)
+	public function setCriteriaMessage(?string $criteriaMessage)
 	{
 		$this->criteriaMessage=$criteriaMessage; 
 		$this->keyModified['criteria_message'] = 1; 

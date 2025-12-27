@@ -27,7 +27,7 @@ class ConfigurationOptions implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -48,7 +48,7 @@ class ConfigurationOptions implements Model
 	 * The method to set the value to values
 	 * @param array $values A array
 	 */
-	public function setValues(array $values)
+	public function setValues(?array $values)
 	{
 		$this->values=$values; 
 		$this->keyModified['values'] = 1; 
@@ -69,7 +69,7 @@ class ConfigurationOptions implements Model
 	 * The method to set the value to dataType
 	 * @param Choice $dataType An instance of Choice
 	 */
-	public function setDataType(Choice $dataType)
+	public function setDataType(?Choice $dataType)
 	{
 		$this->dataType=$dataType; 
 		$this->keyModified['data_type'] = 1; 
@@ -90,7 +90,7 @@ class ConfigurationOptions implements Model
 	 * The method to set the value to properties
 	 * @param array $properties A array
 	 */
-	public function setProperties(array $properties)
+	public function setProperties(?array $properties)
 	{
 		$this->properties=$properties; 
 		$this->keyModified['properties'] = 1; 

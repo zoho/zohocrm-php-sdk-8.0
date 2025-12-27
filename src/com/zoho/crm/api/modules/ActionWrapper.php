@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to modules
 	 * @param array $modules A array
 	 */
-	public function setModules(array $modules)
+	public function setModules(?array $modules)
 	{
 		$this->modules=$modules; 
 		$this->keyModified['modules'] = 1; 

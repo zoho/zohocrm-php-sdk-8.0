@@ -26,7 +26,7 @@ class DefaultReplytoAddress implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -47,7 +47,7 @@ class DefaultReplytoAddress implements Model
 	 * The method to set the value to userName
 	 * @param string $userName A string
 	 */
-	public function setUserName(string $userName)
+	public function setUserName(?string $userName)
 	{
 		$this->userName=$userName; 
 		$this->keyModified['user_name'] = 1; 
@@ -68,7 +68,7 @@ class DefaultReplytoAddress implements Model
 	 * The method to set the value to email
 	 * @param string $email A string
 	 */
-	public function setEmail(string $email)
+	public function setEmail(?string $email)
 	{
 		$this->email=$email; 
 		$this->keyModified['email'] = 1; 

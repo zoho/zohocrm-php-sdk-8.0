@@ -27,7 +27,7 @@ class EmailCompose implements Model
 	 * The method to set the value to defaultFromAddress
 	 * @param DefaultFromAddress $defaultFromAddress An instance of DefaultFromAddress
 	 */
-	public function setDefaultFromAddress(DefaultFromAddress $defaultFromAddress)
+	public function setDefaultFromAddress(?DefaultFromAddress $defaultFromAddress)
 	{
 		$this->defaultFromAddress=$defaultFromAddress; 
 		$this->keyModified['default_from_address'] = 1; 
@@ -48,7 +48,7 @@ class EmailCompose implements Model
 	 * The method to set the value to defaultReplytoAddress
 	 * @param DefaultReplytoAddress $defaultReplytoAddress An instance of DefaultReplytoAddress
 	 */
-	public function setDefaultReplytoAddress(DefaultReplytoAddress $defaultReplytoAddress)
+	public function setDefaultReplytoAddress(?DefaultReplytoAddress $defaultReplytoAddress)
 	{
 		$this->defaultReplytoAddress=$defaultReplytoAddress; 
 		$this->keyModified['default_replyto_address'] = 1; 
@@ -69,7 +69,7 @@ class EmailCompose implements Model
 	 * The method to set the value to font
 	 * @param Font $font An instance of Font
 	 */
-	public function setFont(Font $font)
+	public function setFont(?Font $font)
 	{
 		$this->font=$font; 
 		$this->keyModified['font'] = 1; 
@@ -90,7 +90,7 @@ class EmailCompose implements Model
 	 * The method to set the value to type
 	 * @param Choice $type An instance of Choice
 	 */
-	public function setType(Choice $type)
+	public function setType(?Choice $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 

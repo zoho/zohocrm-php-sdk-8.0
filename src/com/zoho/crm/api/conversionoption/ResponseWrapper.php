@@ -23,7 +23,7 @@ class ResponseWrapper implements Model, ResponseHandler
 	 * The method to set the value to conversionOptions
 	 * @param ConversionOptions $conversionOptions An instance of ConversionOptions
 	 */
-	public function setConversionOptions(ConversionOptions $conversionOptions)
+	public function setConversionOptions(?ConversionOptions $conversionOptions)
 	{
 		$this->conversionOptions=$conversionOptions; 
 		$this->keyModified['__conversion_options'] = 1; 

@@ -26,7 +26,7 @@ class Format implements Model
 	 * The method to set the value to decimalSeparator
 	 * @param Choice $decimalSeparator An instance of Choice
 	 */
-	public function setDecimalSeparator(Choice $decimalSeparator)
+	public function setDecimalSeparator(?Choice $decimalSeparator)
 	{
 		$this->decimalSeparator=$decimalSeparator; 
 		$this->keyModified['decimal_separator'] = 1; 
@@ -47,7 +47,7 @@ class Format implements Model
 	 * The method to set the value to thousandSeparator
 	 * @param Choice $thousandSeparator An instance of Choice
 	 */
-	public function setThousandSeparator(Choice $thousandSeparator)
+	public function setThousandSeparator(?Choice $thousandSeparator)
 	{
 		$this->thousandSeparator=$thousandSeparator; 
 		$this->keyModified['thousand_separator'] = 1; 
@@ -68,7 +68,7 @@ class Format implements Model
 	 * The method to set the value to decimalPlaces
 	 * @param Choice $decimalPlaces An instance of Choice
 	 */
-	public function setDecimalPlaces(Choice $decimalPlaces)
+	public function setDecimalPlaces(?Choice $decimalPlaces)
 	{
 		$this->decimalPlaces=$decimalPlaces; 
 		$this->keyModified['decimal_places'] = 1; 

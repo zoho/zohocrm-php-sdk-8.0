@@ -31,7 +31,7 @@ class MailMerge implements Model
 	 * The method to set the value to mailMergeTemplate
 	 * @param MailMergeTemplate $mailMergeTemplate An instance of MailMergeTemplate
 	 */
-	public function setMailMergeTemplate(MailMergeTemplate $mailMergeTemplate)
+	public function setMailMergeTemplate(?MailMergeTemplate $mailMergeTemplate)
 	{
 		$this->mailMergeTemplate=$mailMergeTemplate; 
 		$this->keyModified['mail_merge_template'] = 1; 
@@ -52,7 +52,7 @@ class MailMerge implements Model
 	 * The method to set the value to fromAddress
 	 * @param Address $fromAddress An instance of Address
 	 */
-	public function setFromAddress(Address $fromAddress)
+	public function setFromAddress(?Address $fromAddress)
 	{
 		$this->fromAddress=$fromAddress; 
 		$this->keyModified['from_address'] = 1; 
@@ -73,7 +73,7 @@ class MailMerge implements Model
 	 * The method to set the value to toAddress
 	 * @param array $toAddress A array
 	 */
-	public function setToAddress(array $toAddress)
+	public function setToAddress(?array $toAddress)
 	{
 		$this->toAddress=$toAddress; 
 		$this->keyModified['to_address'] = 1; 
@@ -94,7 +94,7 @@ class MailMerge implements Model
 	 * The method to set the value to ccEmail
 	 * @param array $ccEmail A array
 	 */
-	public function setCcEmail(array $ccEmail)
+	public function setCcEmail(?array $ccEmail)
 	{
 		$this->ccEmail=$ccEmail; 
 		$this->keyModified['cc_email'] = 1; 
@@ -115,7 +115,7 @@ class MailMerge implements Model
 	 * The method to set the value to bccEmail
 	 * @param array $bccEmail A array
 	 */
-	public function setBccEmail(array $bccEmail)
+	public function setBccEmail(?array $bccEmail)
 	{
 		$this->bccEmail=$bccEmail; 
 		$this->keyModified['bcc_email'] = 1; 
@@ -136,7 +136,7 @@ class MailMerge implements Model
 	 * The method to set the value to subject
 	 * @param string $subject A string
 	 */
-	public function setSubject(string $subject)
+	public function setSubject(?string $subject)
 	{
 		$this->subject=$subject; 
 		$this->keyModified['subject'] = 1; 
@@ -157,7 +157,7 @@ class MailMerge implements Model
 	 * The method to set the value to message
 	 * @param string $message A string
 	 */
-	public function setMessage(string $message)
+	public function setMessage(?string $message)
 	{
 		$this->message=$message; 
 		$this->keyModified['message'] = 1; 
@@ -178,7 +178,7 @@ class MailMerge implements Model
 	 * The method to set the value to type
 	 * @param string $type A string
 	 */
-	public function setType(string $type)
+	public function setType(?string $type)
 	{
 		$this->type=$type; 
 		$this->keyModified['type'] = 1; 
@@ -199,7 +199,7 @@ class MailMerge implements Model
 	 * The method to set the value to attachmentName
 	 * @param string $attachmentName A string
 	 */
-	public function setAttachmentName(string $attachmentName)
+	public function setAttachmentName(?string $attachmentName)
 	{
 		$this->attachmentName=$attachmentName; 
 		$this->keyModified['attachment_name'] = 1; 

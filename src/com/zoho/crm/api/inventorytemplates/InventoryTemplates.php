@@ -38,7 +38,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to createdTime
 	 * @param \DateTime $createdTime An instance of \DateTime
 	 */
-	public function setCreatedTime(\DateTime $createdTime)
+	public function setCreatedTime(?\DateTime $createdTime)
 	{
 		$this->createdTime=$createdTime; 
 		$this->keyModified['created_time'] = 1; 
@@ -59,7 +59,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to modifiedTime
 	 * @param \DateTime $modifiedTime An instance of \DateTime
 	 */
-	public function setModifiedTime(\DateTime $modifiedTime)
+	public function setModifiedTime(?\DateTime $modifiedTime)
 	{
 		$this->modifiedTime=$modifiedTime; 
 		$this->keyModified['modified_time'] = 1; 
@@ -80,7 +80,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to lastUsageTime
 	 * @param \DateTime $lastUsageTime An instance of \DateTime
 	 */
-	public function setLastUsageTime(\DateTime $lastUsageTime)
+	public function setLastUsageTime(?\DateTime $lastUsageTime)
 	{
 		$this->lastUsageTime=$lastUsageTime; 
 		$this->keyModified['last_usage_time'] = 1; 
@@ -101,7 +101,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to folder
 	 * @param Folder $folder An instance of Folder
 	 */
-	public function setFolder(Folder $folder)
+	public function setFolder(?Folder $folder)
 	{
 		$this->folder=$folder; 
 		$this->keyModified['folder'] = 1; 
@@ -122,7 +122,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to module
 	 * @param ModuleMap $module An instance of ModuleMap
 	 */
-	public function setModule(ModuleMap $module)
+	public function setModule(?ModuleMap $module)
 	{
 		$this->module=$module; 
 		$this->keyModified['module'] = 1; 
@@ -143,7 +143,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to createdBy
 	 * @param User $createdBy An instance of User
 	 */
-	public function setCreatedBy(User $createdBy)
+	public function setCreatedBy(?User $createdBy)
 	{
 		$this->createdBy=$createdBy; 
 		$this->keyModified['created_by'] = 1; 
@@ -164,7 +164,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to modifiedBy
 	 * @param User $modifiedBy An instance of User
 	 */
-	public function setModifiedBy(User $modifiedBy)
+	public function setModifiedBy(?User $modifiedBy)
 	{
 		$this->modifiedBy=$modifiedBy; 
 		$this->keyModified['modified_by'] = 1; 
@@ -185,7 +185,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -206,7 +206,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -227,7 +227,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to editorMode
 	 * @param string $editorMode A string
 	 */
-	public function setEditorMode(string $editorMode)
+	public function setEditorMode(?string $editorMode)
 	{
 		$this->editorMode=$editorMode; 
 		$this->keyModified['editor_mode'] = 1; 
@@ -248,7 +248,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to category
 	 * @param string $category A string
 	 */
-	public function setCategory(string $category)
+	public function setCategory(?string $category)
 	{
 		$this->category=$category; 
 		$this->keyModified['category'] = 1; 
@@ -269,7 +269,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to favorite
 	 * @param bool $favorite A bool
 	 */
-	public function setFavorite(bool $favorite)
+	public function setFavorite(?bool $favorite)
 	{
 		$this->favorite=$favorite; 
 		$this->keyModified['favorite'] = 1; 
@@ -290,7 +290,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to content
 	 * @param string $content A string
 	 */
-	public function setContent(string $content)
+	public function setContent(?string $content)
 	{
 		$this->content=$content; 
 		$this->keyModified['content'] = 1; 
@@ -311,7 +311,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to active
 	 * @param bool $active A bool
 	 */
-	public function setActive(bool $active)
+	public function setActive(?bool $active)
 	{
 		$this->active=$active; 
 		$this->keyModified['active'] = 1; 
@@ -332,7 +332,7 @@ class InventoryTemplates implements Template, Model
 	 * The method to set the value to mailContent
 	 * @param string $mailContent A string
 	 */
-	public function setMailContent(string $mailContent)
+	public function setMailContent(?string $mailContent)
 	{
 		$this->mailContent=$mailContent; 
 		$this->keyModified['mail_content'] = 1; 

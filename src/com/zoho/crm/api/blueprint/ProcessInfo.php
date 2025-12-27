@@ -34,7 +34,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to fieldId
 	 * @param string $fieldId A string
 	 */
-	public function setFieldId(string $fieldId)
+	public function setFieldId(?string $fieldId)
 	{
 		$this->fieldId=$fieldId; 
 		$this->keyModified['field_id'] = 1; 
@@ -55,7 +55,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to isContinuous
 	 * @param bool $isContinuous A bool
 	 */
-	public function setIsContinuous(bool $isContinuous)
+	public function setIsContinuous(?bool $isContinuous)
 	{
 		$this->isContinuous=$isContinuous; 
 		$this->keyModified['is_continuous'] = 1; 
@@ -76,7 +76,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to aPIName
 	 * @param string $apiName A string
 	 */
-	public function setAPIName(string $apiName)
+	public function setAPIName(?string $apiName)
 	{
 		$this->apiName=$apiName; 
 		$this->keyModified['api_name'] = 1; 
@@ -97,7 +97,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to continuous
 	 * @param bool $continuous A bool
 	 */
-	public function setContinuous(bool $continuous)
+	public function setContinuous(?bool $continuous)
 	{
 		$this->continuous=$continuous; 
 		$this->keyModified['continuous'] = 1; 
@@ -118,7 +118,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to fieldLabel
 	 * @param string $fieldLabel A string
 	 */
-	public function setFieldLabel(string $fieldLabel)
+	public function setFieldLabel(?string $fieldLabel)
 	{
 		$this->fieldLabel=$fieldLabel; 
 		$this->keyModified['field_label'] = 1; 
@@ -139,7 +139,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to name
 	 * @param string $name A string
 	 */
-	public function setName(string $name)
+	public function setName(?string $name)
 	{
 		$this->name=$name; 
 		$this->keyModified['name'] = 1; 
@@ -160,7 +160,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to columnName
 	 * @param string $columnName A string
 	 */
-	public function setColumnName(string $columnName)
+	public function setColumnName(?string $columnName)
 	{
 		$this->columnName=$columnName; 
 		$this->keyModified['column_name'] = 1; 
@@ -181,7 +181,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to fieldValue
 	 * @param string $fieldValue A string
 	 */
-	public function setFieldValue(string $fieldValue)
+	public function setFieldValue(?string $fieldValue)
 	{
 		$this->fieldValue=$fieldValue; 
 		$this->keyModified['field_value'] = 1; 
@@ -202,7 +202,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to id
 	 * @param string $id A string
 	 */
-	public function setId(string $id)
+	public function setId(?string $id)
 	{
 		$this->id=$id; 
 		$this->keyModified['id'] = 1; 
@@ -223,7 +223,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to fieldName
 	 * @param string $fieldName A string
 	 */
-	public function setFieldName(string $fieldName)
+	public function setFieldName(?string $fieldName)
 	{
 		$this->fieldName=$fieldName; 
 		$this->keyModified['field_name'] = 1; 
@@ -244,7 +244,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to escalation
 	 * @param Escalation $escalation An instance of Escalation
 	 */
-	public function setEscalation(Escalation $escalation)
+	public function setEscalation(?Escalation $escalation)
 	{
 		$this->escalation=$escalation; 
 		$this->keyModified['escalation'] = 1; 
@@ -265,7 +265,7 @@ class ProcessInfo implements Model
 	 * The method to set the value to currentPicklist
 	 * @param CurrentPicklist $currentPicklist An instance of CurrentPicklist
 	 */
-	public function setCurrentPicklist(CurrentPicklist $currentPicklist)
+	public function setCurrentPicklist(?CurrentPicklist $currentPicklist)
 	{
 		$this->currentPicklist=$currentPicklist; 
 		$this->keyModified['current_picklist'] = 1; 

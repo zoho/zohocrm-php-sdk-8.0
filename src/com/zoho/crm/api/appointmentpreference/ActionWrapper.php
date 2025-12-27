@@ -23,7 +23,7 @@ class ActionWrapper implements Model, ActionHandler
 	 * The method to set the value to appointmentPreferences
 	 * @param ActionResponse $appointmentPreferences An instance of ActionResponse
 	 */
-	public function setAppointmentPreferences(ActionResponse $appointmentPreferences)
+	public function setAppointmentPreferences(?ActionResponse $appointmentPreferences)
 	{
 		$this->appointmentPreferences=$appointmentPreferences; 
 		$this->keyModified['appointment_preferences'] = 1; 
