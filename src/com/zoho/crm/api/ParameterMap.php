@@ -35,7 +35,7 @@ class ParameterMap
     /**
      * This method to add parameter name and value.
      * @param Param $param A Param class instance.
-     * @param object $value A object containing the parameter value.
+     * @param mixed $value The parameter value (string, int, bool, array, or object).
      */
     public function add(Param $param, $value)
     {
