@@ -1,5 +1,5 @@
 <?php
-namespace com\zoho\crm\sample\territories;
+namespace samples\territories;
 
 use com\zoho\api\authenticator\OAuthBuilder;
 use com\zoho\crm\api\dc\INDataCenter;

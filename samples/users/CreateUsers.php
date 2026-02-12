@@ -1,5 +1,5 @@
 <?php
-namespace com\zoho\crm\sample\users;
+namespace samples\users;
 
 use com\zoho\api\authenticator\OAuthBuilder;
 use com\zoho\crm\api\dc\INDataCenter;
