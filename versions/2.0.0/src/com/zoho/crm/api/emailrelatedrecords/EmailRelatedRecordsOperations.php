@@ -23,7 +23,7 @@ class EmailRelatedRecordsOperations
 	 * @param string $type A string
 	 * @param string $ownerId A string
 	 */
-	public function __Construct(string $recordId, string $moduleName, string $type=null, string $ownerId=null)
+	public function __Construct(string $recordId, string $moduleName, ?string $type = null, ?string $ownerId = null)
 	{
 		$this->recordId=$recordId; 
 		$this->moduleName=$moduleName; 
@@ -37,7 +37,7 @@ class EmailRelatedRecordsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getEmailsRelatedRecords(ParameterMap $paramInstance=null)
+	public function getEmailsRelatedRecords(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

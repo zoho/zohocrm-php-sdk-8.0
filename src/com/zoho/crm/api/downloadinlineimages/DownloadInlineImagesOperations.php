@@ -18,7 +18,7 @@ class DownloadInlineImagesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getDownloadInlineImages(string $recordId, string $module, ParameterMap $paramInstance=null)
+	public function getDownloadInlineImages(string $recordId, string $module, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

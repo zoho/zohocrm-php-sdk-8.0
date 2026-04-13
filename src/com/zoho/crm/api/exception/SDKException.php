@@ -20,7 +20,7 @@ class SDKException extends \Exception
      * @param \Exception $cause An Exception class instance.
      * @param array $details A JSON Object containing the error response.
      */
-    public function __construct($code, $message, $details=null, \Exception $cause=null)
+    public function __construct($code, $message, $details=null, \?Exception $cause = null)
     {
         $this->_code = $code;
         $this->_message = $message;

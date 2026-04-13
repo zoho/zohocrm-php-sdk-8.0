@@ -39,7 +39,7 @@ class MassConvertOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getJobStatus(ParameterMap $paramInstance=null)
+	public function getJobStatus(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

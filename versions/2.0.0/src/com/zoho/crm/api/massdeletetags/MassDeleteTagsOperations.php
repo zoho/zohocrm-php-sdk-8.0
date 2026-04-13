@@ -35,7 +35,7 @@ class MassDeleteTagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getStatus(ParameterMap $paramInstance=null)
+	public function getStatus(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

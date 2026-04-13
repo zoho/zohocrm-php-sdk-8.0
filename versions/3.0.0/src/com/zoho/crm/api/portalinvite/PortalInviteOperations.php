@@ -30,7 +30,7 @@ class PortalInviteOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function inviteUsers(string $record, ParameterMap $paramInstance=null)
+	public function inviteUsers(string $record, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

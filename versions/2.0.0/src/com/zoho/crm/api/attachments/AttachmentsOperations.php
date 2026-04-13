@@ -44,7 +44,7 @@ class AttachmentsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAttachments(string $recordId, string $module, ParameterMap $paramInstance=null)
+	public function getAttachments(string $recordId, string $module, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -68,7 +68,7 @@ class AttachmentsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function uploadUrlAttachments(string $recordId, string $module, ParameterMap $paramInstance=null)
+	public function uploadUrlAttachments(string $recordId, string $module, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -92,7 +92,7 @@ class AttachmentsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteAttachments(string $recordId, string $module, ParameterMap $paramInstance=null)
+	public function deleteAttachments(string $recordId, string $module, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

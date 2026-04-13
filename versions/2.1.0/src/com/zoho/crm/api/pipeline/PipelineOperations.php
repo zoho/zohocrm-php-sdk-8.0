@@ -16,7 +16,7 @@ class PipelineOperations
 	 * Creates an instance of PipelineOperations with the given parameters
 	 * @param string $layoutId A string
 	 */
-	public function __Construct(string $layoutId=null)
+	public function __Construct(?string $layoutId = null)
 	{
 		$this->layoutId=$layoutId; 
 

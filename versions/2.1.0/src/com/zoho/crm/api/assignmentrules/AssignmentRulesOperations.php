@@ -16,7 +16,7 @@ class AssignmentRulesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssignmentRules(ParameterMap $paramInstance=null)
+	public function getAssignmentRules(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -35,7 +35,7 @@ class AssignmentRulesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssignmentRule(string $id, ParameterMap $paramInstance=null)
+	public function getAssignmentRule(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

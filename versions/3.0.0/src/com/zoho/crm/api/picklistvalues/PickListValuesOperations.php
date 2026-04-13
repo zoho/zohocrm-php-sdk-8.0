@@ -18,7 +18,7 @@ class PickListValuesOperations
 	 * @param string $fieldId A string
 	 * @param string $module A string
 	 */
-	public function __Construct(string $fieldId, string $module=null)
+	public function __Construct(string $fieldId, ?string $module = null)
 	{
 		$this->fieldId=$fieldId; 
 		$this->module=$module; 

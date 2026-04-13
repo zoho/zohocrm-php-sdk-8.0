@@ -16,7 +16,7 @@ class CustomViewsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getCustomViews(ParameterMap $paramInstance=null)
+	public function getCustomViews(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -35,7 +35,7 @@ class CustomViewsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getCustomView(string $id, ParameterMap $paramInstance=null)
+	public function getCustomView(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -55,7 +55,7 @@ class CustomViewsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function changeSortOrderOfCustomViews(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function changeSortOrderOfCustomViews(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -78,7 +78,7 @@ class CustomViewsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function changeSortOrderOfCustomView(string $id, BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function changeSortOrderOfCustomView(string $id, BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

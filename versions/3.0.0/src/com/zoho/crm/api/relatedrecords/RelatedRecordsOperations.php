@@ -36,7 +36,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRelatedRecords(string $recordId, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRelatedRecords(string $recordId, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -63,7 +63,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRelatedRecords(string $recordId, BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRelatedRecords(string $recordId, BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -91,7 +91,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function delinkRecords(string $recordId, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function delinkRecords(string $recordId, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -118,7 +118,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRelatedRecordsUsingExternalId(string $externalValue, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRelatedRecordsUsingExternalId(string $externalValue, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -145,7 +145,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRelatedRecordsUsingExternalId(string $externalValue, BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRelatedRecordsUsingExternalId(string $externalValue, BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -173,7 +173,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteRelatedRecordsUsingExternalId(string $externalValue, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function deleteRelatedRecordsUsingExternalId(string $externalValue, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -201,7 +201,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRelatedRecord(string $relatedRecordId, string $recordId, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRelatedRecord(string $relatedRecordId, string $recordId, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -231,7 +231,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRelatedRecord(string $relatedRecordId, string $recordId, BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRelatedRecord(string $relatedRecordId, string $recordId, BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -262,7 +262,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function delinkRecord(string $relatedRecordId, string $recordId, HeaderMap $headerInstance=null)
+	public function delinkRecord(string $relatedRecordId, string $recordId, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -291,7 +291,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRelatedRecordUsingExternalId(string $externalFieldValue, string $externalValue, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRelatedRecordUsingExternalId(string $externalFieldValue, string $externalValue, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -321,7 +321,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRelatedRecordUsingExternalId(string $externalFieldValue, string $externalValue, BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRelatedRecordUsingExternalId(string $externalFieldValue, string $externalValue, BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -352,7 +352,7 @@ class RelatedRecordsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteRelatedRecordUsingExternalId(string $externalFieldValue, string $externalValue, HeaderMap $headerInstance=null)
+	public function deleteRelatedRecordUsingExternalId(string $externalFieldValue, string $externalValue, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -379,7 +379,7 @@ class RelatedRecordsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getDeletedParentRecordsRelatedRecord(string $recordId, ParameterMap $paramInstance=null)
+	public function getDeletedParentRecordsRelatedRecord(string $recordId, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

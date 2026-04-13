@@ -17,7 +17,7 @@ class SharingRulesOperations
 	 * Creates an instance of SharingRulesOperations with the given parameters
 	 * @param string $module A string
 	 */
-	public function __Construct(string $module=null)
+	public function __Construct(?string $module = null)
 	{
 		$this->module=$module; 
 
@@ -28,7 +28,7 @@ class SharingRulesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getSharingRules(ParameterMap $paramInstance=null)
+	public function getSharingRules(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -150,7 +150,7 @@ class SharingRulesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function searchSharingRules(FiltersBody $request, ParameterMap $paramInstance=null)
+	public function searchSharingRules(FiltersBody $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

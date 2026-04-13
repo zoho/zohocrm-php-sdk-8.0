@@ -32,7 +32,7 @@ class RecordLockingOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecordLockingInformations(ParameterMap $paramInstance=null)
+	public function getRecordLockingInformations(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -83,7 +83,7 @@ class RecordLockingOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecordLockingInformation(string $lockId, ParameterMap $paramInstance=null)
+	public function getRecordLockingInformation(string $lockId, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

@@ -56,7 +56,7 @@ class RescheduleHistoryOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAppointmentsRescheduledHistory(ParameterMap $paramInstance=null)
+	public function getAppointmentsRescheduledHistory(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -96,7 +96,7 @@ class RescheduleHistoryOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAppointmentRescheduledHistory(string $id, ParameterMap $paramInstance=null)
+	public function getAppointmentRescheduledHistory(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

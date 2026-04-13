@@ -61,7 +61,7 @@ class SDKLogger
         self::writeToFile("SEVERE", $message);
     }
 
-    public static function severeError($message, Exception $e=null)
+    public static function severeError($message, ?Exception $e = null)
     {
         $parsedMessage = $message;
         if($e != null)

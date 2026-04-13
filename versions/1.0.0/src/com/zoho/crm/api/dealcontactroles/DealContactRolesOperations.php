@@ -18,7 +18,7 @@ class DealContactRolesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssociatedContactRoles(string $deal, ParameterMap $paramInstance=null)
+	public function getAssociatedContactRoles(string $deal, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -41,7 +41,7 @@ class DealContactRolesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteAssociatedContactRoles(string $deal, ParameterMap $paramInstance=null)
+	public function deleteAssociatedContactRoles(string $deal, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

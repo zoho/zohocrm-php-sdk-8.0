@@ -17,7 +17,7 @@ class RecordLockingConfigurationOperations
 	 * Creates an instance of RecordLockingConfigurationOperations with the given parameters
 	 * @param string $module A string
 	 */
-	public function __Construct(string $module=null)
+	public function __Construct(?string $module = null)
 	{
 		$this->module=$module; 
 
@@ -28,7 +28,7 @@ class RecordLockingConfigurationOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecordLockingConfigurations(ParameterMap $paramInstance=null)
+	public function getRecordLockingConfigurations(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

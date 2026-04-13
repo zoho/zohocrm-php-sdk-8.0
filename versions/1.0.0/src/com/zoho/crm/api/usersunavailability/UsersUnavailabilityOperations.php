@@ -56,7 +56,7 @@ class UsersUnavailabilityOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getUsersUnavailability(ParameterMap $paramInstance=null)
+	public function getUsersUnavailability(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -96,7 +96,7 @@ class UsersUnavailabilityOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getUserUnavailability(string $id, ParameterMap $paramInstance=null)
+	public function getUserUnavailability(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

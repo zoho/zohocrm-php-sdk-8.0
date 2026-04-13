@@ -33,7 +33,7 @@ class WizardsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getWizardById(string $wizardId, ParameterMap $paramInstance=null)
+	public function getWizardById(string $wizardId, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

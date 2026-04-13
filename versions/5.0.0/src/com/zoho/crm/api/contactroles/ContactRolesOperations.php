@@ -72,7 +72,7 @@ class ContactRolesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteContactRoles(ParameterMap $paramInstance=null)
+	public function deleteContactRoles(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

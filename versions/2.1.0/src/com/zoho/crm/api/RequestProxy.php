@@ -8,7 +8,7 @@ class RequestProxy
     private $user = null;
     private $password = null;
 
-    public function __construct(string $host , int $port, string $user = null, string $password = null)
+    public function __construct(string $host , int $port, ?string $user = null, ?string $password = null)
     {
         $this->host = $host;
         $this->port = $port;

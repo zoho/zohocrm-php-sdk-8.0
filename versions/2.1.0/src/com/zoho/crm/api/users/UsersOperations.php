@@ -20,7 +20,7 @@ class UsersOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getUsers(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getUsers(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -80,7 +80,7 @@ class UsersOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getUser(string $user, HeaderMap $headerInstance=null)
+	public function getUser(string $user, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -140,7 +140,7 @@ class UsersOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssociatedGroups(string $user, ParameterMap $paramInstance=null)
+	public function getAssociatedGroups(string $user, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -160,7 +160,7 @@ class UsersOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function usersCount(ParameterMap $paramInstance=null)
+	public function usersCount(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

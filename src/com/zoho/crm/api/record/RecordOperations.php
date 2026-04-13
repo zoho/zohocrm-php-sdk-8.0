@@ -33,7 +33,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecord(string $id, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRecord(string $id, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -59,7 +59,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRecord(string $id, BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRecord(string $id, BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -87,7 +87,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteRecord(string $id, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function deleteRecord(string $id, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -111,7 +111,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecords(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRecords(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -134,7 +134,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function createRecords(BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function createRecords(BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -158,7 +158,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRecords(BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRecords(BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -182,7 +182,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteRecords(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function deleteRecords(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -204,7 +204,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function upsertRecords(BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function upsertRecords(BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -229,7 +229,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getDeletedRecords(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getDeletedRecords(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -252,7 +252,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function searchRecords(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function searchRecords(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -299,7 +299,7 @@ class RecordOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function uploadPhoto(string $id, FileBodyWrapper $request, ParameterMap $paramInstance=null)
+	public function uploadPhoto(string $id, FileBodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -372,7 +372,7 @@ class RecordOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getMassUpdateStatus(ParameterMap $paramInstance=null)
+	public function getMassUpdateStatus(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -495,7 +495,7 @@ class RecordOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function recordCount(ParameterMap $paramInstance=null)
+	public function recordCount(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -517,7 +517,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecordUsingExternalId(string $externalFieldValue, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getRecordUsingExternalId(string $externalFieldValue, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -543,7 +543,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateRecordUsingExternalId(string $externalFieldValue, BodyWrapper $request, HeaderMap $headerInstance=null)
+	public function updateRecordUsingExternalId(string $externalFieldValue, BodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -571,7 +571,7 @@ class RecordOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteRecordUsingExternalId(string $externalFieldValue, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function deleteRecordUsingExternalId(string $externalFieldValue, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -595,7 +595,7 @@ class RecordOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getFullDataForRichText(string $id, ParameterMap $paramInstance=null)
+	public function getFullDataForRichText(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -618,7 +618,7 @@ class RecordOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRichTextRecords(ParameterMap $paramInstance=null)
+	public function getRichTextRecords(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

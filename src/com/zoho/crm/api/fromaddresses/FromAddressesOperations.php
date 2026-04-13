@@ -16,7 +16,7 @@ class FromAddressesOperations
 	 * Creates an instance of FromAddressesOperations with the given parameters
 	 * @param string $userId A string
 	 */
-	public function __Construct(string $userId=null)
+	public function __Construct(?string $userId = null)
 	{
 		$this->userId=$userId; 
 

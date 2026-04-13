@@ -16,7 +16,7 @@ class APIsOperations
 	 * Creates an instance of ApisOperations with the given parameters
 	 * @param string $filters A string
 	 */
-	public function __Construct(string $filters=null)
+	public function __Construct(?string $filters = null)
 	{
 		$this->filters=$filters; 
 

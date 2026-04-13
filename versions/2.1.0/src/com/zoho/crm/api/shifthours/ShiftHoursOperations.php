@@ -16,7 +16,7 @@ class ShiftHoursOperations
 	 * Creates an instance of ShiftHoursOperations with the given parameters
 	 * @param string $xCrmOrg A string
 	 */
-	public function __Construct(string $xCrmOrg=null)
+	public function __Construct(?string $xCrmOrg = null)
 	{
 		$this->xCrmOrg=$xCrmOrg; 
 

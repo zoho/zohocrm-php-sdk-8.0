@@ -16,7 +16,7 @@ class DuplicateCheckPreferenceOperations
 	 * Creates an instance of DuplicateCheckPreferenceOperations with the given parameters
 	 * @param string $module A string
 	 */
-	public function __Construct(string $module=null)
+	public function __Construct(?string $module = null)
 	{
 		$this->module=$module; 
 

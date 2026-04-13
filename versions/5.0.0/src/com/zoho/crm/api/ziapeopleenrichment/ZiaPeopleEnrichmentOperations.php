@@ -17,7 +17,7 @@ class ZiaPeopleEnrichmentOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getZiaPeopleEnrichments(ParameterMap $paramInstance=null)
+	public function getZiaPeopleEnrichments(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -36,7 +36,7 @@ class ZiaPeopleEnrichmentOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function createZiaPeopleEnrichment(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function createZiaPeopleEnrichment(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
