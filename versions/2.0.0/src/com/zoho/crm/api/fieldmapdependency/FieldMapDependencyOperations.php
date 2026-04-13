@@ -19,7 +19,7 @@ class FieldMapDependencyOperations
 	 * @param string $layoutId A string
 	 * @param string $module A string
 	 */
-	public function __Construct(string $layoutId, string $module=null)
+	public function __Construct(string $layoutId, ?string $module = null)
 	{
 		$this->layoutId=$layoutId; 
 		$this->module=$module; 
@@ -54,7 +54,7 @@ class FieldMapDependencyOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getMapDependencies(ParameterMap $paramInstance=null)
+	public function getMapDependencies(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

@@ -16,7 +16,7 @@ class NotificationsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getNotifications(ParameterMap $paramInstance=null)
+	public function getNotifications(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -113,7 +113,7 @@ class NotificationsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteNotification(ParameterMap $paramInstance=null)
+	public function deleteNotification(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

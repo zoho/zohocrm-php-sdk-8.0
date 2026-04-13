@@ -17,7 +17,7 @@ class BulkWriteOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function uploadFile(FileBodyWrapper $request, HeaderMap $headerInstance=null)
+	public function uploadFile(FileBodyWrapper $request, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

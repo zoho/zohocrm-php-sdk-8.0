@@ -19,7 +19,7 @@ class TimelinesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getTimelines(string $module, string $recordId, ParameterMap $paramInstance=null)
+	public function getTimelines(string $module, string $recordId, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

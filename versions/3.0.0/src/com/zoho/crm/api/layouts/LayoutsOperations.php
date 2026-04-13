@@ -16,7 +16,7 @@ class LayoutsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getLayouts(ParameterMap $paramInstance=null)
+	public function getLayouts(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -35,7 +35,7 @@ class LayoutsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getLayout(string $id, ParameterMap $paramInstance=null)
+	public function getLayout(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -56,7 +56,7 @@ class LayoutsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateCustomLayout(string $id, BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function updateCustomLayout(string $id, BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -78,7 +78,7 @@ class LayoutsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteCustomLayout(string $id, ParameterMap $paramInstance=null)
+	public function deleteCustomLayout(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -99,7 +99,7 @@ class LayoutsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function activateCustomLayout(string $id, BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function activateCustomLayout(string $id, BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -123,7 +123,7 @@ class LayoutsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deactivateCustomLayout(string $id, ParameterMap $paramInstance=null)
+	public function deactivateCustomLayout(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

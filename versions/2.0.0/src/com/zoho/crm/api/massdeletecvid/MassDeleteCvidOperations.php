@@ -70,7 +70,7 @@ class MassDeleteCvidOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getMassDeleteStatus(ParameterMap $paramInstance=null)
+	public function getMassDeleteStatus(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

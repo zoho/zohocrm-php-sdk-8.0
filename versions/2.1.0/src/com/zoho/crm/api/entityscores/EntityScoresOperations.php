@@ -21,7 +21,7 @@ class EntityScoresOperations
 	 * @param string $fields A string
 	 * @param string $cvid A string
 	 */
-	public function __Construct(string $fields=null, string $cvid=null)
+	public function __Construct(?string $fields = null, ?string $cvid = null)
 	{
 		$this->fields=$fields; 
 		$this->cvid=$cvid; 
@@ -54,7 +54,7 @@ class EntityScoresOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getEntityScores(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getEntityScores(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

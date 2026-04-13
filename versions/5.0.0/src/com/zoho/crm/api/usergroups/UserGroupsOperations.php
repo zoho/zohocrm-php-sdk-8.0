@@ -16,7 +16,7 @@ class UserGroupsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getGroups(ParameterMap $paramInstance=null)
+	public function getGroups(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -133,7 +133,7 @@ class UserGroupsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getSources(string $group, ParameterMap $paramInstance=null)
+	public function getSources(string $group, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -191,7 +191,7 @@ class UserGroupsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssociatedUsersCount(ParameterMap $paramInstance=null)
+	public function getAssociatedUsersCount(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -210,7 +210,7 @@ class UserGroupsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssociateGroupsOfUser(string $user, ParameterMap $paramInstance=null)
+	public function getAssociateGroupsOfUser(string $user, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -231,7 +231,7 @@ class UserGroupsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getGroupedCounts(string $group, ParameterMap $paramInstance=null)
+	public function getGroupedCounts(string $group, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

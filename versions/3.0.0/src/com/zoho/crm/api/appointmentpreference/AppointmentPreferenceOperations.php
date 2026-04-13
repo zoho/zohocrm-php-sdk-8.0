@@ -16,7 +16,7 @@ class AppointmentPreferenceOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAppointmentPreference(ParameterMap $paramInstance=null)
+	public function getAppointmentPreference(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

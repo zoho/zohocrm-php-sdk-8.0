@@ -24,7 +24,7 @@ class EmailSignaturesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAllEmailSignatures(ParameterMap $paramInstance=null)
+	public function getAllEmailSignatures(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -43,7 +43,7 @@ class EmailSignaturesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function createEmailSignatures(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function createEmailSignatures(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -65,7 +65,7 @@ class EmailSignaturesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateEmailSignatures(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function updateEmailSignatures(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -86,7 +86,7 @@ class EmailSignaturesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteEmailSignatures(ParameterMap $paramInstance=null)
+	public function deleteEmailSignatures(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

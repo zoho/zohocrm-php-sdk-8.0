@@ -19,7 +19,7 @@ class NotesOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getNotes(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getNotes(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -78,7 +78,7 @@ class NotesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteNotes(ParameterMap $paramInstance=null)
+	public function deleteNotes(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -98,7 +98,7 @@ class NotesOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getNote(string $id, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getNote(string $id, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

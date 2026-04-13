@@ -16,7 +16,7 @@ class RecycleBinOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecyclebinRecords(ParameterMap $paramInstance=null)
+	public function getRecyclebinRecords(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -34,7 +34,7 @@ class RecycleBinOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteRecyclebinRecords(ParameterMap $paramInstance=null)
+	public function deleteRecyclebinRecords(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

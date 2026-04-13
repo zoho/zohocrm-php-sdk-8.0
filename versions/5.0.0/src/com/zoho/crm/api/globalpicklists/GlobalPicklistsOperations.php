@@ -16,7 +16,7 @@ class GlobalPicklistsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getGlobalPicklists(ParameterMap $paramInstance=null)
+	public function getGlobalPicklists(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -74,7 +74,7 @@ class GlobalPicklistsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteGlobalPicklists(ParameterMap $paramInstance=null)
+	public function deleteGlobalPicklists(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -93,7 +93,7 @@ class GlobalPicklistsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getGlobalPicklist(string $id, ParameterMap $paramInstance=null)
+	public function getGlobalPicklist(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -193,7 +193,7 @@ class GlobalPicklistsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getAssociations(string $id, ParameterMap $paramInstance=null)
+	public function getAssociations(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -214,7 +214,7 @@ class GlobalPicklistsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getPickListValueAssociations(string $id, ParameterMap $paramInstance=null)
+	public function getPickListValueAssociations(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

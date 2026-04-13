@@ -20,7 +20,7 @@ class FieldAttachmentsOperations
 	 * @param string $recordId A string
 	 * @param string $fieldsAttachmentId A string
 	 */
-	public function __Construct(string $moduleAPIName, string $recordId, string $fieldsAttachmentId=null)
+	public function __Construct(string $moduleAPIName, string $recordId, ?string $fieldsAttachmentId = null)
 	{
 		$this->moduleAPIName=$moduleAPIName; 
 		$this->recordId=$recordId; 

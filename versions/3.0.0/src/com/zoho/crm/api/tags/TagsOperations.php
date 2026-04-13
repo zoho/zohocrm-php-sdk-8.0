@@ -16,7 +16,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getTags(ParameterMap $paramInstance=null)
+	public function getTags(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -35,7 +35,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function createTags(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function createTags(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -57,7 +57,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateTags(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function updateTags(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -80,7 +80,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateTag(string $id, BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function updateTag(string $id, BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -145,7 +145,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function addTags(string $moduleAPIName, string $recordId, NewTagRequestWrapper $request, ParameterMap $paramInstance=null)
+	public function addTags(string $moduleAPIName, string $recordId, NewTagRequestWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -198,7 +198,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function addTagsToMultipleRecords(string $moduleAPIName, NewTagRequestWrapper $request, ParameterMap $paramInstance=null)
+	public function addTagsToMultipleRecords(string $moduleAPIName, NewTagRequestWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -223,7 +223,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function removeTagsFromMultipleRecords(string $moduleAPIName, ExistingTagRequestWrapper $request, ParameterMap $paramInstance=null)
+	public function removeTagsFromMultipleRecords(string $moduleAPIName, ExistingTagRequestWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -247,7 +247,7 @@ class TagsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRecordCountForTag(string $id, ParameterMap $paramInstance=null)
+	public function getRecordCountForTag(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

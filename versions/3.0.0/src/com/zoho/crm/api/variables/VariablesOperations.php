@@ -16,7 +16,7 @@ class VariablesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getVariables(ParameterMap $paramInstance=null)
+	public function getVariables(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -74,7 +74,7 @@ class VariablesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteVariables(ParameterMap $paramInstance=null)
+	public function deleteVariables(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -93,7 +93,7 @@ class VariablesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getVariableById(string $id, ParameterMap $paramInstance=null)
+	public function getVariableById(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -114,7 +114,7 @@ class VariablesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateVariableById(string $id, BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function updateVariableById(string $id, BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -155,7 +155,7 @@ class VariablesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function updateVariableByApiname(string $apiName, BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function updateVariableByApiname(string $apiName, BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -177,7 +177,7 @@ class VariablesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getVariableByApiname(string $apiName, ParameterMap $paramInstance=null)
+	public function getVariableByApiname(string $apiName, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

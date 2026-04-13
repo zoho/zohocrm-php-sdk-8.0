@@ -20,7 +20,7 @@ class ModulesOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getModules(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function getModules(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

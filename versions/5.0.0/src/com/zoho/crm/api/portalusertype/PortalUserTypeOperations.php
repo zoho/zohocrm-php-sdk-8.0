@@ -28,7 +28,7 @@ class PortalUserTypeOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getUserTypes(ParameterMap $paramInstance=null)
+	public function getUserTypes(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

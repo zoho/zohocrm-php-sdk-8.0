@@ -23,7 +23,7 @@ class FunctionsOperations
 	 * @param string $authType A string
 	 * @param array $arguments A array
 	 */
-	public function __Construct(string $functionName, string $authType=null, array $arguments=null)
+	public function __Construct(string $functionName, ?string $authType = null, ?array $arguments = null)
 	{
 		$this->functionName=$functionName; 
 		$this->authType=$authType; 
@@ -38,7 +38,7 @@ class FunctionsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function executeFunctionUsingRequestBody(BodyWrapper $request, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function executeFunctionUsingRequestBody(BodyWrapper $request, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -65,7 +65,7 @@ class FunctionsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function executeFunctionUsingParameters(ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function executeFunctionUsingParameters(?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -90,7 +90,7 @@ class FunctionsOperations
 	 * @param HeaderMap $headerInstance An instance of HeaderMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function executeFunctionUsingFile(FileBodyWrapper $request, ParameterMap $paramInstance=null, HeaderMap $headerInstance=null)
+	public function executeFunctionUsingFile(FileBodyWrapper $request, ?ParameterMap $paramInstance = null, ?HeaderMap $headerInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

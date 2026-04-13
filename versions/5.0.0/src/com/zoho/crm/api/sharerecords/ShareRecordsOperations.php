@@ -31,7 +31,7 @@ class ShareRecordsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getSharedRecordDetails(ParameterMap $paramInstance=null)
+	public function getSharedRecordDetails(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

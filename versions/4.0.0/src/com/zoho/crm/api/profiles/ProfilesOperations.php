@@ -16,7 +16,7 @@ class ProfilesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getProfiles(ParameterMap $paramInstance=null)
+	public function getProfiles(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -97,7 +97,7 @@ class ProfilesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function deleteProfile(string $id, ParameterMap $paramInstance=null)
+	public function deleteProfile(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

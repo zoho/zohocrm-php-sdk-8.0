@@ -17,7 +17,7 @@ class RelatedListsOperations
 	 * Creates an instance of RelatedListsOperations with the given parameters
 	 * @param string $layoutId A string
 	 */
-	public function __Construct(string $layoutId=null)
+	public function __Construct(?string $layoutId = null)
 	{
 		$this->layoutId=$layoutId; 
 
@@ -28,7 +28,7 @@ class RelatedListsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRelatedLists(ParameterMap $paramInstance=null)
+	public function getRelatedLists(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -48,7 +48,7 @@ class RelatedListsOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getRelatedList(string $id, ParameterMap $paramInstance=null)
+	public function getRelatedList(string $id, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

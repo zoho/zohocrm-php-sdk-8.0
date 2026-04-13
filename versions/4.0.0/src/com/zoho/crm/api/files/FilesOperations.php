@@ -17,7 +17,7 @@ class FilesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function uploadFiles(BodyWrapper $request, ParameterMap $paramInstance=null)
+	public function uploadFiles(BodyWrapper $request, ?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 
@@ -38,7 +38,7 @@ class FilesOperations
 	 * @param ParameterMap $paramInstance An instance of ParameterMap
 	 * @return APIResponse An instance of APIResponse
 	 */
-	public function getFile(ParameterMap $paramInstance=null)
+	public function getFile(?ParameterMap $paramInstance = null)
 	{
 		$handlerInstance=new CommonAPIHandler(); 
 		$apiPath=""; 

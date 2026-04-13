@@ -26,7 +26,7 @@ class GetRelatedLists
             ->initialize();
     }
 
-    public static function getRelatedLists(string $layoutId = null) 
+    public static function getRelatedLists(?string $layoutId = null) 
     {
         $relatedListsOperations = new RelatedListsOperations();
         $paramInstance = new ParameterMap();
