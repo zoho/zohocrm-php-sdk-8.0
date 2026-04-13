@@ -37,13 +37,13 @@ class FileStore implements TokenStore
 		{
             $allContents = [];
             $csvReader = file($this->filePath, FILE_IGNORE_NEW_LINES);
-            $headers = str_getcsv($csvReader[0]);
+            $headers = str_getcsv($csvReader[0], ',', '"', '\\');
             if(sizeof($headers) == 9)
             {
                 $allContents[0] = implode(",", $this->headers) . "\n";
                 for($index = 1; $index < sizeof($csvReader); $index++)
                 {
-                    $nextRecord = str_getcsv($csvReader[$index]);
+                    $nextRecord = str_getcsv($csvReader[$index], ',', '"', '\\');
                     array_push($nextRecord, null);
                     $allContents[$index] = implode(",", $nextRecord) . "\n";
                 }
@@ -73,7 +73,7 @@ class FileStore implements TokenStore
             for($index = 1; $index < sizeof($csvReader); $index++)
             {
                 $allContents = $csvReader[$index];
-                $nextRecord = str_getcsv($allContents);
+                $nextRecord = str_getcsv($allContents, ',', '"', '\\');
                 if (sizeof($nextRecord) > 1)
                 {
                     $isRowPresent = $this->checkCondition($oauthToken, $nextRecord);
@@ -109,7 +109,7 @@ class FileStore implements TokenStore
             $isRowPresent = false;
             for ($index = 1; $index < sizeof($allContents); $index++)
             {
-                $nextRecord = str_getcsv($allContents[$index]);
+                $nextRecord = str_getcsv($allContents[$index], ',', '"', '\\');
                 if (sizeof($nextRecord) > 1) 
                 {
                     if ($oauthToken->getId() != null) 
@@ -173,7 +173,7 @@ class FileStore implements TokenStore
             $isRowPresent = false;
             for ($index = 1; $index < sizeof($csvReader); $index++) 
             {
-                $nextRecord = str_getcsv($csvReader[$index]);
+                $nextRecord = str_getcsv($csvReader[$index], ',', '"', '\\');
                 if (sizeof($nextRecord) > 1) 
                 {
                     $recordId = $this->getData($nextRecord[0]);
@@ -211,7 +211,7 @@ class FileStore implements TokenStore
             $allContents = file($this->filePath, FILE_IGNORE_NEW_LINES);
             for ($index = 1; $index < sizeof($allContents); $index++)
             {
-                $nextRecord = str_getcsv($allContents[$index]);
+                $nextRecord = str_getcsv($allContents[$index], ',', '"', '\\');
                 if(sizeof($nextRecord) > 1)
                 {
                     $class = new \ReflectionClass(OAuthToken::class);
@@ -250,7 +250,7 @@ class FileStore implements TokenStore
             $isRowPresent = false;
             for ($index = 1; $index < sizeof($csvReader); $index++) 
             {
-                $nextRecord = str_getcsv($csvReader[$index]);
+                $nextRecord = str_getcsv($csvReader[$index], ',', '"', '\\');
                 if (sizeof($nextRecord) > 1 && $nextRecord[0] == $id) 
                 {
                     $isRowPresent = true;
@@ -393,7 +393,7 @@ class FileStore implements TokenStore
         {
             for ($index = 1; $index < sizeof($allContents); $index++)
             {
-                $nextRecord = str_getcsv($allContents[$index]);
+                $nextRecord = str_getcsv($allContents[$index], ',', '"', '\\');
                 if(sizeof($nextRecord) > 1 && $nextRecord[0] != null && mb_strlen($nextRecord[0] ?? '', 'utf-8'))
                 {
                     if ($maxValue < intval( $nextRecord[0]))
