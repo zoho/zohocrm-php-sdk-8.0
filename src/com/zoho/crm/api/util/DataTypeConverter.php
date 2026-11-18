@@ -31,7 +31,7 @@ class DataTypeConverter
         $float = function ($obj) { return floatval($obj); };
         $long = function ($obj) { return print_r($obj, true); };
 		$bool = function ($obj) { return (bool)$obj; };
-		$double = function ($obj) { return (double)$obj; };
+		$double = function ($obj) { return (float)$obj; };
         $stringToDateTime = function ($obj) { return date_create($obj)->setTimezone(new \DateTimeZone(date_default_timezone_get())); };
 		$dateTimeToString = function ($obj) { return $obj->format(\Datetime::ATOM); };
 		$stringToDate = function ($obj) { return date('Y-m-d', strtotime($obj)); };
