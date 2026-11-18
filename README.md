@@ -26,6 +26,12 @@ License
 
 ## Latest Version
 
+- [5.0.1](/versions/5.0.1/README.md)
+    - Fixed the PHP 8.4 deprecation warning "Implicitly marking parameter as nullable is deprecated". Parameters with a `null` default are now explicitly nullable (`Type $x = null` changed to `?Type $x = null`) across all `*Operations` classes, `SDKLogger::severeError()`, and the `SDKException` constructor.
+    - Fixed the PHP 8.5 deprecation warning "Non-canonical cast (double) is deprecated". The `(double)` cast is replaced with `(float)` in `OAuthToken` and `DataTypeConverter`.
+    - Supports PHP 7.1 through 8.5. The minimum PHP version is unchanged (`>=7.1`).
+    - No behaviour or public API changes.
+
 - [5.0.0](/versions/5.0.0/README.md)
     - Improved DB store query handling.
     - Fixed an issue with the Blueprint update API response.
@@ -82,10 +88,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-php-sdk-8.0/r
 
 ## Including the SDK in your project
 You can include the SDK to your project using Composer.
-For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/4.0.0) of PHP SDK, navigate to the workspace of your client app and run the following command.
+For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/5.0.1) of PHP SDK, navigate to the workspace of your client app and run the following command.
 
 ```sh
-composer require zohocrm/php-sdk-8.0:4.0.0
+composer require zohocrm/php-sdk-8.0:5.0.1
 ```
 With this, the PHP SDK will be installed and a package named vendor will be created in the workspace of your client app.
 
@@ -104,4 +110,4 @@ For example, if you generate the tokens for your Sandbox environment in the CN d
 
 ---
 
-For more details, kindly refer here. [here](/versions/4.0.0/README.md).
+For more details, kindly refer [here](/versions/5.0.1/README.md).
