@@ -120,7 +120,10 @@ class DBBuilder
     {
         $class = new \ReflectionClass(DBStore::class);
         $constructor = $class->getConstructor();
-        $constructor->setAccessible(true);
+        if (PHP_VERSION_ID < 80100)
+        {
+            $constructor->setAccessible(true);
+        }
         $object = $class->newInstanceWithoutConstructor();
         $constructor->invoke($object, $this->host, $this->databaseName, $this->tableName, $this->userName, $this->password, $this->portNumber, $this->key, $this->certificate, $this->caCertificate, $this->caPath, $this->cipherAlgos);
         return $object;

@@ -260,17 +260,52 @@ class DBStore implements TokenStore
 
     private function getMysqlConnection()
     {
-        $mysqli_con = new \mysqli($this->host . ":" . $this->portNumber, $this->userName, $this->password, $this->databaseName);
-        if ($mysqli_con->connect_errno)
+        $tlsRequested = $this->key !== null || $this->certificate !== null || $this->caCertificate !== null || $this->caPath !== null || $this->cipherAlgos !== null;
+        $mysqli_con = mysqli_init();
+        if ($mysqli_con === false)
         {
-            throw new \Exception($mysqli_con->connect_error);
+            throw new \Exception("Unable to initialize the MySQL connection.");
         }
-        if ($this->key) 
+        try
         {
-            $mysqli_con->options(MYSQLI_OPT_SSL_VERIFY_SERVER_CERT, true);
-            $mysqli_con->ssl_set($this->key, $this->certificate, $this->caCertificate, $this->caPath, $this->cipherAlgos);
+            // TLS options must be applied before opening the connection.
+            if ($tlsRequested)
+            {
+                if (!$mysqli_con->options(MYSQLI_OPT_SSL_VERIFY_SERVER_CERT, true))
+                {
+                    throw new \Exception("Unable to enable MySQL TLS certificate verification.");
+                }
+                if (!$mysqli_con->ssl_set($this->key, $this->certificate, $this->caCertificate, $this->caPath, $this->cipherAlgos))
+                {
+                    throw new \Exception("Unable to configure MySQL TLS.");
+                }
+            }
+            if (!$mysqli_con->real_connect($this->host, $this->userName, $this->password, $this->databaseName, (int) $this->portNumber, null, $tlsRequested ? MYSQLI_CLIENT_SSL : 0))
+            {
+                throw new \Exception($mysqli_con->connect_error);
+            }
+            if ($tlsRequested)
+            {
+                // Never allow token queries on an unencrypted session, including local sockets.
+                $result = $mysqli_con->query("SHOW SESSION STATUS LIKE 'Ssl_cipher'");
+                if ($result === false)
+                {
+                    throw new \Exception("Unable to verify MySQL TLS encryption.");
+                }
+                $status = $result->fetch_assoc();
+                $result->free();
+                if (!isset($status['Value']) || $status['Value'] === '')
+                {
+                    throw new \Exception("MySQL TLS was requested but the connection is not encrypted.");
+                }
+            }
+            return $mysqli_con;
         }
-        return $mysqli_con;
+        catch (\Throwable $ex)
+        {
+            $mysqli_con->close();
+            throw $ex;
+        }
     }
 
     public function getTokens()

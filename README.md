@@ -35,6 +35,14 @@ License
 
 ## Latest Version
 
+I’ll check the latest changes and draft a matching `6.0.0` release note.
+- [6.0.0](/versions/6.0.0/README.md)
+    - Fixed a security issue in `DBStore` where TLS settings were not applied before connecting to MySQL.
+    - Configuring any TLS option now requires an encrypted connection with server certificate verification. Connection, certificate verification, or encryption failures abort before any OAuth token query is executed.
+    - Configurations without TLS options retain their existing behaviour.
+    - The minimum PHP version is unchanged (`>=7.1`).
+    - No public API changes. **Behaviour change:** TLS-configured connections that cannot establish verified encryption now fail instead of proceeding.
+
 - [5.0.1](/versions/5.0.1/README.md)
     - Fixed the PHP 8.4 deprecation warning "Implicitly marking parameter as nullable is deprecated". Parameters with a `null` default are now explicitly nullable (`Type $x = null` changed to `?Type $x = null`) across all `*Operations` classes, `SDKLogger::severeError()`, and the `SDKException` constructor.
     - Fixed the PHP 8.5 deprecation warning "Non-canonical cast (double) is deprecated". The `(double)` cast is replaced with `(float)` in `OAuthToken` and `DataTypeConverter`.
@@ -97,10 +105,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-php-sdk-8.0/r
 
 ## Including the SDK in your project
 You can include the SDK to your project using Composer.
-For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/5.0.1) of PHP SDK, navigate to the workspace of your client app and run the following command.
+For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/6.0.0) of PHP SDK, navigate to the workspace of your client app and run the following command.
 
 ```sh
-composer require zohocrm/php-sdk-8.0:5.0.1
+composer require zohocrm/php-sdk-8.0:6.0.0
 ```
 With this, the PHP SDK will be installed and a package named vendor will be created in the workspace of your client app.
 
@@ -119,4 +127,4 @@ For example, if you generate the tokens for your Sandbox environment in the CN d
 
 ---
 
-For more details, kindly refer [here](/versions/5.0.1/README.md).
+For more details, kindly refer [here](/versions/6.0.0/README.md).
