@@ -1,4 +1,4 @@
-## Security Responsibilities and SDK Usage
+# Security Responsibilities and SDK Usage
 Zoho CRM PHP SDK is fully open source, enabling developers to customize, configure, and integrate it according to their application requirements. The SDK operates within the security context of the integrating application. Developers are responsible for validating inputs and ensuring that data, OAuth tokens, and other credentials are handled securely.
 
 The SDK provides interfaces and implementations for OAuth token persistence, which are intended to be used within the application's trusted server-side environment. Developers should ensure that these components are not directly exposed to untrusted or unauthenticated inputs and should use appropriate secure storage mechanisms for production deployments.
