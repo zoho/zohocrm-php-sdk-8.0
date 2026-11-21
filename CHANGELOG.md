@@ -2,6 +2,12 @@
 
 All notable changes to the Zoho CRM PHP SDK 8.0 (`zohocrm/php-sdk-8.0`) are documented in this file.
 
+## [6.0.0]
+
+### Security
+
+- Apply `DBStore` TLS settings before connecting to MySQL. Setting any TLS builder option now requires an encrypted connection with server certificate verification; connection, verification or encryption failures abort before any OAuth token query. Configurations without TLS options retain their existing behavior.
+
 ## [5.0.1]
 
 ### Compatibility
@@ -39,5 +45,9 @@ No functional changes.
 ### Upgrade
 
 ```sh
-composer require zohocrm/php-sdk-8.0:5.0.1
+composer require zohocrm/php-sdk-8.0:6.0.0
 ```
+
+## [5.0.0]
+
+- Added new APIs and issue fixes.
