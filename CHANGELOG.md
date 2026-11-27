@@ -2,6 +2,46 @@
 
 All notable changes to the Zoho CRM PHP SDK 8.0 (`zohocrm/php-sdk-8.0`) are documented in this file.
 
+## [7.0.0]
+
+### Breaking changes
+
+The per-user configuration cache in `Initializer` has been removed. The following public members no longer exist:
+
+| Removed | Replacement |
+|---|---|
+| `Initializer::$LOCAL` | None. `Initializer::getInitializer()` returns the most recently initialized or switched user. |
+| `Initializer::removeUserConfiguration($token)` | None. Call `Initializer::switchUser()` to change the active user. |
+| `Initializer::getEncodedKey()` | None. |
+| `Constants::USER_NOT_FOUND_ERROR` | None. |
+| `Constants::USER_NOT_FOUND_ERROR_MESSAGE` | None. |
+
+### Fixed
+
+- **`Initializer::switchUser()` generated the token in the previous user's environment.**
+  The new user is now made active before `generateToken()` runs, so `OAuthToken::getToken()` uses the new user's API domain and accounts URL.
+- **`Initializer::getInitializer()` could only ever return the active user.**
+  The removed `$LOCAL` lookup built its key from the active user, so it never selected anyone else. The method now returns the active user directly.
+- **`Initializer::toString()` reported the active user's environment** instead of the environment of the instance it was called on.
+- **`Utility::getEncodedFileName()`** (module fields cache file):
+  - Throws an `SDKException` if the SDK is not initialized or has no environment, instead of a PHP error.
+  - Replaces `/` with `_` in the base64 file name, so the name can no longer be treated as a sub-directory.
+  - Uses a SHA-256 hash when the name would be longer than 250 characters, keeping it within the common 255-byte file name limit.
+  - Refresh or access tokens of 32 characters or fewer previously produced an empty key, so all such users in the same data center shared one cache file. They now get a separate file.
+  - Creating the `resources` directory no longer fails when two processes create it at the same time. An `SDKException` is thrown if it cannot be created.
+
+### Behaviour
+
+- Users whose refresh or access token is 32 characters or fewer get a new cache file name after upgrading. Their module field details are fetched again once. All other cache file names are unchanged.
+
+### Upgrade
+
+```sh
+composer require zohocrm/php-sdk-8.0:7.0.0
+```
+
+Remove any calls to `Initializer::removeUserConfiguration()` and `Initializer::getEncodedKey()`, and any references to `Initializer::$LOCAL` or `Constants::USER_NOT_FOUND_ERROR*`.
+
 ## [6.0.0]
 
 ### Security

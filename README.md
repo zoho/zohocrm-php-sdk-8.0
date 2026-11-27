@@ -35,7 +35,19 @@ License
 
 ## Latest Version
 
-I’ll check the latest changes and draft a matching `6.0.0` release note.
+- [7.0.0](/versions/7.0.0/README.md)
+    - Fixed an issue in `Initializer::switchUser()` where the token was fetched using the previous user's environment. The new user is now made active before the token is requested.
+    - `Initializer::getInitializer()` now returns the active user directly, and `toString()` now reports its own environment.
+    - Fixed the cache file name built by `Utility::getEncodedFileName()`:
+        - It raises a clear `SDKException` if the SDK isn't initialized or has no environment.
+        - It replaces `/` with `_`, so the name can't turn into a subfolder.
+        - Names longer than 250 characters are hashed to stay within filesystem limits.
+        - Tokens of 32 characters or fewer get their own cache file instead of sharing one.
+        - Creating the `resources` folder no longer fails when two processes do it at the same moment.
+    - The minimum PHP version is unchanged (`>=7.1`).
+    - **Breaking changes:** Removed `Initializer::$LOCAL`, `Initializer::removeUserConfiguration()`, `Initializer::getEncodedKey()`, `Constants::USER_NOT_FOUND_ERROR` and `Constants::USER_NOT_FOUND_ERROR_MESSAGE`. Remove any calls to these before upgrading.
+    - **Behaviour change:** Users with tokens of 32 characters or fewer get a new cache file name, so their cached field details are fetched again once after upgrading.
+
 - [6.0.0](/versions/6.0.0/README.md)
     - Fixed a security issue in `DBStore` where TLS settings were not applied before connecting to MySQL.
     - Configuring any TLS option now requires an encrypted connection with server certificate verification. Connection, certificate verification, or encryption failures abort before any OAuth token query is executed.
@@ -105,10 +117,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-php-sdk-8.0/r
 
 ## Including the SDK in your project
 You can include the SDK to your project using Composer.
-For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/6.0.0) of PHP SDK, navigate to the workspace of your client app and run the following command.
+For installing the latest [version](https://github.com/zoho/zohocrm-php-sdk-8.0/releases/tag/7.0.0) of PHP SDK, navigate to the workspace of your client app and run the following command.
 
 ```sh
-composer require zohocrm/php-sdk-8.0:6.0.0
+composer require zohocrm/php-sdk-8.0:7.0.0
 ```
 With this, the PHP SDK will be installed and a package named vendor will be created in the workspace of your client app.
 
@@ -127,4 +139,4 @@ For example, if you generate the tokens for your Sandbox environment in the CN d
 
 ---
 
-For more details, kindly refer [here](/versions/6.0.0/README.md).
+For more details, kindly refer [here](/versions/7.0.0/README.md).

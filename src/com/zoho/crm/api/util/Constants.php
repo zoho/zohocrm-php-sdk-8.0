@@ -257,7 +257,7 @@ class Constants
     const SET_API_URL_EXCEPTION = "Exception in setting API URL";
     const AUTHENTICATION_EXCEPTION = "Exception in authenticating current request : ";
     const FORM_REQUEST_EXCEPTION = "Exception in forming request body : ";
-    const SDK_VERSION = "6.0.0";
+    const SDK_VERSION = "7.0.0";
     const API_CALL_EXCEPTION = "Exception in current API call execution : ";
     const HTTP = "http";
     const CONTENT_API_URL = "content.zohoapis.com";
@@ -278,8 +278,6 @@ class Constants
     const MODULE_API_EXCEPTION = "com\zoho\crm\api\modules\APIException";
     const JSON_DETAILS_FILE_PATH = "resources/JSONDetails.json";
     const EVENTS_MODULE_PARAMS = array("startDateTime", "endDateTime");
-    const USER_NOT_FOUND_ERROR = "USER NOT FOUND ERROR : ";
-    const USER_NOT_FOUND_ERROR_MESSAGE  = "Given user not found in SDK configuration details";
     const HEADER_OR_PARAM_NAME = "HEADER OR PARAM";
     const URL = "URL";
 	const PARAMS = "PARAMS";
