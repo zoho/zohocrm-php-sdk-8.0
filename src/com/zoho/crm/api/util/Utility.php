@@ -304,50 +304,82 @@ class Utility
             }
         }
     }
+    /**
+     * Maximum length of the generated file name (without ".json"), so that the
+     * full name stays within the common 255-byte file-system limit.
+     */
+    const MAX_FIELD_FILE_NAME_LENGTH = 250;
+
+    /**
+     * Number of trailing characters of a refresh/access token that are never
+     * written into the file name.
+     */
+    const TOKEN_KEY_TRIM_LENGTH = 32;
+
+    /**
+     * Returns the absolute path of the module-fields cache file of the active user.
+     * The name is derived from the active user's API domain and token identity, so
+     * different users never share a cache file.
+     * @return string
+     * @throws SDKException
+     */
     public static function getEncodedFileName()
     {
         $initializer = Initializer::getInitializer();
-        $token = $initializer->getToken();
-        $accessToken = "";
-        $refreshToken = "";
-        $tokenKey = "";
-        if ($token instanceof OAuthToken)
+        if ($initializer == null)
         {
-            $oauthToken = $token;
-			if($oauthToken->getUserSignature() != null)
-			{
-				$tokenKey = $oauthToken->getUserSignature()->getName();
-			}
-			else
-			{
-				$refreshToken = $oauthToken->getRefreshToken();
-				if ($refreshToken != null && mb_strlen($refreshToken, 'utf-8') > 0)
-				{
-                    $tokenKey = substr($refreshToken, 0, mb_strlen($refreshToken, 'utf-8') - 32);
-				}
-				else
-				{
-					$accessToken = $oauthToken->getAccessToken();
-					if ($accessToken != null && mb_strlen($accessToken) > 0)
-					{
-						$tokenKey = substr($accessToken, 0, mb_strlen($accessToken, 'utf-8') - 32);
-					}
-				}
-			}
+            throw new SDKException(Constants::SDK_UNINITIALIZATION_ERROR, Constants::SDK_UNINITIALIZATION_MESSAGE);
         }
-        $fileName = $initializer->getEnvironment()->getUrl();
-        if ($tokenKey != null && mb_strlen($tokenKey, 'utf-8') > 0)
+        if ($initializer->getEnvironment() == null)
         {
-            $fileName = $fileName . $tokenKey;
+            throw new SDKException(Constants::ENVIRONMENT_ERROR_1, Constants::ENVIRONMENT_ERROR_MESSAGE);
         }
-        $input = unpack('C*', mb_convert_encoding($fileName, "UTF-8"));
-        $str = base64_encode(implode(array_map("chr", $input)));
-        $resourcesPath = Initializer::getInitializer()->getResourcePath() . DIRECTORY_SEPARATOR . Constants::FIELD_DETAILS_DIRECTORY;
-        if (!is_dir($resourcesPath))
+        $fileName = $initializer->getEnvironment()->getUrl() . self::getTokenKey($initializer->getToken());
+        // Standard base64 can emit "/", which would be treated as a directory separator.
+        // "_" is not part of the standard alphabet, so the mapping stays unique and every
+        // name that was valid before is unchanged.
+        $str = strtr(base64_encode(mb_convert_encoding($fileName, "UTF-8")), '/', '_');
+        if (strlen($str) > self::MAX_FIELD_FILE_NAME_LENGTH)
         {
-            mkdir($resourcesPath);
+            $str = hash('sha256', $fileName);
+        }
+        $resourcesPath = $initializer->getResourcePath() . DIRECTORY_SEPARATOR . Constants::FIELD_DETAILS_DIRECTORY;
+        if (!is_dir($resourcesPath) && !@mkdir($resourcesPath) && !is_dir($resourcesPath))
+        {
+            throw new SDKException(Constants::INITIALIZATION_ERROR, Constants::RESOURCE_PATH_INVALID_ERROR_MESSAGE . " : " . $resourcesPath);
         }
         return $resourcesPath . DIRECTORY_SEPARATOR . $str . ".json";
+    }
+
+    /**
+     * Returns the user-identifying part of the cache file name for the given token.
+     */
+    private static function getTokenKey($token)
+    {
+        if (!($token instanceof OAuthToken))
+        {
+            return "";
+        }
+        if ($token->getUserSignature() != null)
+        {
+            return (string) $token->getUserSignature()->getName();
+        }
+        $value = $token->getRefreshToken();
+        if ($value == null || strlen($value) == 0)
+        {
+            $value = $token->getAccessToken();
+        }
+        if ($value == null || strlen($value) == 0)
+        {
+            return "";
+        }
+        if (strlen($value) > self::TOKEN_KEY_TRIM_LENGTH)
+        {
+            return substr($value, 0, strlen($value) - self::TOKEN_KEY_TRIM_LENGTH);
+        }
+        // Too short to trim: previously this produced an empty key, so every such user
+        // of the same data center shared one fields file. Use a one-way hash instead.
+        return hash('sha256', $value);
     }
 
     public static function getRelatedLists($relatedModuleName, $moduleAPIName, &$commonAPIHandler)

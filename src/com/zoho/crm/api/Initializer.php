@@ -18,7 +18,6 @@ All rights reserved.
    limitations under the License. 
 */
 
-use com\zoho\api\authenticator\OAuthToken;
 use com\zoho\api\logger\Logger;
 use com\zoho\crm\api\exception\SDKException;
 use com\zoho\crm\api\sdkconfigbuilder\SDKConfig;
@@ -34,7 +33,6 @@ use com\zoho\api\logger\SDKLogger;
  */
 class Initializer
 {
-    public static $LOCAL = array();
     private static $initializer;
     private $environment = null;
     private $store = null;
@@ -86,7 +84,6 @@ class Initializer
             }
             $initializer->token = $token;
             self::$initializer = $initializer;
-            self::$LOCAL[$initializer->getEncodedKey()] = $initializer;
             SDKLogger::info(Constants::INITIALIZATION_SUCCESSFUL . $initializer->toString());
         }
         catch(SDKException $e)
@@ -111,15 +108,7 @@ class Initializer
      */
     public static function getInitializer()
     {
-        if (!empty(self::$LOCAL) && count(self::$LOCAL) != 0)
-        {
-            $initializer = new Initializer();
-            $key = $initializer->getEncodedKey();
-            if(array_key_exists($key, self::$LOCAL))
-            {
-                return self::$LOCAL[$key];
-            }
-        }
+        // The latest initialized/switched user is authoritative.
         return self::$initializer;
     }
 
@@ -138,13 +127,14 @@ class Initializer
         $initializer->resourcePath = self::$initializer->resourcePath;
         $initializer->requestProxy = $proxy;
         $initializer->token = $token;
+        // Activate the new initializer before generating the token so that OAuthToken::getToken()
+        // resolves the new user's environment (API domain / accounts URL) instead of the previous user's.
+        self::$initializer = $initializer;
         if ($token != null)
         {
             $token->generateToken();
         }
         $initializer->token = $token;
-        self::$LOCAL[$initializer->getEncodedKey()] = $initializer;
-        self::$initializer = $initializer;
         SDKLogger::info(Constants::INITIALIZATION_SWITCHED . $initializer->toString());
     }
 
@@ -203,68 +193,9 @@ class Initializer
         return $this->sdkConfig;
     }
 
-    public static function removeUserConfiguration($token)
-    {
-        $initializer = new Initializer();
-        if ($token instanceof OAuthToken)
-        {
-            if ($token->getId() == self::$initializer->getToken()->getId())
-            {
-                $key = $initializer->getEncodedKey();
-                if(array_key_exists($key, self::$LOCAL))
-                {
-                    unset(self::$LOCAL[$initializer->getEncodedKey()]);
-                }
-                else
-                {
-                    $exception = new SDKException(null, Constants::USER_NOT_FOUND_ERROR_MESSAGE);
-                    SDKLogger::info(Constants::USER_NOT_FOUND_ERROR . $exception);
-                    throw $exception;
-                }
-            }
-        }
-    }
-    public static function getEncodedKey()
-    {
-        $initializer = new Initializer();
-        $token = $initializer->getToken();
-        $key = null;
-        if ($token instanceof OAuthToken)
-        {
-            $oauthToken = $token;
-            if($oauthToken->getUserSignature() != null)
-			{
-				$key = $oauthToken->getUserSignature()->getName();
-			}
-            else
-            {
-                $refreshToken = $oauthToken->getRefreshToken();
-                if ($refreshToken != null && mb_strlen($refreshToken, 'utf-8') > 0)
-                {
-                    $key = substr($refreshToken, 0, mb_strlen($refreshToken, 'utf-8') - 32);
-                }
-                else
-                {
-                    $accessToken = $oauthToken->getAccessToken();
-                    if ($accessToken != null && mb_strlen($accessToken, 'utf-8') > 0)
-                    {
-                        $key = substr($accessToken, 0, mb_strlen($accessToken, 'utf-8') - 32);
-                    }
-                }
-            }
-        }
-        $tokenKey = self::$initializer->getEnvironment()->getUrl();
-        if ($key != null && mb_strlen($key, 'utf-8') > 0)
-        {
-            $tokenKey = $tokenKey . $key;
-        }
-        $input = unpack('C*', mb_convert_encoding($tokenKey, "UTF-8"));
-        return base64_encode(implode(array_map("chr", $input)));
-    }
-
     public function toString()
 	{
-		return Constants::IN_ENVIRONMENT . self::$initializer->getEnvironment()->getUrl() . ".";
+		return Constants::IN_ENVIRONMENT . $this->getEnvironment()->getUrl() . ".";
 	}
 }
 ?>
